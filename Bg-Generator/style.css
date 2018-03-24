@@ -98,7 +98,9 @@ h6 {
     -webkit-appearance: none;
     width: 80px;
     height: 30px;
-    cursor:pointer
+    cursor:pointer;
+    font-size: 10px;
+    text-align: center;
 }
 .color2 {
     border: none;
@@ -106,7 +108,9 @@ h6 {
     background: #333333;
     width: 80px;
     height: 30px;
-    cursor:pointer
+    cursor:pointer;
+    font-size: 10px;
+    text-align: center;
 }
     
 input[type="color"] {

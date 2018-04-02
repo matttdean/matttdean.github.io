@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="276px" viewBox="0 0 1440 276" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>darkest-blue-bottom</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 1449 0 1449 280.015875 0 280.015875"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(0.000000, -2960.000000)">
+            <g id="darkest-blue-bottom" transform="translate(-5.000000, 2955.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M1448.99694,1307.85159 L1448.99694,1290.39796 C1448.99796,901.34579 1449,86.8717298 1449,60.3141999 C1343.55298,224.157823 1206.29363,186.086153 1005.91607,186.086153 C484.776863,186.086153 232.766673,266.221428 0,0 L0,1306.50023 L0,811.718331 L0,1664.1754 L0,1886.03814 L0,2869 L1449,2869 L1448.9949,1927.98352 L1448.9949,1913.80232 C1448.9949,1905.05818 1448.99592,1892.43216 1448.99592,1876.41449 C1448.99694,1876.4155 1448.99796,1876.41652 1449,1876.41754 C1449,1857.84185 1448.99796,1573.97519 1448.99694,1307.85159" id="Fill-1" fill="#27229D" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

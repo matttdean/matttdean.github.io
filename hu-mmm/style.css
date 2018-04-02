@@ -139,27 +139,24 @@ img {
   margin-left: -480px;
 }*/
 
+
 .blue-bottom{
-  height: 100%;	
+  height: 60%;	
   width: 100%;
-  background-image: url("img/bottom-man.svg");
-  background-position: top;
-  background-repeat: no-repeat;
   position: absolute;
-  background-size: cover;
-  top:38%;
-  
+  top:20%;  
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .blue-bottom{
+    top:31%; 
+  }
 }
 @media only screen and (max-width: 768px) {
-	.blue-bottom{
-	  height: 60%;	
-	  width: 100%;
-	  background-image: url("img/bottom-man.svg");
-	  position: absolute;
-	  background-size: cover;
-	  top:70%;
-	  
-	}
+  .blue-bottom{
+    top:40%; 
+  }
 }
 
 .dark-blue-bottom{
@@ -270,10 +267,36 @@ img {
 .chart-placeholder {
   width: 80%;
   height: 800px;
-  background-color: #FFF;
-  opacity: 0.8;
   margin-left: auto;
   margin-right: auto;
+}
+.chart-line{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.chart-nav {
+  width:auto;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  }
+
+.site-name{
+  background-image: url(img/masthead-1);
+
+ } 
+.site-logo{
+  width: 50px;
+  height: 50px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .line{

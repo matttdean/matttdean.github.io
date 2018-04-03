@@ -13,9 +13,9 @@ $(window).scroll(function(){
 	$('.brain-clouds').css({
 		'transform' : 'translate(0px, '+ wScroll /64 +'%)'
 	})
-	$('.dark-blue-bottom').css({
-		'transform' : 'translate(0px, -'+ wScroll /64 +'%)'
-	})
+	// $('.dark-blue-bottom').css({
+	// 	'transform' : 'translate(0px, -'+ wScroll /64 +'%)'
+	// })
 	$('.darkest-blue-bottom').css({
 		'transform' : 'translate(0px, -'+ wScroll /53 +'%)'
 	})

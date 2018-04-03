@@ -95,7 +95,11 @@ img {
 
 .dark-blue-row{
   background-color: #3431B0;
-  margin-top: -500px;
+  padding-top: 60px;
+/*  margin-top: -300px;*/
+  position: relative;
+  z-index: 10;
+  margin-top: -100px;
 }
 
 .cloud-bg{
@@ -162,24 +166,17 @@ img {
 }
 
 .dark-blue-bottom{
-  height: 600px; 
+  height: auto; 
   width: 100%;
-  background-image: url("img/dark-blue-bottom.svg");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-/*  margin-top: -200px;*/
-}
+  margin-top: -400px;
+  }
 
 @media only screen and (max-width: 768px) {
   .dark-blue-bottom{
-    height: 500px; 
-    width: 100%;
-    background-image: url("img/dark-blue-bottom.svg");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 20px;
+    
   }
 }
 
@@ -196,15 +193,16 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: -200px;
+  position: relative;
 }
 
 .white-bottom{
   height: 700px; 
   width: 100%;
   background-image: url("img/white-bottom.svg");
-  background-position: top;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   margin-bottom: -680px;
 }
 
@@ -246,18 +244,15 @@ img {
 }*/
 
 .moon{
-  height:500px;
+  height:auto;
   width: 100%;
-  background-image: url("img/moon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   margin-bottom:-500px;
+  position: relative;
+  top:90%;
 }
 
 @media only screen and (max-width: 768px) {
   .moon{
-    height:300px;
     margin-bottom:-300px;
   }
 }
@@ -282,6 +277,7 @@ img {
 .chart-nav {
   width:auto;
   height: 50px;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
   display: flex;

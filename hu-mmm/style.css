@@ -93,13 +93,19 @@ img {
   background-color: #5450F5;
 }
 
-.dark-blue-row{
+.dark-blue-row {
   background-color: #3431B0;
-  padding-top: 60px;
+  padding-top: 10px;
 /*  margin-top: -300px;*/
   position: relative;
   z-index: 10;
-  margin-top: -100px;
+  margin-top: -300px;
+}
+
+@media only screen and (max-width: 768px) {
+  .dark-blue-row {
+    margin-top: -300px;
+  }
 }
 
 .cloud-bg{
@@ -176,7 +182,7 @@ img {
 
 @media only screen and (max-width: 768px) {
   .dark-blue-bottom{
-    
+    margin-top: -650px;
   }
 }
 
@@ -346,7 +352,7 @@ img {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 1;
+  z-index: 30;
 }
 .no-touch #vertical-nav li {
   text-align: right;
@@ -422,7 +428,7 @@ img {
 /* Touch devices */
 .touch .nav-trigger {
   display: block;
-  z-index: 2;
+  z-index: 32;
   position: fixed;
   bottom: 30px;
   right: 5%;
@@ -465,7 +471,7 @@ img {
 
 .touch #vertical-nav {
   position: fixed;
-  z-index: 1;
+  z-index: 30;
   right: 5%;
   bottom: 30px;
   width: 90%;

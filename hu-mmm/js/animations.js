@@ -1,4 +1,4 @@
-// Magnifing glass man
+// Magnifying glass
 	HaikuComponentEmbed_philipgemmell_MMM( 
 		document.getElementById('mount-c5282b6c-79ed-4853-9889-18cdb8825f59'), 
 		{
@@ -7,14 +7,15 @@
 			contextMenu: 'disabled'
 		});
 
-// Rocket
-	HaikuComponentEmbed_philipgemmell_MMM(
-		document.getElementById('mount-61bc195c-23d3-4513-8b6e-ccd43ab8e352'),
+// rocket
+	HaikuComponentEmbed_philipgemmell_rocket( 
+		document.getElementById('mount-60414e7c-f53e-4929-bac6-54e6ced7ee9a'), 
 			{
 				loop: true,
-				sizing: 'contain',
+				sizing: "contain",
 				contextMenu: 'disabled'
-			});
+			}); 
+
 
 // Woman Door-Head
 

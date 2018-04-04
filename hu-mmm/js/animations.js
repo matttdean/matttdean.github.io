@@ -45,9 +45,9 @@
 			});
 // Girl with Bird
 	HaikuComponentEmbed_philipgemmell_Girlwithbird( 
-		document.getElementById('mount-efd2bc68-a550-4951-8a0f-6d84b80d2324'), 
-			{
-				loop: true,
-				sizing: "contain",
-				contextMenu: 'disabled'
-			});
+		document.getElementById('mount-9bb634c9-8668-4e60-8d98-db507dc80be3'), 
+		{
+			loop: true,
+			sizing: "contain",
+			contextMenu: 'disabled'
+		});

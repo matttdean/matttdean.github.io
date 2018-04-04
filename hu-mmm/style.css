@@ -282,18 +282,55 @@ img {
 }
 .chart-nav {
   width:auto;
-  height: 50px;
-  margin-top: 100px;
+  height: 70px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-flow: row nowrap;
-  overflow-y: hidden;
-  overflow-x: scroll;
+  flex-flow: row wrap;
+  justify-content: center;
   }
+@media only screen and (max-width: 1000px) {
+  .chart-nav {
+    width:auto;
+    height: 70px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    }
+}
 
+.pie {
+  margin-bottom: -125px;
+  padding: 3rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .pie {
+    margin-bottom: -25px;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+.pie {
+  margin-bottom: -10px;
+  padding:5rem;
+}
+}
 .site-name{
-  background-image: url(img/masthead-1);
+  margin-top: 100px;
+  height: 30px;
+  width: 100%;
+  background-image: url("img/site-name.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 
  } 
 .site-logo{
@@ -301,6 +338,14 @@ img {
   height: 50px;
   margin-left: 2px;
   margin-right: 2px;
+  margin-bottom: 5px;
+  opacity: 0.6;
+  transition: all .2s ease-in-out;
+}
+
+.site-logo:hover {
+ transform: scale(1.2);
+ opacity: 1;
 }
 
 .line{

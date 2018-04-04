@@ -1,11 +1,11 @@
 // Magnifing glass man
-	HaikuComponentEmbed_philipgemmell_rocket( 
-		document.getElementById('mount-60414e7c-f53e-4929-bac6-54e6ced7ee9a'), 
-			{
-				loop: true,
-				sizing: "contain",
-				contextMenu: 'disabled'
-			}); 
+	HaikuComponentEmbed_philipgemmell_MMM( 
+		document.getElementById('mount-c5282b6c-79ed-4853-9889-18cdb8825f59'), 
+		{
+			loop: true,
+			sizing: 'contain',
+			contextMenu: 'disabled'
+		});
 
 // Rocket
 	HaikuComponentEmbed_philipgemmell_MMM(

@@ -52,3 +52,29 @@
 			sizing: "contain",
 			contextMenu: 'disabled'
 		});
+
+// head
+	HaikuComponentEmbed_philipgemmell_openhead( 
+		document.getElementById('mount-af510554-3f05-4d3b-9547-485ff99baa29'), 
+		{
+			loop: false,
+			sizing: "contain",
+			contextMenu: 'disabled'
+		});
+
+// Woman with plants
+	HaikuComponentEmbed_philipgemmell_womanandplants( 
+		document.getElementById('mount-5a096923-587b-4d61-9726-f5e165548912'), 
+		{
+			loop: true,
+			sizing: "contain",
+			contextMenu: 'disabled'
+		});
+// Dark plants
+	HaikuComponentEmbed_philipgemmell_darkplants( 
+		document.getElementById('mount-b9491b5c-5720-49ea-876e-6156f613225a'), 
+		{
+			loop: true,
+			sizing: "contain",
+			contextMenu: 'disabled'
+		});

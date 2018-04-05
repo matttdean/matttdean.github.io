@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="637px" viewBox="0 0 1440 637" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>trigger-bottom</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.000507735584 0.869071023 1443.9279 0.869071023 1443.9279 639.901007 0.000507735584 639.901007"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(0.000000, -5539.000000)">
+            <g id="trigger-bottom" transform="translate(-2.000000, 5536.000000)">
+                <g id="Group-14">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-13"></g>
+                    <path d="M1443.92536,1303.76583 L1443.92536,1286.37832 C1443.92638,898.800054 1443.92841,98.2932525 1443.92841,71.8363346 C1338.8505,235.059244 1202.07161,176.727928 1002.39545,176.727928 C483.080451,176.727928 315.083948,328.275233 0.000507735584,0.868969496 L0.000507735584,1302.41958 L0.000507735584,809.512144 L0.000507735584,1658.73972 L0.000507735584,1879.76194 L0.000507735584,2858.9999 L1443.92841,2858.9999 L1443.92333,1921.54842 L1443.92333,1907.42195 C1443.92333,1898.70992 1443.92435,1886.13174 1443.92435,1870.17475 C1443.92536,1870.17576 1443.92638,1870.17678 1443.92841,1870.17779 C1443.92841,1851.67145 1443.92638,1568.88122 1443.92536,1303.76583" id="Fill-12" fill="#3431B0" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

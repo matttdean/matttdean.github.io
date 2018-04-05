@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="310px" height="315px" viewBox="0 0 310 315" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>red-blurb</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-365.000000, -4478.000000)" fill="#F76381">
+            <g id="Sad-quotes" transform="translate(365.000000, 4372.000000)">
+                <path d="M65.606,106.935 L243.899,106.935 C279.982,106.935 309.504,136.457 309.504,172.541 L309.504,257.567 L309.504,277.549 L309.504,421.034 C281.562,393.091 243.663,377.393 204.146,377.393 L65.606,377.393 C29.523,377.393 0,347.87 0,311.787 L0,172.541 C0,136.458 29.523,106.935 65.606,106.935" id="red-blurb"></path>
+            </g>
+        </g>
+    </g>
+</svg>

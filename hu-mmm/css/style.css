@@ -16,7 +16,7 @@ html * {
 
 body {
   font-size: 100%;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #3e3947;
   background-color: white;
 }
@@ -37,6 +37,9 @@ img {
   max-width: 100%;
 }
 
+h2 {
+   font-family: 'Oswald', sans-serif;
+}
 
 /*Components*/
 
@@ -73,7 +76,7 @@ img {
 #intro p {
 
   color: #AAAAAA;
-  line-height: 1.7em;
+  line-height: 1.8em;
 }
 
 #section2{
@@ -90,7 +93,12 @@ img {
 }
 #section5{
   color:#FFF;
-  background-color: #5450F5;
+  background-color: #3431B0;
+  margin-top: -500px;
+}
+#section6{
+  color:#FFF;
+  background-color: #1E1A7F;
 }
 
 .dark-blue-row {
@@ -130,11 +138,81 @@ img {
 .brain-clouds {
   height: 600px;  
   width: 100%;
-  background-image: url("../img/brain-clouds.svg");
+  background-image: url("../img/brain-clouds_animated.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: -600px;
+}
+
+.light-blue-brain {
+
+  height: 600px;  
+  width: 100%;
+  background-image: url("../img/big-light-blue-brain.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 300px;
+}
+
+.head {
+  height:auto;
+  min-height: 300px;
+  width: 100%;
+  position: relative;
+  z-index: 34;
+  top: 23%;
+}
+
+.blurb-col-1 {
+    margin-right: -10px;
+}
+.blurb-col-2 {
+    margin-left: -10px;
+}
+.blurb-row {
+  position: relative;
+  margin-bottom: -700px;
+  z-index: 33;
+  padding-top: 200px;
+}
+
+.red-blurb {
+  height:314px;
+  width: 309px;
+  position: relative;
+  background-image: url("../img/red-blurb.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #FFF;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.blue-blurb {
+  height:230px;
+  width: 280px;
+  position: relative;
+  background-image: url("../img/blue-blurb.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #FFF;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.peach-blurb {
+  height: 271px;
+  width: 378px;
+  position: relative;
+  background-image: url("../img/peach-blurb.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #FFF;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 /*.man{
@@ -207,12 +285,72 @@ img {
 .white-bottom{
   height: 700px; 
   width: 100%;
-  background-image: url("../img/white-bottom.svg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  margin-bottom: -680px;
+  margin-bottom: -400px;
 }
+
+.dark-plants-bottom{
+  height: 700px; 
+  width: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: -200px;
+}
+
+.trigger {
+  margin-top: 280px;
+  color: #FFF;
+  line-height: 1.7em;
+}
+.trigger h2 {
+  color: #F5A396;
+}
+.trigger-1{
+  height: 1000px; 
+  width: 100%;
+  background-image: url("../img/trigger-blue-1.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: -600px;
+  position: relative;
+  z-index: 37;
+}
+.trigger-2{
+  height: 1600px; 
+  width: 100%;
+  background-image: url("../img/trigger-blue-2.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: -1600px;
+}
+.trigger-3{
+  height: 1600px; 
+  width: 100%;
+  background-image: url("../img/trigger-blue-3.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: -1600px;
+}
+
+.trigger-bottom{
+  height: 1000px; 
+  width: 100%;
+  background-image: url("../img/trigger-bottom.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: -500px;
+  position: relative;
+  z-index: 40;
+}
+
+
 
 .logo{
   height: 146px;  
@@ -292,20 +430,16 @@ img {
   flex-flow: row wrap;
   justify-content: center;*/
   }
-/*@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .chart-nav {
-    width:auto;
-    height: 70px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    overflow-x: scroll;
-    overflow-y: hidden;
+      width:600px;
     }
-}*/
+}
+@media only screen and (max-width: 768px) {
+  .chart-nav {
+      width:300px;
+    }
+}
 
 .pie {
   margin-bottom: -125px;
@@ -411,7 +545,7 @@ img {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 30;
+  z-index: 100;
 }
 .no-touch #vertical-nav li {
   text-align: right;
@@ -487,7 +621,7 @@ img {
 /* Touch devices */
 .touch .nav-trigger {
   display: block;
-  z-index: 32;
+  z-index: 102;
   position: fixed;
   bottom: 30px;
   right: 5%;
@@ -530,7 +664,7 @@ img {
 
 .touch #vertical-nav {
   position: fixed;
-  z-index: 30;
+  z-index: 100;
   right: 5%;
   bottom: 30px;
   width: 90%;

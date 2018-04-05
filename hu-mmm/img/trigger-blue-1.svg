@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="719px" viewBox="0 0 1440 719" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>trigger-blue-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 1442 0 1442 718.762775 0 718.762775"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(0.000000, -5176.000000)">
+            <g id="trigger-blue-1" transform="translate(-2.000000, 5176.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M1441.99695,858.790108 L1441.99695,841.380517 C1441.99898,453.310114 1442,26.4894959 1442,0 C1337.06312,163.42915 1200.46653,109.110333 1001.05761,109.110333 C482.434855,109.110333 298.068737,430.234223 0,131.33638 L0,857.443167 L0,363.909844 L0,1214.21473 L0,1435.51761 L0,2416 L1442,2416 L1441.99594,1477.35715 L1441.99594,1463.21274 L1441.99594,1425.91824 C1441.99695,1425.91926 1441.99797,1425.92027 1442,1425.92129 C1442,1407.39247 1441.99898,1124.24316 1441.99695,858.790108" id="Fill-1" fill="#5450F5" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -7,6 +7,9 @@ $(window).scroll(function(){
 	$('.blue-bottom').css({
 		'transform' : 'translate(0px,-'+ wScroll /32 +'%)'
 	})
+	$('.test').css({
+		'transform' : 'translate(0px,-'+ wScroll /64 +'%)'
+	})
 	$('.moon').css({
 		'transform' : 'translate(0px, -'+ wScroll /26 +'%)'
 	})

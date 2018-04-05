@@ -46,4 +46,42 @@ jQuery(document).ready(function($){
         	600
         );
 	}
+
+		$('.chart-nav').slick({
+	  centerMode: true,
+	  centerPadding: '30px',
+	  slidesToShow: 9,
+	  asNavFor: '.site-name',
+	  focusOnSelect: true,
+	  useTransform: true,
+	  cssEase: 'ease-out',
+	  responsive: [
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        arrows: false,
+	        centerMode: true,
+	        centerPadding: '40px',
+	        slidesToShow: 3
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        arrows: false,
+	        centerMode: true,
+	        centerPadding: '40px',
+	        slidesToShow: 1
+	      }
+	    }
+	  ]
+	});
+		$('.site-name').slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  asNavFor: '.chart-nav',
+		  arrows: false,
+		  
+		});
+
 });

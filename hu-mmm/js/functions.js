@@ -25,32 +25,11 @@ $(window).scroll(function(){
 
 });
 
-$(document).ready(function(){
-	$('.chart-nav').slick({
-	  centerMode: true,
-	  centerPadding: '60px',
-	  slidesToShow: 8,
-	  responsive: [
-	    {
-	      breakpoint: 768,
-	      settings: {
-	        arrows: false,
-	        centerMode: true,
-	        centerPadding: '40px',
-	        slidesToShow: 3
-	      }
-	    },
-	    {
-	      breakpoint: 480,
-	      settings: {
-	        arrows: false,
-	        centerMode: true,
-	        centerPadding: '40px',
-	        slidesToShow: 1
-	      }
-	    }
-	  ]
-	});
+
+$("#scroll").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#section2").offset().top
+    }, 1000);
 });
 
 	

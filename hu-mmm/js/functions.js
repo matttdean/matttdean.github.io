@@ -25,7 +25,11 @@ $(window).scroll(function(){
 	$('.white-bottom').css({
 		'transform' : 'translate(0px, -'+ wScroll /42 +'%)'
 	})
-
+	if (wScroll > $('.blue-blurb').offset().top) {
+		$('.blue-blurb').slideDown();
+	} else {
+      $('.vlue-blurb').slideUp();
+   }
 });
 
 

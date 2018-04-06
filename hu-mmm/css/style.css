@@ -82,6 +82,8 @@ h2 {
 #section2{
   color:#FFF;
   background-color: #5450F5;
+  padding-top: 50px;
+
 }
 
 #section3{
@@ -95,12 +97,17 @@ h2 {
   color:#FFF;
   background-color: #3431B0;
   margin-top: -500px;
+  height: 145%;
 }
 #section6{
   color:#FFF;
   background-color: #1E1A7F;
+  padding-top: 300px;
 }
-
+#section7{
+  color:#1E1A7F;
+  background-color: #FFF;
+}
 .dark-blue-row {
   background-color: #3431B0;
   padding-top: 10px;
@@ -227,6 +234,29 @@ h2 {
   margin-left: -480px;
 }*/
 
+.evc {
+  line-height: 1.8em;
+}
+
+.light-blue {
+  color: #84D0F1;
+}
+.yellow {
+  color: #FFF78F;
+}
+
+.peach {
+  color: #F5A396;
+}
+.m-10 {
+  margin-top: 200px;
+  color: #FFF;
+}
+
+.m-20 {
+  margin-top: 400px;
+  color: #FFF;
+}
 .header-text{
   position: relative;
   z-index: 30;
@@ -291,13 +321,62 @@ h2 {
   margin-bottom: -400px;
 }
 
+.blue-plant-bg {
+  height: 1000px; 
+  width: 100%;
+  background-image: url("../img/blue-plant-bg.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: -600px;
+  position: relative;
+  z-index: 37;
+}
 .dark-plants-bottom{
-  height: 700px; 
+  height: 600px; 
   width: 100%;
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
-  margin-top: -200px;
+  margin-top: -1200px;
+  position: relative;
+  z-index: 47;
+}
+.bird-bottom {
+  height: 1000px; 
+  width: 100%;
+  background-image: url("../img/bird-bottom.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: -600px;
+  position: relative;
+  z-index: 38;
+}
+.brain-cloud-bottom {
+  height: 600px; 
+  width: 80%;
+   background-image: url("../img/brain-cloud-bottom.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  z-index: 47;
+  top: 10%;
+}
+
+
+.white-curve {
+  height: 600px; 
+  width: 100%;
+  background-image: url("../img/white-curve-bottom.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: -100px;
+  position: relative;
+  z-index: 50;
+
 }
 
 .trigger {
@@ -426,6 +505,8 @@ h2 {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index:44;
 /*  display: flex;
   flex-flow: row wrap;
   justify-content: center;*/
@@ -444,21 +525,27 @@ h2 {
 .pie {
   margin-bottom: -125px;
   padding: 3rem;
+  position: relative;
+  z-index:44;
 }
 
+.pie-2 {
+  position: relative;
+  z-index:44;
+}
 @media only screen and (max-width: 1200px) {
   .pie {
     margin-bottom: -25px;
     padding: 1rem;
   }
 }
-
 @media only screen and (max-width: 768px) {
-.pie {
-  margin-bottom: -10px;
-  padding:5rem;
+  .pie {
+    margin-bottom: -10px;
+    padding:5rem;
+  }
 }
-}
+
 .site-name{
   margin-top: 100px;
   height: 50px;
@@ -481,7 +568,6 @@ h2 {
  transform: scale(1.2);
  opacity: 1;
 }*/
-
 .line{
   width: 100%;
 }

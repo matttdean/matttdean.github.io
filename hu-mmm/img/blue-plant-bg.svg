@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="637px" viewBox="0 0 1440 637" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>blue-plant-bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 1446 0 1446 643.394801 0 643.394801"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(0.000000, -6750.000000)">
+            <g id="blue-plant-bg" transform="translate(-1.000000, 6743.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M1445.99694,1061.37454 L1445.99694,1039.95769 C1445.99898,562.56749 1446,32.5863375 1446,0 C1335.17974,169.225606 1080.02677,84.3438059 863.491523,86.9094667 C344.870388,93.0515649 185.938204,263.915607 0.00101901815,14.6909044 L0,1059.71674 L0,452.589492 L0,1498.60573 L0,1770.84598 L0,2977 L1446,2977 L1445.99592,1822.31611 L1445.99592,1804.91485 L1445.99592,1759.03558 C1445.99694,1759.03762 1445.99796,1759.03864 1446,1759.03966 C1446,1736.24624 1445.99898,1387.92569 1445.99694,1061.37454" id="Fill-1" fill="#27229D" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

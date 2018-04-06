@@ -11,6 +11,11 @@ var ctx3 = document.getElementById("anxiety").getContext('2d');
 var ctx4 = document.getElementById("panicDisorder").getContext('2d');
 var ctx5 = document.getElementById("sad").getContext('2d');
 var ctx6 = document.getElementById("stress").getContext('2d');
+var ctx7 = document.getElementById("c-1").getContext('2d');
+var ctx8 = document.getElementById("c-2").getContext('2d');
+var ctx9 = document.getElementById("c-3").getContext('2d');
+var ctx10 = document.getElementById("c-4").getContext('2d');
+
 
 var chart1 = new Chart(ctx, {
     type: 'pie',
@@ -102,6 +107,70 @@ var chart6 = new Chart(ctx6, {
             data: [10, 100],
             backgroundColor: [
                 '#F76381',
+                '#FFF',
+            ],
+            borderWidth: 0
+        }]
+    },
+    options: {
+    	responsive: true
+    }
+});
+var chart7 = new Chart(ctx7, {
+    type: 'pie',
+    data: {
+        datasets: [{
+            data: [10, 100],
+            backgroundColor: [
+                '#F76381',
+                '#FFF',
+            ],
+            borderWidth: 0
+        }]
+    },
+    options: {
+    	responsive: true
+    }
+});
+var chart8 = new Chart(ctx8, {
+    type: 'pie',
+    data: {
+        datasets: [{
+            data: [10, 100],
+            backgroundColor: [
+                '#84D0F1',
+                '#FFF',
+            ],
+            borderWidth: 0
+        }]
+    },
+    options: {
+    	responsive: true
+    }
+});
+var chart9 = new Chart(ctx9, {
+    type: 'pie',
+    data: {
+        datasets: [{
+            data: [10, 100],
+            backgroundColor: [
+                '#FFEF57',
+                '#FFF',
+            ],
+            borderWidth: 0
+        }]
+    },
+    options: {
+    	responsive: true
+    }
+});
+var chart10 = new Chart(ctx10, {
+    type: 'pie',
+    data: {
+        datasets: [{
+            data: [10, 100],
+            backgroundColor: [
+                '#F5A396',
                 '#FFF',
             ],
             borderWidth: 0

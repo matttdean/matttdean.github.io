@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="472px" viewBox="0 0 1440 472" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>white-curve-bottom</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 1445 0 1445 471.850346 0 471.850346"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(0.000000, -9272.000000)">
+            <g id="white-curve-bottom" transform="translate(-3.000000, 9272.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M1444.99595,291.686298 L1444.99595,305.768898 L1444.99595,291.686298 L1444.99595,196.499708 C1215.20616,23.1705817 977.831829,168.024802 705.141574,168.024802 C400.89579,168.024802 254.068414,-114.692944 0,53.3256028 L0,11.6678692 L0,53.3256028 L0,1983 L1445,1983 L1445,196.499708 C1444.99899,196.498696 1444.99696,196.50072 1444.99595,196.499708 L1444.99595,291.686298 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

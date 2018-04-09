@@ -310,7 +310,7 @@ h2 {
   color: #F5A396;
 }
 .m-10 {
-  margin-top: 200px;
+  margin-top: 160px;
   color: #FFF;
 }
 
@@ -911,6 +911,10 @@ h2 {
  padding: 4px;
  margin-left: auto;
  margin-right: auto;
+}
+
+.lh-1 {
+  line-height: 2em;
 }
 
 /*Vertical Nav*/

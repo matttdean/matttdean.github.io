@@ -694,6 +694,12 @@ h2 {
   position: relative;
   z-index: 51;
 }
+.pie2-l {
+  margin-left: 353px;
+}
+.pie2-r {
+  margin-left: -73px;
+}
 .chart-2 {
   position: relative;
   z-index: 51;

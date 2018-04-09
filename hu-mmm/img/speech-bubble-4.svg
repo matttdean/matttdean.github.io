@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="377px" height="313px" viewBox="0 0 377 313" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>speech-bubble-4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0004 0.9597 355.9204 0.9597 355.9204 311 0.0004 311"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-541.000000, -9875.000000)">
+            <g id="speech-bubble-4" transform="translate(718.826742, 10032.092337) rotate(167.000000) translate(-718.826742, -10032.092337) translate(540.826742, 9876.092337)">
+                <g id="Group-3" transform="translate(0.000000, 0.795000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M177.9604,311.0007 C79.6754,311.0007 0.0004,241.5947 0.0004,155.9797 C0.0004,70.3637 79.6754,0.9597 177.9604,0.9597 C276.2444,0.9597 355.9204,70.3637 355.9204,155.9797 C355.9204,241.5947 276.2444,311.0007 177.9604,311.0007 Z" id="Fill-1" fill="#27229D" mask="url(#mask-2)"></path>
+                </g>
+                <polygon id="Fill-4" fill="#27229D" transform="translate(35.441163, 53.442143) rotate(-37.000000) translate(-35.441163, -53.442143) " points="12.0851629 25.5461426 16.3041629 81.3381426 58.7971629 60.5291426"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

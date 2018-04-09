@@ -47,6 +47,8 @@ jQuery(document).ready(function($){
         );
 	}
 
+	// chart slider
+
 		$('.chart-nav').slick({
 	  centerMode: true,
 	  centerPadding: '30px',
@@ -55,14 +57,15 @@ jQuery(document).ready(function($){
 	  focusOnSelect: true,
 	  useTransform: true,
 	  cssEase: 'ease-out',
+	  arrows: false,
 	  responsive: [
 	    {
 	      breakpoint: 768,
 	      settings: {
 	        arrows: false,
 	        centerMode: true,
-	        centerPadding: '40px',
-	        slidesToShow: 3
+	        centerPadding: '30px',
+	        slidesToShow: 9
 	      }
 	    },
 	    {
@@ -71,7 +74,7 @@ jQuery(document).ready(function($){
 	        arrows: false,
 	        centerMode: true,
 	        centerPadding: '40px',
-	        slidesToShow: 1
+	        slidesToShow: 5
 	      }
 	    }
 	  ]

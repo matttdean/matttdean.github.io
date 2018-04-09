@@ -19,6 +19,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #3e3947;
   background-color: white;
+
 }
 
 body, html {
@@ -99,6 +100,12 @@ h2 {
   margin-top: -500px;
   height: 145%;
 }
+@media only screen and (max-width: 768px) {
+#section5{
+  height: auto;
+}
+
+}
 #section6{
   color:#FFF;
   background-color: #1E1A7F;
@@ -120,6 +127,7 @@ h2 {
 @media only screen and (max-width: 768px) {
   .dark-blue-row {
     margin-top: -800px;
+    line-height: 1.8em;
   }
 }
 
@@ -151,9 +159,13 @@ h2 {
   background-size: contain;
   margin-top: -600px;
 }
+@media only screen and (max-width: 768px) {
+  .brain-clouds {
+    margin-top: -235px;
+  }
+}
 
 .light-blue-brain {
-
   height: 600px;  
   width: 100%;
   background-image: url("../img/big-light-blue-brain.svg");
@@ -172,6 +184,23 @@ h2 {
   top: 23%;
 }
 
+@media only screen and (max-width: 768px) {
+  .light-blue-brain {
+      height: 397px;
+      width: 100%;
+      background-image: none;
+      margin-top: -251px;
+  }
+  .head {
+      height: auto;
+      width: 100%;
+      position: relative;
+      z-index: 34;
+      top: unset; 
+  }
+
+}
+
 .blurb-col-1 {
     margin-right: -10px;
 }
@@ -183,6 +212,7 @@ h2 {
   margin-bottom: -700px;
   z-index: 33;
   padding-top: 200px;
+  margin-left: 3rem;
 }
 
 .red-blurb {
@@ -220,6 +250,35 @@ h2 {
   padding-top: 40px;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .blurb-col-1 {
+    margin-right: 0px;
+  }
+  .blurb-col-2 {
+    margin-left: 0px;
+  }
+  .blurb-row {
+    margin-bottom: 0px;
+    padding-top: 0px;
+    margin-left: 0px;
+  }
+  .red-blurb {
+    height:314px;
+    width: 300px;
+  }
+  .blue-blurb {
+    height:230px;
+    width: 300px;
+  }
+  .peach-blurb {
+    height: 216px;
+    width: 300px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 /*.man{
@@ -292,16 +351,16 @@ h2 {
 
 @media only screen and (max-width: 768px) {
   .dark-blue-bottom{
-    margin-top: -1050px;
+    margin-top: -1645px;
   }
 }
 
-.light-blue{
+.light-blue {
   color: #84D0F1;
 }
 
 
-.darkest-blue-bottom{
+.darkest-blue-bottom {
   height: 300px; 
   width: 100%;
   background-image: url("../img/darkest-blue-bottom.svg");
@@ -311,6 +370,12 @@ h2 {
   margin-bottom: -200px;
   position: relative;
 }
+@media only screen and (max-width: 768px) {
+  .darkest-blue-bottom {
+    height: 100px;
+    margin-bottom: -10px;
+  }
+}
 
 .white-bottom{
   height: 700px; 
@@ -319,6 +384,17 @@ h2 {
   background-repeat: no-repeat;
   background-size: contain;
   margin-bottom: -400px;
+}
+@media only screen and (max-width: 768px) {
+  .white-bottom{
+      height: 700px;
+      width: 100%;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-bottom: 23px;
+      margin-top: -524px;
+  }
 }
 
 .blue-plant-bg {
@@ -352,6 +428,21 @@ h2 {
   margin-bottom: -600px;
   position: relative;
   z-index: 38;
+}
+
+@media only screen and (max-width: 768px) {
+  .bird-bottom {
+    height: 800px;
+    width: 100%;
+    background-image: url(../img/bird-bottom.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+    margin-top: 77px;
+    position: relative;
+    z-index: 38;
+  }
 }
 .brain-cloud-bottom {
   height: 600px; 
@@ -430,6 +521,41 @@ h2 {
 }
 
 
+@media only screen and (max-width: 768px) {
+.trigger {
+  margin-top: 280px;
+  line-height: 1.7em;
+}
+.trigger-1 {
+  height: 816px;
+  margin-bottom: 193px;
+  background-size: cover;
+
+}
+.trigger-2 {
+  height: 400px;
+  margin-bottom: -433px;
+  background-size: cover;
+}
+.trigger-3 {
+  height: 400px;
+  margin-bottom: -373px;
+  margin-top: -126px;
+  background-size: cover;
+
+}
+
+.trigger-bottom {
+  height: 400px;
+  margin-top: -387px;
+  z-index: 40;
+  background-size: cover;
+  margin-bottom: 328px;
+
+}
+
+}
+
 
 .logo{
   height: 146px;  
@@ -478,7 +604,9 @@ h2 {
 
 @media only screen and (max-width: 768px) {
   .moon{
-    margin-bottom:-300px;
+    margin-bottom: 570px;
+    top: unset;
+    margin-top: -508px;
   }
 }
 
@@ -492,12 +620,23 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
-.chart-line{
+.chartLine{
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+ justify-content: center;
+}
+
+.chart-row {
+  margin-left: 10px;
+
+}
+
+@media only screen and (max-width: 768px) {
+  .chartLine{
+    display: none;
+  }
 }
 .chart-nav {
   width:960px;
@@ -522,28 +661,62 @@ h2 {
     }
 }
 
+.pie-charts {
+  position: relative;
+  margin-top: -1076px;
+}
 .pie {
-  margin-bottom: -125px;
+  margin-bottom: -99px;
   padding: 3rem;
   position: relative;
   z-index:44;
 }
 
+.pie-r {
+  margin-right: 30px;
+}
+
+.pie-l {
+  margin-left: .25rem;
+}
+
+
 .pie-2 {
   position: relative;
   z-index:44;
+  margin-top: -750px;
 }
-@media only screen and (max-width: 1200px) {
+.chart-2 {
+  position: relative;
+  z-index: 51;
+}
+/*@media only screen and (max-width: 1200px) {
   .pie {
     margin-bottom: -25px;
     padding: 1rem;
   }
-}
+}*/
 @media only screen and (max-width: 768px) {
+  .pie-charts {
+  margin-top: 0px;
+  }
   .pie {
     margin-bottom: -10px;
     padding:5rem;
   }
+  .pie-2 {
+    margin-top: 0px;
+  }
+  .chart-2 {
+    position: relative;
+    z-index: 51;
+  }
+}
+.chart-svg {
+  width: 1440px; 
+  height: 742px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .site-name{
@@ -583,14 +756,124 @@ h2 {
     -moz-transform: scale(0.9);
   transform: scale(0.9);
   opacity: 0.9;
+  transition: all .2s ease-in-out;
 }
 .slick-center {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     transform: scale(1);
     opacity: 1;
+    transition: all .2s ease-in-out;
 }
 
+.circle-1 {
+  width: 70px;
+  height: 200px;
+  background-image: url("../img/circle.svg");
+ /* background: radial-gradient(circle, rgba(255,67,173,1) 2%, rgba(0,212,255,0) 49%);*/
+  border-radius: 200px;
+  opacity: 0.8;
+  position: absolute;
+  top:30%;
+  right: 20%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 130px;
+  background-blend-mode: multiply;
+  background-size: contain;
+  background-position: top;
+
+  animation: circle 20s infinite;
+  animation-timing-function: ease;
+
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari */
+  transform: rotate(0deg);
+}
+
+
+@keyframes circle {
+    from {
+      -ms-transform: rotate(0deg); /* IE 9 */
+      -webkit-transform: rotate(0deg); /* Safari */
+      transform: rotate(0deg);
+    }
+
+    to {  
+      -ms-transform: rotate(360deg); /* IE 9 */
+      -webkit-transform: rotate(3600deg); /* Safari */
+      transform: rotate(360deg);
+    }
+}
+
+
+#speechBubble {
+  height:350px;
+  width: 100%;
+  position: relative;
+  background-image: url("../img/speech-bubble-2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #FFF;
+  padding-top: 130px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  #speechBubble {
+    height:230px;
+    width: 100%;
+    position: relative;
+    background-image: url("../img/speech-bubble-2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #FFF;
+    padding-top: 130px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+}
+
+
+.video-player {
+  width: 600px;
+  height: 400px;
+  background-color: #999;
+}
+.computer {
+  width: 605px;
+  height: 578px;
+  background-image: url("../img/computer.svg");
+  background-size: contain;
+  padding-left: 69px;
+  padding-right: 39px;
+  padding-top: 39px;
+}
+
+@media only screen and (max-width: 768px) {
+  .computer {
+    width: 300px;
+    height: 700px;
+    background-image: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+
+  .video-player {
+    width: 300px;
+    height: 120px;
+    background-color: #999;
+  }
+
+}
+.computer img {
+ padding: 4px;
+ margin-left: auto;
+ margin-right: auto;
+}
 
 /*Vertical Nav*/
 

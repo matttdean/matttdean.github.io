@@ -15,6 +15,7 @@ var ctx7 = document.getElementById("c-1").getContext('2d');
 var ctx8 = document.getElementById("c-2").getContext('2d');
 var ctx9 = document.getElementById("c-3").getContext('2d');
 var ctx10 = document.getElementById("c-4").getContext('2d');
+var currentColor;
 
 
 var chart1 = new Chart(ctx, {
@@ -312,6 +313,10 @@ var charts = [
 ];
 
 
+function changeLineColor() {
+    document.getElementById("chartLine").setAttribute("fill", currentColor);
+}
+
 	function updateCharts(){
 		window.chart1.update();	
 		window.chart2.update();
@@ -319,30 +324,35 @@ var charts = [
 		window.chart4.update();	
 		window.chart5.update();
 		window.chart6.update();
+		changeLineColor();
 	}
 
 	function generateABCData() {
 		for (i=0; i<charts.length; i++) {
 		charts[i].splice(0, 1, abcData[i]);
 		}
+
 		updateCharts()
 	}
 	function generateT2DData() {
 		for (i=0; i<charts.length; i++) {
 		charts[i].splice(0, 1, t2dData[i]);
 		}
+		currentColor = "#EE394F"
 		updateCharts()
 	}
 	function generatePCData() {
 		for (i=0; i<charts.length; i++) {
 		charts[i].splice(0, 1, pcData[i]);
 		}
+		currentColor = "#AFA0D9"
 		updateCharts()
 	}
 	function generateBData() {
 		for (i=0; i<charts.length; i++) {
 		charts[i].splice(0, 1, bData[i]);
 		}
+		currentColor = "#C878B6"
 		updateCharts()
 	}
 	function generateCData() {
@@ -358,11 +368,11 @@ var charts = [
 		updateCharts()
 	}
 
-	abc.addEventListener("mouseover", generateABCData);
-	t2d.addEventListener("mouseover", generateT2DData);
-	pc.addEventListener("mouseover", generatePCData);
-	b.addEventListener("mouseover", generateBData);
-	c.addEventListener("mouseover", generateCData);
-	bc.addEventListener("mouseover", generateBCData);
+	abc.addEventListener("click", generateABCData);
+	t2d.addEventListener("click", generateT2DData);
+	pc.addEventListener("click", generatePCData);
+	b.addEventListener("click", generateBData);
+	c.addEventListener("click", generateCData);
+	bc.addEventListener("click", generateBCData);
 
 		

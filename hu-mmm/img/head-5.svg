@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="248px" height="281px" viewBox="0 0 248 281" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>head-5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0177897698 0.352871996 195.351 0.352871996 195.351 206.9996 0.0177897698 206.9996"></polygon>
+        <polygon id="path-3" points="0 0.128039016 106.264604 0.128039016 106.264604 147.807728 0 147.807728"></polygon>
+        <polygon id="path-5" points="0.599796322 0.78 105.885222 0.78 105.885222 100.645731 0.599796322 100.645731"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-416.000000, -10157.000000)">
+            <g id="head-5" transform="translate(416.000000, 10156.000000)">
+                <g id="Group-3" transform="translate(52.000000, 74.220000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M139.0477,206.9996 C139.0477,206.9996 187.6927,205.6486 194.4487,173.2186 C201.2057,140.7886 168.7757,54.3096 139.0477,27.2836 C109.3197,0.2586 41.5887,-12.2964 13.3807,17.8246 C-20.4003,53.8976 16.0837,139.4366 53.9187,167.8136 C82.1077,188.9556 93.1057,205.6486 139.0477,206.9996" id="Fill-1" fill="#F5A396" mask="url(#mask-2)"></path>
+                </g>
+                <path d="M160.7455,183.6902 C160.7455,183.6902 163.6615,161.3332 188.4825,169.8842" id="Stroke-4" stroke="#170A4C" stroke-width="1.675"></path>
+                <path d="M202.2846,164.533 C202.2846,164.533 208.0816,146.913 225.3256,152.754" id="Stroke-6" stroke="#170A4C" stroke-width="1.675"></path>
+                <path d="M234.037,223.7655 C234.037,223.7655 214.501,227.0285 209.87,231.0465 C205.238,235.0655 219.222,237.9355 228.307,233.5515 C237.392,229.1675 234.037,223.7655 234.037,223.7655" id="Fill-8" fill="#F76381"></path>
+                <g id="Group-12" transform="translate(0.000000, 78.220000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Clip-11"></g>
+                    <path d="M99.1283,15.3101 C109.6613,27.1101 115.3843,135.7291 65.3653,145.5451 C15.3463,155.3631 -2.7857,130.3531 0.3403,125.3511 C3.4663,120.3491 38.5673,133.8541 28.3203,91.1041 C15.6593,38.2871 57.8623,-30.9179 99.1283,15.3101" id="Fill-10" fill="#84D0F1" mask="url(#mask-4)"></path>
+                </g>
+                <path d="M89.1244,107.285 C89.1244,107.285 119.0944,129.18 165.9304,129.794 C212.7654,130.407 160.0884,113.224 160.0884,113.224 C160.0884,113.224 214.4844,119.79 238.8684,111.348 C263.2524,102.908 227.1254,97.949 214.4644,91.853 C203.1904,86.425 178.3764,46.565 131.4844,47.303 C89.9264,47.956 66.9284,67.582 89.1244,107.285" id="Fill-13" fill="#84D0F1"></path>
+                <g id="Group-17" transform="translate(17.000000, 0.220000)">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <g id="Clip-16"></g>
+                    <path d="M3.1449,66.5474 C3.1449,66.5474 33.5559,115.4814 73.2949,96.1084 C113.0349,76.7344 118.8989,17.8584 77.1239,5.6674 C35.3489,-6.5236 17.9639,6.9014 12.5579,15.4474 C7.1509,23.9954 13.0979,31.0124 19.9439,26.6804 C26.7909,22.3484 -9.0281,40.7004 3.1449,66.5474" id="Fill-15" fill="#84D0F1" mask="url(#mask-6)"></path>
+                </g>
+                <path d="M208.9535,178.6356 C208.8575,179.3436 226.3635,195.7556 214.0005,199.0376" id="Stroke-18" stroke="#170A4C" stroke-width="1.675"></path>
+                <path d="M93.4135,103.3768 C93.4135,103.3768 70.2425,110.4108 80.5035,146.5188 C89.4655,178.0518 85.0605,201.8528 68.1795,206.5408 C47.0155,212.4198 31.3185,208.7268 31.3185,208.7268" id="Stroke-20" stroke="#FFFFFF" stroke-width="1.675" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M90.2948,88.5506 C86.9358,87.4336 51.8008,95.8736 52.0178,118.8516 C52.2348,141.8286 89.2668,191.5356 37.9258,199.0376" id="Stroke-22" stroke="#FFFFFF" stroke-width="1.675" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M37.9262,124.0096 C37.9262,124.0096 34.8852,139.5166 43.7952,153.0996 C52.7042,166.6826 46.3352,181.4866 40.6102,185.3386" id="Stroke-24" stroke="#FFFFFF" stroke-width="1.675" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M117.893,67.742 C117.893,67.742 137.111,54.147 158.682,67.742 C180.253,81.338 187.568,98.353 213.687,100.865" id="Stroke-26" stroke="#FFFFFF" stroke-width="1.675" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M117.893,81.283 C117.893,81.283 136.173,74.573 149.685,83.214 C158.989,89.163 173.659,102.439 180.473,103.377" id="Stroke-28" stroke="#FFFFFF" stroke-width="1.675" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M53.1322,15.2186 C53.1322,15.2186 107.9612,12.8896 99.1282,54.6086" id="Stroke-30" stroke="#FFFFFF" stroke-width="1.675" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M40.5121,42.8856 C40.5121,42.8856 47.5461,70.5526 73.3371,69.1456" id="Stroke-32" stroke="#FFFFFF" stroke-width="1.675" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M53.1322,30.6932 C53.1322,30.6932 77.0892,31.3132 78.4952,50.9322" id="Stroke-34" stroke="#FFFFFF" stroke-width="1.675" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M154.9994,191.4236 C154.9994,191.4236 146.2464,194.5506 141.5564,191.4236" id="Stroke-36" stroke="#170A4C" stroke-width="1.675"></path>
+                <path d="M157.8129,196.1131 C157.8129,196.1131 155.2459,202.0531 149.1829,201.7401" id="Stroke-38" stroke="#170A4C" stroke-width="1.675"></path>
+            </g>
+        </g>
+    </g>
+</svg>

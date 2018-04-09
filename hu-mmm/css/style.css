@@ -83,7 +83,7 @@ h2 {
 #section2{
   color:#FFF;
   background-color: #5450F5;
-  padding-top: 50px;
+  padding-top: 200px;
 
 }
 
@@ -740,9 +740,16 @@ h2 {
   position: relative;
   width: 100%;
   overflow: hidden;
+/*  display: flex;*/
   margin-bottom: -678px;
   padding-top: 66px;
   z-index: 50;
+}
+
+@media only screen and (max-width: 1000px) {
+  .chart-wrapper {
+    display: none;
+  }
 }
 
 .site-name{
@@ -792,16 +799,115 @@ h2 {
     transition: all .2s ease-in-out;
 }
 
-.circle-1 {
+
+.dot-1 {
+  width: 70px;
+  height: 86px;
+  background-image: url("../img/dot-1.png");
+ /* background: radial-gradient(circle, rgba(255,67,173,1) 2%, rgba(0,212,255,0) 49%);*/
+  border-radius: 200px;
+  opacity: 0.8;
+  position: absolute;
+  top:20%;
+  left: 20%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 130px;
+  background-blend-mode: multiply;
+  background-size: contain;
+  background-position: top;
+
+  animation: circle 5s infinite;
+  animation-timing-function: linear;
+
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari */
+  transform: rotate(0deg);
+}
+
+.dot-2 {
   width: 70px;
   height: 200px;
-  background-image: url("../img/circle.svg");
+  background-image: url("../img/dot-2.png");
  /* background: radial-gradient(circle, rgba(255,67,173,1) 2%, rgba(0,212,255,0) 49%);*/
   border-radius: 200px;
   opacity: 0.8;
   position: absolute;
   top:30%;
   right: 20%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 130px;
+  background-blend-mode: multiply;
+  background-size: contain;
+  background-position: top;
+
+  animation: circlereverse 20s infinite;
+  animation-timing-function: ease;
+
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari */
+  transform: rotate(0deg);
+}
+
+.dot-3 {
+  width: 50px;
+  height: 100px;
+  background-image: url("../img/dot-3.png");
+ /* background: radial-gradient(circle, rgba(255,67,173,1) 2%, rgba(0,212,255,0) 49%);*/
+  border-radius: 200px;
+  opacity: 0.8;
+  position: absolute;
+  top:70%;
+  left: 10%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 130px;
+  background-blend-mode: multiply;
+  background-size: contain;
+  background-position: top;
+
+  animation: circle 20s infinite;
+  animation-timing-function: ease-out;
+
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari */
+  transform: rotate(0deg);
+}
+.dot-4 {
+  width: 20px;
+  height: 70px;
+  background-image: url("../img/dot-4.png");
+ /* background: radial-gradient(circle, rgba(255,67,173,1) 2%, rgba(0,212,255,0) 49%);*/
+  border-radius: 200px;
+  opacity: 0.8;
+  position: absolute;
+  top:80%;
+  left: 40%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 130px;
+  background-blend-mode: multiply;
+  background-size: contain;
+  background-position: top;
+
+  animation: circle 15s infinite;
+  animation-timing-function: linear;
+
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari */
+  transform: rotate(0deg);
+}
+.dot-5 {
+  width: 70px;
+  height: 100px;
+  background-image: url("../img/dot-5.png");
+ /* background: radial-gradient(circle, rgba(255,67,173,1) 2%, rgba(0,212,255,0) 49%);*/
+  border-radius: 200px;
+  opacity: 0.8;
+  position: absolute;
+  top:65%;
+  left: 80%;
   background-repeat: no-repeat;
   background-size: contain;
   padding-top: 130px;
@@ -816,7 +922,30 @@ h2 {
   -webkit-transform: rotate(0deg); /* Safari */
   transform: rotate(0deg);
 }
+.dot-6 {
+  width: 70px;
+  height: 100px;
+  background-image: url("../img/dot-6.png");
+ /* background: radial-gradient(circle, rgba(255,67,173,1) 2%, rgba(0,212,255,0) 49%);*/
+  border-radius: 200px;
+  opacity: 0.8;
+  position: absolute;
+  top:70%;
+  left: 10%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 130px;
+  background-blend-mode: multiply;
+  background-size: contain;
+  background-position: top;
 
+  animation: circle 20s infinite;
+  animation-timing-function: ease-out;
+
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari */
+  transform: rotate(0deg);
+}
 
 @keyframes circle {
     from {
@@ -829,6 +958,19 @@ h2 {
       -ms-transform: rotate(360deg); /* IE 9 */
       -webkit-transform: rotate(3600deg); /* Safari */
       transform: rotate(360deg);
+    }
+}
+@keyframes circlereverse {
+    from {
+      -ms-transform: rotate(0deg); /* IE 9 */
+      -webkit-transform: rotate(0deg); /* Safari */
+      transform: rotate(0deg);
+    }
+
+    to {  
+      -ms-transform: rotate(-360deg); /* IE 9 */
+      -webkit-transform: rotate(-3600deg); /* Safari */
+      transform: rotate(-360deg);
     }
 }
 
@@ -861,13 +1003,67 @@ h2 {
   }
 
 }
-
-
 .video-player {
-  width: 600px;
-  height: 400px;
-  background-color: #999;
+  width: 1000px;
+  height: 610px;
+  background-image: url("../img/video-background.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
+.video-frame {
+    width: 800px;
+    height: 471px;
+    border-radius: 17px;
+    background: white;
+    margin-top: 10px;
+    box-shadow: 20px 10px 200px #27229D;
+}
+.play-button {
+  width: 132px;
+  height: 132px;
+  background-image: url("../img/play-button.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scale(0.8);
+  transition: all .2s ease-in-out;
+  position: absolute;
+}
+.play-button:hover {
+  transform: scale(1);
+}
+
+.video-plants {
+  width: 939px;
+  height: 610px;
+  background-image: url(../img/video-plants.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  background-position: bottom;
+  display:unset;
+}
+@media only screen and (max-width: 1200px) {
+    .video-player {
+      width: 700px;
+      height: 427px;
+    }
+    .video-frame {
+      width: 500px;
+      height: 295px;
+
+    }
+    .play-button {
+    }
+    .video-plants {
+      display:none;
+    }
+}
+
 .computer {
   width: 605px;
   height: 578px;

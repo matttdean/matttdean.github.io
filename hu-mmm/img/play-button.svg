@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="132px" height="132px" viewBox="0 0 132 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>play-button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-653.000000, -10843.000000)">
+            <g id="video" transform="translate(254.000000, 10634.000000)">
+                <g id="play-button" transform="translate(399.000000, 209.000000)">
+                    <path d="M131.497175,65.9895358 C131.497175,102.424272 102.112887,131.960126 65.8666392,131.960126 C29.6197113,131.960126 0.236103093,102.424272 0.236103093,65.9895358 C0.236103093,29.5554839 29.6197113,0.0196290155 65.8666392,0.0196290155 C102.112887,0.0196290155 131.497175,29.5554839 131.497175,65.9895358" id="Fill-2" fill="#F76381"></path>
+                    <polygon id="Fill-4" fill="#FFFFFF" points="102.492625 65.9895358 74.712068 82.1120021 46.9315113 98.2344684 46.9315113 65.9895358 46.9315113 33.7446031 74.712068 49.8677534"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -23,7 +23,7 @@ $(window).scroll(function(){
 			'transform' : 'translate(0px, -'+ wScroll /53 +'%)'
 		})
 		$('.white-bottom').css({
-			'transform' : 'translate(0px, -'+ wScroll /42 +'%)'
+			'transform' : 'translate(0px, -'+ wScroll /44 +'%)'
 		})
 		$('#head1').css({
 			'transform' : 'rotate('+ wScroll +'deg)'

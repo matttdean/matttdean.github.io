@@ -1,0 +1,18 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg width="1440px" height="742px" viewBox="0 0 1440 742" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(0.000000, -6005.000000)" stroke="#84D0F1" stroke-width="11.884">
+            <path d="M-80,6011 L577.956623,6011 C644.891184,6011 699.344989,6065.45485 699.344989,6132.38837 C699.344989,6199.32293 644.891184,6254.57965 577.957666,6254.57965 C511.024147,6254.57965 456.568257,6309.03242 456.568257,6375.96698 C456.568257,6442.9005 511.024147,6497.3543 577.957666,6497.3543 C644.891184,6497.3543 699.344989,6442.9005 699.344989,6375.96698 L699.27721,6375.09523 C699.27721,6308.16171 753.82382,6254.57965 820.757338,6254.57965 C887.689814,6254.57965 942.144662,6309.03242 942.144662,6375.96698 C942.144662,6442.9005 887.689814,6497.3543 820.757338,6497.3543 C753.82382,6497.3543 699.368972,6551.80811 699.368972,6618.74162 C699.368972,6685.67619 753.82382,6740.12895 820.757338,6740.12895 L1564,6740.12895" id="curve-line-2" class="GgOeHWEE_0"></path>
+        </g>
+    </g>
+	<style data-made-with="vivus-instant">.GgOeHWEE_0
+		{
+			stroke-dasharray:3309 3311;
+			stroke-dashoffset:3310;
+			animation:GgOeHWEE_draw 1800ms ease 0ms forwards;
+		}
+		@keyframes GgOeHWEE_draw{100%
+		{stroke-dashoffset:0;}}
+		@keyframes GgOeHWEE_fade{0%{stroke-opacity:1;}94.20289855072464%{stroke-opacity:1;}100%{stroke-opacity:0;}}
+	</style>
+</svg>

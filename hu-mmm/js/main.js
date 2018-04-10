@@ -58,6 +58,7 @@ jQuery(document).ready(function($){
 	  useTransform: true,
 	  cssEase: 'ease-out',
 	  arrows: false,
+	  draggable:false,
 	  responsive: [
 	    {
 	      breakpoint: 768,

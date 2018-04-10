@@ -104,25 +104,39 @@ jQuery(document).ready(function($){
 			// grab Wista API
 			wistiaEmbed = Wistia.api("wistiaGenID_");
 
+
 			// when the video is stopped
 			wistiaEmbed.bind("end", function() {					 
 			  $('.video-plants').fadeIn("slow");
+			  $('.video-frame').css({
+				'box-shadow' : 'none'
+				})
+
 			});
 
 			//when the video is paused
 			wistiaEmbed.bind("pause", function() {
 			  $('.video-plants').fadeIn("slow");
+			  $('.video-frame').css({
+				'box-shadow' : 'none'
+				})
 			});
 
 			//when the video time changes
 			wistiaEmbed.bind("secondchange", function() {
 			  $('.video-plants').fadeOut("slow");
+			  $('.video-frame').css({
+				'box-shadow' : '0px 20px 200px #27229D'
+				})
 			});  
 
 			// when you click the custom play button
 			$('.video-plants').click(function() {
 				wistiaEmbed.play();
 				$('.video-plants').fadeOut("slow");
+				$('.video-frame').css({
+				'box-shadow' : '0px 20px 200px #27229D'
+				})
 			});		
 
 		}

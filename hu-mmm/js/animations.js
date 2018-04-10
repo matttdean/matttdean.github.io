@@ -78,27 +78,3 @@
 			sizing: "contain",
 			contextMenu: 'disabled'
 		});
-
-
-	// Head Quotes
-
-// 	var head1 = document.getElementById("head1");
-// 	var head2 = document.getElementById("head2");
-// 	var head3 = document.getElementById("head3");
-// 	var head4 = document.getElementById("head4");
-// 	var head5 = document.getElementById("head5");
-// 	var head6 = document.getElementById("head6");
-// 	var speechBubble = document.getElementById("speechBubble");
-
-// function rotateSpeechBubble(bg) {
-// 	speechBubble.style.backgroundImage = 'url("img/speech-bubble-' + bg + '.svg")';
-// 	console.log(bg);
-// }
-
-
-// 	head1.addEventListener("mouseover", rotateSpeechBubble(1));
-// 	head2.addEventListener("mouseover", rotateSpeechBubble(2));
-// 	head3.addEventListener("mouseover", rotateSpeechBubble(3));
-// 	head4.addEventListener("mouseover", rotateSpeechBubble(4));
-// 	head5.addEventListener("mouseover", rotateSpeechBubble(5));
-// 	head6.addEventListener("mouseover", rotateSpeechBubble(6));

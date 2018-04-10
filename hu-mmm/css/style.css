@@ -1026,37 +1026,43 @@ h2 {
 }
 .video-frame {
     width: 800px;
-    height: 471px;
-    border-radius: 17px;
-    background: white;
+    height: 450px;
     margin-top: 10px;
     box-shadow: 0px 20px 200px #27229D;
 }
-.play-button {
-  width: 132px;
-  height: 132px;
-  background-image: url("../img/play-button.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  transform: scale(0.8);
-  transition: all .2s ease-in-out;
-  position: absolute;
+.play-btn {
+    width: 132px;
+    height: 132px;
+    position: absolute;
+    top: 48%;
+    left: 53%;
+    z-index: 50;
+    transform: translateY(-50%) translateX(-50%) scale(0.9);
+    background-image: url(../img/play-button.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .2s ease-in-out;
+    opacity: 0.8;
 }
-.play-button:hover {
-  transform: scale(1);
+.play-btn:hover {
+  transform: translateY(-50%) translateX(-50%) scale(1.05);
+  transition: all .2s ease-out;
+  opacity: 1;
 }
 
 .video-plants {
-  width: 861px;
-  height: 610px;
-  background-image: url(../img/video-plants.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  background-position: bottom;
-  display:unset;
-  margin-left: -35px;
-  margin-top: -1px;
+    width: 859px;
+    height: 610px;
+    background-image: url(../img/video-plants.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    background-position: bottom;
+    display: unset;
+    margin-left: -66px;
+    margin-top: -86px;
+    z-index: 100;
+    cursor: pointer;
 }
 @media only screen and (max-width: 1200px) {
     .video-player {
@@ -1073,6 +1079,10 @@ h2 {
     .video-plants {
       display:none;
     }
+}
+
+.wistia_responsive_padding {
+  cursor: pointer;
 }
 
 .computer {

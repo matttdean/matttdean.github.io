@@ -88,5 +88,45 @@ jQuery(document).ready(function($){
 		  
 		});
 
+		window._wq = window._wq || [];
+
+		_wq.push({ id: "_all", onReady: function(wistiaEmbed) {			
+
+		  	console.log("This will run for every video on the page. Right now I'm on this one:", wistiaEmbed);		  	
+
+		  	var wistiaHash = $(".wistia_embed").attr("id", "wistiaGenID_" + wistiaEmbed.hashedId());
+
+			var allVideos = Wistia.api.all();
+
+			var wistiaHashId = wistiaEmbed.hashedId();
+
+			
+			// grab Wista API
+			wistiaEmbed = Wistia.api("wistiaGenID_");
+
+			// when the video is stopped
+			wistiaEmbed.bind("end", function() {					 
+			  $('.video-plants').fadeIn("slow");
+			});
+
+			//when the video is paused
+			wistiaEmbed.bind("pause", function() {
+			  $('.video-plants').fadeIn("slow");
+			});
+
+			//when the video time changes
+			wistiaEmbed.bind("secondchange", function() {
+			  $('.video-plants').fadeOut("slow");
+			});  
+
+			// when you click the custom play button
+			$('.video-plants').click(function() {
+				wistiaEmbed.play();
+				$('.video-plants').fadeOut("slow");
+			});		
+
+		}
+	});
+
 });
 

@@ -194,6 +194,11 @@ footer {
   z-index: 34;
   top: 23%;
 }
+.heads {
+    margin-top: -65px;
+    z-index: 99;
+    position: relative;
+}
 
 @media only screen and (max-width: 768px) {
   .light-blue-brain {
@@ -499,6 +504,8 @@ footer {
   margin-top: 280px;
   color: #FFF;
   line-height: 1.7em;
+  position: relative;
+  z-index: 99;
 }
 .trigger h2 {
   color: #F5A396;
@@ -1191,11 +1198,22 @@ position: relative;
   background-image: url("../img/computer.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  padding-left: 69px;
+  padding-left: 63px;
   padding-right: 39px;
   padding-top: 39px;
   z-index: 100;
   position: relative;
+}
+.hubs {
+  transition: all 1s ease;
+  float: left;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 1px;
+
+}
+.hubs:hover {
+  transform: scale(1.2);
 }
 .computer img {
  padding: 4px;

@@ -55,6 +55,7 @@ jQuery(document).ready(function($){
 	  slidesToShow: 9,
 	  asNavFor: '.site-name',
 	  focusOnSelect: true,
+	  focusOnChange: true,
 	  useTransform: true,
 	  cssEase: 'ease-out',
 	  arrows: false,
@@ -85,6 +86,7 @@ jQuery(document).ready(function($){
 		  slidesToScroll: 1,
 		  asNavFor: '.chart-nav',
 		  arrows: false,
+		  draggable:false
 		  
 		});
 

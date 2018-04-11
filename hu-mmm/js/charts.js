@@ -197,26 +197,25 @@ var chart10 = new Chart(ctx10, {
 });
 
 var chartData = [
-	[136,51,25,8,7,11], //SC
-	[63,55,23,7,5,11], //MS
-	[56,44,17,0,6,0], //BloodC
-	[54,44,19,7,5,11], //PD
-	[43,36,17,6,1,11], //LC
-	[31,23,15,8,0,0], //PC
-	[383,83,17,0,0,0], //BladderC
-	[83,71,33,20,7,11], //HepC
-	[79,64,42,14,9,11], //IBS
-	[76,63,37,12,8,11], // Migraine
-	[76,65,41,10,9,11], //AD
-	[75,61,36,13,7,11], //A
-	[74,61,35,12,7,11], //pso
-	[71,58,26,9,7,11], //t2d
-	[69,56,32,9,7,11], //psa
-	[69,61,28,13,9,11], //Alz
-	[68,54,26,13,6,11], //COPD
-	[68,55,31,13,5,11], //IBD
-	[68,55,27,8,5,11], //RA
-	[65,54,26,9,9,11] //UC
+	[64,51,25,7,8,32],
+    [63,55,23,5,7,2],
+    [56,44,17,6,null,6],
+    [54,44,19,5,7,2],
+    [43,36,17,1,6,1],
+    [31,23,15,null,8,1],
+    [83,83,17,null,null,33],
+    [83,71,33,7,20,35],
+    [78,64,42,9,14,42],
+    [76,63,37,8,12,39],
+    [76,65,41,9,10,39],
+    [75,61,36,7,13,39],
+    [74,61,35,7,11,35],
+    [71,58,26,7,9,37],
+    [69,56,32,7,9,34],
+    [69,61,28,8,13,30],
+    [68,54,26,6,13,29],
+    [68,55,31,5,13,35],
+    [68,205,27,5,7,32]
 ];
 var chart1Data = chart1.data.datasets[0].data;
 var chart2Data = chart2.data.datasets[0].data;
@@ -250,26 +249,25 @@ var chartPercentages = [
 	chartPercentage6
 ];
 var percentages = [
-	[64,51,25,8,7,11], //SC
-	[63,55,23,7,5,11], //MS
-	[56,44,17,null,6,null], //BloodC
-	[54,44,19,7,5,11], //PD
-	[43,36,17,6,1,11], //LC
-	[31,23,15,8,null,null], //PC
-	[83,83,17,null,null,null], //BladderC
-	[83,71,33,20,7,11], //HepC
-	[79,64,42,14,9,11], //IBS
-	[76,63,37,12,8,11], // Migraine
-	[76,65,41,10,9,11], //AD
-	[75,61,36,13,7,11], //A
-	[74,61,35,12,7,11], //pso
-	[71,58,26,9,7,11], //t2d
-	[69,56,32,9,7,11], //psa
-	[69,61,28,13,9,11], //Alz
-	[68,54,26,13,6,11], //COPD
-	[68,55,31,13,5,11], //IBD
-	[68,55,27,8,5,11], //RA
-	[65,54,26,9,9,11] //UC
+	[64,51,25,7,8,32],
+    [63,55,23,5,7,2],
+    [56,44,17,6,null,6],
+    [54,44,19,5,7,2],
+    [43,36,17,1,6,1],
+    [31,23,15,null,8,1],
+    [83,83,17,null,null,33],
+    [83,71,33,7,20,35],
+    [78,64,42,9,14,42],
+    [76,63,37,8,12,39],
+    [76,65,41,9,10,39],
+    [75,61,36,7,13,39],
+    [74,61,35,7,11,35],
+    [71,58,26,7,9,37],
+    [69,56,32,7,9,34],
+    [69,61,28,8,13,30],
+    [68,54,26,6,13,29],
+    [68,55,31,5,13,35],
+    [68,55,27,5,7,32]
 ];
 
 var colors = [
@@ -296,10 +294,10 @@ var colors = [
 ]
 
 
-
+var chartLine = document.getElementById("chartLine");
 
 function changeLineColor() {
-    document.getElementById("chartLine").setAttribute("fill", currentColor);
+    chartLine.setAttribute("fill", currentColor);
 }
 
 	function updateCharts(){
@@ -309,7 +307,7 @@ function changeLineColor() {
 		window.chart4.update();	
 		window.chart5.update();
 		window.chart6.update();
-		changeLineColor();
+        changeLineColor();
 	}
 
 	function generateData(number) {
@@ -321,7 +319,7 @@ function changeLineColor() {
 	 			chartPercentages[i].innerHTML = percentages[number][i] + "%";
 	 		} else { chartPercentages[i].innerHTML = "n/a" ;}
 	 	}
-		currentColor = colors[number];
+        currentColor = colors[number];
 		updateCharts()
 	}
 

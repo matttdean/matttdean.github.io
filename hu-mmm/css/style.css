@@ -140,6 +140,9 @@ footer {
     margin-top: -800px;
     line-height: 1.8em;
   }
+  #section6{
+    padding-top: 0px;
+  }
 }
 
 .cloud-bg{
@@ -279,6 +282,7 @@ footer {
     margin-bottom: 0px;
     padding-top: 0px;
     margin-left: 0px;
+    font-size: 14px;
   }
   .red-blurb {
     height:314px;
@@ -328,6 +332,20 @@ footer {
 .m-10 {
   margin-top: 160px;
   color: #FFF;
+}
+
+@media only screen and (max-width: 1200px) {
+  .m-10 {
+    margin-top: 100px;
+    color: #FFF;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .m-10 {
+    margin-top: 80px;
+    color: #FFF;
+  }
 }
 
 .evc-title {
@@ -473,6 +491,13 @@ footer {
     position: relative;
     z-index: 38;
   }
+  .dark-plants-bottom{
+    display: none;
+  }
+  .blue-plant-bg {
+    display: none;
+    margin-bottom: 0px;
+  }
 }
 .brain-cloud-bottom {
   height: 600px; 
@@ -595,6 +620,8 @@ footer {
 .logo{
   height: 146px;  
   width: 340px;
+  z-index: 99;
+  position: relative;
 }
 
 @media only screen and (max-width: 768px) {
@@ -732,6 +759,7 @@ footer {
   .pie2-l {
     margin-left: 0px;
   }
+
 }
 
 
@@ -767,8 +795,8 @@ footer {
   margin-top: 0px;
   }
   .pie {
-    margin-bottom: -10px;
-    padding:5rem;
+    margin: unset;
+    padding:2rem;
   }
   .pie-2 {
     margin-top: 0px;
@@ -777,6 +805,7 @@ footer {
     position: relative;
     z-index: 51;
   }
+
 }
 .chart-2-line-bottom {
     margin-top: 97px;
@@ -796,6 +825,9 @@ footer {
       margin-right: 0px;
       margin-left: 0px;
   }
+  .pie2-r {
+  margin-left: unset;
+}
 }
 
 .chart-svg {
@@ -1090,11 +1122,28 @@ position: relative;
    transition: all .8s ease;
    transform-origin: center;
 }
+
+.sb-text {
+    padding-top: 5.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
 .speech-bubble-1 {
   background-image: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+  font-size: 14px;
+  color: #FFF;
 }
 .speech-bubble-2 {
   background-image: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+  font-size: 14px;
+  color: #FFF;
 }
 .speech-bubble-3 {
   background-image: none;
@@ -1105,8 +1154,33 @@ position: relative;
 .speech-bubble-5 {
   background-image: none;
 }
+.quote-mobile {
+  display: none;
+  text-align: center;
+  margin-left: 37px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 768px) {
+   #speechBubble {
+    display: none;
+  }
 
-
+  .speech-bubble-1 {
+    width:300px;
+    height: 280px;
+    background-image: url("../img/speech-bubble-2.svg");
+    display: flex;
+  }
+  .speech-bubble-2 {
+    width:300px;
+    height: 280px;
+    background-image: url("../img/speech-bubble-1.svg");
+    display: flex;
+  }
+  .quote-mobile {
+  display: inline;
+}
+}
 .quote-text {
   position: absolute;
   top: 13%;
@@ -1126,7 +1200,7 @@ position: relative;
   margin-top: -10px;
 }
 @media only screen and (max-width: 768px) {
-  #speechBubble {
+  /*#speechBubble {
     height:230px;
     width: 100%;
     position: relative;
@@ -1138,7 +1212,7 @@ position: relative;
     padding-left: 50px;
     padding-right: 50px;
 
-  }
+  }*/
 }
 .video-player {
   width: 1000px;

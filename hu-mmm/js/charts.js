@@ -199,7 +199,6 @@ var chart10 = new Chart(ctx10, {
 var chartData = [
 	[64,51,25,7,8,32],
     [63,55,23,5,7,2],
-    [56,44,17,6,null,6],
     [54,44,19,5,7,2],
     [43,36,17,1,6,1],
     [31,23,15,null,8,1],
@@ -212,7 +211,6 @@ var chartData = [
     [74,61,35,7,11,35],
     [71,58,26,7,9,37],
     [69,56,32,7,9,34],
-    [69,61,28,8,13,30],
     [68,54,26,6,13,29],
     [68,55,31,5,13,35],
     [68,205,27,5,7,32]
@@ -251,7 +249,6 @@ var chartPercentages = [
 var percentages = [
 	[64,51,25,7,8,32],
     [63,55,23,5,7,2],
-    [56,44,17,6,null,6],
     [54,44,19,5,7,2],
     [43,36,17,1,6,1],
     [31,23,15,null,8,1],
@@ -264,7 +261,6 @@ var percentages = [
     [74,61,35,7,11,35],
     [71,58,26,7,9,37],
     [69,56,32,7,9,34],
-    [69,61,28,8,13,30],
     [68,54,26,6,13,29],
     [68,55,31,5,13,35],
     [68,55,27,5,7,32]
@@ -273,7 +269,6 @@ var percentages = [
 var colors = [
 	"#69CDF6",
 	"#FF574C",
-	"#979AED",
 	"#5B7288",
 	"#7EBCF9",
 	"#B094FF",
@@ -286,11 +281,9 @@ var colors = [
 	"#FF6E43",
 	"#EE394E",
 	"#B84E8B",
-	"#5285C6",
 	"#1BABA4",
 	"#6059AF",
 	"#8D55A4",
-	"#333"
 ]
 
 
@@ -329,56 +322,50 @@ sc.addEventListener("click", function() {
 ms.addEventListener("click", function() {
 	generateData(1);
 });
-bc.addEventListener("click", function() {
+pd.addEventListener("click", function() {
 	generateData(2);
 });
-pd.addEventListener("click", function() {
+lc.addEventListener("click", function() {
 	generateData(3);
 });
-lc.addEventListener("click", function() {
+pc.addEventListener("click", function() {
 	generateData(4);
 });
-pc.addEventListener("click", function() {
+b.addEventListener("click", function() {
 	generateData(5);
 });
-b.addEventListener("click", function() {
+hepc.addEventListener("click", function() {
 	generateData(6);
 });
-hepc.addEventListener("click", function() {
+ibs.addEventListener("click", function() {
 	generateData(7);
 });
-ibs.addEventListener("click", function() {
+m.addEventListener("click", function() {
 	generateData(8);
 });
-m.addEventListener("click", function() {
+ad.addEventListener("click", function() {
 	generateData(9);
 });
-ad.addEventListener("click", function() {
+a.addEventListener("click", function() {
 	generateData(10);
 });
-a.addEventListener("click", function() {
+pso.addEventListener("click", function() {
 	generateData(11);
 });
-pso.addEventListener("click", function() {
+t2d.addEventListener("click", function() {
 	generateData(12);
 });
-t2d.addEventListener("click", function() {
+psa.addEventListener("click", function() {
 	generateData(13);
 });
-psa.addEventListener("click", function() {
+copd.addEventListener("click", function() {
 	generateData(14);
 });
-alz.addEventListener("click", function() {
+ibd.addEventListener("click", function() {
 	generateData(15);
 });
-copd.addEventListener("click", function() {
-	generateData(16);
-});
-ibd.addEventListener("click", function() {
-	generateData(17);
-});
 ra.addEventListener("click", function() {
-	generateData(18);
+	generateData(16);
 });
 
 		

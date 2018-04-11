@@ -62,7 +62,7 @@ $('#head1').hover(function() {
     fill: "#E15471"
     });
     $('.quote-text').html(
-    	"It’s really interesting and helpful to read this. I have often wondered if there’s a link between migraines and depression and somehow it helps to know there is a link and that you’re not alone. <em>– Suzie</em>"
+    	"It's really interesting and helpful to read this. I have often wondered if there's a link between migraines and depression and somehow it helps to know there is a link and that you're not alone. <em>– Suzie</em>"
     	);
 });
 $('#head2').hover(function() { 
@@ -71,7 +71,7 @@ $('#head2').hover(function() {
     fill: "#27229D"
     });
     $('.quote-text').html(
-    	"This post and comments brought tears to my eyes. I now know that I am not alone in feeling this way and although that’s sad in one respect, it’s comforting in another.  <em>– Celeste<em>"
+    	"This post and comments brought tears to my eyes. I now know that I am not alone in feeling this way and although that's sad in one respect, it's comforting in another.  <em>– Celeste<em>"
     	);
 });
 $('#head3').hover(function() { 
@@ -80,7 +80,7 @@ $('#head3').hover(function() {
     fill: "#170A4C"
     });
     $('.quote-text').html(
-    	"Nice job, and thank you once again for giving us a voice. Please everyone stay strong… continue to educate others of our struggles… Hang tough, God bless all of us who suffer and as always, much love to all. <em>– Eddie<em> "
+    	"Nice job, and thank you once again for giving us a voice. Please everyone stay strong... continue to educate others of our struggles... Hang tough, God bless all of us who suffer and as always, much love to all. <em>– Eddie<em> "
     	);
 });
 $('#head4').hover(function() { 

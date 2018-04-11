@@ -501,13 +501,16 @@ footer {
 }
 
 .trigger {
-  margin-top: 280px;
+  margin-top: -131px;
   color: #FFF;
   line-height: 1.7em;
   position: relative;
   z-index: 99;
 }
 .trigger h2 {
+  color: #F5A396;
+}
+.trigger a {
   color: #F5A396;
 }
 .trigger-1{
@@ -1087,6 +1090,23 @@ position: relative;
    transition: all .8s ease;
    transform-origin: center;
 }
+.speech-bubble-1 {
+  background-image: none;
+}
+.speech-bubble-2 {
+  background-image: none;
+}
+.speech-bubble-3 {
+  background-image: none;
+}
+.speech-bubble-4 {
+  background-image: none;
+}
+.speech-bubble-5 {
+  background-image: none;
+}
+
+
 .quote-text {
   position: absolute;
   top: 13%;

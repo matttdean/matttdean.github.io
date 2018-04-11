@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="382px" height="382px" viewBox="0 0 382 382" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>quote-bubble-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.000428691892 0.122556156 381.450475 0.122556156 381.450475 381.516128 0.000428691892 381.516128"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-525.000000, -9858.000000)">
+            <g id="quote-bubble-1" transform="translate(716.473832, 10048.000685) rotate(-3.000000) translate(-716.473832, -10048.000685) translate(524.973832, 9856.000685)">
+                <g id="Group-3" transform="translate(0.193386, 1.903872)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M381.450475,190.819157 C381.450475,296.137758 296.059336,381.516989 190.725452,381.516989 C85.390495,381.516989 0.000428691892,296.137758 0.000428691892,190.819157 C0.000428691892,85.4993263 85.390495,0.122556156 190.725452,0.122556156 C296.059336,0.122556156 381.450475,85.4993263 381.450475,190.819157" id="Fill-1" fill="#5450F5" mask="url(#mask-2)"></path>
+                </g>
+                <polygon id="Fill-4" fill="#5450F5" transform="translate(74.839814, 31.418148) rotate(-4.000000) translate(-74.839814, -31.418148) " points="51.4838143 1.90387215 55.7028143 60.9324246 98.1958143 38.9162727"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -135,7 +135,7 @@ var chart7 = new Chart(ctx7, {
     type: 'pie',
     data: {
         datasets: [{
-            data: [10, 100],
+            data: [49, 100],
             backgroundColor: [
                 '#F76381',
                 '#FFF',
@@ -151,7 +151,7 @@ var chart8 = new Chart(ctx8, {
     type: 'pie',
     data: {
         datasets: [{
-            data: [10, 100],
+            data: [36, 100],
             backgroundColor: [
                 '#84D0F1',
                 '#FFF',
@@ -167,7 +167,7 @@ var chart9 = new Chart(ctx9, {
     type: 'pie',
     data: {
         datasets: [{
-            data: [10, 100],
+            data: [32, 100],
             backgroundColor: [
                 '#FFEF57',
                 '#FFF',
@@ -183,7 +183,7 @@ var chart10 = new Chart(ctx10, {
     type: 'pie',
     data: {
         datasets: [{
-            data: [10, 100],
+            data: [13, 100],
             backgroundColor: [
                 '#F5A396',
                 '#FFF',
@@ -382,7 +382,5 @@ ibd.addEventListener("click", function() {
 ra.addEventListener("click", function() {
 	generateData(18);
 });
-uc.addEventListener("click", function() {
-	generateData(19);
-});
+
 		

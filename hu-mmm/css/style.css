@@ -162,6 +162,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  position: relative;
 }
 
 .brain-clouds {
@@ -176,6 +177,9 @@ footer {
 @media only screen and (max-width: 768px) {
   .brain-clouds {
     margin-top: -235px;
+  }
+  .brain {
+    bottom: 90%;
   }
 }
 

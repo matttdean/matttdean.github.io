@@ -1291,6 +1291,7 @@ position: relative;
 }
 .no-touch #vertical-nav a.is-selected .dot {
   background-color: white;
+  border: 1px solid #F76381;
 }
 .no-touch #vertical-nav .dot {
   position: relative;
@@ -1312,7 +1313,9 @@ position: relative;
 .no-touch #vertical-nav .label {
   position: relative;
   margin-right: 10px;
-  padding: .4em .5em;
+  padding: .5em 1em;
+  background: #F76381;
+  border-radius: 21px;
   color: white;
   font-size: 14px;
   font-size: 0.875rem;

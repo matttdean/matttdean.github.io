@@ -114,13 +114,14 @@ footer {
 }
 @media only screen and (max-width: 768px) {
 #section5{
+  padding-bottom: 60px;
 }
 
 }
 #section6{
   color:#FFF;
   background-color: #1E1A7F;
-  padding-top: 300px;
+  padding-top: 60px;
 }
 #section7{
   color:#1E1A7F;
@@ -139,9 +140,6 @@ footer {
   .dark-blue-row {
     margin-top: -800px;
     line-height: 1.8em;
-  }
-  #section6{
-    padding-top: 0px;
   }
 }
 
@@ -578,13 +576,14 @@ footer {
 
 @media only screen and (max-width: 768px) {
 .trigger {
-  margin-top: 280px;
+  margin-top: -85px;
   line-height: 1.7em;
 }
 .trigger-1 {
-  height: 816px;
-  margin-bottom: 193px;
+  height: 757px;
+  margin-bottom: 87px;
   background-size: cover;
+}
 
 }
 .trigger-2 {
@@ -601,11 +600,10 @@ footer {
 }
 
 .trigger-bottom {
-  height: 400px;
-  margin-top: -387px;
+  margin-top: -515px;
   z-index: 40;
   background-size: cover;
-  margin-bottom: 328px;
+  background-image: none;
 
 }
 

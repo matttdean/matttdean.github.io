@@ -106,7 +106,7 @@ jQuery(document).ready(function($){
 			// grab Wista API
 			wistiaEmbed = Wistia.api("wistiaGenID_");
 
-
+  if ($(window).width() > 960) {
 			// when the video is stopped
 			wistiaEmbed.bind("end", function() {					 
 			  $('.video-plants').fadeIn("slow");
@@ -139,8 +139,8 @@ jQuery(document).ready(function($){
 				$('.video-frame').css({
 				'box-shadow' : '0px 20px 200px #27229D'
 				})
-			});		
-
+			});	
+		 }	
 		}
 	});
 

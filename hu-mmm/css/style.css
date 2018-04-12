@@ -202,7 +202,7 @@ footer {
   top: 23%;
 }
 .heads {
-    margin-top: -65px;
+    margin-top: 20px;
     z-index: 99;
     position: relative;
 }
@@ -338,14 +338,7 @@ footer {
   color: #FFF;
 }
 
-@media only screen and (max-width: 1200px) {
-  .m-10 {
-    margin-top: 100px;
-    color: #FFF;
-  }
-}
-
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 768px) {
   .m-10 {
     margin-top: 80px;
     color: #FFF;
@@ -471,15 +464,14 @@ footer {
   z-index: 47;
 }
 .bird-bottom {
-  height: 1000px; 
+  height: 600px;
   width: 100%;
-  background-image: url("../img/bird-bottom.svg");
-  background-position: top;
+  background-image: url(../img/bird-bottom.svg);
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: -600px;
+  background-size: cover;
+  /* margin-bottom: 31px; */
   position: relative;
-  z-index: 38;
 }
 
 @media only screen and (max-width: 768px) {
@@ -523,10 +515,9 @@ footer {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -100px;
-  position: relative;
+  margin-top: -326px;
+  position: absolute;
   z-index: 50;
-
 }
 
 .trigger {
@@ -543,13 +534,13 @@ footer {
   color: #F5A396;
 }
 .trigger-1{
-  height: 1000px; 
+  height: 600px;
   width: 100%;
-  background-image: url("../img/trigger-blue-1.svg");
-  background-position: top;
+  background-image: url(../img/trigger-blue-1.svg);
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: -600px;
+  background-size: cover;
+  /* margin-bottom: 31px; */
   position: relative;
   z-index: 37;
 }
@@ -579,7 +570,7 @@ footer {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  /* margin-top: -500px; */
+   margin-top: -227px; 
   position: relative;
   z-index: 40;
 }
@@ -1282,9 +1273,19 @@ position: relative;
     .play-button {
     }
     .video-plants {
-      display:none;
+      width: 597px;
+      height: 406px;
+      margin-left: -71px;
+      margin-top: -51px;
     }
 }
+
+@media only screen and (max-width: 960px) {
+  .video-plants {
+      display: none;
+  }
+}
+
 
 .wistia_responsive_padding {
   cursor: pointer;

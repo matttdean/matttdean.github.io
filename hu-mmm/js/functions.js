@@ -62,7 +62,7 @@ $('#head1').hover(function() {
     fill: "#E15471"
     });
     $('.quote-text').html(
-    	"It's really interesting and helpful to read this. I have often wondered if there's a link between migraines and depression and somehow it helps to know there is a link and that you're not alone. <em>– Suzie</em>"
+    	"&#8220;It&#39;s really interesting and helpful to read this. I have often wondered if there&#39;s a link between migraines and depression and somehow it helps to know there is a link and that you're not alone.&#8221; <em>&#8211;Suzie</em>"
     	);
 });
 $('#head2').hover(function() { 
@@ -71,7 +71,7 @@ $('#head2').hover(function() {
     fill: "#27229D"
     });
     $('.quote-text').html(
-    	"This post and comments brought tears to my eyes. I now know that I am not alone in feeling this way and although that's sad in one respect, it's comforting in another.  <em>– Celeste<em>"
+    	"&#8220;This post and comments brought tears to my eyes. I now know that I am not alone in feeling this way and although that&#39;s sad in one respect, it's comforting in another.&#8221; <em>&#8211;Celeste</em>"
     	);
 });
 $('#head3').hover(function() { 
@@ -80,7 +80,7 @@ $('#head3').hover(function() {
     fill: "#170A4C"
     });
     $('.quote-text').html(
-    	"Nice job, and thank you once again for giving us a voice. Please everyone stay strong... continue to educate others of our struggles... Hang tough, God bless all of us who suffer and as always, much love to all. <em>– Eddie<em> "
+    	"&#8220;Nice job, and thank you once again for giving us a voice. Please everyone stay strong... continue to educate others of our struggles... Hang tough, God bless all of us who suffer and as always, much love to all.&#8221; <em>–Eddie</em> "
     	);
 });
 $('#head4').hover(function() { 
@@ -89,7 +89,7 @@ $('#head4').hover(function() {
     fill: "#170A4C"
     });
     $('.quote-text').html(
-    	"On my first visit to the site, the second post I see is dealing with the mental impact of this hideous disease has on suffers. Thank you for recognizing this most important factor.<em>– Darell</em>"
+    	"&#8220;On my first visit to the site, the second post I see is dealing with the mental impact of this hideous disease has on suffers. Thank you for recognizing this most important factor.&#8221; <em>&#8211;Darell</em>"
     	);
 });  
 $('#head5').hover(function() { 
@@ -98,7 +98,7 @@ $('#head5').hover(function() {
     fill: "#E15471"
     });
     $('.quote-text').html(
-    	"Thank you for the site. I find out more about life with daily migraines and a broken spirit... We can try our best to help each other with compassion and Hope. Blessings to you. Xx <em>– Gina</em> "
+    	"&#8220;Thank you for the site. I find out more about life with daily migraines and a broken spirit... We can try our best to help each other with compassion and Hope. Blessings to you. Xx&#8221; <em>&#8211;Gina</em> "
     	);
 });
 $('#head6').hover(function() { 
@@ -107,7 +107,7 @@ $('#head6').hover(function() {
     fill: "#27229D"
     });
     $('.quote-text').html(
-    	"Glad to know I’m not the only one who feels this way. I feel guilty for getting depressed because I know it could be much worse. <em>– Paula</em> "
+    	"&#8220;Glad to know I&#39;m not the only one who feels this way. I feel guilty for getting depressed because I know it could be much worse.&#8221; <em>&#8211;Paula</em> "
     	);
 });
 	

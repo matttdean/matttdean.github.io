@@ -36,7 +36,7 @@ var chart1 = new Chart(ctx, {
     type: 'pie',
     data: {
         datasets: [{
-            data: [55, 100],
+            data: [155, 100],
             backgroundColor: [
                 '#F76381',
                 '#FFF',
@@ -45,7 +45,8 @@ var chart1 = new Chart(ctx, {
         }]
     },
     options: {
-        responsive: true
+        responsive: true,
+        tooltips: {enabled: false}
     }
 });
 
@@ -54,7 +55,7 @@ var chart2 = new Chart(ctx2, {
     type: 'pie',
     data: {
         datasets: [{
-            data: [13, 100],
+            data: [103, 100],
             backgroundColor: [
                 '#FFEF57',
                 '#FFF',
@@ -63,7 +64,8 @@ var chart2 = new Chart(ctx2, {
         }]
     },
     options: {
-    	responsive: true
+    	responsive: true,
+        tooltips: {enabled: false}
     }
 });
 
@@ -71,7 +73,7 @@ var chart3 = new Chart(ctx3, {
     type: 'pie',
     data: {
         datasets: [{
-            data: [77, 100],
+            data: [33, 100],
             backgroundColor: [
                 '#84D0F1',
                 '#FFF',
@@ -80,14 +82,15 @@ var chart3 = new Chart(ctx3, {
         }]
     },
     options: {
-    	responsive: true
+    	responsive: true,
+        tooltips: {enabled: false}
     }
 });
 var chart4 = new Chart(ctx4, {
     type: 'pie',
     data: {
         datasets: [{
-            data: [42, 100],
+            data: [7, 100],
             backgroundColor: [
                 '#F5A396',
                 '#FFF',
@@ -96,14 +99,15 @@ var chart4 = new Chart(ctx4, {
         }]
     },
     options: {
-    	responsive: true
+    	responsive: true,
+        tooltips: {enabled: false}
     }
 });
 var chart5 = new Chart(ctx5, {
     type: 'pie',
     data: {
         datasets: [{
-            data: [88, 100],
+            data: [8, 100],
             backgroundColor: [
                 '#5450F5',
                 '#FFF',
@@ -112,14 +116,15 @@ var chart5 = new Chart(ctx5, {
         }]
     },
     options: {
-    	responsive: true
+    	responsive: true,
+        tooltips: {enabled: false}
     }
 });
 var chart6 = new Chart(ctx6, {
     type: 'pie',
     data: {
         datasets: [{
-            data: [10, 100],
+            data: [42, 100],
             backgroundColor: [
                 '#F76381',
                 '#FFF',
@@ -128,7 +133,8 @@ var chart6 = new Chart(ctx6, {
         }]
     },
     options: {
-    	responsive: true
+    	responsive: true,
+        tooltips: {enabled: false}
     }
 });
 var chart7 = new Chart(ctx7, {
@@ -144,7 +150,8 @@ var chart7 = new Chart(ctx7, {
         }]
     },
     options: {
-    	responsive: true
+    	responsive: true,
+        tooltips: {enabled: false}
     }
 });
 var chart8 = new Chart(ctx8, {
@@ -160,7 +167,8 @@ var chart8 = new Chart(ctx8, {
         }]
     },
     options: {
-    	responsive: true
+    	responsive: true,
+        tooltips: {enabled: false}
     }
 });
 var chart9 = new Chart(ctx9, {
@@ -176,7 +184,8 @@ var chart9 = new Chart(ctx9, {
         }]
     },
     options: {
-    	responsive: true
+    	responsive: true,
+        tooltips: {enabled: false}
     }
 });
 var chart10 = new Chart(ctx10, {
@@ -192,28 +201,29 @@ var chart10 = new Chart(ctx10, {
         }]
     },
     options: {
-    	responsive: true
+    	responsive: true,
+        tooltips: {enabled: false}
     }
 });
 
 var chartData = [
-	[64,51,25,7,8,32],
-    [63,55,23,5,7,2],
-    [54,44,19,5,7,2],
-    [43,36,17,1,6,1],
-    [31,23,15,null,8,1],
-    [83,83,17,null,null,33],
-    [83,71,33,7,20,35],
-    [78,64,42,9,14,42],
-    [76,63,37,8,12,39],
-    [76,65,41,9,10,39],
-    [75,61,36,7,13,39],
-    [74,61,35,7,11,35],
-    [71,58,26,7,9,37],
-    [69,56,32,7,9,34],
-    [68,54,26,6,13,29],
-    [68,55,31,5,13,35],
-    [68,205,27,5,7,32]
+	[200,103,33,7,8,32],
+    [190,106,30,5,7,2],
+    [106,64,29,5,7,2],
+    [63,46,22,1,6,1],
+    [42,33,15,null,8,1],
+    [460,460,17,null,null,53],
+    [460,290,33,7,20,45],
+    [310,156,60,9,14,58],
+    [310,160,57,8,12,59],
+    [302,160,60,9,10,53],
+    [300,160,36,7,13,39],
+    [298,160,45,7,11,45],
+    [290,130,39,7,9,54],
+    [285,106,32,7,9,48],
+    [165,104,26,6,13,42],
+    [280,105,31,5,13,45],
+    [280,105,27,5,7,32]
 ];
 var chart1Data = chart1.data.datasets[0].data;
 var chart2Data = chart2.data.datasets[0].data;

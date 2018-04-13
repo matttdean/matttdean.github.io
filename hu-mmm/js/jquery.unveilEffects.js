@@ -8,6 +8,8 @@
 
 !(function($) {
 
+  if ($(window).width() > 960) {
+
   //-------------------------------
   // Plugin definition
   //-------------------------------
@@ -87,5 +89,5 @@
       }, (- unveilEffectSettings.threshold) )
 
   })
-
+ }
 })(window.jQuery);

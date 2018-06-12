@@ -125,10 +125,22 @@ header h1 {
 
 .blueButton button {
   position: relative;
+  margin-top: 20px;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
   z-index: 3001;
   width: 200px;
-  height: 80px;
+  height: 60px;
+  border: none;
+  border-radius: 80px;
+  transition: 1s;
   background-color: #30f0d3;
+}
+
+.blueButton button:hover {
+  transform: scale(1.2);
 }
 
 .redButton {
@@ -301,7 +313,7 @@ header h1 {
   margin-top: 240px;
 }
 nav {
-  z-index: 1000;
+  z-index: 5000;
 }
 
 /* Animations */

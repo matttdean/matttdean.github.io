@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="43px" viewBox="0 0 33 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>plane-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-629.000000, -416.000000)" fill="#6D82D7">
+            <path d="M649.122771,450.871713 L645.754122,458.144301 L642.385473,450.871713 L629.877786,450.871713 L645.563089,416.364046 L645.772226,416.364046 L661.666667,450.871713 L649.122771,450.871713 Z" id="plane-arrow" transform="translate(645.772226, 437.254173) rotate(-180.000000) translate(-645.772226, -437.254173) "></path>
+        </g>
+    </g>
+</svg>

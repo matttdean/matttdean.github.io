@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="105px" viewBox="0 0 91 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>plane-glow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-3132.2%" y="-1120.4%" width="6364.4%" height="2340.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="13.7527902" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-129.8%" y="-119.6%" width="359.6%" height="339.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="13.7527902" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-254.6%" y="-235.9%" width="609.2%" height="571.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="13.7527902" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-3132.2%" y="-1094.3%" width="6364.4%" height="2288.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="13.7527902" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-3132.2%" y="-1094.3%" width="6364.4%" height="2288.6%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="13.7527902" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-457.000000, -342.000000)" fill="#6D82D7">
+            <g id="plane-glow" transform="translate(502.421695, 388.248167) rotate(-180.000000) translate(-502.421695, -388.248167) translate(486.421695, 356.748167)">
+                <polygon id="Path" filter="url(#filter-1)" points="15.1403852 59.2705396 16.4576207 59.2705396 16.4576207 62.9528836 15.1403852 62.9528836"></polygon>
+                <polygon id="A-Copy" filter="url(#filter-2)" points="0 34.5076663 31.7888805 34.5076663 15.8944402 0 15.6853029 0"></polygon>
+                <polygon id="Path-20" filter="url(#filter-3)" points="23.9782945 41.7802543 7.77437655 41.7802543 15.8763355 24.2889061"></polygon>
+                <polygon id="Path" filter="url(#filter-4)" points="15.1403852 44.1894391 16.4576207 44.1894391 16.4576207 47.9597143 15.1403852 47.9597143"></polygon>
+                <polygon id="Path" filter="url(#filter-5)" points="15.1403852 51.7299894 16.4576207 51.7299894 16.4576207 55.5002645 15.1403852 55.5002645"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

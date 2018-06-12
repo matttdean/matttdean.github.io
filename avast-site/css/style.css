@@ -1,0 +1,354 @@
+/* AVAST: INTERACTIVE CREATIVE AGENCY */
+
+* {
+  margin: 0;
+}
+
+body{
+  background-color: #2F1959;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  list-style-type: none;
+  display: flex;
+}
+li {
+    margin-left: 20px;
+    color: #6D82D7;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: 0.8;
+}
+li:hover {
+  color: #899df0;
+}
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+header h1 {
+  text-transform: uppercase;
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  letter-spacing: 1.7px;
+  text-align: center;
+  margin-top: -150px;
+}
+.stars {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  opacity: 0.8;
+}
+.stars img {
+  width: 100%;
+  height: auto;
+}
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.logo-main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+.logo-glow {
+ position: relative;
+ z-index: 2;
+ margin-top: -209px;
+ animation: 4s infinite reverse glow;
+ animation-timing-function: ease-in-out;
+}
+.header-box {
+  position: absolute;
+  top: 30%;
+}
+.plane-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  animation: 2s infinite reverse planeArrow;
+  animation-timing-function: ease-in-out;
+  z-index: 5;
+}
+.plane-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  transition: 1s;
+}
+.plane-arrow:hover {
+  transform: scale(1.3);
+}
+.plane-glow {
+  position: absolute;
+  z-index: 2;
+}
+
+.blue-box {
+  margin-top: -300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50vw;
+}
+
+.blueButton {
+
+}
+
+.blueButton button {
+  position: relative;
+  z-index: 3001;
+  width: 200px;
+  height: 80px;
+  background-color: #30f0d3;
+}
+
+.redButton {
+
+}
+
+.redButton button {
+  position: relative;
+  z-index: 3001;
+  width: 200px;
+  height: 80px;
+  background-color: #30f0d3;
+}
+
+.orangeButton {
+
+}
+
+.orangeButton button {
+  position: relative;
+  z-index: 3001;
+  width: 200px;
+  height: 80px;
+  background-color: #30f0d3;
+}
+
+.blueBlob {
+  position: absolute;
+  z-index: 3;
+  width: 45%;
+  transition: 2s;
+}
+
+.blue-glow {
+  position: absolute;
+  z-index: 2;
+  animation: 4s infinite reverse glow;
+  width: 55%;
+}
+
+.red-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50vw;
+}
+
+.red-blob {
+  position: absolute;
+  z-index: 3;
+  width: 45%;
+  transition: 2s;
+}
+
+.red-glow {
+  position: absolute;
+  z-index: 2;
+  animation: 4s infinite reverse glow;
+  width: 50%;
+}
+
+.orange-box {
+  margin-top: -300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50vw;
+}
+
+.orange-blob {
+  position: absolute;
+  z-index: 3;
+  width: 45%;
+  transition: 2s;
+}
+
+.orange-glow {
+  position: absolute;
+  z-index: 2;
+  animation: 4s infinite reverse glow;
+  width: 50%;
+}
+
+.meteor {
+  position: absolute;
+  top: 10%;
+  left: -350px;
+  animation-duration: 5s;
+  animation-delay: 6s;
+  animation-name: meteor;
+}
+
+.text-box-r {
+  color: white;
+  position: relative;
+  width: 450px;
+  padding: 100px;
+}
+.text-box-r h1 {
+  font-size: 3rem;
+}
+.text-box-r p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.text-box-l {
+  color: white;
+  position: relative;
+  width: 450px;
+  padding: 100px;
+}
+.text-box-l h1 {
+  font-size: 3rem;
+}
+.text-box-l p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.p-box {
+  width: 100vw;
+  height: auto;
+  z-index: 100;
+  animation-name: rotate;
+  animation-duration: 10s;
+
+}
+.p-glow {
+  width: 100vw;
+  animation: 4s infinite reverse glow;
+  position: absolute;
+  z-index: 101;
+}
+.p-1 {
+  width: 100vw;
+  position: absolute;
+  z-index: 102;
+  margin-top: 170px;
+}
+.p-2 {
+  width: 100vw;
+  position: absolute;
+  z-index: 103;
+  margin-top: 240px;
+}
+.p-3 {
+  width: 100vw;
+  position: absolute;
+  z-index: 103;
+  margin-top: 380px;
+}
+.p-4{
+  width: 100vw;
+  position: absolute;
+  z-index: 103;
+  margin-top: 480px;
+}
+.p-5-glow {
+  width: 100vw;
+  animation: 4s infinite reverse glow;
+  position: absolute;
+  z-index: 104;
+  margin-top: 200px;
+}
+.p-5 {
+  width: 100vw;
+  position: absolute;
+  z-index: 105;
+  margin-top: 240px;
+}
+nav {
+  z-index: 1000;
+}
+
+/* Animations */
+
+@keyframes planeArrow {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(5px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+@keyframes glow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes meteor {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(2500px, 800px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    width: 100vw;
+  }
+  to {
+    width: 110vw;
+  }
+}
+
+.scale {
+  transform: scale(20);
+  position: fixed;
+  z-index: 3000;
+}

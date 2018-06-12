@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="464px" height="516px" viewBox="0 0 464 516" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>blue-blob</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(0.000000, -767.000000)" fill="#04FFF0">
+            <path d="M-102.421742,882.475817 C-68.7292279,864.313094 170.550332,769.183818 225.466981,767.935124 C316.591095,765.863144 362.751171,762.179443 416.557125,836.431106 C502.78965,955.431106 459.360497,1140.68749 375.339062,1256.63621 C327.726172,1322.34151 249.916782,1241.9061 152.841338,1219.4715 C78.6098494,1202.31625 -38.3153186,1342.51597 -75.6935256,1290.93443 C-161.952687,1171.89768 -235.453835,954.189819 -102.421742,882.475817 Z" id="blue-blob"></path>
+        </g>
+    </g>
+</svg>

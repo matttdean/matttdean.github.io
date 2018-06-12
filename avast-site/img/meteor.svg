@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="340px" viewBox="0 0 400 340" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>meteor</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-49.4%" y="-91.1%" width="198.8%" height="282.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="39.2243304" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-8.1%" y="-15.0%" width="116.3%" height="130.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="6.47042411" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-111.000000, -345.000000)">
+            <g id="meteor" transform="translate(299.082561, 518.252783) rotate(8.000000) translate(-299.082561, -518.252783) translate(179.582561, 453.252783)">
+                <path d="M0.125692752,0.0615356858 C118.851496,3.81509712 185.615596,9.32635177 200.417994,16.5952996 C222.621591,27.4987214 252.591002,61.4406891 230.727271,96.5332295 C208.86354,131.62577 182.77102,134.891452 154.124797,122.8198 C135.027315,114.772031 83.6942798,73.8526101 0.125692752,0.0615356858 Z" id="Path-8" fill="#A9FFFA" filter="url(#filter-1)"></path>
+                <path d="M0.125692752,0.0615356858 C118.851496,3.81509712 185.615596,9.32635177 200.417994,16.5952996 C222.621591,27.4987214 252.591002,61.4406891 230.727271,96.5332295 C208.86354,131.62577 182.77102,134.891452 154.124797,122.8198 C135.027315,114.772031 83.6942798,73.8526101 0.125692752,0.0615356858 Z" id="Path-8-Copy-2" fill="#A9FFFA" filter="url(#filter-2)"></path>
+                <polygon id="Path-7" fill="#442775" points="136.573615 28.7914021 196.599891 28.7914021 221.224059 57.8389614 221.224059 96.4596126 179.947008 117.82112 123.399386 89.7217191"></polygon>
+                <polygon id="Path-12" fill="#9457FF" points="175.405505 87.5247225 221.224732 57.8439459 221.224732 96.4546808"></polygon>
+                <polygon id="Path-11" fill="#5A3E8A" style="mix-blend-mode: multiply;" points="175.404606 87.5245106 136.767629 29.1812833 123.585936 90.1778568"></polygon>
+                <ellipse id="Oval-6" fill="#9457FF" cx="168.535516" cy="42.6510202" rx="10.5658671" ry="4.69594092"></ellipse>
+                <ellipse id="Oval-6-Copy" fill="#9457FF" cx="196.738934" cy="45.0027671" rx="5.28293353" ry="2.34419401"></ellipse>
+                <ellipse id="Oval-6-Copy-4" fill="#9457FF" cx="185.853119" cy="61.2910593" rx="6.51109943" ry="3.37445472"></ellipse>
+                <polygon id="Path-9" fill="#281B3F" points="220.959976 96.4358927 175.406015 87.5250838 179.925685 117.979514"></polygon>
+                <polygon id="Path-10" fill="#120923" points="175.405828 87.5248007 123.609299 89.8260479 180.809045 118.156746"></polygon>
+                <path d="M0.125692752,0.0615356858 C118.851496,3.81509712 185.615596,9.32635177 200.417994,16.5952996 C222.621591,27.4987214 252.591002,61.4406891 230.727271,96.5332295 C208.86354,131.62577 182.77102,134.891452 154.124797,122.8198 C135.027315,114.772031 83.6942798,73.8526101 0.125692752,0.0615356858 Z" id="Path-8-Copy" fill="#A9FFFA" style="mix-blend-mode: overlay;"></path>
+            </g>
+        </g>
+    </g>
+</svg>

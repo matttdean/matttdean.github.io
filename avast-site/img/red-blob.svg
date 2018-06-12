@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="457px" height="659px" viewBox="0 0 457 659" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>red-blob</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-567.000000, -1281.000000)" fill="#FF6551">
+            <path d="M611.326573,1412.311 C628.500292,1364.42314 693.169877,1306.70897 857.653419,1312.94834 C879.665948,1313.78334 943.644524,1333.77095 988.060009,1312.94834 C1007.91838,1303.63845 1032.4893,1274.80923 1061.77275,1226.46068 L1094.76882,1976.83962 C1012.63506,1930.68219 949.264508,1903.46052 904.657164,1895.17463 C750.213959,1866.48651 613.231163,1885.45066 587.335653,1871.74879 C531.663922,1842.29169 611.326573,1722.66381 626.990393,1654.9774 C662.265686,1502.54603 594.152853,1460.19885 611.326573,1412.311 Z" id="red-blob"></path>
+        </g>
+    </g>
+</svg>

@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-body{
+body {
   background-color: #2F1959;
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
@@ -13,9 +13,16 @@ body{
 section {
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
   display: flex;
   justify-content: space-between;
 }
+
+.fr {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -42,6 +49,7 @@ header {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
 }
@@ -54,6 +62,7 @@ header h1 {
   text-align: center;
   margin-top: -150px;
 }
+
 .stars {
   position: absolute;
   z-index: 0;
@@ -116,7 +125,6 @@ header h1 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 50vw;
 }
 
 .blueButton {
@@ -149,10 +157,18 @@ header h1 {
 
 .redButton button {
   position: relative;
+  margin-top: 20px;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
   z-index: 3001;
   width: 200px;
-  height: 80px;
-  background-color: #30f0d3;
+  height: 60px;
+  border: none;
+  border-radius: 80px;
+  transition: 1s;
+  background-color: #FF6551;
 }
 
 .orangeButton {
@@ -161,10 +177,18 @@ header h1 {
 
 .orangeButton button {
   position: relative;
+  margin-top: 20px;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
   z-index: 3001;
   width: 200px;
-  height: 80px;
-  background-color: #30f0d3;
+  height: 60px;
+  border: none;
+  border-radius: 80px;
+  transition: 1s;
+  background-color: #FFA05C;
 }
 
 .blueBlob {
@@ -363,4 +387,112 @@ nav {
   transform: scale(20);
   position: fixed;
   z-index: 3000;
+}
+
+
+@media only screen and (max-width: 600px) {
+  section {
+  display: block;
+  }
+  header h1 {
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    letter-spacing: 1.7px;
+    text-align: center;
+    font-size: 24px;
+    margin-top: -50px;
+  }
+  .fr {
+    margin-bottom: 550px;
+  }
+
+  .logo-glow {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin-top: -147px;
+    /* margin-bottom: 100px; */
+    animation: 4s infinite reverse glow;
+    animation-timing-function: ease-in-out;
+  }
+  .blue-box {
+    margin-top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .blueBlob {
+    position: absolute;
+    z-index: 3;
+    width: 80%;
+    transition: 2s;
+  }
+  .blue-glow {
+    position: absolute;
+    z-index: 2;
+    animation: 4s infinite reverse glow;
+    width: 95%;
+  }
+  .red-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50vw;
+    /* margin-top: -100px; */
+    margin-bottom: 600px;
+}
+  .red-blob {
+    position: absolute;
+    z-index: 3;
+    width: 80%;
+    transition: 2s;
+  }
+  .red-glow {
+    position: absolute;
+    z-index: 2;
+    animation: 4s infinite reverse glow;
+    width: 95%;
+  }
+  .orange-blob {
+    position: absolute;
+    z-index: 3;
+    width: 80%;
+    transition: 2s;
+  }
+  .orange-glow {
+    position: absolute;
+    z-index: 2;
+    animation: 4s infinite reverse glow;
+    width: 95%;
+  }
+
+  .text-box-r {
+    color: white;
+    position: relative;
+    width: 90%;
+    padding: 200px 20px 20px 20px;
+  }
+  .text-box-r h1 {
+    font-size: 2rem;
+  }
+  .text-box-r p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+
+  .text-box-l {
+    color: white;
+    position: absolute;
+    width: 90%;
+    padding: 351px 20px 20px 20px;
+  }
+  .text-box-l h1 {
+    font-size: 2rem;
+  }
+  .text-box-l p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
 }

@@ -5,7 +5,6 @@
 }
 
 body {
-  background-color: #2F1959;
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   overflow-x: hidden;
@@ -17,7 +16,15 @@ section {
   display: flex;
   justify-content: space-between;
 }
-
+.space {
+  background-color: #2F1959;
+}
+.blackhole {
+  background-color: #507787;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
 .fr {
   display: flex;
   flex-direction: row-reverse;
@@ -62,7 +69,6 @@ header h1 {
   text-align: center;
   margin-top: -150px;
 }
-
 .stars {
   position: absolute;
   z-index: 0;
@@ -119,18 +125,15 @@ header h1 {
   position: absolute;
   z-index: 2;
 }
-
 .blue-box {
   margin-top: -300px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-
 .blueButton {
 
 }
-
 .blueButton button {
   position: relative;
   margin-top: 20px;
@@ -247,7 +250,60 @@ header h1 {
   animation: 4s infinite reverse glow;
   width: 50%;
 }
+.blue-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: #04FFF0;
+  transform: translateX(-2000px);
+  transition: 1s;
+  position: fixed;
+  z-index:9000;
+  /* clip-path: ellipse(86% 72% at 13% 56%); */
+}
 
+.red-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FF6551;
+  transform: translateX(2000px);
+  transition: 1s;
+  position: fixed;
+  z-index:9000;
+  /* clip-path: ellipse(86% 72% at 13% 56%); */
+}
+
+.orange-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFA05C;
+  transform: translateY(2000px);
+  transition: 1s;
+  position: fixed;
+  z-index:9000;
+  /* clip-path: ellipse(86% 72% at 13% 56%); */
+}
+
+.purple-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: #9457FF;
+  /* transform: translateY(-2000px); */
+  opacity: 0;
+  transition: 1s;
+  position: fixed;
+  z-index:0;
+  /* clip-path: ellipse(86% 72% at 13% 56%); */
+}
+
+.exit {
+  background-color: black;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 10000;
+}
 .meteor {
   position: absolute;
   top: 10%;
@@ -256,7 +312,6 @@ header h1 {
   animation-delay: 6s;
   animation-name: meteor;
 }
-
 .text-box-r {
   color: white;
   position: relative;
@@ -387,6 +442,15 @@ nav {
   transform: scale(20);
   position: fixed;
   z-index: 3000;
+}
+
+.translated {
+  transform: translate(0px, 0px);
+}
+
+.opacity {
+  opacity: 1;
+  z-index: 10000;
 }
 
 

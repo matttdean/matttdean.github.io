@@ -1,19 +1,25 @@
 
 $(function(){
   $(".blueButton").click(function() {
-  $(".blueBlob").toggleClass("scale");
+  $(".blue-page").toggleClass("translated");
   });
 });
 
 $(function(){
   $(".redButton").click(function() {
-  $(".red-blob").toggleClass("scale");
+  $(".red-page").toggleClass("translated");
   });
 });
 
 $(function(){
   $(".orangeButton").click(function() {
-  $(".orange-blob").toggleClass("scale");
+  $(".orange-page").toggleClass("translated");
+  });
+});
+
+$(function(){
+  $(".purpleButton").click(function() {
+  $(".purple-page").toggleClass("opacity");
   });
 });
 //
@@ -33,7 +39,7 @@ $(function(){
 // 		// })
 // });
 
-var stars = $('.stars');
+var stars = $('#stars');
 
 function simpleParallax(intensity, element) {
         $(window).scroll(function() {

@@ -2,6 +2,8 @@
 $(function(){
   $(".blueButton").click(function() {
   $(".blue-page").toggleClass("translated");
+  $(".blue-clip").toggleClass("clip-translate");
+  // $(".space").toggleClass("fade");
   });
 });
 
@@ -22,6 +24,8 @@ $(function(){
   $(".purple-page").toggleClass("opacity");
   });
 });
+
+
 //
 // $(window).scroll(function(){
 // 	var wScroll = $(this).scrollTop();
@@ -49,10 +53,27 @@ function simpleParallax(intensity, element) {
         });
     }
 
-    simpleParallax(3, stars);
+    simpleParallax(4, stars);
 
 $("#scroll").click(function() {
     $('html, body').animate({
         scrollTop: $("#blue").offset().top + 140
     }, 1000);
+});
+
+$("#scroll-top").click(function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 1000);
+});
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 800) {
+    $('.arrow-top-container').addClass('arrow-top-visible');
+    // $('.arrow-top-glow').addClass('arrow-top-visible');
+  } else {
+    $('.arrow-top-container').removeClass('arrow-top-visible');
+    // $('.arrow-top-glow').removeClass('arrow-top-visible');
+  }
 });

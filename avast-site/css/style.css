@@ -8,7 +8,12 @@ body {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   overflow-x: hidden;
+  transition: 1s;
+  opacity: 1;
+  background-color: black;
 }
+.nav-colored { background-color:#000; }
+.nav-transparent { background-color: blue !important;}
 section {
   width: 100vw;
   height: 100vh;
@@ -18,6 +23,7 @@ section {
 }
 .space {
   background-color: #2F1959;
+  transition: 1s;
 }
 .blackhole {
   background-color: #507787;
@@ -48,6 +54,7 @@ li {
     text-transform: uppercase;
     font-weight: 500;
     opacity: 0.8;
+    cursor: pointer;
 }
 li:hover {
   color: #899df0;
@@ -124,6 +131,43 @@ header h1 {
 .plane-glow {
   position: absolute;
   z-index: 2;
+}
+
+.arrow-top-container {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.9);
+  clip-path: circle(50% at 50% 50%);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .7s;
+  opacity: 0;
+}
+
+.arrow-top {
+  width: 40%;
+}
+.arrow-top-glow {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 9998;
+  width: 70px;
+  height: 70px;
+  opacity: 0;
+}
+.arrow-top-visible {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+.arrow-top-visible:hover {
+  transform: rotate(180deg) scale(1.1);
+  background-color: rgba(255, 255, 255, 1);
 }
 .blue-box {
   margin-top: -300px;
@@ -254,33 +298,79 @@ header h1 {
   width: 100vw;
   height: 100vh;
   background-color: #04FFF0;
-  transform: translateX(-2000px);
+  transform: translateX(-100vw);
   transition: 1s;
+  transition-timing-function: ease;
   position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
   z-index:9000;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
   /* clip-path: ellipse(86% 72% at 13% 56%); */
 }
-
+.blue-clip {
+  position: absolute;
+  width: 100vw;
+  height: 190vh;
+  background-color: #171244;
+  transform: translate(-100vw);
+  clip-path: ellipse(50% 0%, 86% 4%, 100% 43%, 79% 71%, 68% 100%, 0 100%, 0 78%, 0% 43%, 0 0);
+  transition: 1s;
+  transition-timing-function: ease;
+  z-index: 9000;
+}
+.clip-translate {
+  transform: translate(350px, -250px);
+}
+.blue-grid {
+  display: flex;
+  padding: 200px;
+  /* position: absolute; */
+  /* justify-content: space-between;
+  align-content: space-around; */
+  flex-wrap: wrap;
+}
+.circle-item {
+  flex: 1 0 40%;
+  height: 200px;
+  margin: 20px;
+  background-color: white;
+  transition: .5s;
+  transition-timing-function: ease;
+  cursor: pointer;
+  box-shadow: 0 10px 6px -6px #1DCFC4;
+}
+.circle-item:hover{
+  /* transform: rotate(90deg); */
+transform: translateY(-10px);
+  background-color: #B7FFFB;
+}
 .red-page {
   width: 100vw;
   height: 100vh;
   background-color: #FF6551;
-  transform: translateX(2000px);
+  transform: translateX(100vw);
   transition: 1s;
+  transition-timing-function: ease;
   position: fixed;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
   z-index:9000;
-  /* clip-path: ellipse(86% 72% at 13% 56%); */
+  clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
 
 .orange-page {
   width: 100vw;
   height: 100vh;
   background-color: #FFA05C;
-  transform: translateY(2000px);
+  transform: translateY(100vh);
   transition: 1s;
+  transition-timing-function: ease;
   position: fixed;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
   z-index:9000;
-  /* clip-path: ellipse(86% 72% at 13% 56%); */
+clip-path: polygon(100% 50%, 100% 50%, 100% 100%, 0 100%, 0 50%, 50% 0);
 }
 
 .purple-page {
@@ -288,6 +378,7 @@ header h1 {
   height: 100vh;
   background-color: #9457FF;
   /* transform: translateY(-2000px); */
+  transition-timing-function: ease;
   opacity: 0;
   transition: 1s;
   position: fixed;
@@ -297,12 +388,18 @@ header h1 {
 
 .exit {
   background-color: black;
-  height: 100px;
-  width: 100px;
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  height: 40px;
+  width: 40px;
   position: absolute;
   top: 50px;
   right: 50px;
   z-index: 10000;
+  transition: 1s;
+  cursor: pointer;
+}
+.exit:hover {
+  transform: scale(1.2) rotate(90deg);
 }
 .meteor {
   position: absolute;
@@ -311,6 +408,14 @@ header h1 {
   animation-duration: 5s;
   animation-delay: 6s;
   animation-name: meteor;
+}
+.astronaut {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  z-index: 4;
+  animation: 2.5s infinite alternate astronaut;
+  animation-timing-function: ease;
 }
 .text-box-r {
   color: white;
@@ -437,7 +542,14 @@ nav {
     width: 110vw;
   }
 }
-
+@keyframes astronaut {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
 .scale {
   transform: scale(20);
   position: fixed;
@@ -446,6 +558,11 @@ nav {
 
 .translated {
   transform: translate(0px, 0px);
+  opacity: 1;
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+}
+.fade {
+  opacity: 0;
 }
 
 .opacity {

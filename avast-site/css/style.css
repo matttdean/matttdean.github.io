@@ -447,7 +447,7 @@ header h1 {
   animation-name: meteor;
 }
 .astronaut {
-  width: 400px;
+  width: 200px;
   height: auto;
   position: absolute;
   z-index: 4;
@@ -542,7 +542,7 @@ nav {
 .mobile-nav-button {
   display: none;
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (max-device-width : 1024px) {
   .mobile-nav {
     width: 100vw;
     height: 100vh;
@@ -587,6 +587,11 @@ nav {
   }
   nav {
     display: none;
+  }
+
+  .blue-grid {
+    padding: 0px;
+
   }
 }
 .rotate-top {

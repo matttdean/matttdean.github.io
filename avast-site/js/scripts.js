@@ -5,6 +5,7 @@ $(function(){
   $(".blue-page").toggleClass("translated");
   $(".blue-clip").toggleClass("clip-translate");
   $(".blue-grid").toggleClass("slideIn");
+  $(".space").toggleClass("noScroll");
   // $(".space").toggleClass("fade");
   });
 });
@@ -12,18 +13,21 @@ $(function(){
 $(function(){
   $(".redButton").click(function() {
   $(".red-page").toggleClass("translated");
+  $(".space").toggleClass("noScroll");
   });
 });
 
 $(function(){
   $(".orangeButton").click(function() {
   $(".orange-page").toggleClass("translated");
+  $(".space").toggleClass("noScroll");
   });
 });
 
 $(function(){
   $(".purpleButton").click(function() {
   $(".purple-page").toggleClass("opacity");
+  $(".space").toggleClass("noScroll");
   });
 });
 
@@ -33,6 +37,7 @@ $(function(){
   $(".line-top").toggleClass("rotate-top");
   $(".line-middle").toggleClass("fade-middle");
   $(".line-bottom").toggleClass("rotate-bottom");
+  $(".space").toggleClass("noScroll");
   });
 });
 

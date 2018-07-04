@@ -594,6 +594,11 @@ nav {
 
   }
 }
+
+.noScroll {
+    overflow: hidden;
+    position: fixed;
+}
 .rotate-top {
   transform: translate(0px, 10px) rotateZ(-45deg);
 }

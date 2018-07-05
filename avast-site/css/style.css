@@ -11,6 +11,7 @@ body {
   transition: 1s;
   opacity: 1;
   background-color: black;
+  transition-timing-function: ease;
 }
 .nav-colored { background-color:#000; }
 .nav-transparent { background-color: blue !important;}
@@ -299,7 +300,7 @@ header h1 {
   width: 100vw;
   height: 100vh;
   background-color: #04FFF0;
-  transform: translateX(-100vw);
+  transform: translateX(-110vw);
   transition: 1s;
   transition-timing-function: ease;
   position: fixed;
@@ -383,7 +384,7 @@ header h1 {
   width: 100vw;
   height: 100vh;
   background-color: #FF6551;
-  transform: translateX(100vw);
+  transform: translateX(110vw);
   transition: 1s;
   transition-timing-function: ease;
   position: fixed;
@@ -398,7 +399,7 @@ header h1 {
   width: 100vw;
   height: 100vh;
   background-color: #FFA05C;
-  transform: translateY(100vh);
+  transform: translateY(110vh);
   transition: 1s;
   transition-timing-function: ease;
   position: fixed;
@@ -412,14 +413,19 @@ header h1 {
 .purple-page {
   width: 100vw;
   height: 100vh;
-  background-color: #9457FF;
+  /* background-color: #9457FF; */
   /* transform: translateY(-2000px); */
   transition-timing-function: ease;
-  opacity: 0;
+  /* opacity: 0; */
+  transform: translateY(-100vh);
   transition: 1s;
   position: fixed;
   z-index:0;
   /* clip-path: ellipse(86% 72% at 13% 56%); */
+}
+
+.translateY {
+  transform: translateY(100vh);
 }
 
 .exit {
@@ -553,7 +559,7 @@ nav {
     align-items: center;
     position: absolute;
     z-index: 5000;
-    transform: translateY(-100vh);
+    transform: translateY(-110vh);
     transition: .5s;
   }
   .mobile-nav ul {
@@ -571,8 +577,8 @@ nav {
   }
   .mobile-nav-button {
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background-color: white;
     top: 30px;
     right: 30px;
@@ -904,4 +910,53 @@ background-color: purple;
     font-size: 1.2rem;
     line-height: 1.7;
   }
+}
+
+/* Asteroids */
+
+canvas {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #2F1959;
+}
+
+#info {
+	color: #FFF;
+	font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+	margin: 10px 10px 0;
+	padding: 8px;
+	background: #161616;
+	position: absolute;
+	z-index: 1;
+}
+
+#info h1 {
+	font-size: 18px;
+}
+
+#info p {
+	font-size: 11px;
+}
+
+#scoreBoard {
+ font-size: 3rem;
+ position: absolute;
+ font-weight: 700;
+ bottom: 50px;
+ right: 50px;
+ z-index: 9999;
+ color: white;
+ transition: 1s;
+}
+
+#progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  background-color: #9457FF;
+  z-index: 9999;
+  opacity: 0.8;
+  transition: .3s;
 }

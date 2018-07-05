@@ -26,7 +26,9 @@ $(function(){
 
 $(function(){
   $(".purpleButton").click(function() {
-  $(".purple-page").toggleClass("opacity");
+  $("body").toggleClass("translateY");
+
+   // $.getScript("asteroids.js");
   $(".space").toggleClass("noScroll");
   });
 });

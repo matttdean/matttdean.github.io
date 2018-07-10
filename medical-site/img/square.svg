@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="120px" viewBox="0 0 96 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>square</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-38.9%" y="-65.0%" width="177.8%" height="230.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="7.43861607" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <polygon id="path-2" points="0.268890718 0.930262234 0.268890718 64.6323268 47.8113954 84.2329679 95.3539 64.6323268 95.3539 0.930262234"></polygon>
+        <linearGradient x1="50%" y1="-3.59673193%" x2="50%" y2="89.653025%" id="linearGradient-4">
+            <stop stop-color="#27283B" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#324366" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-2" transform="translate(-610.000000, -421.000000)">
+            <g id="square" transform="translate(609.867004, 421.266062)">
+                <polygon id="Path-2-Copy" fill="#27283B" filter="url(#filter-1)" points="18.8459048 85.3525942 47.5425047 103 76.2391045 85.3525942 47.5425047 68.674502"></polygon>
+                <g id="Path-4" transform="translate(0.000000, 18.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="#b560aa" xlink:href="#path-2"></use>
+                    <polygon fill="url(#linearGradient-4)" mask="url(#mask-3)" points="47.6660813 21.342793 47.6660813 536.0918 95.3625317 512.426511 95.3625317 1.13608449 47.6660813 7.94855014"></polygon>
+                </g>
+                <polygon id="Path-2" fill="#d287c9" points="0.272641125 18.9277137 47.8151458 38.867907 95.3576504 18.9277137 47.8151458 0.0827691889"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

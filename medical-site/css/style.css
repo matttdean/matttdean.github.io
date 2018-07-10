@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(11,16,48,1);
+}
+header {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.header-gradient {
+  position: absolute;
+  background: rgb(22,144,142);
+  background: radial-gradient(circle, rgba(22,144,142,1) 0%, rgba(11,16,48,1) 100%);
+  width: 100vw;
+  height: 200vh;
+  z-index: 2;
+}
+.tower-overlay {
+  pointer-events: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(30,32,83);
+  background: linear-gradient(6deg, rgba(11,16,48,1) 4%, rgba(237,237,237,0) 51%);
+  z-index: 9999;
+}
+.square {
+  width: 100%;
+  margin-bottom: -50px;
+  position: relative;
+  opacity: 1;
+
+  margin-top: 0px;
+  z-index: 9999;
+  cursor: move;
+}
+.squareLoad {
+  opacity: 0;
+  margin-bottom: 0px;
+  margin-top: -20px;
+}
+.squareTransition {
+  transition: .2s;
+  transition-timing-function: ease;
+}
+.tower-1 {
+  position: absolute;
+  height: 80%;
+  width: 8%;
+  transform: translateX(45vw) translateY(100vh);
+  transition: 1s;
+  transition-timing-function: ease-in-out;
+  z-index: 999;
+  animation-name: t1;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+.tower-2 {
+  position: absolute;
+  height: 80%;
+  width: 8%;
+  transform: translate(37vw, 100vh);
+  z-index: 20;
+  transition: 1s;
+  animation-name: t2;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: .2s;
+}
+
+.tower-3 {
+  position: absolute;
+  height: 80%;
+  width: 8%;
+  transform: translate(50vw, 100vh);
+  z-index: 10;
+  transition: 1s;
+  animation-name: t3;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: .2s;
+}
+.tower-4 {
+  position: absolute;
+  height: 80%;
+  width: 8%;
+  transform: translate(55vw, 100vh);
+  z-index: 10;
+  transition: 1s;
+  animation-name: t4;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: .2s;
+}
+.tower-5 {
+  position: absolute;
+  height: 80%;
+  width: 8%;
+  transform: translate(25vw, 100vh);
+  z-index: 10;
+  transition: 1s;
+  animation-name: t5;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: .2s;
+}
+.tower-6 {
+  position: absolute;
+  height: 80%;
+  width: 8%;
+  transform: translate(35vw, 100vh);
+  z-index: 10;
+  transition: 1s;
+  animation-name: t6;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: .2s;
+}
+.tower-7 {
+  position: absolute;
+  height: 80%;
+  width: 8%;
+  transform: translate(15vw, 100vh);
+  z-index: 15;
+  transition: 1s;
+  animation-name: t7;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: .2s;
+}
+.tower-8 {
+  position: absolute;
+  height: 80%;
+  width: 8%;
+  transform: translate(60vw, 100vh);
+  z-index: 15;
+  transition: 1s;
+  animation-name: t8;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: .2s;
+}
+.tower-9 {
+  position: absolute;
+  height: 80%;
+  width: 8%;
+  transform: translate(50vw, 100vh);
+  z-index: 20;
+  transition: 1s;
+  animation-name: t9;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: .2s;
+}
+
+header img {
+  transition: .5s;
+  transition-timing-function: ease;
+  width: 100%;
+}
+.towerLoad {
+  animation-name: none;
+}
+.push-right-1 {
+  transform: translateX(-30px);
+}
+.push-left-1 {
+  transform: translateX(30px);
+}
+.push-right-2 {
+  transform: translateX(-50px);
+}
+.push-left-2 {
+  transform: translateX(50px);
+}
+
+@keyframes t1 {
+  0% { transform: translateX(40vw) translateY(100vh); }
+  75% { transform: translateX(40vw) translateY(13vh); }
+  100% { transform: translateX(40vw) translateY(15vh); }
+}
+@keyframes t2 {
+  0% { transform: translateX(45vw) translateY(100vh); }
+  75% { transform: translateX(45vw) translateY(10vh); }
+  100% { transform: translateX(45vw) translateY(12vh); }
+}
+@keyframes t3 {
+  0% { transform: translateX(55vw) translateY(100vh); }
+  75% { transform: translateX(55vw) translateY(23vh); }
+  100% { transform: translateX(55vw) translateY(25vh); }
+}
+@keyframes t4 {
+  0% { transform: translateX(60vw) translateY(100vh); }
+  75% { transform: translateX(60vw) translateY(32vh); }
+  100% { transform: translateX(60vw) translateY(34vh); }
+}
+@keyframes t5 {
+  0% { transform: translateX(25vw) translateY(100vh); }
+  75% { transform: translateX(25vw) translateY(34vh); }
+  100% { transform: translateX(25vw) translateY(36vh); }
+}
+@keyframes t6 {
+  0% { transform: translateX(35vw) translateY(100vh); }
+  75% { transform: translateX(35vw) translateY(28vh); }
+  100% { transform: translateX(35vw) translateY(30vh); }
+}
+@keyframes t7 {
+  0% { transform: translateX(15vw) translateY(100vh); }
+  75% { transform: translateX(15vw) translateY(58vh); }
+  100% { transform: translateX(15vw) translateY(60vh); }
+}
+@keyframes t8 {
+  0% { transform: translateX(65vw) translateY(100vh); }
+  75% { transform: translateX(65vw) translateY(58vh); }
+  100% { transform: translateX(65vw) translateY(60vh); }
+}
+@keyframes t9 {
+  0% { transform: translateX(50vw) translateY(100vh); }
+  75% { transform: translateX(50vw) translateY(38vh); }
+  100% { transform: translateX(50vw) translateY(35vh); }
+}

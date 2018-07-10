@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="702px" viewBox="0 0 96 702" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>tower</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-3.59673193%" x2="50%" y2="89.653025%" id="linearGradient-1">
+            <stop stop-color="#27283B" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#324366" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-2" transform="translate(-1045.000000, -322.000000)">
+            <g id="tower" transform="translate(1044.809705, 322.684366)">
+                <polygon id="Path-3" fill="#60A8B5" points="0.268890718 18.9302622 0.268890718 840.708566 95.3539 838.162998 95.3539 18.9302622"></polygon>
+                <polygon id="Path-4" fill="url(#linearGradient-1)" points="47.6660813 46.9596055 47.6660813 792.33662 95.3625317 703.026843 95.3625317 19.1360845 47.6660813 28.5164732"></polygon>
+                <polygon id="Path-2" fill="#8AC3CE" points="0.272641125 18.9277137 47.8151458 38.867907 95.3576504 18.9277137 47.8151458 0.0827691889"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -3,20 +3,25 @@
 }
 
 header {
-  position: fixed;
   width: 100vw;
   height: 100vh;
 }
 section {
   width: 100vw;
-  height: 60vh;
-  position: absolute;
+  height: 100vh;
 }
 
 #welcome {
   background-color: #8ea32e;
+  position: absolute;
+  z-index: 999;
 }
 
+.m-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
 .m-1 {
   width: 100vw;
   height: 100vh;
@@ -26,6 +31,7 @@ section {
   background-position: center;
   position: absolute;
   z-index: 5;
+  margin-top: 100px;
 }
 .m-2 {
   width: 100vw;
@@ -36,6 +42,7 @@ section {
   background-position: center;
   position: absolute;
   z-index: 4;
+  margin-top: 50px;
 }
 .m-3 {
   width: 100vw;
@@ -46,6 +53,7 @@ section {
   background-position: center;
   position: absolute;
   z-index: 3;
+  margin-top: 10px;
 }
 .m-4 {
   width: 100vw;

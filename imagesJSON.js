@@ -4,28 +4,28 @@
       name: 'Leanne Graham',
       username: 'Bret',
       tags:'green doctor this over',
-      img_url: 'https://s3.us-east-2.amazonaws.com/hu-test/facebook_share-12728_custom_2x.png'
+      img: 'https://s3.us-east-2.amazonaws.com/hu-test/facebook_share-12728_custom_2x.png'
     },
     {
       id: 2,
       name: 'Ervin Howell',
       username: 'Antonette',
       tags:'green doctor this over',
-      img_url: 'https://s3.us-east-2.amazonaws.com/hu-test/facebook_share-12728_custom_2x.png'
+      img: 'https://s3.us-east-2.amazonaws.com/hu-test/facebook_share-12728_custom_2x.png'
     },
     {
       id: 3,
       name: 'Clementine Bauch',
       username: 'Samantha',
       tags:'yellow doctor that over',
-      img_url: 'https://s3.us-east-2.amazonaws.com/hu-test/facebook_share-12728_custom_2x.png'
+      img: 'https://s3.us-east-2.amazonaws.com/hu-test/facebook_share-12728_custom_2x.png'
     },
     {
       id: 4,
       name: 'Patricia Lebsack',
       username: 'Karianne',
       tags:'green doctor this over',
-      img_url: 'https://s3.us-east-2.amazonaws.com/hu-test/facebook_share-12728_custom_2x.png'
+      img: 'https://s3.us-east-2.amazonaws.com/hu-test/facebook_share-12728_custom_2x.png'
     },
     {
       id: 5,

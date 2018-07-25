@@ -77,10 +77,52 @@
     "img": "https://s3.us-east-2.amazonaws.com/hu-test/12573_custom.jpg"
   },
   {
-    "id": "109821324623492",
+    "id": 109821324623492,
     "name": "Matt Dean",
     "username": "matttdean",
     "tags": "blue doctor this over",
     "img": "https://s3.us-east-2.amazonaws.com/hu-test/12637_custom.jpg"
+  },
+  {
+    "id": 11,
+   "name": "Leanne Graham",
+    "username": "Bret",
+    "tags": "green doctor this over",
+    "img": "https://s3.us-east-2.amazonaws.com/hu-test/12554_combo.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "tags": "green doctor this over",
+    "img": "https://s3.us-east-2.amazonaws.com/hu-test/12572_custom.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "tags": "red doctor that over",
+    "img": "https://s3.us-east-2.amazonaws.com/hu-test/12573_custom.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "tags": "green doctor this over",
+    "img": "https://s3.us-east-2.amazonaws.com/hu-test/12637_custom.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "tags":"green doctor this over",
+    "img": "https://s3.us-east-2.amazonaws.com/hu-test/12643_custom.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "tags": "yellow doctor that over",
+    "img": "https://s3.us-east-2.amazonaws.com/hu-test/12646_custom.jpg"
   }
 ]

@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 30px 0 0;
+}
+ul li {
+    display: flex;
+    margin-right: 20px;
+}
+nav {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+nav ul li {
+    padding: 5px 10px 5px 10px;
+    color: #4E26FF;
+    transition: .5s;
+    cursor: pointer;
+}
+nav ul li:hover {
+    color: white;
+    background-color: #4E26FF;
+    border-radius: 20px;
+}
+header {
+    display: flex;
+   align-items: center;
+}
+header h1 {
+    font-size: 5rem;
+    font-style: normal;
+    color: #4E26FF;
+    pointer-events: none;
+    font-weight: 300;
+}
+header h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+#about {
+    margin-top: -100;
+}
+.l-slanted-section {
+    width: 100vw;
+    height: auto;
+    padding: 400px 0 500px 0;
+    /* -webkit-clip-path: polygon(0 24%, 100% 0%, 100% 85%, 0% 100%);
+    clip-path: polygon(0 24%, 100% 0%, 100% 85%, 0% 100%); */
+    -webkit-clip-path: polygon(0 24%, 100% 0%, 100% 85%, 0% 100%);
+    clip-path: polygon(0 24%, 100% 0%, 100% 100%, 0% 90%);
+    background-color: #4E26FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -800px;
+}
+.l-slanted-section h1 {
+    color: #BCEEFF;
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 300;
+    /* padding: 0px 100px 0px 100px; */
+    width: 80vw;
+}
+.r-slanted-section {
+    width: 100vw;
+    height: 800px;
+    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+    background-color: #3618BB;
+}
+
+.r-slanted-code {
+    width: 100vw;
+    height: 800px;
+    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+    background-color: #3618BB;
+    position: relative;
+    margin-top: -200px;
+
+}
+.photo {
+   width: 50vw;
+   height: 100%;
+   -webkit-clip-path: polygon(0 0, 68% 0, 100% 100%, 0% 100%);
+   clip-path: polygon(0 0, 68% 0, 100% 100%, 0% 100%);
+   background-image: url("../img/me.jpg");
+   background-size: cover;
+   background-position: top left;
+   position: relative;
+   margin-top: -100px;
+   animation-name: photo;
+   animation-duration: 1s;
+   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
+   overflow: visible;
+}
+
+.photo-bg {
+    width: 600px;
+    height: 100vh;
+    -webkit-clip-path: polygon(70% 0, 100% 12%, 89% 40%, 100% 70%, 92% 96%, 63% 100%, 28% 100%, 0 100%, 0 0, 51% 6%);
+    clip-path: polygon(70% 0, 100% 12%, 89% 40%, 100% 70%, 92% 96%, 63% 100%, 28% 100%, 0 100%, 0 0, 51% 6%);
+    background-color: #4E26FF;
+    position: relative;
+ }
+ .intro {
+     margin-top: -50px;
+ }
+.wave {
+    display: inline-block;
+    -webkit-animation: wave .6s infinite; /* Safari 4.0 - 8.0 */
+    animation: wave .6s infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    transition: 1s;
+}
+.design-container{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 300px 0 200px 0;
+
+}
+.design {
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.design-bg {
+    width: 500px;
+    height: 500px;
+    -webkit-clip-path: ellipse(50% 42% at 50% 50%);
+    clip-path: ellipse(50% 42% at 50% 50%);
+    border-radius: 10px;
+    background: rgb(188,238,255);
+    background: radial-gradient(circle, rgba(188,238,255,0.3) 0%, rgba(188,238,255,0) 100%);
+    position: absolute;
+    animation-name: design-bg;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease;
+}
+
+.design-bg-2 {
+    width: 600px;
+    height: 600px;
+    -webkit-clip-path: ellipse(50% 42% at 50% 50%);
+    clip-path: ellipse(50% 42% at 50% 50%);
+    border-radius: 10px;
+    background: rgb(188,238,255);
+    background: radial-gradient(circle, rgba(188,238,255,0.3) 0%, rgba(188,238,255,0) 100%);
+    position: absolute;
+    animation-name: design-bg;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+.pen {
+    position: absolute;
+    animation: pen 4s infinite;
+}
+.compass {
+    position: absolute;
+    animation: compass 4s infinite;
+    animation-delay: .7s;
+}
+.pencil {
+    position: absolute;
+    animation: pencil 4s infinite;
+    animation-delay: .5s;
+}
+.brush {
+    position: absolute;
+    animation: brush 4s infinite;
+    animation-delay: .2s;
+}
+.dropper {
+    position: absolute;
+    animation: dropper 4s infinite;
+    animation-delay: 1.2s;
+}
+.curve {
+    position: absolute;
+    animation: curve 4s infinite;
+    animation-delay: 1.6s;
+}
+.palette {
+    position: absolute;
+    animation: palette 4s infinite;
+    animation-delay: 1.8s;
+}
+
+@keyframes wave {
+    from {transform: rotateZ(5deg)}
+    to {transform: rotateZ(-5deg)}
+}
+@keyframes photo {
+    from { -webkit-clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);
+            clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);}
+    to { -webkit-clip-path: polygon(0 0, 68% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 68% 0, 100% 100%, 0% 100%); }
+}
+
+@keyframes design-bg {
+    from { transform: scale(1.0)}
+    to { transform: scale(1.1)}
+}
+
+@keyframes pen {
+   0% { transform: translate(-80px, -80px) scale(1);
+        opacity: 1;}
+    80% { transform: translate(-240px, -240px) scale(1.5);
+            opacity: 1;}
+    100% {transform: translate(-250px, -250px) scale(0.2);
+            opacity: 0;}
+}
+
+@keyframes compass {
+    0% { transform: translate(80px, -80px) scale(1);
+        opacity: 1;}
+    80% { transform: translate(240px, -240px) scale(1.5);
+            opacity: 1;}
+    100% {transform: translate(250px, -250px) scale(0.2);
+            opacity: 0;}
+}
+
+@keyframes pencil {
+    0% { transform: translate(80px, 80px) scale(1);
+        opacity: 1;}
+    80% { transform: translate(240px, 240px) scale(1.5);
+            opacity: 1;}
+    100% {transform: translate(250px, 250px) scale(0.2);
+            opacity: 0;}
+}
+@keyframes brush {
+    0% { transform: translate(-80px, 80px) scale(1);
+        opacity: 1;}
+    80% { transform: translate(-240px, 240px) scale(1.5);
+            opacity: 1;}
+    100% {transform: translate(-250px, 250px) scale(0.2);
+            opacity: 0;}
+}
+
+@keyframes dropper {
+    0% { transform: translate(-100px, 0px) scale(0.4);
+        opacity: 1;}
+    80% { transform: translate(-280px, 0px) scale(0.8);
+            opacity: 1;}
+    100% {transform: translate(-300px, 0px) scale(0.1);
+            opacity: 0;}
+}
+
+@keyframes curve {
+    0% { transform: translate(100px, 0px) scale(0.4);
+        opacity: 1;}
+    80% { transform: translate(280px, 0px) scale(0.8);
+            opacity: 1;}
+    100% {transform: translate(300px, 0px) scale(0.1);
+            opacity: 0;}
+}
+
+@keyframes palette {
+    0% { transform: translate(0px, 100px) scale(0.4);
+        opacity: 1;}
+    80% { transform: translate(0px, 280px) scale(0.8);
+            opacity: 1;}
+    100% {transform: translate(0px, 300px) scale(0.1);
+            opacity: 0;}
+}

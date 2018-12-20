@@ -2,7 +2,15 @@ body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
-
+.frame {
+    pointer-events: none;
+    background-image: url("../img/frame.png");
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 9999;
+}
 p {
     width: 70%;
 }

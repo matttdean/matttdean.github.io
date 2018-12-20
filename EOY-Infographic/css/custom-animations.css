@@ -24,6 +24,18 @@
     height: 270px;
 		opacity: 1;
 	}
+
+	.effect-paper {
+		width: 70%;
+		height: 50px;
+    transition-delay: 3s;
+	}
+
+	.effect-paper.in {
+		width: 70%;
+		height: 800px;
+
+	}
 	.effect-fade {
 	  opacity: 0;
 	}

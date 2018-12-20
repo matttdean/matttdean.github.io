@@ -55,6 +55,7 @@ section {
 #s4 {
     background: rgb(176,210,227);
     background: linear-gradient(0deg, rgba(176,210,227,1) 0%, rgba(255,247,212,1) 20%);
+    margin-bottom: -10px;
 }
 
 #s5 {

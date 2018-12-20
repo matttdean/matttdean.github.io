@@ -1,0 +1,103 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+p {
+    width: 70%;
+}
+h1 {
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 3.5rem;
+    color:white;
+    line-height: 1;
+}
+h2 {
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 4rem;
+    color:white;
+    line-height: 1;
+}
+h3 {
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 2rem;
+    line-height: 1;
+}
+section {
+    padding: 20px 0px 50px 0px;
+}
+
+#s1 {
+    background: rgb(175,226,225);
+    background: linear-gradient(0deg, rgba(175,226,225,1) 0%, rgba(171,204,218,1) 10%);
+}
+
+#s2 {
+    background: rgb(223,199,230);
+    background: linear-gradient(0deg, rgba(223,199,230,1) 0%, rgba(175,226,225,1) 20%);
+}
+
+#s3 {
+    background: rgb(255,247,212);
+    background: linear-gradient(0deg, rgba(255,247,212,1) 0%, rgba(223,199,230,1) 20%);
+    padding-bottom: 500px;
+
+}
+
+#s4 {
+    background: rgb(176,210,227);
+    background: linear-gradient(0deg, rgba(176,210,227,1) 0%, rgba(255,247,212,1) 20%);
+}
+
+#s5 {
+    background: rgb(176,210,227);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+.speech-blue {
+    margin-right: -300px;
+    position: relative;
+    z-index: 9999;
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: auto;
+}
+
+.speech-green {
+    margin-left: -300px;
+    width: 100%;
+    height: auto;
+}
+
+.question-bg {
+    position: absolute;
+}
+
+.question-h2 {
+    text-align: center;
+    font-size: 5rem;
+    color: #2180AE;
+}
+
+.question-h3 {
+    text-align: center;
+}
+

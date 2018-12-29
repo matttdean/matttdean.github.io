@@ -26,6 +26,48 @@ h2 {
     color:white;
     line-height: 1;
 }
+
+.advocates {
+    margin-top: 24px;
+    font-size: 5rem;
+}
+.dark {
+    color: #002E3B;
+    font-size: 3rem;
+}
+.purple {
+    color: #A663B9;
+    text-align: center;
+}
+.blue-green {
+    color: #21AEAB;
+    text-align: center;
+}
+
+.survey {
+    font-size: 7rem;
+}
+.blue {
+    color: #2180AE;
+    text-align: center;
+}
+.tv-number {
+font-size: 5rem;
+}
+.tv-text {
+    font-size: 1.5rem;
+}
+.tv-info {
+    font-size: 2rem;
+    color: #FFE986;
+}
+
+.tv-footnote {
+    font-size: 1rem;
+    color: #21AEAB;
+    margin-left: 200px;
+}
+
 h3 {
     font-family: 'Walter Turncoat', cursive;
     font-size: 2rem;
@@ -69,7 +111,7 @@ section {
     padding: 50px;
 }
 
-.col {
+.col-3, .col {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,6 +119,16 @@ section {
     position: relative;
 }
 
+.tv {
+    padding: 10px 50px 10px 50px;
+}
+
+.mt-neg {
+    margin-top: -480px;
+}
+.full-width {
+    padding: 50px 0px 50px 0px;
+}
 .abs {
     position: absolute;
 }
@@ -110,3 +162,42 @@ section {
     text-align: center;
 }
 
+.numbers {
+    color: #A663B9;
+    font-size: 6rem;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.speech-bubble-m {
+    margin-left: -40px;
+}
+
+.speech-container {
+    position: absolute;
+    z-index: 99999;
+}
+.speech-number {
+    font-size: 7rem;
+    color: white;
+}
+.speech-text {
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+}
+.town-text {
+    position: absolute;
+    right: 157px;
+    top: 278px;
+    text-align: center;
+}
+.town-text h3 {
+    font-size: 2.8rem;
+}
+.survey-content {
+    position: absolute;
+    top: 100px;
+    width: 50%;
+    margin-left: -27px;
+}

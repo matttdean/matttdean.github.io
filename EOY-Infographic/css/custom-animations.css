@@ -52,6 +52,18 @@
 	  transform: translate3d(0, 0, 0);
 	  opacity: 1;
 	}
+	.effect-slide-left-2 {
+	  -webkit-transform: translate3d(-30%, 0, 0);
+	  transform: translate3d(-30%, 0, 0);
+		opacity: 0;
+		animation-delay: 3s;
+	}
+	.effect-slide-left-2.in {
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+
 	.effect-slide-right {
 	  -webkit-transform: translate3d(30%, 0, 0);
 	  transform: translate3d(30%, 0, 0);
@@ -87,6 +99,39 @@
 		animation-delay: 1s;
 	}
 	.effect-pop.in {
+	  -webkit-animation: pop 0.6s ease-out 0.5s both;
+	  -moz-animation: pop 0.6s ease-out 0.5s both;
+	  -o-animation: pop 0.6s ease-out 0.5s both;
+	  animation: pop 0.6s ease-out 0.5s both;
+	  opacity: 1 \9;
+	}
+  .effect-pop-2 {
+		opacity: 0;
+		animation-delay: 2s;
+	}
+	.effect-pop-2.in {
+	  -webkit-animation: pop 0.6s ease-out 0.5s both;
+	  -moz-animation: pop 0.6s ease-out 0.5s both;
+	  -o-animation: pop 0.6s ease-out 0.5s both;
+	  animation: pop 0.6s ease-out 0.5s both;
+	  opacity: 1 \9;
+	}
+  .effect-pop-3 {
+		opacity: 0;
+		animation-delay: 3s;
+	}
+	.effect-pop-3.in {
+	  -webkit-animation: pop 0.6s ease-out 0.5s both;
+	  -moz-animation: pop 0.6s ease-out 0.5s both;
+	  -o-animation: pop 0.6s ease-out 0.5s both;
+	  animation: pop 0.6s ease-out 0.5s both;
+	  opacity: 1 \9;
+	}
+	.effect-pop-4 {
+		opacity: 0;
+		animation-delay: 4s;
+	}
+	.effect-pop-4.in {
 	  -webkit-animation: pop 0.6s ease-out 0.5s both;
 	  -moz-animation: pop 0.6s ease-out 0.5s both;
 	  -o-animation: pop 0.6s ease-out 0.5s both;
@@ -185,6 +230,11 @@
 	  -webkit-perspective: 1300px;
 	  -moz-perspective: 1300px;
 	  perspective: 1300px;
+	}
+	.effect-perspective.in {
+	  -webkit-perspective: 0px;
+	  -moz-perspective: 0px;
+	  perspective: 0px;
 	}
 	.effect-helix {
 	  -webkit-transform-style: preserve-3d;

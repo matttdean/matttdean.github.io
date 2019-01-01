@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1000; user-scalable=0;" />
+    <meta name="viewport" content="width=1000, user-scalable=0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Walter+Turncoat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500|Walter+Turncoat" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="css/custom-animations.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
@@ -26,7 +26,7 @@
             </div>
             <div class="row">
                     <div class="col">
-                        <p>In 2018, we welcomed many incredible additions to our [condition] family. 
+                        <p>In 2018, we welcomed many incredible additions to our <span class="condition"> </span>family. 
                                 By bringing on more advocates, new perspectives and experiences were shared 
                                 with the community through publication of articles and newsletters. 
                                 These advocates also provided incredible support by engaging others 
@@ -38,12 +38,12 @@
             <div class="row">
                 <div class="col">
                     <img class="swing" src="img/megaphone.png" alt="megaphone">
-                    <h2 class="abs">21</h2>
+                    <h2 class="abs"><span id="dataPoint0"></span></h2>
                     <h3>New Advocates</h3>
                 </div>
                 <div class="col">
                     <img class="pulse" src="img/advocates.png" alt="advocates">
-                    <h2 class="abs purple advocates">31</h2>
+                    <h2 class="abs purple advocates"><span id="dataPoint1"></span></h2>
                     <h3>Total Advocates</h3>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                 <div class="col">
                     <img data-effect="pop" src="img/papers.png" alt="papers">
                     <div class="abs">
-                        <h2 class="blue-green">658</h2>
+                        <h2 class="blue-green"><span id="dataPoint2"></span></h2>
                         <h3 class>Articles Published</h3>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                     <img  data-effect="slide-left-2" class="plane-3" src="img/plane.png" alt="plane">
                     <img  data-effect="slide-left-2" class="plane-4" src="img/plane.png" alt="plane">
                     <div class="abs">
-                            <h2 class="blue-green">48</h2>
+                            <h2 class="blue-green"><span id="dataPoint3"></span></h2>
                             <h3 class>Newsletters Sent</h3>
                         </div>
                 </div>
@@ -73,7 +73,7 @@
                         <div class="abs">
                             <div class="row tv">
                                 <div class="col">
-                                    <h2 class="tv-number float-left">4000+</h2>
+                                    <h2 class="tv-number float-left"><span id="dataPoint4"></span></h2>
                                 </div>
                                 <div class="col">
                                     <h2 class="tv-text">hours providing <br>
@@ -83,7 +83,7 @@
                             <div class="row tv">
                                 <div class="col">
                                 <h2 class="tv-info text-center">That’s like watching <br>
-                                [300] seasons of tv on netflix!</h2>
+                                    <span id="dataPoint5"></span> seasons of tv on netflix!</h2>
                                 </div>
                             </div>
                             <div class="row tv">
@@ -107,7 +107,7 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <p>[Site] provides a platform for patients and caregivers to connect with each other based on shared experiences, interests or frustrations. Members are provided with a safe space to share with a community that understands, and they engage over and over again because they find support, validation, empathy, and connection.
+                                <p><span class="site"></span> provides a platform for patients and caregivers to connect with each other based on shared experiences, interests or frustrations. Members are provided with a safe space to share with a community that understands, and they engage over and over again because they find support, validation, empathy, and connection.
                                     </p>
                             </div>
                         </div>
@@ -116,7 +116,7 @@
                         <div data-effect="slide-right" class="col">
                             <img width="100%" src="img/speech-bubble.png" alt="speech-bubble">
                             <div class="abs speech-bubble-m">
-                                <h2 class="purple numbers">200</h2>
+                                <h2 class="purple numbers" id="dataPoint6"></h2>
                                 <h3 class="dark">Personal Experiences<br>
                                         Shared via Stories</h3>
                             </div>
@@ -134,7 +134,7 @@
                             <img data-effect="slide-right"class="speech-green" src="img/speech-green.png" alt="speech-green">
                         </div>
                         <div data-effect="pop" class="col speech-container">
-                            <h2 class="speech-number">100,000+</h2>
+                            <h2 class="speech-number"><span id="dataPoint7"></span> </h2>
                             <h3 class="speech-text">Comments in the Community</h3>
                             <h3></h3>
                         </div>
@@ -148,12 +148,12 @@
                         </div>
                         <div class="col-3">
                                 <img width="70%" src="img/box.png" alt="box">
-                                <h2 class="time">3</h2>
+                                <h2 class="time"><span id="dataPoint8"></span> </h2>
                                 <h3>Minutes</h3>
                         </div>
                         <div class="col-3">
                                 <img width="70%" src="img/box.png" alt="box">
-                                <h2 class="time">10</h2>
+                                <h2 class="time"><span id="dataPoint9"></span> </h2>
                                 <h3>Seconds</h3>
                         </div>
                     </div>
@@ -180,7 +180,7 @@
                                 </script>
                         </div>
                         <div class="col">
-                            <h2 class="question-h2">36</h2>
+                            <h2 class="question-h2"><span id="dataPoint10"></span> </h2>
                             <h3 class="question-h3">Questions Asked <br>
                                     and Answered <br>
                                     via our Q&A tool</h3>
@@ -189,7 +189,7 @@
                     <div class="row">
                             <div class="col-1"></div>
                         <div class="col-4">
-                                <h2 class="question-h2">20,000+</h2>
+                                <h2 class="question-h2"><span id="dataPoint11"></span> </h2>
                                 <h3 class="question-h3">Poll Votes in 2018
                         </div>
                         <div class="col-1"></div>
@@ -219,7 +219,7 @@
                     </div>
                     <div class="row">
                             <div class="col">
-                                <p>Our online community extends past [site] and exists in other social media channels. These additional channels on the web provide another outlet for our members share information, connect and provide support for those living with [condition].   
+                                <p>Our online community extends past <span class="site"></span> and exists in other social media channels. These additional channels on the web provide another outlet for our members share information, connect and provide support for those living with <span class="condition"> </span>.   
                                     </p>
                             </div>
                         </div>
@@ -228,7 +228,7 @@
                             <img width="50%" src="img/fb-l.svg" alt="">
                         </div>
                         <div class="col">
-                            <h2 class="fb">94,569</h2>
+                            <h2 class="fb"><span id="dataPoint12"></span></h2>
                             <h3>Facebook Followers</h3>
                         </div>
                         <div class="col">
@@ -240,7 +240,7 @@
                                     <img width="50%" src="img/insta-l.svg" alt="">
                                 </div>
                             <div class="col">
-                                <h2 class="insta">1,423</h2>
+                                <h2 class="insta"><span id="dataPoint13"></span></h2>
                                 <h3>Instagram Followers</h3>
                             </div>
                             <div class="col">
@@ -252,7 +252,7 @@
                                         <img width="50%" src="img/t-l.svg" alt="">
                                     </div>
                                 <div class="col">
-                                    <h2 class="twitter">862</h2>
+                                    <h2 class="twitter"><span id="dataPoint14"></span></h2>
                                     <h3>Twitter Followers</h3>
                                 </div>
                                 <div class="col">
@@ -264,7 +264,7 @@
                                         <img style="opacity: 0.6;" width="110%" src="img/town.svg" alt="town">
                                         <div class="town-text"><h3>These numbers <br>
                                                 add up to the population <br>
-                                                of [City, State]!</h3>
+                                                of <span id="dataPoint15"></span> !</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -280,7 +280,7 @@
                         </div>
                         <div class="row">
                                 <div class="col">
-                                    <p>Every year, [site], surveys the community about what it’s like to live with this 
+                                    <p>Every year, <span class="site"> </span>, surveys the community about what it’s like to live with this 
                                             condition. Our 2018 In America survey was completed by [number] of community members. These survey results help us to share the ins and outs of this disease 
                                             and the true impact it has on people’s lives. 
                                             
@@ -351,7 +351,7 @@
                                     </div>
                                     <div class="row full-width">
                                         <div class="col">
-                                            <h2 class="caregiver">42</h2>
+                                            <h2 class="caregiver"><span id="dataPoint16"></span></h2>
                                             <img width="105%" src="img/hands.svg" alt="hands">
                                             <h3 class="hands">Caregiver responses</h3>
                                         </div>
@@ -367,7 +367,7 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <p>[Site] is one of Health Union's 19 (and growing) online health communities that bring people together in the shared experiences of living with a chronic health condition.
+                                <p><span class="site"></span> is one of Health Union's 19 (and growing) online health communities that bring people together in the shared experiences of living with a chronic health condition.
                                     </p>
                             </div>
                         </div>
@@ -433,5 +433,6 @@
 </footer>
 <script src="js/jquery-2.1.3.min.js"></script>
 <script src="js/jquery.unveilEffects.js"></script>
+<script src="js/data.js"></script>
 </body>
 </html>

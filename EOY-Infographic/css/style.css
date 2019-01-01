@@ -18,28 +18,37 @@ p {
     font-size: 1.5rem;
     line-height: 2rem;
     letter-spacing: 0.02rem;
+    font-weight: 300;
 }
 h1 {
     font-family: 'Walter Turncoat', cursive;
-    font-size: 3.5rem;
+    font-size: 3.5vw;
     color:white;
     line-height: 1;
     text-align: center;
 }
 h2 {
     font-family: 'Walter Turncoat', cursive;
-    font-size: 4rem;
+    font-size: 4vw;
     color:white;
     line-height: 1;
 }
 
+.site {
+    font-weight: 500;
+    color: #2180AE;
+}
+.condition {
+    font-weight: 500;
+    color: #2180AE;
+}
 .advocates {
     margin-top: 24px;
-    font-size: 5rem;
+    font-size: 5vw;
 }
 .dark {
     color: #002E3B;
-    font-size: 3rem;
+    font-size: 3vw;
 }
 .purple {
     color: #A663B9;
@@ -53,25 +62,25 @@ h2 {
     color: #2180AE;
 }
 .survey {
-    font-size: 7rem;
+    font-size: 7vw;
 }
 .blue {
     color: #2180AE;
     text-align: center;
 }
 .tv-number {
-font-size: 5rem;
+font-size: 5vw;
 }
 .tv-text {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 }
 .tv-info {
-    font-size: 2rem;
+    font-size: 2vw;
     color: #FFE986;
 }
 
 .tv-footnote {
-    font-size: 1rem;
+    font-size: 1vw;
     color: #21AEAB;
     margin-left: 200px;
 }
@@ -89,7 +98,7 @@ font-size: 5rem;
     margin-top: 35px;
 }
 .engagement img {
-    width: 60%;
+    width: 58vw;
 }
 .engagement h1 {
     position: absolute;
@@ -137,7 +146,7 @@ font-size: 5rem;
 
 h3 {
     font-family: 'Walter Turncoat', cursive;
-    font-size: 2rem;
+    font-size: 2vw;
     line-height: 1;
     text-align: center;
 }
@@ -378,13 +387,13 @@ font-size: 6rem;
 
 @media only screen and (max-width: 600px) { 
 
-    .engagement img {
+    /* .engagement img {
         width: 90%;
-    }
-    .engagement h1 {
+    } */
+    /* .engagement h1 {
         position: absolute;
         top: 58px;
-    }
+    } */
 
 
 

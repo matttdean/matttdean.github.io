@@ -24,7 +24,6 @@ let data = [
     "~1,400",
     "~19,270",
     "Salt Lake City, UT",
-    "NA"
 ];
 
 let conditions = document.getElementsByClassName('condition');

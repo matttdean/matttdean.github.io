@@ -2,7 +2,7 @@
 // Replace with Site/Condition names
 
 let siteName = "Migraine.com";
-let conditionName = "migraine";
+let conditionName = "Migraine";
 let number = 345;
 
 // Infographic Data Points

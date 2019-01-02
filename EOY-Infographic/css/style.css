@@ -1,7 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    min-width: 700px;
+    min-width: 640px;
 }
 
 a {
@@ -221,22 +221,6 @@ section {
     position: relative;
 }
 
-.tv {
-    padding: 10px 50px 10px 50px;
-}
-
-.mt-neg-2 {
-    margin-top: -480px;
-}
-.mt-neg-1 {
-    margin-top: -150px;
-}
-.full-width {
-    padding: 50px 0px 50px 0px;
-}
-.abs {
-    position: absolute;
-}
 .plane-1 {
     position: absolute;
     top: -8px;
@@ -262,6 +246,23 @@ section {
     width: 12%;
     bottom: -24px;
 }
+
+.tv {
+    padding: 10px 50px 10px 50px;
+}
+
+.mt-neg-2 {
+    margin-top: -480px;
+}
+.mt-neg-1 {
+    margin-top: -150px;
+}
+.full-width {
+    padding: 50px 0px 50px 0px;
+}
+.abs {
+    position: absolute;
+}
 .fb {
 color: #2180AE;
 font-size: 6rem;
@@ -281,8 +282,8 @@ font-size: 6rem;
 
 .time {
     position: absolute;
-    top: 48px;
-    font-size: 6rem;
+    top: 16px;
+    font-size: 4rem;
     color: #A663B9;
     text-align: center;
 }
@@ -291,13 +292,13 @@ font-size: 6rem;
     position: relative;
     z-index: 9999;
     mix-blend-mode: multiply;
-    width: 100%;
+    width: 500px;
     height: auto;
 }
 
 .speech-green {
     margin-left: -300px;
-    width: 100%;
+    width: 500px;
     height: auto;
 }
 
@@ -382,7 +383,7 @@ font-size: 6rem;
 .speech-dark {
     position: absolute;
     text-align: center;
-    left: 124px;
+    left: 55px;
 }
 .town-bg {
     background-image: url("../img/town.svg");

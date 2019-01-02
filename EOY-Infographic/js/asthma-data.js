@@ -1,30 +1,14 @@
 
 // Replace with Site/Condition names
 
-let siteName = "Migraine.com";
-let conditionName = "migraine";
+let siteName = "Asthma.net";
+let conditionName = "Asthma";
 let number = 345;
 
 // Infographic Data Points
 
 let data = [
-    3,
-    21,
-    276,
-    83,
-    "18,000+",
-    "1,726",
-    147,
-    "135,000+",
-    3,
-    55,
-    252,
-    "102,000+",
-    "~185,890",
-    "~1,400",
-    "~19,270",
-    "Salt Lake City, UT",
-    "NA"
+    1,14,429,61,"18,000+","1,726",21,"7,000+",72,42,73,"18,600+","~37,660","~180","~260","Juneau, AK",NA
 ];
 
 let conditions = document.getElementsByClassName('condition');

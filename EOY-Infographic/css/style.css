@@ -3,6 +3,19 @@ body {
     overflow-x: hidden;
     min-width: 970px;
 }
+
+a {
+    color: #2180AE;
+    transition: 1s;
+    font-size: 4vw;
+
+}
+a:hover {
+    text-decoration: none;
+    font-size: 4.2vw;
+    color: #045775;
+}
+
 .frame {
     pointer-events: none;
     background-image: url("../img/frame.png");
@@ -35,6 +48,10 @@ h2 {
 }
 
 .site {
+    font-weight: 500;
+    color: #2180AE;
+}
+#number {
     font-weight: 500;
     color: #2180AE;
 }
@@ -162,6 +179,12 @@ section {
 #s2 {
     background: rgb(223,199,230);
     background: linear-gradient(0deg, rgba(223,199,230,1) 0%, rgba(175,226,225,1) 20%);
+}
+
+#s2-no-social {
+    background: rgb(223,199,230);
+    background: linear-gradient(0deg, rgba(255,247,212,1) 0%, rgba(175,226,225,1) 20%);
+    padding-bottom: 500px;
 }
 
 #s3 {
@@ -359,14 +382,21 @@ font-size: 6rem;
     text-align: center;
     left: 124px;
 }
+.town-bg {
+    background-image: url("../img/town.svg");
+    min-width: 100vw;
+    height: 800px;
+    background-size: contain;
+
+}
 .town-text {
     position: absolute;
-    right: 157px;
-    top: 278px;
+    right: 18vw;
+    top: 17vw;
     text-align: center;
 }
 .town-text h3 {
-    font-size: 2.8rem;
+    font-size: 2.6vw;
 }
 .survey-content {
     position: absolute;
@@ -385,16 +415,43 @@ font-size: 6rem;
     font-size: 6rem;
 }
 
-@media only screen and (max-width: 600px) { 
-
-    /* .engagement img {
-        width: 90%;
-    } */
-    /* .engagement h1 {
-        position: absolute;
-        top: 58px;
-    } */
-
-
-
+.map {
+    padding-bottom: 40px;
+    animation: map;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    /* animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335); */
 }
+
+@keyframes map {
+    from {
+      transform: translateY(-20px);
+    }
+    to {
+      transform: translateY(20px);
+    }
+  }
+
+@media screen and (max-width: 1200px) { 
+
+    .town-text {
+        position: absolute;
+        right: 108px;
+        top: 183px;
+        text-align: center;
+    }
+    .town-text h3 {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .effect-paper.in {
+        width: 70%;
+        height: 650px !important;
+    }
+  }
+ 

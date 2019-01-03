@@ -1,34 +1,19 @@
 
 // Replace with Site/Condition names
 
-let siteName = "Migraine.com";
-let conditionName = "Migraine";
+let siteName = "AtopicDermatitis.net";
+let conditionName = "AtopicDermatitis";
 let number = "32,539";
-let advocates = "/patient-advocates";
+let advocates = "/community/community-advocates";
 let stories = "/stories";
 let qa = "/q-and-a";
-let fb = "https://www.facebook.com/MigraineDotCom/";
-let insta = "https://www.instagram.com/migraine_hu/";
-let twitter = "https://twitter.com/Migrainedotcom";
+let fb = "https://www.facebook.com/AtopicDermatitisDotNet/";
+let insta = "https://www.instagram.com/atopicdermatitis_hu/";
+let twitter = "https://twitter.com/AtopicDerm_HU";
 // Infographic Data Points
 
 let data = [
-    3,
-    21,
-    276,
-    83,
-    "18,000+",
-    "1,726",
-    147,
-    "135,000+",
-    3,
-    55,
-    252,
-    "102,000+",
-    "~185,890",
-    "~1,400",
-    "~19,270",
-    "Salt Lake City, UT",
+    6,18,244,77,"18,000+","1,726",9,"26,000+",19,53,24,"4,900+","~11,800","~400","~350","Sedona, AZ"
 ];
 
 let conditions = document.getElementsByClassName('condition');

@@ -5,7 +5,7 @@ body {
 }
 
 a {
-    color: #2180AE;
+    color: inherit;
     transition: 1s;
     font-size: 4vw;
 
@@ -67,7 +67,9 @@ h2 {
 }
 .dark {
     color: #002E3B;
-    font-size: 3vw;
+    font-size: 4.5vw;
+    line-height: 1.1em;
+    margin: 10px 0 10px 0;
 }
 .purple {
     color: #A663B9;
@@ -99,9 +101,11 @@ font-size: 8vw;
 }
 
 .tv-footnote {
-    font-size: 2vw;
+    font-size: 2.5vw;
     color: #21AEAB;
-    margin-left: 200px;
+    margin-left: 148px;
+    margin-bottom: 18px;
+    margin-top: -10px;
 }
 
 .survey-footnote {
@@ -128,7 +132,8 @@ font-size: 8vw;
     color: #2180AE;
 }
 .hands {
-    font-size: 4rem;
+    margin-top: 25px;
+    font-size: 3rem;
 }
 
 /* .group-hands {
@@ -286,8 +291,9 @@ color: #21AEAB;
 font-size: 4rem;
 }
 
-.speech-bubble {
-
+.speech-bubble-text {
+    color: #002E3B;
+    font-size: 3vw;
 }
 
 .time {
@@ -418,7 +424,7 @@ font-size: 4rem;
     position: absolute;
     top: 100px;
     width: 50%;
-    margin-left: -27px;
+    margin-left: -17px;
 }
 .chart {
     position: absolute;
@@ -480,6 +486,7 @@ font-size: 4rem;
     opacity: 1;
     transform: scale(1.1)
 }
+
 .map {
     padding-bottom: 40px;
     animation: map;
@@ -502,18 +509,12 @@ font-size: 4rem;
 
 
 
-/* @media screen and (max-width: 1200px) { 
-
-    .town-text {
+@media screen and (max-width: 500px) { 
+    .engagement h1 {
         position: absolute;
-        right: 108px;
-        top: 183px;
-        text-align: center;
-    }
-    .town-text h3 {
-        font-size: 2.3rem;
+        top: 70px;
     }
 }
- */
+
 
  

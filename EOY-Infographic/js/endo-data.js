@@ -13,7 +13,7 @@ let twitter = "https://twitter.com/Endo_HU";
 // Infographic Data Points
 
 let data = [
-    17,22,110,12,"18,000+","1,726",15,"7,000+",75,31,8,"3,000+","~7,420","~310","~80","Montpelier, VT",
+    22,22,110,12,"18,000+","1,726",15,"7,000+",75,31,8,"3,000+","~7,420","~310","~80","Montpelier, VT",
 ];
 
 let conditions = document.getElementsByClassName('condition');

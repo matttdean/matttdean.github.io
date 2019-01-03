@@ -1,7 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    min-width: 640px;
+    min-width: 300px;
 }
 
 a {
@@ -37,14 +37,14 @@ p {
 }
 h1 {
     font-family: 'Walter Turncoat', cursive;
-    font-size: 3.5vw;
+    font-size: 5vw;
     color:white;
     line-height: 1;
     text-align: center;
 }
 h2 {
     font-family: 'Walter Turncoat', cursive;
-    font-size: 4vw;
+    font-size: 7vw;
     color:white;
     line-height: 1;
 }
@@ -63,7 +63,7 @@ h2 {
 }
 .advocates {
     margin-top: 24px;
-    font-size: 5vw;
+    font-size: 7vw;
 }
 .dark {
     color: #002E3B;
@@ -88,27 +88,27 @@ h2 {
     text-align: center;
 }
 .tv-number {
-font-size: 5vw;
+font-size: 8vw;
 }
 .tv-text {
-    font-size: 1.5vw;
+    font-size: 3.5vw;
 }
 .tv-info {
-    font-size: 2vw;
+    font-size: 6vw;
     color: #FFE986;
 }
 
 .tv-footnote {
-    font-size: 1vw;
+    font-size: 2vw;
     color: #21AEAB;
     margin-left: 200px;
 }
 
 .survey-footnote {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #045775;
-    margin-right: -53px;
-    margin-top: 159px;
+    margin-right: -44px;
+    margin-top: 109px;
 }
 .medicine-footnote {
     font-size: 1rem;
@@ -117,11 +117,11 @@ font-size: 5vw;
     margin-top: 35px;
 }
 .engagement img {
-    width: 58vw;
+    width: 100%;
 }
 .engagement h1 {
     position: absolute;
-    top: 58px;
+    top: 45px;
 }
 .caregiver {
     font-size: 9rem;
@@ -176,6 +176,11 @@ section {
 #s1 {
     background: rgb(175,226,225);
     background: linear-gradient(0deg, rgba(175,226,225,1) 0%, rgba(171,204,218,1) 10%);
+}
+
+.s1-h3 {
+    margin-top: 20px;
+    font-size: 4vw;
 }
 
 #s2 {
@@ -263,17 +268,22 @@ section {
 .abs {
     position: absolute;
 }
+
+.s1-abs {
+    position: absolute;
+    top: 57px;
+}
 .fb {
 color: #2180AE;
-font-size: 6rem;
+font-size: 4rem;
 }
 .insta {
 color: #A663B9;
-font-size: 6rem;
+font-size: 4rem;
 }
 .twitter {
 color: #21AEAB;
-font-size: 6rem;
+font-size: 4rem;
 }
 
 .speech-bubble {
@@ -354,6 +364,7 @@ font-size: 6rem;
 
 .question-h3 {
     text-align: center;
+    font-size: 2rem;
 }
 
 .numbers {
@@ -372,11 +383,11 @@ font-size: 6rem;
     z-index: 99999;
 }
 .speech-number {
-    font-size: 7rem;
+    font-size: 6rem;
     color: white;
 }
 .speech-text {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: white;
     text-align: center;
 }
@@ -384,23 +395,24 @@ font-size: 6rem;
     position: absolute;
     text-align: center;
     left: 55px;
+    font-size: 4vw;
 }
 .town-bg {
     background-image: url("../img/town.svg");
     min-width: 100vw;
-    height: 800px;
+    height: 400px;
     background-size: contain;
     background-repeat: no-repeat;
 
 }
 .town-text {
     position: absolute;
-    right: 18vw;
-    top: 17vw;
+    right: 31px;
+    top: 122px;
     text-align: center;
 }
 .town-text h3 {
-    font-size: 2.6vw;
+    font-size: 3.4vw;
 }
 .survey-content {
     position: absolute;
@@ -411,14 +423,63 @@ font-size: 6rem;
 .chart {
     position: absolute;
     color: #002E3B;
+    font-size: 7vw;
+    top: 54px;
 }
 .doctors {
     position: absolute;
     color: #002E3B;
-    bottom: 48px;
-    font-size: 6rem;
+    bottom: 36px;
+    font-size: 8vw;
 }
 
+.s4-h3 {
+    font-size: 4vw;
+}
+
+.time-h3 {
+    font-size: 3vw;
+    padding-top: 10px;
+}
+.social-h3 {
+    font-size: 3vw;
+}
+
+.site-icons {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+}
+.site-icons img {
+    width: 8vw;
+    margin: 0 5px 0 5px;
+    transition: 1s;
+    opacity: 0.8;
+    transform: scale(1)
+}
+
+.site-icons img:hover {
+    opacity: 1;
+    transform: scale(1.1)
+}
+
+.new-site-icons {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+}
+.new-site-icons img {
+    width: 14vw;
+    margin: 0 4px 0 4px;
+    transition: 1s;
+    opacity: 0.8;
+    transform: scale(1)
+}
+
+.new-site-icons img:hover {
+    opacity: 1;
+    transform: scale(1.1)
+}
 .map {
     padding-bottom: 40px;
     animation: map;
@@ -439,7 +500,9 @@ font-size: 6rem;
     }
   }
 
-@media screen and (max-width: 1200px) { 
+
+
+/* @media screen and (max-width: 1200px) { 
 
     .town-text {
         position: absolute;
@@ -451,11 +514,6 @@ font-size: 6rem;
         font-size: 2.3rem;
     }
 }
+ */
 
-@media screen and (max-width: 1000px) {
-    .effect-paper.in {
-        width: 70%;
-        height: 650px !important;
-    }
-  }
  

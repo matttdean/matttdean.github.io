@@ -3,8 +3,13 @@
 
 let siteName = "Migraine.com";
 let conditionName = "Migraine";
-let number = 345;
-
+let number = "32,539";
+let advocates = "";
+let stories = "/stories";
+let qa = "/q-and-a";
+let fb = "";
+let insta = "";
+let twitter = "";
 // Infographic Data Points
 
 let data = [
@@ -29,6 +34,13 @@ let data = [
 let conditions = document.getElementsByClassName('condition');
 let sites = document.getElementsByClassName('site');
 document.getElementById('number').innerHTML = number;
+document.getElementById('advocates').innerHTML = advocates;
+document.getElementById('stories').innerHTML = siteName + stories;
+document.getElementById('qa').innerHTML = siteName + qa;
+document.getElementById('fb-link').innerHTML = fb;
+document.getElementById('insta-link').innerHTML = insta;
+document.getElementById('twitter-link').innerHTML = twitter;
+
 
 [].slice.call(sites).forEach(function (site) {
     site.innerHTML = siteName;

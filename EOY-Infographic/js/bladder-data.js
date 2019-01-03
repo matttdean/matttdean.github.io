@@ -1,19 +1,19 @@
 
 // Replace with Site/Condition names
 
-let siteName = "AtopicDermatitis.net";
-let conditionName = "Atopic Dermatitis";
+let siteName = "BladderCancer.net";
+let conditionName = "Bladder Cancer";
 let number = "32,539";
-let advocates = "/community/community-advocates";
+let advocates = "/community/advocates";
 let stories = "/stories";
 let qa = "/q-and-a";
-let fb = "https://www.facebook.com/AtopicDermatitisDotNet/";
-let insta = "https://www.instagram.com/atopicdermatitis_hu/";
-let twitter = "https://twitter.com/AtopicDerm_HU";
+let fb = "https://www.facebook.com/BladderCancerDotNet/";
+// let insta = "";
+let twitter = "https://twitter.com/BladderCancerHU";
 // Infographic Data Points
 
 let data = [
-    6,18,244,77,"18,000+","1,726",9,"26,000+",19,53,24,"4,900+","~11,800","~400","~350","Sedona, AZ"
+    3,13,257,73,"18,000+","1,726",17,"5000+",106,13,21,"4400+","~6660","~280","Aspen, CO",69
 ];
 
 let conditions = document.getElementsByClassName('condition');
@@ -23,7 +23,7 @@ document.getElementById('advocates').href = 'https://' + siteName + advocates;
 document.getElementById('stories').href = 'https://' + siteName + stories;
 document.getElementById('qa').href = 'https://' + siteName + qa;
 document.getElementById('fb-link').href = fb;
-document.getElementById('insta-link').href = insta;
+// document.getElementById('insta-link').href = insta;
 document.getElementById('twitter-link').href = twitter;
 
 

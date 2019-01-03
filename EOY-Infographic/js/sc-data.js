@@ -1,19 +1,19 @@
 
 // Replace with Site/Condition names
 
-let siteName = "AtopicDermatitis.net";
-let conditionName = "Atopic Dermatitis";
+let siteName = "SkinCancer.net";
+let conditionName = "Skin Cancer";
 let number = "32,539";
-let advocates = "/community/community-advocates";
+let advocates = "/community/communityadvocates";
 let stories = "/stories";
 let qa = "/q-and-a";
-let fb = "https://www.facebook.com/AtopicDermatitisDotNet/";
-let insta = "https://www.instagram.com/atopicdermatitis_hu/";
-let twitter = "https://twitter.com/AtopicDerm_HU";
+let fb = "https://www.facebook.com/skincancerdotnet/";
+let insta = "https://www.instagram.com/skincancer_hu/";
+let twitter = "https://twitter.com/SkinCancer_HU";
 // Infographic Data Points
 
 let data = [
-    6,18,244,77,"18,000+","1,726",9,"26,000+",19,53,24,"4,900+","~11,800","~400","~350","Sedona, AZ"
+    10,18,207,79,"18,000+","1,726",16,"21,000+",25,0,44,"4,700+","~10,210","~220","~210","Sedona, AZ"
 ];
 
 let conditions = document.getElementsByClassName('condition');

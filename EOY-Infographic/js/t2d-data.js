@@ -1,19 +1,19 @@
 
 // Replace with Site/Condition names
 
-let siteName = "AtopicDermatitis.net";
-let conditionName = "Atopic Dermatitis";
+let siteName = "Type2Diabetes.com";
+let conditionName = "Type 2 Diabetes";
 let number = "32,539";
-let advocates = "/community/community-advocates";
+let advocates = "/community/experts";
 let stories = "/stories";
 let qa = "/q-and-a";
-let fb = "https://www.facebook.com/AtopicDermatitisDotNet/";
-let insta = "https://www.instagram.com/atopicdermatitis_hu/";
-let twitter = "https://twitter.com/AtopicDerm_HU";
+let fb = "https://www.facebook.com/Type2Diabetesdotcom/";
+let insta = "https://www.instagram.com/type2diabetes_hu/";
+let twitter = "https://twitter.com/T2D_HU";
 // Infographic Data Points
 
 let data = [
-    6,18,244,77,"18,000+","1,726",9,"26,000+",19,53,24,"4,900+","~11,800","~400","~350","Sedona, AZ"
+    4,21,403,84,"18,000+","1,726",11,"16,000+",32,10,26,"31,000+","~78,250","~320","~510","Boulder, CO"
 ];
 
 let conditions = document.getElementsByClassName('condition');

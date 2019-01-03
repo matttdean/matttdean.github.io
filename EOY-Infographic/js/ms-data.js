@@ -1,19 +1,19 @@
 
 // Replace with Site/Condition names
 
-let siteName = "AtopicDermatitis.net";
-let conditionName = "Atopic Dermatitis";
+let siteName = "MultipleSclerosis.net";
+let conditionName = "Multiple Sclerosis";
 let number = "32,539";
-let advocates = "/community/community-advocates";
+let advocates = "/community/experts";
 let stories = "/stories";
 let qa = "/q-and-a";
-let fb = "https://www.facebook.com/AtopicDermatitisDotNet/";
-let insta = "https://www.instagram.com/atopicdermatitis_hu/";
-let twitter = "https://twitter.com/AtopicDerm_HU";
+let fb = "https://www.facebook.com/MultipleSclerosisDotNet/";
+let insta = "https://www.instagram.com/multiplesclerosis_hu/";
+let twitter = "https://twitter.com/MS_HealthUnion";
 // Infographic Data Points
 
 let data = [
-    6,18,244,77,"18,000+","1,726",9,"26,000+",19,53,24,"4,900+","~11,800","~400","~350","Sedona, AZ"
+    3,23,449,80,"18,000+","1,726",204,"95,000+",5,33,134,"90,000+","~133,340","~1,640","~3,290","Charleston, SC",164
 ];
 
 let conditions = document.getElementsByClassName('condition');

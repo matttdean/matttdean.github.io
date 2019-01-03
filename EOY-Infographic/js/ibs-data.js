@@ -1,19 +1,19 @@
 
 // Replace with Site/Condition names
 
-let siteName = "AtopicDermatitis.net";
-let conditionName = "Atopic Dermatitis";
+let siteName = "IrritableBowelSyndrome.net";
+let conditionName = "Irritable Bowel Syndrome";
 let number = "32,539";
-let advocates = "/community/community-advocates";
+let advocates = "/experts";
 let stories = "/stories";
 let qa = "/q-and-a";
-let fb = "https://www.facebook.com/AtopicDermatitisDotNet/";
-let insta = "https://www.instagram.com/atopicdermatitis_hu/";
-let twitter = "https://twitter.com/AtopicDerm_HU";
+let fb = "https://www.facebook.com/ibsdotnet/";
+let insta = "https://www.instagram.com/irritablebowelsyndrome_hu/";
+let twitter = "https://twitter.com/IBS_HU";
 // Infographic Data Points
 
 let data = [
-    6,18,244,77,"18,000+","1,726",9,"26,000+",19,53,24,"4,900+","~11,800","~400","~350","Sedona, AZ"
+    6,21,321,79,"18,000+","1,726",29,"25,000+",21,38,57,"21,000+","~29,350","~632","~560","Princeton, NJ"
 ];
 
 let conditions = document.getElementsByClassName('condition');

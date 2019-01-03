@@ -1,19 +1,19 @@
 
 // Replace with Site/Condition names
 
-let siteName = "AtopicDermatitis.net";
-let conditionName = "Atopic Dermatitis";
+let siteName = "RheumatoidArthritis.net";
+let conditionName = "Rheumatoid Arthritis";
 let number = "32,539";
-let advocates = "/community/community-advocates";
+let advocates = "/community/experts";
 let stories = "/stories";
 let qa = "/q-and-a";
-let fb = "https://www.facebook.com/AtopicDermatitisDotNet/";
-let insta = "https://www.instagram.com/atopicdermatitis_hu/";
-let twitter = "https://twitter.com/AtopicDerm_HU";
+let fb = "https://www.facebook.com/PsoriaticArthritisdotcom/";
+let insta = "https://www.instagram.com/rheumatoidarthritis_hu/";
+let twitter = "https://twitter.com/PsA_HU";
 // Infographic Data Points
 
 let data = [
-    6,18,244,77,"18,000+","1,726",9,"26,000+",19,53,24,"4,900+","~11,800","~400","~350","Sedona, AZ"
+    5,20,307,80,"18,000+","1,726",75,"91,000+",5,49,193,"64,000+","~123,170","~1,800","~3,470","Topeka, KS"
 ];
 
 let conditions = document.getElementsByClassName('condition');

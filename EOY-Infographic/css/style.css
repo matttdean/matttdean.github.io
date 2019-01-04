@@ -473,6 +473,7 @@ font-size: 4rem;
     display: flex;
     flex-direction: row;
     width: 80vw;
+    flex-wrap: nowrap !important;
 }
 .new-site-icons img {
     width: 14vw;

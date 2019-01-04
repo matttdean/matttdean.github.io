@@ -10,6 +10,7 @@ let qa = "/q-and-a";
 let fb = "https://www.facebook.com/EndometriosisDotNet/";
 let insta = "https://www.instagram.com/endometriosis_hu/";
 let twitter = "https://twitter.com/Endo_HU";
+
 // Infographic Data Points
 
 let data = [

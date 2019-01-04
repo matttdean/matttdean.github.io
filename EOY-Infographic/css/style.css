@@ -33,6 +33,7 @@ p {
     line-height: 6vw;
     letter-spacing: 0.02rem;
     font-weight: 300;
+    padding: 20px;
 }
 h1 {
     font-family: 'Walter Turncoat', cursive;
@@ -128,10 +129,10 @@ font-size: 8vw;
 }
 
 .survey-footnote {
-    font-size: 0.9vw;
+    font-size: 2vw;
     color: #045775;
     margin-right: -44px;
-    margin-top: 109px;
+    margin-top: 85px;
 }
 .medicine-footnote {
     font-size: 1vw;
@@ -206,7 +207,7 @@ font-size: 8vw;
 
 h3 {
     font-family: 'Walter Turncoat', cursive;
-    font-size: 2vw;
+    font-size: 3vw;
     line-height: 1;
     text-align: center;
 }
@@ -239,7 +240,6 @@ section {
 #s3 {
     background: rgb(255,247,212);
     background: linear-gradient(0deg, rgba(255,247,212,1) 0%, rgba(223,199,230,1) 20%);
-    padding-bottom: 500px;
 
 }
 
@@ -258,7 +258,7 @@ section {
     justify-content: center;
     align-items: center;
     margin: 16px auto;
-    flex-wrap: nowrap !important;
+    flex-wrap: nowrap;
 }
 
 .col-3, .col, .col-4, .col-5, .col-6 {
@@ -312,11 +312,8 @@ section {
     position: absolute;
 }
 
-.mt-neg-2 {
-    margin-top: -480px;
-}
 .mt-neg-1 {
-    margin-top: -150px;
+    margin-top: -48px;
 }
 .full-width {
     padding: 50px 0px 50px 0px;
@@ -331,15 +328,15 @@ section {
 }
 .fb {
 color: #2180AE;
-font-size: 4vw;
+font-size: 10vw;
 }
 .insta {
 color: #A663B9;
-font-size: 4vw;
+font-size: 10vw;
 }
 .twitter {
 color: #21AEAB;
-font-size: 4vw;
+font-size: 10vw;
 }
 
 .speech-bubble-text {
@@ -349,8 +346,8 @@ font-size: 4vw;
 
 .time {
     position: absolute;
-    top: 16px;
-    font-size: 3.5vw;
+    top: 20%;
+    font-size: 7vw;
     color: #A663B9;
     text-align: center;
 }
@@ -359,13 +356,13 @@ font-size: 4vw;
     position: relative;
     z-index: 9999;
     mix-blend-mode: multiply;
-    width: 500px;
+    width: 80vw;
     height: auto;
 }
 
 .speech-green {
     margin-left: -300px;
-    width: 500px;
+    width: 80vw;
     height: auto;
 }
 
@@ -415,13 +412,13 @@ font-size: 4vw;
 
 .question-h2 {
     text-align: center;
-    font-size: 5vw;
+    font-size: 20vw;
     color: #2180AE;
 }
 
 .question-h3 {
     text-align: center;
-    font-size: 2vw;
+    font-size: 5vw;
 }
 
 .numbers {
@@ -439,13 +436,15 @@ font-size: 4vw;
     z-index: 99999;
 }
 .speech-number {
-    font-size: 6vw;
+    font-size: 9vw;
     color: white;
+    margin-left: 20%;
 }
 .speech-text {
-    font-size: 1.5vw;
+    font-size: 3vw;
     color: white;
     text-align: center;
+    margin-left: 20%;
 }
 .speech-dark {
     position: absolute;
@@ -463,7 +462,7 @@ font-size: 4vw;
 }
 .town-text {
     position: absolute;
-    right: 31px;
+    right: 55px;
     top: 122px;
     text-align: center;
 }
@@ -498,7 +497,7 @@ font-size: 4vw;
     padding-top: 10px;
 }
 .social-h3 {
-    font-size: 3vw;
+    font-size: 5vw;
 }
 
 .site-icons {
@@ -549,6 +548,10 @@ font-size: 4vw;
     /* animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335); */
 }
 
+.scratching-man {
+    flex-wrap: wrap;
+}
+
 @keyframes map {
     from {
       transform: translateY(-20px);
@@ -563,12 +566,42 @@ font-size: 4vw;
 
 
 
- 
+.time-row  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 600px) { 
+    .time-row  {
+        align-items: center;
+        justify-content: center
+    }
+    .time-row .col {
+        margin-top: 20px;
+    }
+    .time {
+        font-size: 9vw;
+    }
+    .speech-dark {
+        font-size: 4vw;
+    }
+
+
+}
  @media screen and (max-width: 400px) { 
     p {
         font-size: 0.8rem;
     }
 
+    h3 {
+        font-size: 5vw;
+    }
     .tv {
         margin: 0 auto;
     }
@@ -582,18 +615,62 @@ font-size: 4vw;
     }
 
     .numbers {
-        font-size: 32px;
+        font-size: 42px;
     }
 
     .speech-bubble-text {
         font-size: 12px;
     }
+
+
+    .speech-number {
+        font-size: 42px;
+    }
+    .speech-text {
+        font-size: 12px;
+    }
+
+    .social-h3 {
+        font-size: 8vw;
+    }
+    .fb {
+    font-size: 15vw;
+    }
+    .insta {
+    font-size: 15vw;
+    }
+    .twitter {
+    font-size: 15vw;
+    }
+
+    .town-text {
+        position: initial;
+    }
+
+    .town-text h3 {
+        font-size: 24px;
+    }
+
+    .time-row  {
+        align-items: center;
+        justify-content: center
+    }
+    .time-row .col {
+        margin-top: 20px;
+    }
+    .time {
+        font-size: 15vw;
+    }
+    .speech-dark {
+        font-size: 7vw;
+    }
+    .survey-footnote {
+        font-size: 2vw;
+        color: #045775;
+        margin-right: 0;
+        margin-top: 50px;
+    }
+
 } 
-
-
-
-
-
-
 
 

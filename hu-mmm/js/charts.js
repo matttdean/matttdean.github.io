@@ -240,7 +240,7 @@ var charts = [
 	chart5Data,
 	chart6Data
 ];
-
+[[[[[[[[[[[[[[['']]]]]]]]]]]]]]]
 var chartPercentage1 = document.getElementById("percent1");
 var chartPercentage2 = document.getElementById("percent2");
 var chartPercentage3 = document.getElementById("percent3");

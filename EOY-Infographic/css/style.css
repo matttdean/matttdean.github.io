@@ -57,6 +57,23 @@ h2 {
     font-weight: 500;
     color: #2180AE;
 }
+
+.dream-team img {
+    width: 220px;
+}
+
+@media screen and (max-width: 450px) { 
+    .dream-team img {
+        width: 100px;
+    }
+}
+
+
+.titles {
+    width: 100%;
+    max-width: 600px;
+}
+
 .condition {
     font-weight: 500;
     color: #2180AE;
@@ -89,16 +106,19 @@ h2 {
     color: #2180AE;
     text-align: center;
 }
+
 .tv-number {
 font-size: 8vw;
 }
 .tv-text {
-    font-size: 3.5vw;
+    font-size: 2vw;
 }
 .tv-info {
-    font-size: 6vw;
+    font-size: 5vw;
     color: #FFE986;
 }
+
+
 
 .tv-footnote {
     font-size: 2.5vw;
@@ -120,13 +140,31 @@ font-size: 8vw;
     margin-right: -53px;
     margin-top: 35px;
 }
-.engagement img {
-    width: 100%;
+
+.engament {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
 .engagement h1 {
     position: absolute;
-    top: 45px;
+    margin-top: 10px;
 }
+
+.engagement img {
+    position: absolute;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* @media screen and (max-width: 400px) { 
+    .engagement h1 {
+        position: absolute;
+        top: 70px;
+    }
+} */
 .caregiver {
     font-size: 9rem;
     color: #2180AE;
@@ -260,6 +298,12 @@ section {
 
 .tv {
     padding: 10px 50px 10px 50px;
+}
+.tv-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .mt-neg-2 {
@@ -511,12 +555,7 @@ font-size: 4rem;
 
 
 
-@media screen and (max-width: 500px) { 
-    .engagement h1 {
-        position: absolute;
-        top: 70px;
-    }
-}
+
 
 
  

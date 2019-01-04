@@ -29,14 +29,14 @@ a:hover {
 }
 p {
     text-align: center;
-    font-size: 3vw;
+    font-size: 1rem;
     line-height: 6vw;
     letter-spacing: 0.02rem;
     font-weight: 300;
 }
 h1 {
     font-family: 'Walter Turncoat', cursive;
-    font-size: 5vw;
+    font-size: 7vw;
     color:white;
     line-height: 1;
     text-align: center;
@@ -58,7 +58,6 @@ h2 {
 }
 
 .dream-team img {
-    position: absolute;
     width: 30vw;
     max-width: 220px;
 }
@@ -82,7 +81,7 @@ h2 {
     color: #2180AE;
 }
 .advocates {
-    margin-top: 24px;
+    top: 60%;
     font-size: 7vw;
 }
 .dark {
@@ -126,8 +125,6 @@ font-size: 8vw;
 .tv-footnote {
     font-size: 2.5vw;
     color: #21AEAB;
-    margin-bottom: 18px;
-    margin-top: -10px;
 }
 
 .survey-footnote {
@@ -156,7 +153,6 @@ font-size: 8vw;
 }
 
 .engagement img {
-    position: absolute;
     width: 100%;
     max-width: 600px;
 }
@@ -216,6 +212,7 @@ h3 {
 }
 section {
     padding: 20px 0px 50px 0px;
+    overflow-x: hidden;
 }
 
 #s1 {
@@ -224,7 +221,7 @@ section {
 }
 
 .s1-h3 {
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     font-size: 4vw;
 }
 
@@ -260,7 +257,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    margin: 16px auto;
     flex-wrap: nowrap !important;
 }
 
@@ -299,13 +296,14 @@ section {
 }
 
 .tv {
-    padding: 10px 50px 10px 50px;
+    margin: 16px auto;
 }
 .tv-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 40px 0;
 }
 
 .tv-container img {
@@ -566,3 +564,36 @@ font-size: 4vw;
 
 
  
+ @media screen and (max-width: 400px) { 
+    p {
+        font-size: 0.8rem;
+    }
+
+    .tv {
+        margin: 0 auto;
+    }
+
+    .engagement h1 {
+        margin-top: 8px;
+    }
+
+    .speech-bubble-m {
+        margin-left: -30px;
+    }
+
+    .numbers {
+        font-size: 32px;
+    }
+
+    .speech-bubble-text {
+        font-size: 12px;
+    }
+} 
+
+
+
+
+
+
+
+

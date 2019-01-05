@@ -120,7 +120,7 @@ h2 {
 font-size: 8vw;
 }
 .tv-text {
-    font-size: 2vw;
+    font-size: 4vw;
 }
 .tv-info {
     font-size: 5vw;
@@ -130,7 +130,7 @@ font-size: 8vw;
 
 
 .tv-footnote {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     color: #21AEAB;
 }
 
@@ -141,9 +141,8 @@ font-size: 8vw;
     margin-top: 85px;
 }
 .medicine-footnote {
-    font-size: 1vw;
+    font-size: 4vw;
     color: #045775;
-    margin-right: -53px;
     margin-top: 35px;
 }
 
@@ -213,7 +212,7 @@ font-size: 8vw;
 
 h3 {
     font-family: 'Walter Turncoat', cursive;
-    font-size: 3vw;
+    font-size: 5vw;
     line-height: 1;
     text-align: center;
 }
@@ -477,20 +476,23 @@ font-size: 10vw;
 }
 .survey-content {
     position: absolute;
-    top: 100px;
-    width: 50%;
+    top: 29px;
+    width: 60%;
     margin-left: -17px;
 }
+.survey-content h2{
+    font-size: 11vw;
+}
+
 .chart {
     position: absolute;
     color: #002E3B;
     font-size: 7vw;
-    top: 54px;
 }
 .doctors {
     position: absolute;
     color: #002E3B;
-    bottom: 36px;
+    bottom: 37%;
     font-size: 8vw;
 }
 
@@ -499,7 +501,7 @@ font-size: 10vw;
 }
 
 .time-h3 {
-    font-size: 3vw;
+    font-size: 5vw;
     padding-top: 10px;
 }
 .social-h3 {
@@ -548,6 +550,7 @@ font-size: 10vw;
 .map {
     padding-bottom: 40px;
     animation: map;
+    width: 80vw;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -582,6 +585,17 @@ font-size: 10vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+.stats img {
+    width: 60vw;
+    max-width: 200px;
 }
 
 
@@ -686,10 +700,11 @@ font-size: 10vw;
         font-size: 7vw;
     }
     .survey-footnote {
-        font-size: 2vw;
+        font-size: 5vw;
         color: #045775;
-        margin-right: 0;
-        margin-top: 50px;
+        margin-right: -40px;
+        position: absolute;
+        top: 225px;
     }
     .s1-h3 {
         margin-top: 0px;
@@ -711,6 +726,26 @@ font-size: 10vw;
     .new-site-icons img {
         width: 14vw;
         margin: 5px;
+    }
+    .time-h3 {
+        font-size: 8vw;
+        padding-top: 10px;
+    }
+    .question-h3 {
+        font-size: 8vw;
+        margin: 20px 0;
+    }
+    .town-bg {
+        height: 250px;
+    }
+    .survey-content {
+        top: auto;
+    }
+    .survey {
+        font-size: 8vw;
+    }
+    .s4-h3 {
+        font-size: 7vw;
     }
 } 
 

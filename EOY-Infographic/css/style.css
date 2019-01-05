@@ -58,8 +58,14 @@ h2 {
     color: #2180AE;
 }
 
+.dream-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .dream-team img {
-    width: 30vw;
+    width: 40vw;
     max-width: 220px;
 }
 .dream-team h2 {
@@ -82,7 +88,7 @@ h2 {
     color: #2180AE;
 }
 .advocates {
-    top: 60%;
+    top: 47%;
     font-size: 7vw;
 }
 .dark {
@@ -258,7 +264,7 @@ section {
     justify-content: center;
     align-items: center;
     margin: 16px auto;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .col-3, .col, .col-4, .col-5, .col-6 {
@@ -504,9 +510,10 @@ font-size: 10vw;
     display: flex;
     flex-direction: row;
     width: 80vw;
+    flex-wrap: wrap;
 }
 .site-icons img {
-    width: 8vw;
+    width: 7vw;
     margin: 0 5px 0 5px;
     transition: 1s;
     opacity: 0.8;
@@ -522,11 +529,12 @@ font-size: 10vw;
     display: flex;
     flex-direction: row;
     width: 80vw;
+    flex-wrap: wrap;
 
 }
 .new-site-icons img {
     width: 14vw;
-    margin: 0 4px 0 4px;
+    margin: 5px;
     transition: 1s;
     opacity: 0.8;
     transform: scale(1)
@@ -598,15 +606,27 @@ font-size: 10vw;
     p {
         font-size: 1rem;
         line-height: 9vw;
+        padding: 5px;
     }
-
+    h2 {
+        font-size: 14vw;
+    }
     h3 {
         font-size: 5vw;
     }
+
     .tv {
         margin: 0 auto;
     }
-
+    .tv-number {
+        font-size: 12vw;
+    }
+    .tv-text {
+        font-size: 5vw;
+    }
+    .tv-footnote {
+        font-size: 4vw;
+    }
     .engagement h1 {
         margin-top: 8px;
     }
@@ -620,7 +640,7 @@ font-size: 10vw;
     }
 
     .speech-bubble-text {
-        font-size: 12px;
+        font-size: 7vw;
     }
 
 
@@ -671,7 +691,27 @@ font-size: 10vw;
         margin-right: 0;
         margin-top: 50px;
     }
-
+    .s1-h3 {
+        margin-top: 0px;
+        font-size: 8vw;
+    }
+    .advocates {
+        top: 48%;
+        font-size: 16vw;
+    }
+    .dream-team img {
+        width: 60vw;
+        max-width: 220px;
+        margin: 30px;
+    }
+    .site-icons img {
+        width: 13vw;
+        margin: 5px;
+    }
+    .new-site-icons img {
+        width: 14vw;
+        margin: 5px;
+    }
 } 
 
 

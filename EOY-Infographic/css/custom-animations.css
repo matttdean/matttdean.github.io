@@ -26,14 +26,14 @@
 	}
 
 	.effect-paper {
-		width: 70vw;
-		height: 500px;
+		width: 85vw;
+		height: 700px;
     transition-delay: 3s;
 	}
 
 	.effect-paper.in {
-		width: 70vw;
-		height: 500px;
+		width: 85vw;
+		height: 700px;
 	}
 	.effect-fade {
 	  opacity: 0;

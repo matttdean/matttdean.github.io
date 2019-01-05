@@ -438,12 +438,12 @@ font-size: 10vw;
     z-index: 99999;
 }
 .speech-number {
-    font-size: 9vw;
+    font-size: 13vw;
     color: white;
     margin-left: 20%;
 }
 .speech-text {
-    font-size: 3vw;
+    font-size: 4vw;
     color: white;
     text-align: center;
     margin-left: 20%;

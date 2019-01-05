@@ -14,14 +14,14 @@
 
 
 	.effect-poll {
-		width: 0px;
-    height: 270px;
-		opacity: 0;
+		width: 160px;
+    height: 150px;
+		opacity: 1;
 	}
 
 	.effect-poll.in {
-		width: 280px;
-    height: 270px;
+		width: 160px;
+    height: 150px;
 		opacity: 1;
 	}
 

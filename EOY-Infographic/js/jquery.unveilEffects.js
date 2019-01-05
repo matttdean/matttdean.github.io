@@ -8,7 +8,7 @@
 
 !(function($) {
  
-  if ($(window).width() > 2000) {
+  if ($(window).width() > 20) {
 
   //-------------------------------
   // Plugin definition

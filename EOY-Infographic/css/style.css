@@ -140,6 +140,8 @@ font-size: 8vw;
 .tv-footnote {
     font-size: 3.5vw;
     color: #21AEAB;
+    width: 90vw;
+    text-align: center !important;
 }
 
 .medicine-footnote {
@@ -454,6 +456,7 @@ font-size: 10vw;
     text-align: center;
     left: 55px;
     font-size: 4vw;
+    width: 20vw;
 }
 .town-bg {
     background-image: url("../img/town.svg");
@@ -576,9 +579,18 @@ font-size: 10vw;
 
 
 
+.woman {
+    width: 20vw;
+    margin-left: 80px;
+}
 
+.bubble {
+    width: 60vw;
+    position: absolute;
+}
+.small-dark-bubble {
 
-
+} 
 .time-row  {
     display: flex;
     flex-direction: row;
@@ -611,10 +623,17 @@ font-size: 10vw;
     text-align: right;
 }
 
+.time-boxes {
+    display: flex;
+    flex-direction: row;
+}
 
 
-
-
+@media screen and (max-width: 609px) { 
+    .speech-dark {
+        left: 35%;
+    }
+}
 
 @media screen and (max-width: 600px) { 
     .time-row  {
@@ -712,7 +731,11 @@ font-size: 10vw;
         font-size: 15vw;
     }
     .speech-dark {
-        font-size: 7vw;
+        font-size: 9vw;
+        position: relative;
+        left: auto;
+        width: 80vw;
+        color: #002E3B;
     }
    
     .s1-h3 {
@@ -770,6 +793,17 @@ font-size: 10vw;
     .doctors {
         font-size: 15vw;
     }
+    .woman {
+        display: none;
+    }
+    
+    .bubble {
+        position: relative;
+        width: 100vw;
+    }
+    .small-dark-bubble {
+        display: none;
+    } 
 } 
 
 

@@ -34,6 +34,7 @@ p {
     letter-spacing: 0.02rem;
     font-weight: 300;
     padding: 20px;
+    width: 90vw;
 }
 h1 {
     font-family: 'Walter Turncoat', cursive;
@@ -76,6 +77,7 @@ h3 {
 }
 .dream-team h2 {
    position: absolute; 
+   left: 43%;
 }
 /* @media screen and (max-width: 450px) { 
     .dream-team img {
@@ -160,6 +162,7 @@ font-size: 8vw;
 .engagement h1 {
     position: absolute;
     top: 28%;
+    left: 24%;
 }
 
 .engagement img {
@@ -313,8 +316,9 @@ section {
 
 .tv-container img {
     width: 90vw;
-    max-width: 500px;
     position: absolute;
+    top: 0%;
+    left: 3%;
 }
 
 .mt-neg-1 {

@@ -705,6 +705,12 @@ font-size: 10vw;
     }
 
 }
+
+@media screen and (max-width: 475px) { 
+    .tv-container {
+        padding: 16px 0;
+    }
+}
  @media screen and (max-width: 400px) { 
     p {
         font-size: 1rem;
@@ -820,6 +826,7 @@ font-size: 10vw;
     .question-h3 {
         font-size: 8vw;
         margin: 20px 0;
+        width: 80vw;
     }
     .town-bg {
         height: 250px;
@@ -831,7 +838,7 @@ font-size: 10vw;
     }
     .s4-h3 {
         font-size: 7vw;
- 
+        width: 80vw;
     }
     .speech-blue {
         margin-right: -220px;
@@ -859,6 +866,17 @@ font-size: 10vw;
     .small-dark-bubble {
         display: none;
     } 
+    .tv-container {
+        padding: 16px 0;
+    }
+    .medicine-footnote {
+        width: 80vw;
+        text-align: center !important;
+    }
+    .title-1 {
+        top: 22%;
+        left: 1%;
+    }
 } 
 
 

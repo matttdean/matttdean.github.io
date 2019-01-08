@@ -272,6 +272,7 @@ section {
     flex-wrap: wrap;
     display: -ms-flexbox;
     -ms-flex-wrap: wrap;
+    position: relative;
 }
 
 .col-3, .col, .col-4, .col-5, .col-6 {
@@ -472,8 +473,7 @@ font-size: 10vw;
 .speech-bubble-m {
     position: absolute;
     top: 10%;
-    left: 3%;
-    width: 32vw;
+    left: 18%;
 }
 
 .speech-bubble-m h2 {
@@ -486,6 +486,7 @@ font-size: 10vw;
     position: absolute;
     z-index: 99999;
     left: 0;
+    top: 26%;
 }
 .speech-number {
     font-size: 13vw;
@@ -860,3 +861,10 @@ font-size: 10vw;
 } 
 
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    .bubble {
+        margin-left: 100px;
+    }
+
+}

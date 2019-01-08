@@ -266,6 +266,8 @@ section {
     align-items: center;
     margin: 16px auto;
     flex-wrap: wrap;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
 }
 
 .col-3, .col, .col-4, .col-5, .col-6 {
@@ -274,6 +276,12 @@ section {
     justify-content: center;
     align-items: center;
     position: relative;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
 }
 
 .plane-1 {

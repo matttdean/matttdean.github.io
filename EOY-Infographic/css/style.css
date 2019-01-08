@@ -110,6 +110,7 @@ h3 {
 .purple {
     color: #A663B9;
     text-align: center;
+    width: 90vw;
 }
 .blue-green {
     color: #21AEAB;
@@ -152,6 +153,7 @@ font-size: 8vw;
     font-size: 4vw;
     color: #045775;
     margin-top: 35px;
+    width: 40vw;
 }
 
 .engagement {
@@ -286,6 +288,25 @@ section {
     max-width: 100%;
 }
 
+.title-1 {
+    position: absolute;
+    top: 24%;
+    left: 4%;
+    width: 90vw;
+}
+.title-3{
+    position: absolute;
+    top: 28%;
+    left: 4%;
+    width: 90vw;
+}
+
+.title-4 {
+    position: absolute;
+    top: 33%;
+    left: 4%;
+    width: 90vw;
+}
 .plane-1 {
     position: absolute;
     top: -8px;
@@ -449,6 +470,7 @@ font-size: 10vw;
 }
 
 .speech-bubble-m {
+    position: absolute;
     top: 10%;
     left: 3%;
     width: 32vw;
@@ -515,16 +537,20 @@ font-size: 10vw;
     position: absolute;
     color: #002E3B;
     font-size: 7vw;
+    left: 37%;
+    top: 24%;
 }
 .doctors {
     position: absolute;
     color: #002E3B;
     bottom: 37%;
     font-size: 8vw;
+    left: 22%;
 }
 
 .s4-h3 {
     font-size: 4vw;
+    width: 40vw;
 }
 
 .time-h3 {
@@ -803,6 +829,7 @@ font-size: 10vw;
     }
     .s4-h3 {
         font-size: 7vw;
+ 
     }
     .speech-blue {
         margin-right: -220px;

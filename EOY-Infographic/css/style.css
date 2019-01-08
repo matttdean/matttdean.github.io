@@ -436,6 +436,7 @@ font-size: 10vw;
 .question-h3 {
     text-align: center;
     font-size: 5vw;
+    width: 45vw;
 }
 
 .numbers {
@@ -529,7 +530,8 @@ font-size: 10vw;
     flex-wrap: wrap;
 }
 .site-icons img {
-    width: 9vw;
+    width: 60px;
+    height: 60px;
     margin: 5px;
     transition: 1s;
     opacity: 0.8;
@@ -550,7 +552,8 @@ font-size: 10vw;
 
 }
 .new-site-icons img {
-    width: 14vw;
+    width: 120px;
+    height: 120px;
     margin: 5px;
     transition: 1s;
     opacity: 0.8;
@@ -592,13 +595,11 @@ font-size: 10vw;
 
 
 .woman {
-    width: 20vw;
-    margin-left: 80px;
+    width: 15vw;
 }
 
 .bubble {
     width: 60vw;
-    position: absolute;
 }
 .small-dark-bubble {
   width: 38vw;
@@ -624,7 +625,6 @@ font-size: 10vw;
     max-width: 200px;
 }
 
-
 .survey-footnote {
     font-size: 4.5vw;
     color: #045775;
@@ -638,6 +638,7 @@ font-size: 10vw;
 .time-boxes {
     display: flex;
     flex-direction: row;
+    width: 300px;
 }
 
 

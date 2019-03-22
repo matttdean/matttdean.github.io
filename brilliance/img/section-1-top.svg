@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400px" height="320px" viewBox="0 0 1400 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>section-1-top</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1404" height="346"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LP-full-desktop" transform="translate(0.000000, -103.000000)">
+            <g id="section-1-top" transform="translate(0.000000, 103.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Rectangle"></g>
+                <path d="M-41.5308506,271.870548 C373.16305,475.221994 1068.44105,-38.8942175 1455.46888,77.0731906 C1713.48743,154.384796 1694.93217,59.0270658 1399.80311,-209 L-0.0432174469,-209 C-304.16424,-23.9872647 -317.993451,136.302918 -41.5308506,271.870548 Z" id="Path" fill-opacity="0.7" fill="#002590" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <path d="M-41.7564064,165.926423 C390.5274,368.780509 988.928391,-63.3410381 1457.34887,61.5228943 C1769.62919,144.765516 1750.43943,37.9245511 1399.77957,-259 L-0.26295841,-259 C-316.114461,-110.951776 -329.945611,30.6903647 -41.7564064,165.926423 Z" id="Path-Copy" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

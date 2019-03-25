@@ -1,8 +1,18 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     overflow-x: hidden;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    background: #fff;
 }
+
+.nav-menu {
+top: 10px;
+}
+
 
 .row {
     overflow-x: hidden;
@@ -13,7 +23,24 @@ body {
     flex-basis: 0;
     -ms-flex-positive: 0;
     flex-grow: 0;
+}
 
+.col-3 {
+    max-width: none;
+}
+
+.progress {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100vw;
+    border-radius: 0px;
+    height: 10px;
+    background-color: #FFF;
+}
+.progress-bar {
+    background-color: #FFC633;
+    transition: 0.2s;
 }
 
 .lined-box {
@@ -21,13 +48,16 @@ body {
     border-top: 3px solid #FFF;
     height: 47px;
     width: 100px;
-    margin: 40px 60px 0px 60px;
+    margin: 60px;
     border-bottom: 3px solid #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section {
     min-width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 footer {
     width: 100vw;
@@ -67,6 +97,10 @@ footer {
     color: #0035B0;
 }
 
+#sites .container-fluid{
+    margin-top: 100px;
+}
+
 #hands {
     background-color: #FFC633;
     position: relative;
@@ -85,9 +119,6 @@ footer {
     text-align: center;
 }
 
-#hands img {
-    z-index: 10;
-}
 
 #content {
     background-color: #FF6868;
@@ -132,10 +163,77 @@ footer {
 #bottom .container-fluid .row {
     margin-top: 80px;
 }
+
+@media screen and (max-width: 600px) {
+
+    #discover {
+        height: 700px;
+        overflow: hidden;
+    }
+
+    #sites {
+        overflow: hidden;
+    }
+
+    #discover h1 {
+        font-size: 2.5rem;
+    }
+
+    #hands {
+        height: 475px;
+        overflow: hidden;
+    }
+
+    #hands h1 {
+        font-size: 2.5rem;
+    }
+    #hands h3 {
+        font-size: 1.5rem;
+    }
+
+    #content {
+        height: 700px;
+        overflow: hidden;
+    }
+
+    #content h1 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    #content h3 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #trophy {
+        height: 500px;
+        padding-top: 50px;
+        overflow: hidden;
+    }
+
+    #trophy h3 {
+        font-size: 1.5rem;
+    }
+
+    #bottom {
+        overflow: hidden;
+        height: 280px;
+        margin-top: -5px;
+    }
+
+    #bottom h1 {
+        font-size: 2rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+}
 .s1-top-bg {
    position: absolute;
    top: 0;
-    width: 100%;
+    width: 102vw;
 }
 
 @media screen and (max-width: 600px) {
@@ -146,9 +244,10 @@ footer {
 }
 
 .s1-bottom-bg {
-    width: 100%;
+    width: 102vw;
     position: absolute;
     bottom: 0;
+    margin-bottom: -1px;
 }
 
 @media screen and (max-width: 600px) {
@@ -162,6 +261,7 @@ footer {
     width: 100%;
     position: absolute;
     bottom: 0;
+    margin-bottom: -5px;
 }
 
 @media screen and (max-width: 600px) {
@@ -183,7 +283,8 @@ footer {
     .s2-bottom-people {
         position: absolute;
         bottom: 0;
-        width: 70vw;
+        width: 100vw;
+        margin-left: 12px;
     }
 }
 
@@ -203,6 +304,26 @@ footer {
     transform: scale(1.05);
 }
 
+.site-btn {
+    background-color: #20AEAB;
+    color: #fff;
+    border-radius: 30px;
+    height: 50px;
+    transition: .5s;
+    margin-right: 10px;
+    padding: 0px 25px 0px 25px;
+    animation-name: bounce;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+.site-btn:hover {
+    background-color: rgb(13, 110, 122);
+    color: #fff;
+}
+
 .discover-btn {
     align-self: center;
     background-color: #FF6868;
@@ -215,11 +336,15 @@ footer {
     margin-right: 10px;
     padding: 0px 25px 0px 25px;
     margin-top: 25px;
+    animation-name: bounce;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
 }
 .discover-btn:hover {
     background-color: rgb(207, 45, 72);
     color: #fff;
-    transform: scale(1.05);
 }
 
 .phone {
@@ -228,9 +353,31 @@ footer {
     margin-top: -90px;
 }
 
+.hand-img {
+    z-index: 10;
+    width: 80vw;
+    align-self: center;
+    max-width: 1200px;
+}
+
+.conversation-img {
+    z-index: 10;
+    width: 70vw;
+    align-self: center;
+    max-width: 1200px;
+}
+
+.trophy-img {
+    z-index: 10;
+    width: 60vw;
+    align-self: center;
+    max-width: 800px;
+}
+
+
 @media screen and (max-width: 600px) {
     .phone {
-        width: 95vw;
+        width: 75vw;
         height: auto;
         margin-top: -5px;
     }
@@ -241,7 +388,7 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     margin: 50px 0px 50px 0px;
-    width: 800px;
+    width: 900px;
 }
 
 .avatars img {
@@ -254,11 +401,47 @@ footer {
 .avatars img:hover {
     transform: scale(1.1)
 }
+
+.avatars-mobile {
+    display: none;
+}
+
+.avatars-mobile img {
+    padding: 3px;
+    width: 120px;
+    height: 120px;
+}
+
+@media screen and (max-width: 600px) {
+    .avatars {
+        display: none;
+
+    }
+    
+    .avatars-mobile {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px 0px 10px 0px;
+    }
+    
+}
+
 #hidden-container {
     display: none;
 }
 
 #hidden-sites {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#hidden-container-mobile {
+    display: none;
+}
+
+#hidden-sites-mobile {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -277,6 +460,59 @@ footer {
 }
 
 
+.nav-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .desk {
+       display: none; 
+    }
+
+    .nav-mobile {
+        width: 100vw;
+        height: 70px;
+        position: fixed;
+        bottom: 0;
+        background-color: white;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-mobile .btn {
+        background-color: #FF6868;
+        color: #fff;
+        border-radius: 30px;
+        height: 50px;
+        transition: .5s;
+        padding: 0px 25px 0px 25px;
+    }
+
+    .m-bottom {
+        margin-bottom: 250px;
+    }
+
+
+    .hand-text {
+        margin-top: 40px;
+        margin-bottom: 45px;
+    }
+
+    .mtb-5 {
+        margin: 50px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 
 .arrow {
     margin: 50px 0px;
@@ -290,4 +526,29 @@ footer {
 @keyframes arrow {
     from {transform: translateY(-8px)}
     to {transform: translateY(8px)}
+}
+
+@keyframes bounce {
+    from {transform: scale(1)}
+    to {transform: scale(1.03)}
+}
+
+
+
+@media (hover:none), 
+(hover:on-demand) {
+
+    .cta:hover {
+        background-color: #20AEAB;
+        color: #fff;
+    }
+
+    .discover-btn:hover {
+        background-color: #FF6868;
+        color: #fff;
+    }
+
+    .avatars img:hover {
+        transform: scale(1)
+    }
 }

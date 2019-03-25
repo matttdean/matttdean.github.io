@@ -17,10 +17,17 @@
 
   <body>
     <!-- navigation -->
-    <nav class="navbar sticky-top navbar-light bg-white">
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 0%;"></div>
+    </div>
+    <nav class="navbar sticky-top navbar-light bg-white nav-menu">
       <a class="navbar-brand" href="#"> <img src="img/health-union.png" width="230px" height="auto" alt=""></a>
-      <button class="btn cta my-2 my-sm-0">Discover partnership</button>
+      <button class="btn cta my-2 my-sm-0 desk">Discover partnership</button>
     </nav>
+    
+    <div class="nav-mobile" style="background-color: transparent;">
+      <button class="btn">Discover partnership</button>
+    </div>
 
     <!-- section 1 -->
     <section id="discover">
@@ -34,20 +41,21 @@
               <div class="row justify-content-center">
                   <h1>Discover...</h1>
               </div>
-              <div class="row justify-content-center">
+              <a href="#sites"><div class="row justify-content-center">
                     <img class="arrow" src="img/down-arrow.svg" alt="">
-                </div>
+                </div></a>
       </div>
     </section>
     <!-- section 2 -->
     <section id="sites">
-      <img class="s2-bottom-bg" src="img/section-2-bottom-back.svg" alt="">
+      <img class="s1-bottom-bg" src="img/section-2-bottom-back.svg" alt="">
       <img class="s2-bottom-people" src="img/section-2-bottom-people.svg" alt="">
-      <img class="s2-bottom-bg" src="img/section-2-bottom-front.svg" alt="">
+      <img class="s2-bottom-people" src="img/wind.gif" alt="">
+      <img class="s1-bottom-bg" src="img/section-2-bottom-front.svg" alt="">
 
       <div class="container-fluid">
         <div class="row d-flex justify-content-center flex-column">
-            <h1 class="counter" data-counter-time="2000" data-counter-delay="10">21</h1>
+            <h1 class="counter" data-counter-time="800" data-counter-delay="60">21</h1>
             <h3>condition-specific online health communities</h3>
         </div>
         <div class="row d-flex justify-content-center">
@@ -67,7 +75,6 @@
             <img src="img/ABC.svg" alt="">
             <img src="img/BC.svg" alt="">
             <img src="img/E.svg" alt="">
-            <img src="img/RA.svg" alt="">
             <div id="hidden-container">
               <div id="hidden-sites">
                   <img src="img/COPD.svg" alt="">
@@ -78,9 +85,29 @@
               </div>
             </div>
           </div>
+          <div class="avatars-mobile">
+            <img src="img/LC.svg" alt="">
+            <img src="img/MS.svg" alt="">
+            <img src="img/M.svg" alt="">
+            <img src="img/SC.svg" alt="">
+            <img src="img/T2D.svg" alt="">
+            <img src="img/PC.svg" alt="">
+            <img src="img/B.svg" alt="">
+            <img src="img/IBD.svg" alt="">
+            <img src="img/PD.svg" alt="">
+            <div id="hidden-container-mobile">
+              <div id="hidden-sites-mobile">
+                  <img src="img/COPD.svg" alt="">
+                  <img src="img/ABC.svg" alt="">
+                  <img src="img/BC.svg" alt="">
+                  <img src="img/E.svg" alt="">
+                  <img src="img/RA.svg" alt="">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row d-flex justify-content-center m-bottom">
-            <button id="button" class="btn cta">View all communities</button>
+        <div class="row d-flex justify-content-center m-bottom p-3">
+            <button id="button" class="btn site-btn">View all communities</button>
         </div>
 
         
@@ -91,12 +118,12 @@
     <section id="hands">
       <img class="s1-bottom-bg" src="img/section-3-bottom.svg" alt="">
       <div class="container-fluid">
-        <div class="row d-flex justify-content-center flex-column">
+        <div class="row d-flex justify-content-center align-items-center flex-column">
           <div class="hand-text">
-            <h1>11,000,000 +</h1>
+            <h1> <span class="counter" data-counter-time="800" data-counter-delay="60">11,000,000</span>+</h1>
             <h3>people reached every month</h3>
           </div>
-          <img src="img/hands-shaking.svg" alt="">
+          <img class="hand-img" src="img/hands-shaking.gif" alt="">
         </div>
       </div>
     </section>
@@ -107,19 +134,19 @@
       <div class="container-fluid">
         <div class="row d-flex justify-content-center mtb-5">
           <div class="col-3">
-            <h1>5,000</h1>
+            <h1 class="counter" data-counter-time="800" data-counter-delay="60">5,000</h1>
             <h3>unique pieces of content</h3>
           </div>
           <div class="lined-box">
             <h3>drives</h3>
           </div>
           <div class="col-3">
-              <h1>5,000</h1>
-              <h3>unique pieces of content</h3>
+              <h1 class="counter" data-counter-time="800" data-counter-delay="60">550,000</h1>
+              <h3>conversations every year</h3>
             </div>
         </div>
           <div class="row d-flex justify-content-center flex-column">
-            <img src="img/communication-connection.svg" alt="">
+            <img class="conversation-img" src="img/communication-connection.svg" alt="">
           </div>
         </div>
     </section>
@@ -129,7 +156,7 @@
       <img class="s1-bottom-bg" src="img/section-5-bottom.svg" alt="">
       <div class="container-fluid">
         <div class="row d-flex justify-content-center flex-column">
-          <img src="img/trophy.svg" alt="">
+          <img class="trophy-img" src="img/trophy.svg" alt="">
           <h3>Number 1 in Audience Quality, HCP visits and Rx lift*</h3>
           <p>*Multiple 3rd party measurement studies</p>
         </div>
@@ -158,8 +185,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/countUp.min.js" type="module"></script>
-    <script src="js/countUp-jquery.js" type="module"></script>
+    <script src="js/jquery.countup.js"></script>
     <script src="js/scripts.js"></script>
 
   </body>

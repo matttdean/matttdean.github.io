@@ -1,9 +1,40 @@
+
+   // lock scrolling
+   $('html, body').css({
+    overflow: 'hidden',
+    height: '100%'
+    });
+
+function zoomMask(){
+    //animate mask
+    $(".mask").attr('style', 'transform: scale(22);');
+    // restore scrolling
+    $('html, body').css({
+        overflow: 'auto',
+        height: 'auto'
+    });
+  }
+
+  function eraseMask() {
+    $(".mask").attr('style', 'display: none; ');
+  }
+
+  $(function(){
+    setTimeout(zoomMask, 1500);
+    setTimeout(eraseMask, 2500);
+  });
+  
+
+
+
+//show/hide hidden sites
 $(function() {
     $( "#button" ).click(function() {
         $( "#hidden-container" ).toggle(1000);
     });
 });
 
+//show/hide hidden sites for mobile
 $(function() {
     $( "#button" ).click(function() {
         $( "#hidden-container-mobile" ).toggle(1000);
@@ -13,7 +44,6 @@ $(function() {
 
 $('.counter').countUp();
     
-
 $(window).scroll(function () {
     var s = $(window).scrollTop(),
           d = $(document).height(),

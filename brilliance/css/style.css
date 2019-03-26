@@ -368,6 +368,7 @@ footer {
 }
 
 .trophy-img {
+    margin-top: 100px;
     z-index: 10;
     width: 60vw;
     align-self: center;
@@ -380,6 +381,11 @@ footer {
         width: 75vw;
         height: auto;
         margin-top: -5px;
+    }
+
+    .trophy-img {
+        margin-top: 0px;
+        width: 80vw;
     }
 }
 
@@ -551,4 +557,11 @@ footer {
     .avatars img:hover {
         transform: scale(1)
     }
+}
+
+.mask {
+    position: absolute;
+    z-index: 99999999;
+    width: 100vw;
+    transition: 2.2s;
 }

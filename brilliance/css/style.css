@@ -124,7 +124,7 @@ footer {
     background-color: #FF6868;
     position: relative;
     color: #FFF;
-    height: 1000px;
+    height: 1100px;
     display: flex;
     justify-content: center;
 }
@@ -564,4 +564,12 @@ footer {
     z-index: 99999999;
     width: 100vw;
     transition: 2.2s;
+}
+
+@media screen and (max-width: 600px) { 
+
+    .mask {
+        width: 300vw;
+        transform: translateX(-33%);
+    }
 }

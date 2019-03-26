@@ -7,7 +7,12 @@
 
 function zoomMask(){
     //animate mask
-    $(".mask").attr('style', 'transform: scale(22);');
+    if ($(window).width() < 600) {
+        $(".mask").attr('style', 'transform: translateX(-33%) scale(22);');
+     }
+     else {
+        $(".mask").attr('style', 'transform: scale(22);');
+     }
     // restore scrolling
     $('html, body').css({
         overflow: 'auto',

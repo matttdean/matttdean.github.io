@@ -10,7 +10,9 @@ body {
 }
 
 .nav-menu {
-top: 10px;
+    top: 10px;
+    position: fixed;
+    width: 100vw;
 }
 
 
@@ -45,14 +47,24 @@ top: 10px;
 
 .lined-box {
     text-align: center;
-    border-top: 3px solid #FFF;
     height: 47px;
     width: 100px;
     margin: 60px;
-    border-bottom: 3px solid #FFF;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.arrow-1 {
+    width: 80px;
+    height: auto;
+}
+
+.arrow-2 {
+    width: 80px;
+    height: auto;
+    transform: rotate(180deg);
 }
 
 section {
@@ -73,10 +85,12 @@ footer {
     position: relative;
     height: 1000px;
     color: #FFF;
+    margin-top: 60px;
 }
 
 #discover h1 {
     font-size: 5rem;
+    margin-top: -12px;
 }
 #sites {
     background-color: #FFF;
@@ -105,7 +119,7 @@ footer {
     background-color: #FFC633;
     position: relative;
     color: #FFF;
-    height: 960px;
+    height: 860px;
     display: flex;
     justify-content: center;
 }
@@ -124,7 +138,7 @@ footer {
     background-color: #FF6868;
     position: relative;
     color: #FFF;
-    height: 1100px;
+    height: 860px;
     display: flex;
     justify-content: center;
 }
@@ -141,7 +155,7 @@ footer {
     background-color: #0035B0;
     position: relative;
     color: #FFF;
-    height: 1000px;
+    height: 800px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -150,7 +164,7 @@ footer {
 #bottom {
     background-color: #FFF;
     position: relative;
-    color: #0035B0;
+    color: #FF6868;
     height: 380px;
     display: flex;
     justify-content: center;
@@ -164,6 +178,29 @@ footer {
     margin-top: 80px;
 }
 
+#bottom button {
+    background-color: #FFF;
+    margin: 20px 0;
+    align-self: center;
+    color: #FF6868;
+    font-size: 2.5rem;
+    border: 5px solid #FF6868;
+    width: 650px;
+    border-radius: 100px;
+    padding: 5px 20px;
+    text-align: center;
+    transition: 0.6s;
+    animation-name: bounce;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+#bottom button:hover {
+    color: #fff;
+    background-color: #FF6868;
+}
 @media screen and (max-width: 600px) {
 
     #discover {
@@ -213,6 +250,8 @@ footer {
 
     #trophy h3 {
         font-size: 1.5rem;
+        width: 90vw;
+        align-self: center;
     }
 
     #bottom {
@@ -229,11 +268,27 @@ footer {
         font-size: 0.8rem;
     }
 
+    .arrow-1 {
+        width: 50px;
+        height: auto;
+        transform: rotate(-90deg);
+    }
+    
+    .arrow-2 {
+        width: 50px;
+        height: auto;
+        transform: rotate(90deg);
+    }
+
+    .lined-box {
+        flex-direction: row;
+    }
+
 }
 .s1-top-bg {
    position: absolute;
    top: 0;
-    width: 102vw;
+   width: 102vw;
 }
 
 @media screen and (max-width: 600px) {
@@ -254,6 +309,10 @@ footer {
     .s1-bottom-bg {
         position: absolute;
         bottom: 0;
+    }
+    #discover .s1-bottom-bg {
+        width: 150vw;
+        z-index: 10;
     }
 }
 
@@ -348,9 +407,9 @@ footer {
 }
 
 .phone {
-    width: auto;
+    width: 35vw;
     height: auto;
-    margin-top: -90px;
+    margin-top: -10px;
 }
 
 .hand-img {
@@ -362,13 +421,12 @@ footer {
 
 .conversation-img {
     z-index: 10;
-    width: 70vw;
+    width: 60vw;
     align-self: center;
     max-width: 1200px;
 }
 
 .trophy-img {
-    margin-top: 100px;
     z-index: 10;
     width: 60vw;
     align-self: center;
@@ -378,13 +436,12 @@ footer {
 
 @media screen and (max-width: 600px) {
     .phone {
-        width: 75vw;
+        width: 93vw;
         height: auto;
-        margin-top: -5px;
+        margin-top: 0px;
     }
 
     .trophy-img {
-        margin-top: 0px;
         width: 80vw;
     }
 }
@@ -404,9 +461,6 @@ footer {
     transition: .5s;
 }
 
-.avatars img:hover {
-    transform: scale(1.1)
-}
 
 .avatars-mobile {
     display: none;
@@ -454,14 +508,14 @@ footer {
 }
 
 .m-bottom {
-    margin-bottom: 600px;
+    margin-bottom: 500px;
 }
 
 .mtb-5 {
-    margin: 50px 0;
+    margin: 0px 0px;
 }
 .hand-text {
-    margin-top: 130px;
+    margin-top: 30px;
     margin-bottom: -150px;
 }
 
@@ -521,7 +575,7 @@ footer {
 
 
 .arrow {
-    margin: 50px 0px;
+    margin: 10px 0px;
     animation-name: arrow;
     animation-duration: .6s;
     animation-timing-function: ease-in;
@@ -572,4 +626,23 @@ footer {
         width: 300vw;
         transform: translateX(-33%);
     }
+}
+
+
+@media screen and (max-width: 650px) { 
+
+    #bottom button {
+        background-color: #FFF;
+        margin: 20px 0;
+        font-size: 1.2rem;
+        border: 3px solid #FF6868;
+        width: 85vw;
+        border-radius: 60px;
+        padding: 5px 5px;
+    }
+
+}
+
+@media screen and (min-width: 600px)  {
+    .mobile-break { display: none; }
 }

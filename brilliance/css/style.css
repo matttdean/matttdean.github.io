@@ -654,6 +654,7 @@ footer {
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    overflow: hidden;
 }
 
 @keyframes arrow {

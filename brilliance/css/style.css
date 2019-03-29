@@ -89,8 +89,8 @@ footer {
 }
 
 #discover h1 {
-    font-size: 5rem;
-    margin-top: -12px;
+    font-size: 3rem;
+    text-align: center;
 }
 #sites {
     background-color: #FFF;
@@ -151,6 +151,27 @@ footer {
     text-align: center;
 }
 
+#relationships {
+    background-color: #FFF;
+    position: relative;
+    color: #0035B0;
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    text-align: center;
+}
+
+#relationships h1 {
+    font-size: 2rem;
+    margin-top: 200px;
+}
+
+#relationships .container-fluid .row {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+}
+
 #trophy {
     background-color: #0035B0;
     position: relative;
@@ -183,9 +204,9 @@ footer {
     margin: 20px 0;
     align-self: center;
     color: #FF6868;
-    font-size: 2.5rem;
+    font-size: 2rem;
     border: 5px solid #FF6868;
-    width: 650px;
+    width: 550px;
     border-radius: 100px;
     padding: 5px 20px;
     text-align: center;
@@ -213,7 +234,7 @@ footer {
     }
 
     #discover h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     #hands {
@@ -252,6 +273,15 @@ footer {
         font-size: 1.5rem;
         width: 90vw;
         align-self: center;
+    }
+
+    #relationships {
+        height: 400px;
+    }
+
+    #relationships h1 {
+        font-size: 1.3rem;
+        margin-top: 50px;
     }
 
     #bottom {
@@ -412,6 +442,13 @@ footer {
     margin-top: -10px;
 }
 
+.community-img {
+    margin-bottom: 150px;
+    width: 60vw;
+    align-self: center;
+    max-width: 1200px;;
+}
+
 .hand-img {
     z-index: 10;
     width: 80vw;
@@ -443,6 +480,13 @@ footer {
 
     .trophy-img {
         width: 80vw;
+    }
+
+    .community-img {
+        margin-bottom: 65px;
+        width: 80vw;
+        align-self: center;
+        max-width: 1200px;
     }
 }
 

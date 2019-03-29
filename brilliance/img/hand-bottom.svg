@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400px" height="211px" viewBox="0 0 1400 211" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1400" height="219"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LP-full-desktop" transform="translate(0.000000, -4285.000000)">
+            <g id="Group-3" transform="translate(0.000000, 4277.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Rectangle"></g>
+                <g id="organic-shapes-copy" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="nonzero">
+                    <g transform="translate(699.500000, 3784.000000) scale(-1, 1) translate(-699.500000, -3784.000000) translate(-318.000000, 8.000000)">
+                        <path d="M1780.38539,45.3828125 C1284.94691,-140.238494 746.25,316.234375 266.943837,134.302526 C-52.5936055,13.0146265 -65.1696868,2477.37822 229.215593,7527.39332 L1803.53788,7407.90231 C2118.39521,2623.30351 2110.67771,169.13035 1780.38539,45.3828125 Z" id="Path-2-Copy" fill-opacity="0.4"></path>
+                        <path d="M1780.31217,105.328054 C1286.79081,-73.7443902 781.029246,349.998502 266.870613,148.90921 C-75.9018086,14.8496821 -88.4778899,2482.54661 229.142369,7552 L1803.46466,7432.50899 C2117.0439,2667.10333 2109.32641,224.709683 1780.31217,105.328054 Z" id="Path-2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

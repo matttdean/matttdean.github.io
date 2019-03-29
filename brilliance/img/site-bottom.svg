@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400px" height="159px" viewBox="0 0 1400 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="294" y="0" width="1454" height="165"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LP-full-desktop" transform="translate(0.000000, -2296.000000)">
+            <g id="Group-5" transform="translate(-324.000000, 2290.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Rectangle"></g>
+                <g id="organic-shapes" mask="url(#mask-2)" fill-rule="nonzero">
+                    <g transform="translate(1009.000000, 3746.500000) scale(-1, 1) translate(-1009.000000, -3746.500000) translate(0.000000, 6.000000)" id="Path-2">
+                        <path d="M1769.31217,62 C1285.76251,-143.390625 749.810508,251.929688 257.289062,28.4921875 C-71.0585681,-120.466146 -84.1074658,2349.36979 218.142369,7438 L1792.46466,7318.50899 C2099.3961,2617.76341 2091.6786,198.927083 1769.31217,62 Z" fill="#FFC633"></path>
+                        <path d="M1769.31217,104 C1285.76251,-101.390625 749.810508,294.929688 257.289062,71.4921875 C-71.0585681,-77.4661458 -84.1074658,2392.36979 218.142369,7481 L1792.46466,7361.50899 C2099.3961,2660.09675 2091.6786,240.927083 1769.31217,104 Z" fill="#FF6868"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

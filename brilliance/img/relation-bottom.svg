@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400px" height="164px" viewBox="0 0 1400 164" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="352" y="0" width="1435" height="176"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LP-full-desktop" transform="translate(0.000000, -5086.000000)">
+            <g id="Group" transform="translate(-352.000000, 5074.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Rectangle"></g>
+                <path d="M282.886497,71.0111473 C795.006962,304.707268 1337.79438,-189.46184 1828.61198,113.707283 C2155.82372,315.820032 2191.44455,737.917604 1935.47449,1380 L185.757231,1357.70677 C-90.9035687,344.112276 -58.5271466,-84.7862664 282.886497,71.0111473 Z" id="Path-3" fill="#0035B0" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

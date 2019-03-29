@@ -111,6 +111,7 @@ footer {
     color: #0035B0;
     display: flex;
     justify-content: center;
+    height: 1400px;
 }
 
 #sites h1 {
@@ -151,9 +152,10 @@ footer {
     background-color: #FF6868;
     position: relative;
     color: #FFF;
-    height: 860px;
+    height: 1000px;
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 
 #content h1 {
@@ -244,6 +246,7 @@ footer {
 
     #sites {
         overflow: hidden;
+        height: 1310px;
     }
 
     #discover h1 {

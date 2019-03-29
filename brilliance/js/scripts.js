@@ -32,19 +32,19 @@ function zoomMask(){
 
 
 
-//show/hide hidden sites
-$(function() {
-    $( "#button" ).click(function() {
-        $( "#hidden-container" ).toggle(1000);
-    });
-});
+// //show/hide hidden sites
+// $(function() {
+//     $( "#button" ).click(function() {
+//         $( "#hidden-container" ).toggle(1000);
+//     });
+// });
 
-//show/hide hidden sites for mobile
-$(function() {
-    $( "#button" ).click(function() {
-        $( "#hidden-container-mobile" ).toggle(1000);
-    });
-});
+// //show/hide hidden sites for mobile
+// $(function() {
+//     $( "#button" ).click(function() {
+//         $( "#hidden-container-mobile" ).toggle(1000);
+//     });
+// });
 
 
 $('.counter').countUp();
@@ -63,6 +63,12 @@ $(window).scroll(function () {
     }
     if (scrollPercent > 95) {
         $(".nav-mobile").attr('style', 'display:none');
+    }
+
+    if (scrollPercent > 95) {
+        $(".nav-menu").attr('style', 'opacity: 0');
+    } else {
+        $(".nav-menu").attr('style', 'opacity: 1');
     }
      $(".progress-bar").attr('style', 'width:' + position + '%');
      

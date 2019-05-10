@@ -454,9 +454,10 @@ footer {
 }
 
 .phone {
-    width: 35vw;
+    width: 45vw;
     height: auto;
     margin-top: -10px;
+    margin-left: -120px;
 }
 
 .community-img {
@@ -493,6 +494,7 @@ footer {
         width: 93vw;
         height: auto;
         margin-top: 0px;
+        margin-left: -75px;
     }
 
     .trophy-img {

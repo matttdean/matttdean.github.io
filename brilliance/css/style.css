@@ -26,6 +26,7 @@ a:hover {
     position: fixed;
     width: 100vw;
     transition: 0.4s;
+    background-color: #0035B0;
 }
 
 
@@ -44,6 +45,13 @@ a:hover {
     max-width: none;
 }
 
+.headline {
+    z-index: 10;
+    margin-left: -250px;
+    margin-top: -80px;
+    flex-grow: 1;
+}
+
 .progress {
     position: fixed;
     top: 0;
@@ -51,7 +59,7 @@ a:hover {
     width: 100vw;
     border-radius: 0px;
     height: 10px;
-    background-color: #FFF;
+    background-color: #0035B0;
 }
 .progress-bar {
     background-color: #FFC633;
@@ -96,15 +104,34 @@ footer {
 #discover {
     background-color: #0035B0;
     position: relative;
-    height: 1000px;
+    height: 750px;
     color: #FFF;
     margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#discover .container-fluid {
+    max-width: 1600px;
 }
 
 #discover h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
 }
+#discover h2 {
+    display: none;
+}
+
+.phone {
+    width: 60vw;
+    height: auto;
+    margin-top: -20px;
+    margin-left: -165px;
+    max-width: 1000px;
+}
+
+
 #sites {
     background-color: #FFF;
     position: relative;
@@ -127,6 +154,41 @@ footer {
 
 #sites .container-fluid{
     margin-top: 100px;
+}
+
+
+
+@media screen and (max-width: 960px) {
+
+    #discover h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    #discover {
+        height: 430px;
+    }
+    #sites {
+        height: 1070px;
+    }
+
+    #sites .container-fluid {
+        margin-top: 20px;
+    }
+    .phone {
+        width: 60vw;
+        height: auto;
+        margin-top: -20px;
+        margin-left: -100px;
+        max-width: 1000px;
+    }
+    
+    .headline{
+        z-index: 10;
+        margin-left: -100px;
+        margin-top: 0px;
+        flex-grow: 1;
+    }
+
 }
 
 #hands {
@@ -237,6 +299,12 @@ footer {
     color: #fff;
     background-color: #FF6868;
 }
+
+.arrow-box {
+    display: flex;
+}
+
+
 @media screen and (max-width: 600px) {
 
     #discover {
@@ -246,13 +314,25 @@ footer {
 
     #sites {
         overflow: hidden;
-        height: 1310px;
+        height: 1355px;
     }
 
     #discover h1 {
-        font-size: 2rem;
+        display: none;
     }
 
+    #discover h2 {
+        display: flex;
+        font-size: 3rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .headline {
+        z-index: 10;
+        margin-left: 0px;
+        margin-top: -80px;
+    }
     #hands {
         height: 475px;
         overflow: hidden;
@@ -266,7 +346,7 @@ footer {
     }
 
     #content {
-        height: 700px;
+        height: 730px;
         overflow: hidden;
     }
 
@@ -314,6 +394,7 @@ footer {
         font-size: 0.8rem;
     }
 
+
     .arrow-1 {
         width: 50px;
         height: auto;
@@ -329,6 +410,9 @@ footer {
     .lined-box {
         flex-direction: row;
         margin: 25px;
+    }
+    .arrow-box {
+        display: none;
     }
 
 }
@@ -349,7 +433,8 @@ footer {
     width: 102vw;
     position: absolute;
     bottom: 0;
-    margin-bottom: -1px;
+    z-index: 20;
+    margin-bottom: -2px;
 }
 
 @media screen and (max-width: 600px) {
@@ -395,7 +480,7 @@ footer {
 }
 
 .cta {
-    background-color: #20AEAB;
+    background-color: #FF6868;
     color: #fff;
     border-radius: 30px;
     height: 50px;
@@ -453,12 +538,6 @@ footer {
     color: #fff;
 }
 
-.phone {
-    width: 45vw;
-    height: auto;
-    margin-top: -10px;
-    margin-left: -120px;
-}
 
 .community-img {
     margin-bottom: 150px;
@@ -491,10 +570,10 @@ footer {
 
 @media screen and (max-width: 600px) {
     .phone {
-        width: 93vw;
+        width: 140vw;
         height: auto;
-        margin-top: 0px;
-        margin-left: -75px;
+        margin-top: 10px;
+        margin-left: -150px;
     }
 
     .trophy-img {
@@ -518,7 +597,7 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     margin: 50px 0px 50px 0px;
-    width: 90vw;
+
 }
 
 .avatars img {
@@ -653,7 +732,7 @@ footer {
 
 
 .arrow {
-    margin: 10px 0px;
+    margin: 50px 0px;
     animation-name: arrow;
     animation-duration: .6s;
     animation-timing-function: ease-in;
@@ -729,4 +808,8 @@ footer {
 @media screen and (max-width: 600px)  {
     .mobile-break { display: block; }
     .no-mobile-break { display: none; }
+}
+
+.safari-vid {
+    margin-top: 300px;
 }

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1400px" height="152px" viewBox="0 0 1400 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
     <title>section-1-bottom</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <rect id="path-1" x="0" y="0.196975187" width="1432" height="151.803025"></rect>
+        <rect id="path-1" x="0" y="0.292480469" width="1464" height="154"></rect>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="LP-full-desktop" transform="translate(0.000000, -760.000000)">
-            <g id="section-1-bottom" transform="translate(-28.000000, 760.000000)">
+        <g id="LP-full-desktop" transform="translate(0.000000, -766.000000)">
+            <g id="section-1-bottom" transform="translate(-60.000000, 763.000000)">
                 <mask id="mask-2" fill="white">
                     <use xlink:href="#path-1"></use>
                 </mask>
                 <g id="Rectangle"></g>
-                <path d="M1480.31217,38.53125 C999.161242,-117 441.112715,264.565667 -33.1293868,60.359375 C-349.290788,-75.778153 -361.866869,2409.10206 -70.8576306,7515 L1503.46466,7395.50899 C1808.79695,2594.54466 1801.07945,142.21875 1480.31217,38.53125 Z" id="Path-2-Copy" fill="#002896" fill-rule="nonzero" mask="url(#mask-2)"></path>
-                <path d="M1480.31217,105.734375 C1038,-88.3515625 481.029246,286.998502 -33.1293868,85.9092099 C-375.901809,-48.1503179 -388.47789,2438.54661 -70.8576306,7546 L1503.46466,7426.50899 C1782.90444,2675.3832 1775.18695,235.125 1480.31217,105.734375 Z" id="Path-2" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <path d="M1512.31217,41.53125 C1031.16124,-114 473.112715,267.565667 -1.12938675,63.359375 C-317.290788,-72.778153 -329.866869,2412.10206 -38.8576306,7518 L1535.46466,7398.50899 C1840.79695,2597.54466 1833.07945,145.21875 1512.31217,41.53125 Z" id="Path-2-Copy" fill="#FFC633" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <path d="M1512.31217,108.734375 C1070,-85.3515625 513.029246,289.998502 -1.12938675,88.9092099 C-343.901809,-45.1503179 -356.47789,2441.54661 -38.8576306,7549 L1535.46466,7429.50899 C1814.90444,2678.3832 1807.18695,238.125 1512.31217,108.734375 Z" id="Path-2" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
             </g>
         </g>
     </g>

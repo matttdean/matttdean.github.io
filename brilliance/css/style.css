@@ -126,7 +126,7 @@ footer {
 .phone {
     width: 60vw;
     height: auto;
-    margin-top: -20px;
+    margin-top: -160px;
     margin-left: -165px;
     max-width: 1000px;
 }
@@ -302,6 +302,8 @@ footer {
 
 .arrow-box {
     display: flex;
+    height: 150px;
+    align-items: center;
 }
 
 
@@ -572,7 +574,7 @@ footer {
     .phone {
         width: 140vw;
         height: auto;
-        margin-top: 10px;
+        margin-top: -70px;
         margin-left: -150px;
     }
 
@@ -732,7 +734,8 @@ footer {
 
 
 .arrow {
-    margin: 50px 0px;
+    /* margin: 50px 0px; */
+    height: 60px;
     animation-name: arrow;
     animation-duration: .6s;
     animation-timing-function: ease-in;

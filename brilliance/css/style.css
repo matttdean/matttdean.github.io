@@ -21,6 +21,17 @@ a:hover {
     text-decoration: none;
 }
 
+.mobile-bottom-1 {
+    display: flex;
+}
+.mobile-bottom-2 {
+    display: none;
+}
+
+.mobile-discover {
+    display: none;
+}
+
 .nav-menu {
     top: 10px;
     position: fixed;
@@ -328,6 +339,7 @@ footer {
         font-size: 3rem;
         text-align: center;
         justify-content: center;
+        margin-bottom: 1em;
     }
 
     .headline {
@@ -419,16 +431,9 @@ footer {
 
 }
 .s1-top-bg {
-   position: absolute;
-   top: 0;
-   width: 102vw;
-}
-
-@media screen and (max-width: 600px) {
-    .s1-top-bg {
-        margin-left: -300px;
-        width: auto;
-    }
+    position: absolute;
+    top: -25%;
+    width: 100vw;
 }
 
 .s1-bottom-bg {
@@ -574,7 +579,7 @@ footer {
     .phone {
         width: 140vw;
         height: auto;
-        margin-top: -70px;
+        margin-top: -4em;
         margin-left: -150px;
     }
 
@@ -683,6 +688,23 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+    .mobile-bottom-1 {
+        display: none;
+    }
+    .mobile-bottom-2 {
+        display: flex;
+    }
+    .mobile-discover {
+        position: absolute;
+        bottom: 0;
+        z-index: 30;
+        display: flex;
+        height: 200px;
+        background-color: #001B72;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
     .desk {
        display: none; 
     }

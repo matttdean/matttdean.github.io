@@ -149,7 +149,7 @@ footer {
     color: #0035B0;
     display: flex;
     justify-content: center;
-    height: 1400px;
+    height: 1500px;
 }
 
 #sites h1 {
@@ -264,7 +264,7 @@ footer {
     background-color: #0035B0;
     position: relative;
     color: #FFF;
-    height: 800px;
+    height: 900px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -321,13 +321,13 @@ footer {
 @media screen and (max-width: 600px) {
 
     #discover {
-        height: 700px;
+        height: 850px;
         overflow: hidden;
     }
 
     #sites {
         overflow: hidden;
-        height: 1355px;
+        height: 1520px;
     }
 
     #discover h1 {
@@ -348,7 +348,7 @@ footer {
         margin-top: -80px;
     }
     #hands {
-        height: 475px;
+        height: 540px;
         overflow: hidden;
     }
 
@@ -360,7 +360,7 @@ footer {
     }
 
     #content {
-        height: 730px;
+        height: 840px;
         overflow: hidden;
     }
 
@@ -374,7 +374,7 @@ footer {
     }
 
     #trophy {
-        height: 500px;
+        height: 600px;
         padding-top: 50px;
         overflow: hidden;
     }
@@ -386,7 +386,7 @@ footer {
     }
 
     #relationships {
-        height: 400px;
+        height: 500px;
     }
 
     #relationships h1 {
@@ -432,14 +432,124 @@ footer {
 }
 .s1-top-bg {
     position: absolute;
-    top: -25%;
+    top: -15%;
     width: 100vw;
 }
 
+.wave-container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    bottom:0;
+    left:0;
+  }
+
+.wave-1 {
+    background: url(../img/wave-yellow.svg) repeat-x; 
+    bottom: -20px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+}
+
+.wave-1:nth-of-type(2) {
+    background: url(../img/wave-white.svg) repeat-x; 
+    bottom: -60px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    opacity: 1;
+  }
+
+.wave-2 {
+    background: url(../img/wave-yellow.svg) repeat-x; 
+    bottom: -20px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+}
+
+.wave-2:nth-of-type(2) {
+    background: url(../img/wave-red.svg) repeat-x; 
+    bottom: -60px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    opacity: 1;
+  }
+
+.wave-3 {
+    background: url(../img/wave-orange.svg) repeat-x; 
+    bottom: -20px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+}
+
+.wave-3:nth-of-type(2) {
+    background: url(../img/wave-yellow.svg) repeat-x; 
+    bottom: -60px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    opacity: 1;
+  }
+.wave-4 {
+    background: url(../img/wave-light-yellow.svg) repeat-x; 
+    bottom: -20px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+}
+.wave-4:nth-of-type(2) {
+    background: url(../img/wave-white.svg) repeat-x; 
+    bottom: -60px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    opacity: 1;
+  }
+.wave-5 {
+    background: url(../img/wave-teal.svg) repeat-x; 
+    bottom: -20px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+}
+
+.wave-5:nth-of-type(2) {
+    background: url(../img/wave-blue.svg) repeat-x; 
+    bottom: -60px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    opacity: 1;
+  }
+.wave-6 {
+    background: url(../img/wave-red.svg) repeat-x; 
+    bottom: -20px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+}
+
+.wave-6:nth-of-type(2) {
+    background: url(../img/wave-white.svg) repeat-x; 
+    bottom: -60px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    opacity: 1;
+  }
 .s1-bottom-bg {
-    width: 102vw;
+    height: 150px;
+    width: 100%;
     position: absolute;
     bottom: 0;
+    left: 0;
     z-index: 20;
     margin-bottom: -2px;
 }
@@ -451,7 +561,7 @@ footer {
     }
     #discover .s1-bottom-bg {
         width: 150vw;
-        z-index: 10;
+        z-index: 100;
     }
 }
 
@@ -473,16 +583,16 @@ footer {
 
 .s2-bottom-people {
     width: 800px;
-    position: absolute;
-    bottom: 50px;
+    position: relative;
+    bottom: 0;
+    margin-top: -220px;
 }
 
 @media screen and (max-width: 600px) {
     .s2-bottom-people {
-        position: absolute;
-        bottom: 0;
-        width: 100vw;
-        margin-left: 12px;
+        width: 600px;
+        margin-left: -90px;
+        margin-top: -140px;
     }
 }
 
@@ -571,7 +681,8 @@ footer {
     z-index: 10;
     width: 60vw;
     align-self: center;
-    max-width: 800px;
+    max-width: 600px;
+    margin-top: 150px;
 }
 
 
@@ -699,11 +810,12 @@ footer {
         bottom: 0;
         z-index: 30;
         display: flex;
-        height: 200px;
+        height: 300px;
         background-color: #001B72;
         width: 100vw;
         justify-content: center;
         align-items: center;
+        margin-bottom: 50px;
     }
     .desk {
        display: none; 
@@ -838,3 +950,21 @@ footer {
 .safari-vid {
     margin-top: 300px;
 }
+
+@keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  
+  @keyframes swell {
+    0%, 100% {
+      transform: translate3d(0,-25px,0);
+    }
+    50% {
+      transform: translate3d(0,5px,0);
+    }
+  }

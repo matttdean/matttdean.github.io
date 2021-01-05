@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "antd": "^3.7.1",
-    "axios": "^0.16.2",
+    "axios": "^0.21.1",
     "cloudinary-react": "^1.0.4",
     "downshift": "^1.5.0",
     "jwt-decode": "^2.2.0",

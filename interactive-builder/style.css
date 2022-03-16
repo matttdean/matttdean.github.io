@@ -1,0 +1,39 @@
+.builder {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.builder__content {
+    width: 100%;
+}
+.builder__output {
+    width: 100%;
+    min-width: 200px;
+    background: lightgray;
+    padding: 30px 60px;
+    max-width: 1200px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+.ipa-2__text {
+    line-height: 1.6;
+}
+.builder__inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px 0;
+}
+xmp {
+    white-space: pre-wrap
+}
+
+input {
+ padding: 10px 20px;   
+ margin: 10px;
+}

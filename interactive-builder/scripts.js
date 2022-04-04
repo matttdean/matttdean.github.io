@@ -136,6 +136,11 @@
             e7[0].innerHTML = inputList[7].value;
             CreateOutput(output,preview,siteURL);
         });
+        inputList[8].addEventListener("input", function () {
+            let e8 = document.getElementsByClassName("ipa-2__name");
+            e8[0].style.color = inputList[8].value;
+            CreateOutput(output,preview,siteURL);
+        });
     }
 
     function CreateIpa2Floating() {

@@ -1,3 +1,11 @@
+body {
+    font-size: 1.1875rem;
+}
+
+.content__html h2, .content__html p {
+    margin-bottom: 24px;
+}
+
 .builder {
     width: 100%;
     height: auto;
@@ -17,6 +25,9 @@
     max-width: 1200px;
     border-radius: 25px;
     margin-bottom: 50px;
+}
+.ipa-text {
+    margin: 0 0 24px 0;
 }
 .ipa-2__text {
     line-height: 1.6;

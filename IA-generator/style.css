@@ -1310,3 +1310,8 @@ font-weight:600;
             flex-basis: 0%;
         }
     }
+
+
+    .intro__text {
+        margin-top: 0px;
+    }

@@ -286,7 +286,7 @@
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-vertical-chart-percent-4' ) {
-                    let input = document.getElementById("build-horizontal-chart-percent-4");
+                    let input = document.getElementById("build-vertical-chart-percent-4");
                     document.getElementById("vertical-percent-4").innerHTML = input.value;
                     document.getElementById("vertical-bar-4").style.height = input.value;
                     CreateOutput(output,preview,siteURL);

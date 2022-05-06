@@ -9,7 +9,17 @@ body {
 .content__html h2, .content__html p {
     margin-bottom: 24px;
 }
-
+.site-input-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
 .builder {
     width: 100%;
     height: auto;
@@ -57,6 +67,11 @@ input {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+.button__container {
+    display: flex;
+    width: 350px;
+    justify-content: space-evenly;
 }
 .plus-button {
     width: 50px;
@@ -555,14 +570,16 @@ body {
     color: #FFF;
     text-align: center;
 }
-.quote__image {
+.quote__mark {
     position: absolute;
+    font-size: 160px;
+    color: #fff;
 }
-    .quote__image--top {
+    .quote__mark--top {
         top: 0;
         left: 0;
     }
-    .quote__image--bottom {
+    .quote__mark--bottom {
         bottom: 0;
         right: 0;
     }

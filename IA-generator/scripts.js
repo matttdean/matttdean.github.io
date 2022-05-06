@@ -3,11 +3,13 @@
     let siteURL = "";
     let siteInput = document.getElementById("site-name")
     siteInput.addEventListener("input", function () {
-    siteURL = siteInput.value;
+    siteURL = "https://" + siteInput.value;
     });
     let horizontalChartCounter = 2;
     let verticalChartCounter = 2;
     let percentageCounter = 2;
+    let percentActive = true;
+    let recosCounter = 2;
 
     function CreateIAIntro() {
         let inputList = document.getElementsByClassName("build-intro");
@@ -98,8 +100,8 @@
             CreateOutput(output,preview,siteURL);
         });
         inputList[4].addEventListener("input", function () {
-            document.getElementById("horizontal-percent-1").innerHTML = inputList[4].value;
-            document.getElementById("horizontal-bar-1").style.width = inputList[4].value;
+            document.getElementById("horizontal-percent-1").innerHTML = inputList[4].value + "%";
+            document.getElementById("horizontal-bar-1").style.width = inputList[4].value + "%";
             CreateOutput(output,preview,siteURL);
         });
         let horizontalChartModule = document.getElementById('horizontal-chart-container');
@@ -129,8 +131,8 @@
                 }
                 else if( event.target.id == 'build-horizontal-chart-percent-2' ) {
                     let input = document.getElementById("build-horizontal-chart-percent-2");
-                    document.getElementById("horizontal-percent-2").innerHTML = input.value;
-                    document.getElementById("horizontal-bar-2").style.width = input.value;
+                    document.getElementById("horizontal-percent-2").innerHTML = input.value + "%";
+                    document.getElementById("horizontal-bar-2").style.width = input.value + "%";
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-horizontal-chart-title-3' ) {
@@ -140,8 +142,8 @@
                 }
                 else if( event.target.id == 'build-horizontal-chart-percent-3' ) {
                     let input = document.getElementById("build-horizontal-chart-percent-3");
-                    document.getElementById("horizontal-percent-3").innerHTML = input.value;
-                    document.getElementById("horizontal-bar-3").style.width = input.value;
+                    document.getElementById("horizontal-percent-3").innerHTML = input.value + "%";
+                    document.getElementById("horizontal-bar-3").style.width = input.value + "%";
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-horizontal-chart-title-4' ) {
@@ -151,8 +153,8 @@
                 }
                 else if( event.target.id == 'build-horizontal-chart-percent-4' ) {
                     let input = document.getElementById("build-horizontal-chart-percent-4");
-                    document.getElementById("horizontal-percent-4").innerHTML = input.value;
-                    document.getElementById("horizontal-bar-4").style.width = input.value;
+                    document.getElementById("horizontal-percent-4").innerHTML = input.value + "%";
+                    document.getElementById("horizontal-bar-4").style.width = input.value + "%";
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-horizontal-chart-title-5' ) {
@@ -162,8 +164,8 @@
                 }
                 else if( event.target.id == 'build-horizontal-chart-percent-5' ) {
                     let input = document.getElementById("build-horizontal-chart-percent-5");
-                    document.getElementById("horizontal-percent-5").innerHTML = input.value;
-                    document.getElementById("horizontal-bar-5").style.width = input.value;
+                    document.getElementById("horizontal-percent-5").innerHTML = input.value + "%";
+                    document.getElementById("horizontal-bar-5").style.width = input.value + "%";
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-horizontal-chart-title-6' ) {
@@ -173,8 +175,8 @@
                 }
                 else if( event.target.id == 'build-horizontal-chart-percent-6' ) {
                     let input = document.getElementById("build-horizontal-chart-percent-6");
-                    document.getElementById("horizontal-percent-6").innerHTML = input.value;
-                    document.getElementById("horizontal-bar-6").style.width = input.value;
+                    document.getElementById("horizontal-percent-6").innerHTML = input.value + "%";
+                    document.getElementById("horizontal-bar-6").style.width = input.value + "%";
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-horizontal-chart-title-7' ) {
@@ -184,8 +186,8 @@
                 }
                 else if( event.target.id == 'build-horizontal-chart-percent-7' ) {
                     let input = document.getElementById("build-horizontal-chart-percent-7");
-                    document.getElementById("horizontal-percent-7").innerHTML = input.value;
-                    document.getElementById("horizontal-bar-7").style.width = input.value;
+                    document.getElementById("horizontal-percent-7").innerHTML = input.value + "%";
+                    document.getElementById("horizontal-bar-7").style.width = input.value + "%";
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-horizontal-chart-title-8' ) {
@@ -195,13 +197,27 @@
                 }
                 else if( event.target.id == 'build-horizontal-chart-percent-8' ) {
                     let input = document.getElementById("build-horizontal-chart-percent-8");
-                    document.getElementById("horizontal-percent-8").innerHTML = input.value;
-                    document.getElementById("horizontal-bar-8").style.width = input.value;
+                    document.getElementById("horizontal-percent-8").innerHTML = input.value + "%";
+                    document.getElementById("horizontal-bar-8").style.width = input.value + "%";
                     CreateOutput(output,preview,siteURL);
                 }
 
               });
         });
+
+        let horizontalChartMinusButton = document.getElementById("horizontal-chart-minus-button");
+        horizontalChartMinusButton.addEventListener("click", function() {
+            if(horizontalChartCounter > 2) {
+            let chartList = document.getElementsByClassName('horizontal-bar-chart');
+            document.getElementById('build-horizontal-chart-title-' + (horizontalChartCounter-1)).remove();
+            document.getElementById('build-horizontal-chart-percent-' + (horizontalChartCounter-1)).remove();
+            chartList[horizontalChartCounter-2].remove();
+            horizontalChartCounter--;
+            CreateOutput(output,preview,siteURL);
+            }
+
+        });
+
     }
 
 
@@ -232,8 +248,8 @@
             CreateOutput(output,preview,siteURL);
         });
         inputList[4].addEventListener("input", function () {
-            document.getElementById("vertical-percent-1").innerHTML = inputList[4].value;
-            document.getElementById("vertical-bar-1").style.height = inputList[4].value;
+            document.getElementById("vertical-percent-1").innerHTML = inputList[4].value + "%";
+            document.getElementById("vertical-bar-1").style.height = inputList[4].value + "%";
             CreateOutput(output,preview,siteURL);
         });
 
@@ -265,8 +281,8 @@
                 }
                 else if( event.target.id == 'build-vertical-chart-percent-2' ) {
                     let input = document.getElementById("build-vertical-chart-percent-2");
-                    document.getElementById("vertical-percent-2").innerHTML = input.value;
-                    document.getElementById("vertical-bar-2").style.height = input.value;
+                    document.getElementById("vertical-percent-2").innerHTML = input.value + "%";
+                    document.getElementById("vertical-bar-2").style.height = input.value + "%";
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-horizontal-chart-title-3' ) {
@@ -276,8 +292,8 @@
                 }
                 else if( event.target.id == 'build-vertical-chart-percent-3' ) {
                     let input = document.getElementById("build-vertical-chart-percent-3");
-                    document.getElementById("vertical-percent-3").innerHTML = input.value;
-                    document.getElementById("vertical-bar-3").style.height = input.value;
+                    document.getElementById("vertical-percent-3").innerHTML = input.value + "%";
+                    document.getElementById("vertical-bar-3").style.height = input.value + "%";
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-vertical-chart-title-4' ) {
@@ -287,8 +303,8 @@
                 }
                 else if( event.target.id == 'build-vertical-chart-percent-4' ) {
                     let input = document.getElementById("build-vertical-chart-percent-4");
-                    document.getElementById("vertical-percent-4").innerHTML = input.value;
-                    document.getElementById("vertical-bar-4").style.height = input.value;
+                    document.getElementById("vertical-percent-4").innerHTML = input.value + "%";
+                    document.getElementById("vertical-bar-4").style.height = input.value + "%";
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-vertical-chart-title-5' ) {
@@ -298,13 +314,24 @@
                 }
                 else if( event.target.id == 'build-vertical-chart-percent-5' ) {
                     let input = document.getElementById("build-vertical-chart-percent-5");
-                    document.getElementById("vertical-percent-5").innerHTML = input.value;
-                    document.getElementById("vertical-bar-5").style.height = input.value;
+                    document.getElementById("vertical-percent-5").innerHTML = input.value + "%";
+                    document.getElementById("vertical-bar-5").style.height = input.value + "%";
                     CreateOutput(output,preview,siteURL);
                 }
               });
         });
             
+        let verticalChartMinusButton = document.getElementById("vertical-chart-minus-button");
+        verticalChartMinusButton.addEventListener("click", function() {
+            if(verticalChartCounter > 2) {
+            let chartList = document.getElementsByClassName('vertical-bar-chart__column');
+            document.getElementById('build-vertical-chart-title-' + (verticalChartCounter-1)).remove();
+            document.getElementById('build-vertical-chart-percent-' + (verticalChartCounter-1)).remove();
+            chartList[verticalChartCounter-2].remove();
+            verticalChartCounter--;
+            CreateOutput(output,preview,siteURL);
+            }
+        });
 
     }
 
@@ -338,7 +365,7 @@
         let percentageInputs = document.getElementById('percentage-inputs');
         percentageChartButton.addEventListener("click", function() {
             if(percentageCounter < 5) {
-            percentageChartModule.innerHTML += '<div class="percentage__container"><div id="percentage-number-' + percentageCounter + '" class="percentage__number" style="color:' + barColor + ';"><span class="count">87</span>%</div><div id="percentage-text-' + percentageCounter + '" class="percentage__text">Experience shortness of breath during everyday activities*</div></div>'
+            percentageChartModule.innerHTML += '<div class="percentage__container"><div id="percentage-number-' + percentageCounter + '" class="percentage__number" style="color:' + barColor + ';"><span class="count">87</span><span class="percent-percent">%</span></div><div id="percentage-text-' + percentageCounter + '" class="percentage__text">Experience shortness of breath during everyday activities*</div></div>'
             let chartNumber = document.createElement("input");
             chartNumber.type = "text";
             chartNumber.setAttribute('id',"build-percentage-number-" + percentageCounter);
@@ -388,6 +415,36 @@
                 }
               });
         });
+        let percentageMinusButton = document.getElementById("percentage-minus-button");
+        percentageMinusButton.addEventListener("click", function() {
+            if(percentageCounter > 2) {
+            let chartList = document.getElementsByClassName('percentage__container');
+            document.getElementById('build-percentage-number-' + (percentageCounter-1)).remove();
+            document.getElementById('build-percentage-text-' + (percentageCounter-1)).remove();
+            chartList[percentageCounter-2].remove();
+            percentageCounter--;
+            CreateOutput(output,preview,siteURL);
+            }
+        });
+
+        let percentagePercentButton = document.getElementById("percentage-percent-button");
+        percentagePercentButton.addEventListener("click", function() {
+            let percentList = document.getElementsByClassName('percent-percent');
+            if (percentActive === true) {
+               for (i=0;i<percentList.length;i++) {
+                   percentList[i].innerHTML = "";
+               } 
+               CreateOutput(output,preview,siteURL);
+               percentActive = false;
+            } else if (percentActive === false) {
+                for (i=0;i<percentList.length;i++) {
+                    percentList[i].innerHTML = "%";
+                } 
+                CreateOutput(output,preview,siteURL);
+                percentActive = true;
+            }
+        });
+
     }
     function CreateIAFloatingImageCode() {
         let inputList = document.getElementsByClassName("build-ia-floating-image");
@@ -446,6 +503,9 @@
         inputList[2].addEventListener("input", function () {
             document.getElementById("quote-quote").style.color = inputList[2].value;
             document.getElementById("quote-attribution").style.color = inputList[2].value;
+            let e = document.getElementsByClassName("quote__mark");
+            e[0].style.color = inputList[2].value;
+            e[1].style.color = inputList[2].value;
             CreateOutput(output,preview,siteURL);
         });
     }
@@ -473,10 +533,157 @@
         });
     }
 
+    function CreateIARecos() {
+        let inputList = document.getElementsByClassName("build-recos");
+        let output = document.getElementById("ia-recos-output");
+        let preview = document.getElementById("ia-recos-preview")
+        inputList[0].addEventListener("input", function () {
+            document.getElementById("recos-avatar").src = siteURL + inputList[0].value
+            CreateOutput(output,preview,siteURL);
+        });
+        inputList[1].addEventListener("input", function () {
+            document.getElementById("recos-site-name").innerHTML = inputList[1].value
+            CreateOutput(output,preview,siteURL);
+        });
+        inputList[2].addEventListener("input", function () {
+            let e = document.getElementsByClassName("more__footer-text");
+            e[0].innerHTML = inputList[2].value;
+
+            CreateOutput(output,preview,siteURL);
+        });
+        inputList[3].addEventListener("input", function () {
+            document.getElementById("more-image-1").src = inputList[3].value
+            CreateOutput(output,preview,siteURL);
+        });
+        inputList[4].addEventListener("input", function () {
+            document.getElementById("more-year-1").innerHTML = inputList[4].value
+            CreateOutput(output,preview,siteURL);
+        });
+        inputList[5].addEventListener("input", function () {
+            document.getElementById("more-link-1").href = inputList[5].value
+            CreateOutput(output,preview,siteURL);
+        });
+
+        let recosModule = document.getElementById('recos-container');
+        let recosButton = document.getElementById("recos-button");
+        let recosInputs = document.getElementById('recos-inputs');
+        recosButton.addEventListener("click", function() {
+            if (recosCounter < 7) {
+                recosModule.innerHTML += '<a class="more__links" id="more-link-' + recosCounter + '" href="https://copd.net/"><div class="more__year"><img src="https://copd.net/wp-content/uploads/2022/01/illustration-1.png" id="more-image-' + recosCounter + '" alt="" class="more__year-image"><h3 id="more-year-' + recosCounter + '"class="more__year-text">0000</h3></div></a>'
+                let chartNumber = document.createElement("input");
+                chartNumber.type = "text";
+                chartNumber.setAttribute('id',"build-recos-image-" + recosCounter);
+                chartNumber.setAttribute('value','Reco Image WP URL ' + recosCounter);
+                recosInputs.appendChild(chartNumber);
+                let chartText = document.createElement("input");
+                chartText.type = "text";
+                chartText.setAttribute('id',"build-recos-date-" + recosCounter);
+                chartText.setAttribute('value','Reco Date ' + recosCounter);
+                recosInputs.appendChild(chartText);
+                let chartLink = document.createElement("input");
+                chartLink.type = "text";
+                chartLink.setAttribute('id',"build-recos-link-" + recosCounter);
+                chartLink.setAttribute('value','Reco URL ' + recosCounter);
+                recosInputs.appendChild(chartLink);
+                recosCounter++;
+                CreateOutput(output,preview,siteURL);
+            }
+            document.getElementById("recos-inputs").addEventListener( 'input', function ( event ) {
+                if( event.target.id == 'build-recos-image-2' ) {
+                    let input = document.getElementById("build-recos-image-2");
+                    document.getElementById("more-image-2").src = input.value;
+                    CreateOutput(output,preview,siteURL);
+                }
+                else if( event.target.id == 'build-recos-date-2' ) {
+                    let input = document.getElementById("build-recos-date-2");
+                    document.getElementById("more-year-2").innerHTML = input.value;
+                    CreateOutput(output,preview,siteURL);
+                }
+                else if( event.target.id == 'build-recos-link-2' ) {
+                    let input = document.getElementById("build-recos-link-2");
+                    document.getElementById("more-link-2").href = input.value;
+                    CreateOutput(output,preview,siteURL);
+                }
+                else if( event.target.id == 'build-recos-image-3' ) {
+                    let input = document.getElementById("build-recos-image-3");
+                    document.getElementById("more-image-3").src = input.value;
+                    CreateOutput(output,preview,siteURL);
+                }
+                else if( event.target.id == 'build-recos-date-3' ) {
+                    let input = document.getElementById("build-recos-date-3");
+                    document.getElementById("more-year-3").innerHTML = input.value;
+                    CreateOutput(output,preview,siteURL);
+                }
+                else if( event.target.id == 'build-recos-link-3' ) {
+                    let input = document.getElementById("build-recos-link-3");
+                    document.getElementById("more-link-3").href = input.value;
+                    CreateOutput(output,preview,siteURL);
+                }
+                else if( event.target.id == 'build-recos-image-4' ) {
+                    let input = document.getElementById("build-recos-image-4");
+                    document.getElementById("more-image-4").src = input.value;
+                    CreateOutput(output,preview,siteURL);
+                }
+                else if( event.target.id == 'build-recos-date-4' ) {
+                    let input = document.getElementById("build-recos-date-4");
+                    document.getElementById("more-year-4").innerHTML = input.value;
+                    CreateOutput(output,preview,siteURL);
+                }
+                else if( event.target.id == 'build-recos-link-4' ) {
+                    let input = document.getElementById("build-recos-link-4");
+                    document.getElementById("more-link-4").href = input.value;
+                    CreateOutput(output,preview,siteURL);
+                }
+                else if( event.target.id == 'build-recos-image-5' ) {
+                    let input = document.getElementById("build-recos-image-5");
+                    document.getElementById("more-image-5").src = input.value;
+                    CreateOutput(output,preview,siteURL);
+                }
+                else if( event.target.id == 'build-recos-date-5' ) {
+                    let input = document.getElementById("build-recos-date-5");
+                    document.getElementById("more-year-5").innerHTML = input.value;
+                    CreateOutput(output,preview,siteURL);
+                }
+                else if( event.target.id == 'build-recos-link-5' ) {
+                    let input = document.getElementById("build-recos-link-5");
+                    document.getElementById("more-link-5").href = input.value;
+                    CreateOutput(output,preview,siteURL);
+                }
+                else if( event.target.id == 'build-recos-image-6' ) {
+                    let input = document.getElementById("build-recos-image-6");
+                    document.getElementById("more-image-6").src = input.value;
+                    CreateOutput(output,preview,siteURL);
+                }
+                else if( event.target.id == 'build-recos-date-6' ) {
+                    let input = document.getElementById("build-recos-date-6");
+                    document.getElementById("more-year-6").innerHTML = input.value;
+                    CreateOutput(output,preview,siteURL);
+                }
+                else if( event.target.id == 'build-recos-link-6' ) {
+                    let input = document.getElementById("build-recos-link-6");
+                    document.getElementById("more-link-6").href = input.value;
+                    CreateOutput(output,preview,siteURL);
+                }
+              });
+        });
+        let recosMinusButton = document.getElementById("recos-minus-button");
+        recosMinusButton.addEventListener("click", function() {
+            if(recosCounter > 2) {
+            let chartList = document.getElementsByClassName('more__links');
+            document.getElementById('build-recos-image-' + (recosCounter-1)).remove();
+            document.getElementById('build-recos-date-' + (recosCounter-1)).remove();
+            document.getElementById('build-recos-link-' + (recosCounter-1)).remove();
+            chartList[recosCounter-2].remove();
+            recosCounter--;
+            CreateOutput(output,preview,siteURL);
+            }
+        });
+    }
 
     function CreateOutput(o,p,s) {
         let outputText = p.innerHTML;
         outputText = outputText.replaceAll("https://" + s + "", "");
+        outputText = outputText.replaceAll(" active", "");
         o.innerHTML = "<xmp>" + outputText + "</xmp>";
     }
 
@@ -489,6 +696,7 @@
        CreateIAImageAndCopyCode();
        CreateIAQuote();
        CreateIASpotImage();
+       CreateIARecos();
 }())
 
 

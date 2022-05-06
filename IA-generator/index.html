@@ -25,8 +25,9 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <input class="" id="site-name"type="text" value="Community URL" style="width:300px;">
+        <div class="site-input-container">
+            <input class="" id="site-name"type="text" value="Community URL" style="width:300px;">
+        </div>
 
         <div class="builder" id="ia-intro">
             <div class="builder__content" id="ia-intro-preview"><div class="module module--intro"><img src="https://copd.net/wp-content/uploads/2022/01/copd-ia-full.png" alt="" class="intro__logo"><div class="intro__illustration-container"><img src="https://copd.net/wp-content/uploads/2022/01/intro-image.png" alt="" class="intro__illustration"><div class="intro__chart-container"><div class="intro__chart intro__chart--1"></div><div class="intro__chart intro__chart--2"></div><div class="intro__chart intro__chart--3"></div><div class="intro__chart intro__chart--4"></div></div><div class="intro__pie-container"><div class="intro__pie-1"></div><div class="intro__pie-2"></div></div><div class="intro__circle-container"><div class="intro__circle-1"></div><div class="intro__circle-2"></div></div><div class="intro__lines-container"><div class="intro__line-container-1"><div class="intro__line"></div><div class="intro__arrow"></div></div><div class="intro__line-container-2"><div class="intro__line"></div><div class="intro__arrow"></div></div><div class="intro__line-container-3"><div class="intro__line"></div><div class="intro__arrow"></div></div></div></div><div class="intro__text-container"><h2 id="intro-heading" class="intro__heading">What Is it Like to Live With COPD?</h2><p id="intro-text" class="intro__text">It is estimated that more than 250 million people worldwide have COPD and over 65 million of them have moderate to severe cases. In order to better understand this disease, we have run our COPD In America survey for the past 6 years.</p></div><img src="https://copd.net/wp-content/uploads/2022/02/arrow.png" alt="" class="intro__arrow-down"></div>
@@ -50,7 +51,10 @@
             <div class="builder__content" id="ia-horizontal-chart-preview">
                 <div class="module module--horizontal-bar-chart"><div class="module__container module__container--horizontal-bar-chart"><h2 id="ia-horizontal-module-title" class="module__title">MANY HAVE OTHER CONDITIONS ALONG WITH COPD</h2><div id="horizontal-chart-container"><div class="horizontal-bar-chart"><div class="horizontal-bar-chart__bar-container"><div id="horizontal-bar-1" class="animate horizontal-bar-chart__bar" style="width:41%"></div></div><div id="horizontal-percent-1" class="horizontal-bar-chart__percentage">41%</div><div id="horizontal-title-1" class="horizontal-bar-chart__title">Hypertension </div></div></div></div></div>
         </div>
-        <div id="horizontal-chart-button"" class="plus-button">+</div>
+        <div class="button__container">
+            <div id="horizontal-chart-minus-button"" class="plus-button">-</div> 
+            <div id="horizontal-chart-button"" class="plus-button">+</div>
+        </div>
             <div id="horizontal-inputs" class="builder__inputs">
                 <input class="build-horizontal-chart" type="text" value="Module Title">
                 <input class="build-horizontal-chart" type="text" value="Module Background Color">
@@ -64,7 +68,10 @@
         <div class="builder" id="ia-vertical-chart">
             <div class="builder__content" id="ia-vertical-chart-preview"><div class="module module--vertical-bar-chart"><div class="module__container module__container--vertical-bar-chart"><h2 id="ia-vertical-chart-module-title" class="module__title module__title--vertical-bar-chart">PATIENTS ARE ALSO MANAGING...</h2><div id="vertical-chart-container" class="vertical-bar-chart"><div class="vertical-bar-chart__column"><div class="vertical-bar-chart__container"><div id="vertical-bar-1" class="animate vertical-bar-chart__bar" style="height:35%"></div></div><div id="vertical-percent-1" class="vertical-bar-chart__data vertical-bar-chart__data--percentage">35%</div><div id="vertical-title-1" class="vertical-bar-chart__data vertical-bar-chart__data--title">Respitory<br>Infections</div></div></div></div></div>
         </div>
-        <div id="vertical-chart-button"" class="plus-button">+</div>
+        <div class="button__container">
+            <div id="vertical-chart-minus-button"" class="plus-button">-</div> 
+            <div id="vertical-chart-button"" class="plus-button">+</div>
+        </div>
             <div id="vertical-inputs" class="builder__inputs">
                 <input class="build-vertical-chart" type="text" value="Module Title">
                 <input class="build-vertical-chart" type="text" value="Module Background Color">
@@ -76,9 +83,13 @@
         </div>
 
         <div class="builder" id="ia-percentage">
-            <div class="builder__content" id="ia-percentage-preview"><div id="percentage-container" class="module module--percentage"><h2 id="percentage-title-1" class="percentage__title">SHORTNESS OF BREATH AND FATIGUE ARE FRUSTRATING</h2><div class="percentage__container"><div id="percentage-number-1" class="percentage__number"><span class="count">87</span>%</div><div id="percentage-text-1" class="percentage__text">Experience shortness of breath during everyday activities*</div></div></div>
+            <div class="builder__content" id="ia-percentage-preview"><div id="percentage-container" class="module module--percentage"><h2 id="percentage-title-1" class="percentage__title">SHORTNESS OF BREATH AND FATIGUE ARE FRUSTRATING</h2><div class="percentage__container"><div id="percentage-number-1" class="percentage__number"><span class="count">87</span><span class="percent-percent">%</span></div><div id="percentage-text-1" class="percentage__text">Experience shortness of breath during everyday activities*</div></div></div>
         </div>
-        <div id="percentage-button"" class="plus-button">+</div>
+        <div class="button__container">
+            <div id="percentage-minus-button"" class="plus-button">-</div> 
+            <div id="percentage-button"" class="plus-button">+</div>
+            <div id="percentage-percent-button"" class="plus-button">%</div>
+        </div>
             <div id="percentage-inputs" class="builder__inputs">
                 <input class="build-ia-percentage" type="text" value="Module Title">
                 <input class="build-ia-percentage" type="text" value="Percentage Color">
@@ -113,7 +124,7 @@
         </div>
 
         <div class="builder" id="ia-quote">
-            <div class="builder__content" id="ia-quote-preview"><div class="module module--text" id="quote-container"><div class="module__container module__container--quote"><h2 class="module--text__title module--text__title--larger"id="quote-quote">When I wear my oxygen in public, I feel like an alien.</h2><div id="quote-attribution" class="quote__attribution">- <span id="quote-site-name">COPD.net</span> community member</div><img class="quote__image quote__image--top" src="/wp-content/uploads/2022/01/quote-top.png" alt=""> <img class="quote__image quote__image--bottom" src="/wp-content/uploads/2022/01/quote-bottom.png" alt=""></div></div>
+            <div class="builder__content" id="ia-quote-preview"><div class="module module--text" id="quote-container"><div class="module__container module__container--quote"><h2 class="module--text__title module--text__title--larger"id="quote-quote">When I wear my oxygen in public, I feel like an alien.</h2><div id="quote-attribution" class="quote__attribution">- <span id="quote-site-name">COPD.net</span> community member</div><div class="quote__mark quote__mark--top">&#8220;</div><div class="quote__mark quote__mark--bottom">&#8221;</div></div></div>
         </div>
         
         <div id="ia-quote-inputs" class="builder__inputs">
@@ -135,6 +146,23 @@
                 <input class="build-ia-spot-image" type="text" value="Text Color">
             </div>
             <div id="ia-spot-image-output" class="builder__output"></div>
+        </div>
+        <div class="builder" id="ia-recos">
+            <div class="builder__content" id="ia-recos-preview"><div class="module module--more"><div class="more"><img id="recos-avatar" src="https://copd.net/wp-content/uploads/2022/01/Animated-COPD-IA-Avatar.gif" alt="in america logo" class="more__logo"><div class="more__title">LEARN MORE ABOUT <span id="recos-site-name">COPD</span>:</div><p class="more__text">Explore past years’ In America survey data by navigating to a year on the right.</p></div><div class="more__years" id="recos-container"><a class="more__links" id="more-link-1" href="https://copd.net/"><div class="more__year"><img src="https://copd.net/wp-content/uploads/2022/01/illustration-1.png" id="more-image-1" alt="" class="more__year-image"><h3 id="more-year-1"class="more__year-text">2020</h3></div></a></div><div class="more__footer"><p class="more__footer-text" style="margin-bottom:0;">The COPD in America 2020 survey was conducted online from March through July of 2020. 2,704 people completed the survey.</p></div></div>
+        </div>
+        <div class="button__container">
+            <div id="recos-minus-button"" class="plus-button">-</div> 
+            <div id="recos-button"" class="plus-button">+</div>
+        </div>
+        <div id="recos-inputs" class="builder__inputs">
+                <input class="build-recos" type="text" value="Avatar WP URL">
+                <input class="build-recos" type="text" value="Community Name">
+                <input class="build-recos" type="text" value="Footer Text">
+                <input class="build-recos" type="text" value="Reco Image WP URL 1">
+                <input class="build-recos" type="text" value="Reco Date 1">
+                <input class="build-recos" type="text" value="Reco URL 1">
+            </div>
+            <div id="ia-recos-output" class="builder__output"></div>
         </div>
 
 

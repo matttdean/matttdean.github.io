@@ -3,7 +3,7 @@
     let siteURL = "";
     let siteInput = document.getElementById("site-name")
     siteInput.addEventListener("input", function () {
-    siteURL = "https://" + siteInput.value;
+    siteURL = siteInput.value;
     });
     let horizontalChartCounter = 2;
     let verticalChartCounter = 2;
@@ -113,12 +113,12 @@
             let chartTitle = document.createElement("input");
             chartTitle.type = "text";
             chartTitle.setAttribute('id',"build-horizontal-chart-title-" + horizontalChartCounter);
-            chartTitle.setAttribute('value','Chart Title ' + horizontalChartCounter);
+            chartTitle.setAttribute('value','Bar text ' + horizontalChartCounter);
             horizontalInputs.appendChild(chartTitle);
             chartPercent = document.createElement("input");
             chartPercent.type = "text";
             chartPercent.setAttribute('id',"build-horizontal-chart-percent-" + horizontalChartCounter);
-            chartPercent.setAttribute('value','Chart Percent ' + horizontalChartCounter);
+            chartPercent.setAttribute('value','Bar percent ' + horizontalChartCounter);
             horizontalInputs.appendChild(chartPercent);
             horizontalChartCounter++;
             CreateOutput(output,preview,siteURL);
@@ -263,12 +263,12 @@
             let chartTitle = document.createElement("input");
             chartTitle.type = "text";
             chartTitle.setAttribute('id',"build-vertical-chart-title-" + verticalChartCounter);
-            chartTitle.setAttribute('value','Chart Title ' + verticalChartCounter);
+            chartTitle.setAttribute('value','Bar text ' + verticalChartCounter);
             verticalInputs.appendChild(chartTitle);
             chartPercent = document.createElement("input");
             chartPercent.type = "text";
             chartPercent.setAttribute('id',"build-vertical-chart-percent-" + verticalChartCounter);
-            chartPercent.setAttribute('value','Chart Percent ' + verticalChartCounter);
+            chartPercent.setAttribute('value','Bar percent ' + verticalChartCounter);
             verticalInputs.appendChild(chartPercent);
             verticalChartCounter++;
             CreateOutput(output,preview,siteURL);
@@ -369,12 +369,12 @@
             let chartNumber = document.createElement("input");
             chartNumber.type = "text";
             chartNumber.setAttribute('id',"build-percentage-number-" + percentageCounter);
-            chartNumber.setAttribute('value','Percentage ' + percentageCounter);
+            chartNumber.setAttribute('value','Data point value ' + percentageCounter);
             percentageInputs.appendChild(chartNumber);
             let chartText = document.createElement("input");
             chartText.type = "text";
             chartText.setAttribute('id',"build-percentage-text-" + percentageCounter);
-            chartText.setAttribute('value','Chart Text ' + percentageCounter);
+            chartText.setAttribute('value','Data point text ' + percentageCounter);
             percentageInputs.appendChild(chartText);
             percentageCounter++;
             CreateOutput(output,preview,siteURL);
@@ -538,28 +538,33 @@
         let output = document.getElementById("ia-recos-output");
         let preview = document.getElementById("ia-recos-preview")
         inputList[0].addEventListener("input", function () {
-            document.getElementById("recos-avatar").src = siteURL + inputList[0].value
+            document.getElementById("recos-avatar").src = "https://" + siteURL + inputList[0].value
             CreateOutput(output,preview,siteURL);
         });
         inputList[1].addEventListener("input", function () {
-            document.getElementById("recos-site-name").innerHTML = inputList[1].value
+            let e = document.getElementsByClassName("more__title");
+            e[0].innerHTML = inputList[1].value
             CreateOutput(output,preview,siteURL);
         });
         inputList[2].addEventListener("input", function () {
-            let e = document.getElementsByClassName("more__footer-text");
+            let e = document.getElementsByClassName("more__text");
             e[0].innerHTML = inputList[2].value;
-
             CreateOutput(output,preview,siteURL);
         });
         inputList[3].addEventListener("input", function () {
-            document.getElementById("more-image-1").src = inputList[3].value
+            let e = document.getElementsByClassName("more__footer-text");
+            e[0].innerHTML = inputList[2].value;
             CreateOutput(output,preview,siteURL);
         });
         inputList[4].addEventListener("input", function () {
-            document.getElementById("more-year-1").innerHTML = inputList[4].value
+            document.getElementById("more-image-1").src = "https://" + siteURL + inputList[3].value
             CreateOutput(output,preview,siteURL);
         });
         inputList[5].addEventListener("input", function () {
+            document.getElementById("more-year-1").innerHTML = inputList[4].value
+            CreateOutput(output,preview,siteURL);
+        });
+        inputList[6].addEventListener("input", function () {
             document.getElementById("more-link-1").href = inputList[5].value
             CreateOutput(output,preview,siteURL);
         });
@@ -591,7 +596,7 @@
             document.getElementById("recos-inputs").addEventListener( 'input', function ( event ) {
                 if( event.target.id == 'build-recos-image-2' ) {
                     let input = document.getElementById("build-recos-image-2");
-                    document.getElementById("more-image-2").src = input.value;
+                    document.getElementById("more-image-2").src = "https://" + siteURL + input.value;
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-recos-date-2' ) {
@@ -606,7 +611,7 @@
                 }
                 else if( event.target.id == 'build-recos-image-3' ) {
                     let input = document.getElementById("build-recos-image-3");
-                    document.getElementById("more-image-3").src = input.value;
+                    document.getElementById("more-image-3").src = "https://" + siteURL + input.value;
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-recos-date-3' ) {
@@ -680,6 +685,23 @@
         });
     }
 
+    function CreateIARecosNew() {
+        let inputList = document.getElementsByClassName("build-recos-new");
+        let output = document.getElementById("ia-recos-new-output");
+        let preview = document.getElementById("ia-recos-new-preview")
+        
+        inputList[0].addEventListener("input", function () {
+            document.getElementById("recos-avatar-new").src = "https://" + siteURL + inputList[0].value
+            CreateOutput(output,preview,siteURL);
+        });
+        inputList[1].addEventListener("input", function () {
+            let e = document.getElementsByClassName("more__footer-text");
+            e[1].innerHTML = inputList[1].value;
+
+            CreateOutput(output,preview,siteURL);
+        });
+    }
+
     function CreateOutput(o,p,s) {
         let outputText = p.innerHTML;
         outputText = outputText.replaceAll("https://" + s + "", "");
@@ -697,6 +719,7 @@
        CreateIAQuote();
        CreateIASpotImage();
        CreateIARecos();
+       CreateIARecosNew();
 }())
 
 

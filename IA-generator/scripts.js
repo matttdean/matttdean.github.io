@@ -553,19 +553,19 @@
         });
         inputList[3].addEventListener("input", function () {
             let e = document.getElementsByClassName("more__footer-text");
-            e[0].innerHTML = inputList[2].value;
+            e[0].innerHTML = inputList[3].value;
             CreateOutput(output,preview,siteURL);
         });
         inputList[4].addEventListener("input", function () {
-            document.getElementById("more-image-1").src = "https://" + siteURL + inputList[3].value
+            document.getElementById("more-image-1").src = "https://" + siteURL + inputList[4].value
             CreateOutput(output,preview,siteURL);
         });
         inputList[5].addEventListener("input", function () {
-            document.getElementById("more-year-1").innerHTML = inputList[4].value
+            document.getElementById("more-year-1").innerHTML = inputList[5].value
             CreateOutput(output,preview,siteURL);
         });
         inputList[6].addEventListener("input", function () {
-            document.getElementById("more-link-1").href = inputList[5].value
+            document.getElementById("more-link-1").href = inputList[6].value
             CreateOutput(output,preview,siteURL);
         });
 
@@ -626,7 +626,7 @@
                 }
                 else if( event.target.id == 'build-recos-image-4' ) {
                     let input = document.getElementById("build-recos-image-4");
-                    document.getElementById("more-image-4").src = input.value;
+                    document.getElementById("more-image-4").src = "https://" + siteURL + input.value;
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-recos-date-4' ) {
@@ -641,7 +641,7 @@
                 }
                 else if( event.target.id == 'build-recos-image-5' ) {
                     let input = document.getElementById("build-recos-image-5");
-                    document.getElementById("more-image-5").src = input.value;
+                    document.getElementById("more-image-5").src = "https://" + siteURL + input.value;
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-recos-date-5' ) {
@@ -656,7 +656,7 @@
                 }
                 else if( event.target.id == 'build-recos-image-6' ) {
                     let input = document.getElementById("build-recos-image-6");
-                    document.getElementById("more-image-6").src = input.value;
+                    document.getElementById("more-image-6").src = "https://" + siteURL + input.value;
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-recos-date-6' ) {

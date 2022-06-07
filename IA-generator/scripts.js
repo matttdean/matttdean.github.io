@@ -285,9 +285,9 @@
                     document.getElementById("vertical-bar-2").style.height = input.value + "%";
                     CreateOutput(output,preview,siteURL);
                 }
-                else if( event.target.id == 'build-horizontal-chart-title-3' ) {
-                    let input = document.getElementById("build-horizontal-chart-title-3");
-                    document.getElementById("horizontal-title-3").innerHTML = input.value;
+                else if( event.target.id == 'build-vertical-chart-title-3' ) {
+                    let input = document.getElementById("build-vertical-chart-title-3");
+                    document.getElementById("vertical-title-3").innerHTML = input.value;
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-vertical-chart-percent-3' ) {
@@ -588,7 +588,7 @@
                 let chartLink = document.createElement("input");
                 chartLink.type = "text";
                 chartLink.setAttribute('id',"build-recos-link-" + recosCounter);
-                chartLink.setAttribute('value','Reco URL ' + recosCounter);
+                chartLink.setAttribute('value','Reco PostID ' + recosCounter);
                 recosInputs.appendChild(chartLink);
                 recosCounter++;
                 CreateOutput(output,preview,siteURL);

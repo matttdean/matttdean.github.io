@@ -64,12 +64,12 @@
         });
         inputList[8].addEventListener("input", function () {
             let e = document.getElementsByClassName("intro__illustration");
-            e[0].src = "https://" + siteURL + inputList[8].value;
+            e[0].src = inputList[8].value;
             CreateOutput(output,preview,siteURL);
         });
         inputList[9].addEventListener("input", function () {
             let e = document.getElementsByClassName("intro__logo");
-            e[0].src = "https://" + siteURL + inputList[9].value;
+            e[0].src = inputList[9].value;
             CreateOutput(output,preview,siteURL);
         });
     }
@@ -79,6 +79,7 @@
         let output = document.getElementById("ia-horizontal-chart-output");
         let preview = document.getElementById("ia-horizontal-chart-preview")
         let barColor = "";
+        let textColor = "";
         inputList[0].addEventListener("input", function () {
             document.getElementById("ia-horizontal-module-title").innerHTML = inputList[0].value;
             CreateOutput(output,preview,siteURL);
@@ -96,12 +97,17 @@
             CreateOutput(output,preview,siteURL);
         });
         inputList[3].addEventListener("input", function () {
-            document.getElementById("horizontal-title-1").innerHTML = inputList[3].value;
+            textColor = inputList[3].value;
+            document.getElementById("horizontal-title-1").style.color = inputList[3].value;
             CreateOutput(output,preview,siteURL);
         });
         inputList[4].addEventListener("input", function () {
-            document.getElementById("horizontal-percent-1").innerHTML = inputList[4].value + "%";
-            document.getElementById("horizontal-bar-1").style.width = inputList[4].value + "%";
+            document.getElementById("horizontal-title-1").innerHTML = inputList[4].value;
+            CreateOutput(output,preview,siteURL);
+        });
+        inputList[5].addEventListener("input", function () {
+            document.getElementById("horizontal-percent-1").innerHTML = inputList[5].value + "%";
+            document.getElementById("horizontal-bar-1").style.width = inputList[5].value + "%";
             CreateOutput(output,preview,siteURL);
         });
         let horizontalChartModule = document.getElementById('horizontal-chart-container');
@@ -109,17 +115,29 @@
         let horizontalInputs = document.getElementById('horizontal-inputs');
         horizontalChartButton.addEventListener("click", function() {
             if(horizontalChartCounter < 9) {
-            horizontalChartModule.innerHTML += '<div class="horizontal-bar-chart"><div class="horizontal-bar-chart__bar-container"><div id="horizontal-bar-' + horizontalChartCounter + '" class="animate horizontal-bar-chart__bar active" style="width:41%;background-color:' + barColor + '"></div></div><div id="horizontal-percent-' + horizontalChartCounter + '" class="horizontal-bar-chart__percentage" style="color:' + barColor + ';">41%</div><div id="horizontal-title-' + horizontalChartCounter + '" class="horizontal-bar-chart__title">Hypertension</div></div>';
+            horizontalChartModule.innerHTML += '<div class="horizontal-bar-chart"><div class="horizontal-bar-chart__bar-container"><div id="horizontal-bar-' + horizontalChartCounter + '" class="animate horizontal-bar-chart__bar active" style="width:0%;background-color:' + barColor + '"></div></div><div id="horizontal-percent-' + horizontalChartCounter + '" class="horizontal-bar-chart__percentage" style="color:' + barColor + ';">0%</div><div id="horizontal-title-' + horizontalChartCounter + '" class="horizontal-bar-chart__title" style="color:' + textColor + ';">Lorem Ipsum</div></div>';
+            let chartTitleContainer = document.createElement("div");
+            chartTitleContainer.className = "input__container";
+            horizontalInputs.appendChild(chartTitleContainer);
+            let chartTitleHeading = document.createElement("h3");
+            chartTitleHeading.className = "input__title";
+            chartTitleHeading.innerHTML = "Bar text " + horizontalChartCounter;
+            chartTitleContainer.appendChild(chartTitleHeading);
             let chartTitle = document.createElement("input");
             chartTitle.type = "text";
             chartTitle.setAttribute('id',"build-horizontal-chart-title-" + horizontalChartCounter);
-            chartTitle.setAttribute('value','Bar text ' + horizontalChartCounter);
-            horizontalInputs.appendChild(chartTitle);
+            chartTitleContainer.appendChild(chartTitle);
+            let chartPercentContainer = document.createElement("div");
+            chartPercentContainer.className = "input__container";
+            horizontalInputs.appendChild(chartPercentContainer);
+            let chartPercentHeading = document.createElement("h3");
+            chartPercentHeading.className = "input__title";
+            chartPercentHeading.innerHTML = "Bar percent " + horizontalChartCounter;
+            chartPercentContainer.appendChild(chartPercentHeading);
             chartPercent = document.createElement("input");
             chartPercent.type = "text";
             chartPercent.setAttribute('id',"build-horizontal-chart-percent-" + horizontalChartCounter);
-            chartPercent.setAttribute('value','Bar percent ' + horizontalChartCounter);
-            horizontalInputs.appendChild(chartPercent);
+            chartPercentContainer.appendChild(chartPercent);
             horizontalChartCounter++;
             CreateOutput(output,preview,siteURL);
             }
@@ -227,6 +245,7 @@
         let output = document.getElementById("ia-vertical-chart-output");
         let preview =document.getElementById("ia-vertical-chart-preview");
         let barColor = "";
+        let textColor = "";
         inputList[0].addEventListener("input", function () {
             document.getElementById("ia-vertical-chart-module-title").innerHTML = inputList[0].value
             CreateOutput(output,preview,siteURL);
@@ -244,12 +263,17 @@
             CreateOutput(output,preview,siteURL);
         });
         inputList[3].addEventListener("input", function () {
-            document.getElementById("vertical-title-1").innerHTML = inputList[3].value;
+            textColor = inputList[3].value;
+            document.getElementById("vertical-title-1").style.color = inputList[3].value;
             CreateOutput(output,preview,siteURL);
         });
         inputList[4].addEventListener("input", function () {
-            document.getElementById("vertical-percent-1").innerHTML = inputList[4].value + "%";
-            document.getElementById("vertical-bar-1").style.height = inputList[4].value + "%";
+            document.getElementById("vertical-title-1").innerHTML = inputList[4].value;
+            CreateOutput(output,preview,siteURL);
+        });
+        inputList[5].addEventListener("input", function () {
+            document.getElementById("vertical-percent-1").innerHTML = inputList[5].value + "%";
+            document.getElementById("vertical-bar-1").style.height = inputList[5].value + "%";
             CreateOutput(output,preview,siteURL);
         });
 
@@ -259,17 +283,29 @@
         let verticalInputs = document.getElementById('vertical-inputs');
         verticalChartButton.addEventListener("click", function() {
             if(verticalChartCounter < 6) {
-            verticalChartModule.innerHTML += '<div class="vertical-bar-chart__column"><div class="vertical-bar-chart__container"><div id="vertical-bar-' + verticalChartCounter + '" class="animate vertical-bar-chart__bar active" style="height:35%;background-color: ' + barColor + '"></div></div><div id="vertical-percent-' + verticalChartCounter + '" class="vertical-bar-chart__data vertical-bar-chart__data--percentage" style="color:' + barColor + ';">35%</div><div id="vertical-title-' + verticalChartCounter + '" class="vertical-bar-chart__data vertical-bar-chart__data--title">Respitory<br>Infections</div></div>'
+            verticalChartModule.innerHTML += '<div class="vertical-bar-chart__column"><div class="vertical-bar-chart__container"><div id="vertical-bar-' + verticalChartCounter + '" class="animate vertical-bar-chart__bar active" style="height:0%;background-color: ' + barColor + '"></div></div><div id="vertical-percent-' + verticalChartCounter + '" class="vertical-bar-chart__data vertical-bar-chart__data--percentage" style="color:' + barColor + ';">0%</div><div id="vertical-title-' + verticalChartCounter + '" class="vertical-bar-chart__data vertical-bar-chart__data--title" style="color: ' + textColor + '">Lorem <br> Ipsum</div></div>'
+            let verticalTitleContainer = document.createElement("div");
+            verticalTitleContainer.className = "input__container";
+            verticalInputs.appendChild(verticalTitleContainer);
+            let verticalTitleHeading = document.createElement("h3");
+            verticalTitleHeading.className = "input__title";
+            verticalTitleHeading.innerHTML = "Bar text " + verticalChartCounter;
+            verticalTitleContainer.appendChild(verticalTitleHeading);
             let chartTitle = document.createElement("input");
             chartTitle.type = "text";
             chartTitle.setAttribute('id',"build-vertical-chart-title-" + verticalChartCounter);
-            chartTitle.setAttribute('value','Bar text ' + verticalChartCounter);
-            verticalInputs.appendChild(chartTitle);
+            verticalTitleContainer.appendChild(chartTitle);
+            let verticalPercentContainer = document.createElement("div");
+            verticalPercentContainer.className = "input__container";
+            verticalInputs.appendChild(verticalPercentContainer);
+            let verticalPercentHeading = document.createElement("h3");
+            verticalPercentHeading.className = "input__title";
+            verticalPercentHeading.innerHTML = "Bar percent " + verticalChartCounter;
+            verticalPercentContainer.appendChild(verticalPercentHeading);
             chartPercent = document.createElement("input");
             chartPercent.type = "text";
             chartPercent.setAttribute('id',"build-vertical-chart-percent-" + verticalChartCounter);
-            chartPercent.setAttribute('value','Bar percent ' + verticalChartCounter);
-            verticalInputs.appendChild(chartPercent);
+            verticalPercentContainer.appendChild(chartPercent);
             verticalChartCounter++;
             CreateOutput(output,preview,siteURL);
             }
@@ -340,42 +376,63 @@
         let output = document.getElementById("ia-percentage-output");
         let preview = document.getElementById("ia-percentage-preview")
         let barColor = "";
+        let textColor = "";
         inputList[0].addEventListener("input", function () {
             document.getElementById("percentage-title-1").innerHTML = inputList[0].value
             CreateOutput(output,preview,siteURL);
         });
         inputList[1].addEventListener("input", function () {
-            barColor = inputList[1].value;
-            document.getElementById("percentage-number-1").style.color = inputList[1].value
+            document.getElementById("percentage-container").style.backgroundColor = inputList[1].value
             CreateOutput(output,preview,siteURL);
         });
         inputList[2].addEventListener("input", function () {
-            let e = document.getElementById("percentage-number-1");
-            e.childNodes[0].innerHTML = inputList[2].value;
-
+            textColor = inputList[2].value;
+            document.getElementById("percentage-text-1").style.color = inputList[2].value
             CreateOutput(output,preview,siteURL);
         });
         inputList[3].addEventListener("input", function () {
-            document.getElementById("percentage-text-1").innerHTML = inputList[3].value
+            barColor = inputList[3].value;
+            document.getElementById("percentage-number-1").style.color = inputList[3].value
+            CreateOutput(output,preview,siteURL);
+        });
+        inputList[4].addEventListener("input", function () {
+            let e = document.getElementById("percentage-number-1");
+            e.childNodes[0].innerHTML = inputList[4].value;
+            CreateOutput(output,preview,siteURL);
+        });
+        inputList[5].addEventListener("input", function () {
+            document.getElementById("percentage-text-1").innerHTML = inputList[5].value
             CreateOutput(output,preview,siteURL);
         });
 
-        let percentageChartModule = document.getElementById('percentage-container');
+        let percentageChartModule = document.getElementById('percentage-module-container');
         let percentageChartButton = document.getElementById("percentage-button");
         let percentageInputs = document.getElementById('percentage-inputs');
         percentageChartButton.addEventListener("click", function() {
             if(percentageCounter < 5) {
-            percentageChartModule.innerHTML += '<div class="percentage__container"><div id="percentage-number-' + percentageCounter + '" class="percentage__number" style="color:' + barColor + ';"><span class="count">87</span><span class="percent-percent">%</span></div><div id="percentage-text-' + percentageCounter + '" class="percentage__text">Experience shortness of breath during everyday activities*</div></div>'
+            percentageChartModule.innerHTML += '<div class="percentage__container"><div id="percentage-number-' + percentageCounter + '" class="percentage__number" style="color:' + barColor + ';"><span class="count">1</span><span class="percent-percent">%</span></div><div id="percentage-text-' + percentageCounter + '" class="percentage__text" style="color: ' + textColor + '">Lorem ipsum dolor sit amet, consectetur adipiscing elit*</div></div>'
+            let chartNumberContainer = document.createElement("div");
+            chartNumberContainer.className = "input__container";
+            percentageInputs.appendChild(chartNumberContainer);
+            let chartNumberHeading = document.createElement("h3");
+            chartNumberHeading.className = "input__title";
+            chartNumberHeading.innerHTML = "Data point value " + percentageCounter;
+            chartNumberContainer.appendChild(chartNumberHeading);
             let chartNumber = document.createElement("input");
             chartNumber.type = "text";
             chartNumber.setAttribute('id',"build-percentage-number-" + percentageCounter);
-            chartNumber.setAttribute('value','Data point value ' + percentageCounter);
-            percentageInputs.appendChild(chartNumber);
+            chartNumberContainer.appendChild(chartNumber);
+            let chartTextContainer = document.createElement("div");
+            chartTextContainer.className = "input__container";
+            percentageInputs.appendChild(chartTextContainer);
+            let chartTextHeading = document.createElement("h3");
+            chartTextHeading.className = "input__title";
+            chartTextHeading.innerHTML = "Data point text " + percentageCounter;
+            chartTextContainer.appendChild(chartTextHeading);
             let chartText = document.createElement("input");
             chartText.type = "text";
             chartText.setAttribute('id',"build-percentage-text-" + percentageCounter);
-            chartText.setAttribute('value','Data point text ' + percentageCounter);
-            percentageInputs.appendChild(chartText);
+            chartTextContainer.appendChild(chartText);
             percentageCounter++;
             CreateOutput(output,preview,siteURL);
             }
@@ -452,7 +509,7 @@
         let preview = document.getElementById("ia-floating-image-preview")
         
         inputList[0].addEventListener("input", function () {
-            document.getElementById("floating-image").src = "https://" + siteURL + inputList[0].value;
+            document.getElementById("floating-image").src = inputList[0].value;
             CreateOutput(output,preview,siteURL);
         });
         inputList[1].addEventListener("input", function () {
@@ -467,7 +524,7 @@
         let preview = document.getElementById("ia-image-copy-preview")
         
         inputList[0].addEventListener("input", function () {
-            document.getElementById("image-copy-image").src = "https://" + siteURL + inputList[0].value;
+            document.getElementById("image-copy-image").src = inputList[0].value;
             CreateOutput(output,preview,siteURL);
         });
         inputList[1].addEventListener("input", function () {
@@ -478,6 +535,17 @@
             document.getElementById("image-copy-text").innerHTML = inputList[2].value;
             CreateOutput(output,preview,siteURL);
         });
+        inputList[3].addEventListener("input", function () {
+            let e = document.getElementsByClassName("module--image-copy");
+            e[0].style.backgroundColor = inputList[3].value;
+            CreateOutput(output,preview,siteURL);
+        });
+        inputList[4].addEventListener("input", function () {
+            document.getElementById("image-copy-title").style.color = inputList[4].value;
+            document.getElementById("image-copy-text").style.color = inputList[4].value;
+            CreateOutput(output,preview,siteURL);
+        });
+        
 
         let imageCopyButton = document.getElementById("image-copy-button");
         imageCopyButton.addEventListener("click", function() { 
@@ -520,7 +588,7 @@
             CreateOutput(output,preview,siteURL);
         });
         inputList[1].addEventListener("input", function () {
-            document.getElementById("spot-image-image").src = "https://" + siteURL + inputList[1].value;
+            document.getElementById("spot-image-image").src = inputList[1].value;
             CreateOutput(output,preview,siteURL);
         });
         inputList[2].addEventListener("input", function () {
@@ -538,7 +606,7 @@
         let output = document.getElementById("ia-recos-output");
         let preview = document.getElementById("ia-recos-preview")
         inputList[0].addEventListener("input", function () {
-            document.getElementById("recos-avatar").src = "https://" + siteURL + inputList[0].value
+            document.getElementById("recos-avatar").src = inputList[0].value
             CreateOutput(output,preview,siteURL);
         });
         inputList[1].addEventListener("input", function () {
@@ -557,7 +625,7 @@
             CreateOutput(output,preview,siteURL);
         });
         inputList[4].addEventListener("input", function () {
-            document.getElementById("more-image-1").src = "https://" + siteURL + inputList[4].value
+            document.getElementById("more-image-1").src = inputList[4].value
             CreateOutput(output,preview,siteURL);
         });
         inputList[5].addEventListener("input", function () {
@@ -575,28 +643,46 @@
         recosButton.addEventListener("click", function() {
             if (recosCounter < 7) {
                 recosModule.innerHTML += '<a class="more__links" id="more-link-' + recosCounter + '" href="https://copd.net/"><div class="more__year"><img src="https://copd.net/wp-content/uploads/2022/01/illustration-1.png" id="more-image-' + recosCounter + '" alt="" class="more__year-image"><h3 id="more-year-' + recosCounter + '"class="more__year-text">0000</h3></div></a>'
-                let chartNumber = document.createElement("input");
-                chartNumber.type = "text";
-                chartNumber.setAttribute('id',"build-recos-image-" + recosCounter);
-                chartNumber.setAttribute('value','Reco Image WP URL ' + recosCounter);
-                recosInputs.appendChild(chartNumber);
-                let chartText = document.createElement("input");
-                chartText.type = "text";
-                chartText.setAttribute('id',"build-recos-date-" + recosCounter);
-                chartText.setAttribute('value','Reco Date ' + recosCounter);
-                recosInputs.appendChild(chartText);
-                let chartLink = document.createElement("input");
-                chartLink.type = "text";
-                chartLink.setAttribute('id',"build-recos-link-" + recosCounter);
-                chartLink.setAttribute('value','Reco PostID ' + recosCounter);
-                recosInputs.appendChild(chartLink);
+                let recosImgContainer = document.createElement("div");
+                recosImgContainer.className = "input__container";
+                recosInputs.appendChild(recosImgContainer);
+                let recosImgHeading = document.createElement("h3");
+                recosImgHeading.className = "input__title";
+                recosImgHeading.innerHTML = "Reco Image WP URL " + recosCounter;
+                recosImgContainer.appendChild(recosImgHeading);
+                let recosImg = document.createElement("input");
+                recosImg.type = "text";
+                recosImg.setAttribute('id',"build-recos-image-" + recosCounter);
+                recosImgContainer.appendChild(recosImg);
+                let recosDateContainer = document.createElement("div");
+                recosDateContainer.className = "input__container";
+                recosInputs.appendChild(recosDateContainer);
+                let recosDateHeading = document.createElement("h3");
+                recosDateHeading.className = "input__title";
+                recosDateHeading.innerHTML = "Reco Date " + recosCounter;
+                recosDateContainer.appendChild(recosDateHeading);
+                let recosDate = document.createElement("input");
+                recosDate.type = "text";
+                recosDate.setAttribute('id',"build-recos-date-" + recosCounter);
+                recosDateContainer.appendChild(recosDate);
+                let recosUrlContainer = document.createElement("div");
+                recosUrlContainer.className = "input__container";
+                recosInputs.appendChild(recosUrlContainer);
+                let recosURLHeading = document.createElement("h3");
+                recosURLHeading.className = "input__title";
+                recosURLHeading.innerHTML = "Reco PostID " + recosCounter;
+                recosUrlContainer.appendChild(recosURLHeading);
+                let recosUrl = document.createElement("input");
+                recosUrl.type = "text";
+                recosUrl.setAttribute('id',"build-recos-link-" + recosCounter);
+                recosUrlContainer.appendChild(recosUrl);
                 recosCounter++;
                 CreateOutput(output,preview,siteURL);
             }
             document.getElementById("recos-inputs").addEventListener( 'input', function ( event ) {
                 if( event.target.id == 'build-recos-image-2' ) {
                     let input = document.getElementById("build-recos-image-2");
-                    document.getElementById("more-image-2").src = "https://" + siteURL + input.value;
+                    document.getElementById("more-image-2").src = input.value;
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-recos-date-2' ) {
@@ -611,7 +697,7 @@
                 }
                 else if( event.target.id == 'build-recos-image-3' ) {
                     let input = document.getElementById("build-recos-image-3");
-                    document.getElementById("more-image-3").src = "https://" + siteURL + input.value;
+                    document.getElementById("more-image-3").src = input.value;
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-recos-date-3' ) {
@@ -626,7 +712,7 @@
                 }
                 else if( event.target.id == 'build-recos-image-4' ) {
                     let input = document.getElementById("build-recos-image-4");
-                    document.getElementById("more-image-4").src = "https://" + siteURL + input.value;
+                    document.getElementById("more-image-4").src = input.value;
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-recos-date-4' ) {
@@ -641,7 +727,7 @@
                 }
                 else if( event.target.id == 'build-recos-image-5' ) {
                     let input = document.getElementById("build-recos-image-5");
-                    document.getElementById("more-image-5").src = "https://" + siteURL + input.value;
+                    document.getElementById("more-image-5").src = input.value;
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-recos-date-5' ) {
@@ -656,7 +742,7 @@
                 }
                 else if( event.target.id == 'build-recos-image-6' ) {
                     let input = document.getElementById("build-recos-image-6");
-                    document.getElementById("more-image-6").src = "https://" + siteURL + input.value;
+                    document.getElementById("more-image-6").src = input.value;
                     CreateOutput(output,preview,siteURL);
                 }
                 else if( event.target.id == 'build-recos-date-6' ) {
@@ -691,7 +777,7 @@
         let preview = document.getElementById("ia-recos-new-preview")
         
         inputList[0].addEventListener("input", function () {
-            document.getElementById("recos-avatar-new").src = "https://" + siteURL + inputList[0].value
+            document.getElementById("recos-avatar-new").src = inputList[0].value
             CreateOutput(output,preview,siteURL);
         });
         inputList[1].addEventListener("input", function () {
@@ -707,8 +793,8 @@
         outputText = outputText.replaceAll("https://" + s + "", "");
         outputText = outputText.replaceAll(" active", "");
         o.innerHTML = "<xmp>" + outputText + "</xmp>";
+        
     }
-
 
        CreateIAIntro();
        CreateHorizontalBarChartCode();
@@ -720,6 +806,7 @@
        CreateIASpotImage();
        CreateIARecos();
        CreateIARecosNew();
+
 }())
 
 

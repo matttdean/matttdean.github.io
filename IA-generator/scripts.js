@@ -91,14 +91,42 @@
         });
         inputList[2].addEventListener("input", function () {
             barColor = inputList[2].value;
-            let e = document.getElementsByClassName("horizontal-bar-chart__bar");
-            e[0].style.backgroundColor = inputList[2].value;
+            document.getElementById("horizontal-bar-1").style.backgroundColor = inputList[2].value;
             document.getElementById("horizontal-percent-1").style.color = inputList[2].value;
+            if (document.getElementById("horizontal-percent-2")) {
+                document.getElementById("horizontal-percent-2").style.color = inputList[2].value;
+                document.getElementById("horizontal-bar-2").style.backgroundColor = inputList[2].value;
+            }
+            if (document.getElementById("horizontal-percent-3")) {
+                document.getElementById("horizontal-percent-3").style.color = inputList[2].value;
+                document.getElementById("horizontal-bar-3").style.backgroundColor = inputList[2].value;
+            }
+            if (document.getElementById("horizontal-percent-4")) {
+                document.getElementById("horizontal-percent-4").style.color = inputList[2].value;
+                document.getElementById("horizontal-bar-4").style.backgroundColor = inputList[2].value;
+            }
+            if (document.getElementById("horizontal-percent-5")) {
+                document.getElementById("horizontal-percent-5").style.color = inputList[2].value;
+                document.getElementById("horizontal-bar-5").style.backgroundColor = inputList[2].value;
+            }
+            if (document.getElementById("horizontal-percent-6")) {
+                document.getElementById("horizontal-percent-6").style.color = inputList[2].value;
+                document.getElementById("horizontal-bar-6").style.backgroundColor = inputList[2].value;
+            }
+            if (document.getElementById("horizontal-percent-7")) {
+                document.getElementById("horizontal-percent-7").style.color = inputList[2].value;
+                document.getElementById("horizontal-bar-7").style.backgroundColor = inputList[2].value;
+            }
+            if (document.getElementById("horizontal-percent-8")) {
+                document.getElementById("horizontal-percent-8").style.color = inputList[2].value;
+                document.getElementById("horizontal-bar-8").style.backgroundColor = inputList[2].value;
+            }
             CreateOutput(output,preview,siteURL);
         });
         inputList[3].addEventListener("input", function () {
             textColor = inputList[3].value;
             document.getElementById("horizontal-title-1").style.color = inputList[3].value;
+            document.getElementById("ia-horizontal-module-title").style.color = inputList[3].value;
             CreateOutput(output,preview,siteURL);
         });
         inputList[4].addEventListener("input", function () {
@@ -257,14 +285,30 @@
         });
         inputList[2].addEventListener("input", function () {
             barColor = inputList[2].value;
-            let e = document.getElementsByClassName("vertical-bar-chart__bar");
-            e[0].style.backgroundColor = inputList[2].value;
+            document.getElementById("vertical-bar-1").style.backgroundColor = inputList[2].value;
             document.getElementById("vertical-percent-1").style.color = inputList[2].value;
+            if (document.getElementById("vertical-percent-2")) {
+                document.getElementById("vertical-percent-2").style.color = inputList[2].value;
+                document.getElementById("vertical-bar-2").style.backgroundColor = inputList[2].value;
+            }
+            if (document.getElementById("vertical-percent-3")) {
+                document.getElementById("vertical-percent-3").style.color = inputList[2].value;
+                document.getElementById("vertical-bar-3").style.backgroundColor = inputList[2].value;
+            }
+            if (document.getElementById("vertical-percent-4")) {
+                document.getElementById("vertical-percent-4").style.color = inputList[2].value;
+                document.getElementById("vertical-bar-4").style.backgroundColor = inputList[2].value;
+            }
+            if (document.getElementById("vertical-percent-5")) {
+                document.getElementById("vertical-percent-5").style.color = inputList[2].value;
+                document.getElementById("vertical-bar-5").style.backgroundColor = inputList[2].value;
+            }
             CreateOutput(output,preview,siteURL);
         });
         inputList[3].addEventListener("input", function () {
             textColor = inputList[3].value;
             document.getElementById("vertical-title-1").style.color = inputList[3].value;
+            document.getElementById("ia-vertical-chart-module-title").style.color = inputList[3].value;
             CreateOutput(output,preview,siteURL);
         });
         inputList[4].addEventListener("input", function () {
@@ -388,11 +432,30 @@
         inputList[2].addEventListener("input", function () {
             textColor = inputList[2].value;
             document.getElementById("percentage-text-1").style.color = inputList[2].value
+            document.getElementById("percentage-title-1").style.color = inputList[2].value
+            if(document.getElementById("percentage-text-2")) {
+                document.getElementById("percentage-text-2").style.color = inputList[2].value
+            }
+            if(document.getElementById("percentage-text-3")) {
+                document.getElementById("percentage-text-3").style.color = inputList[2].value
+            }
+            if(document.getElementById("percentage-text-4")) {
+                document.getElementById("percentage-text-4").style.color = inputList[2].value
+            }
             CreateOutput(output,preview,siteURL);
         });
         inputList[3].addEventListener("input", function () {
             barColor = inputList[3].value;
             document.getElementById("percentage-number-1").style.color = inputList[3].value
+            if(document.getElementById("percentage-number-2")) {
+                document.getElementById("percentage-number-2").style.color = inputList[3].value
+            }
+            if(document.getElementById("percentage-number-3")) {
+                document.getElementById("percentage-number-3").style.color = inputList[3].value
+            }
+            if(document.getElementById("percentage-number-4")) {
+                document.getElementById("percentage-number-4").style.color = inputList[3].value
+            }
             CreateOutput(output,preview,siteURL);
         });
         inputList[4].addEventListener("input", function () {

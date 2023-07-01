@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Yellow</title>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/319hf99fYX/fX2F/319hf8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////////////////99fYX/fX2F/319hf8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////////////////wAAAP8AAAD/fX2F/319hf99fYX/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////8AAAD/AAAA/wAAAP99fYX/fX2F/wAAAP8AAAD/AAAA/319hf8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/HBT//xwU//8AAAD//////319hf8AAAD/Dgim/w4Ipv8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAD/HBT//xwU//8cFP//HBT//wAAAP8AAAD/Dgim/w4Ipv8OCKb/Dgim/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAA/xwU//8cFP//HBT//xwU/44cFP//HBT//xwU//8cFP//Dgim/w4Ipv8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/HBT//xwU/47/////HBT/jhwU//8cFP//HBT//w4Ipv8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/xwU//8cFP//HBT/jhwU//8OCKb/Dgim/w4Ipv8OCKb/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/xwU//8OCKb/Dgim/w4Ipv8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAPw/AADwDwAA4AcAAOAHAADAAwAAwAMAAMADAADAAwAA4AcAAOAHAADwDwAA/D8AAP//AAD//wAA//8AAA==" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+        <!-- <img src="img/download.png" alt="">  -->
+        <img src="img/Artboard2.png" alt="">
+        <div class="menu__border--move-list"></div>
+        <div class="menu--battle">
+            <div id="menu__selector"></div>
+            <div class="menu__text-item" id="fight">FIGHT</div>
+            <div class="menu__text-item" id="pkmn"></div>
+            <div class="menu__text-item" id="item">ITEM</div>
+            <div class="menu__text-item" id="run">RUN</div>
+            <div class="menu__border--battle"></div>
+        </div>
+        <div class="menu">
+            <div class="menu__border"></div>
+        </div>
+        <div class="info info--battle">
+            <div class="info__border--battle"></div>
+            <div class="hp__bar-container">
+                <div class="hp__bar-border"></div>
+            </div>
+            <div class="hp__text">20 / <span class="hp__text--total">20</span></div>
+            <div class="hp__label"></div>
+            <div class="level__label"></div>
+            <div class="level__text">5</div>
+            <div class="pokemon__name">BULBASAUR</div>
+        </div>
+        <div style="display: none;" class="info">
+            <div class="info__border"></div>
+            <div class="info__pokeball-container">
+                <div class="info__pokeball" id="pokeball-1"></div>
+                <div class="info__pokeball" id="pokeball-2"></div>
+                <div class="info__pokeball" id="pokeball-3"></div>
+                <div class="info__pokeball" id="pokeball-4"></div>
+                <div class="info__pokeball" id="pokeball-5"></div>
+                <div class="info__pokeball" id="pokeball-6"></div>
+            </div>
+        </div>
+        <div class="info info--opponent">
+            <div class="info__border info__border--opponent"></div>
+            <div class="hp__bar-container hp__bar-container--opponent">
+                <div class="hp__bar-border"></div>
+            </div>
+            <div class="hp__label hp__label--opponent"></div>
+            <div class="level__label level__label--opponent"></div>
+            <div class="level__text level__text--opponent">5</div>
+            <div class="pokemon__name pokemon__name--opponent">CHARMANDER</div>
+            <div class="info__pokeball-container">
+                <div class="info__pokeball" id="pokeball-1"></div>
+                <div class="info__pokeball" id="pokeball-2"></div>
+                <div class="info__pokeball" id="pokeball-3"></div>
+                <div class="info__pokeball" id="pokeball-4"></div>
+                <div class="info__pokeball" id="pokeball-5"></div>
+                <div class="info__pokeball" id="pokeball-6"></div>
+            </div>
+        </div>
+    </div>
+    <div id="pixelmaker"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>

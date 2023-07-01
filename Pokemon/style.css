@@ -1,0 +1,324 @@
+@font-face {
+    font-family: "pixel";
+    src: url('fonts/PKMN RBYGSC.ttf');
+  }
+  @font-face {
+    font-family: "pixel-2";
+    src: url('fonts/Pokemon Classic.ttf');
+  }
+
+* {
+    box-sizing: border-box;
+}
+.bold {
+    font-weight: bold;
+}
+body {
+    background-color: teal;
+}
+.screen {
+    font-family: "pixel"; 
+    text-transform: uppercase;
+    position: relative;
+    margin: 30px auto 0;
+    width: 320px;
+    height: 288px;
+    background-color: white;
+}
+.menu {
+    position: absolute;
+    bottom: 0;
+    height: 95px;
+    width: 320px;
+}
+img {
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+    image-rendering: pixelated;
+}
+.menu__border {
+    width: 2px;
+    height: 2px;
+    box-shadow: 6px 0px black, 8px 0 black, 310px 0 black, 312px 0 black, 
+                4px 2px black, 6px 2px white, 8px 2px black, 10px 2px black, 14px 2px black, 16px 2px black, 18px 2px black, 20px 2px black, 22px 2px black, 24px 2px black, 26px 2px black, 28px 2px black, 30px 2px black, 32px 2px black, 34px 2px black, 36px 2px black, 38px 2px black, 40px 2px black, 42px 2px black, 44px 2px black, 46px 2px black, 48px 2px black, 50px 2px black, 52px 2px black, 54px 2px black, 56px 2px black, 58px 2px black, 60px 2px black, 62px 2px black, 64px 2px black, 66px 2px black, 68px 2px black, 70px 2px black, 72px 2px black, 74px 2px black, 76px 2px black, 78px 2px black, 80px 2px black, 82px 2px black, 84px 2px black, 86px 2px black, 88px 2px black, 90px 2px black, 92px 2px black, 94px 2px black, 96px 2px black, 98px 2px black, 100px 2px black, 102px 2px black, 104px 2px black, 106px 2px black, 108px 2px black, 110px 2px black, 112px 2px black, 114px 2px black, 116px 2px black, 118px 2px black, 120px 2px black, 122px 2px black, 124px 2px black, 126px 2px black, 128px 2px black, 130px 2px black, 132px 2px black, 134px 2px black, 136px 2px black, 138px 2px black, 140px 2px black, 142px 2px black, 144px 2px black, 146px 2px black, 148px 2px black, 150px 2px black, 152px 2px black, 154px 2px black, 156px 2px black, 158px 2px black, 160px 2px black, 162px 2px black, 164px 2px black, 166px 2px black, 168px 2px black, 170px 2px black, 172px 2px black, 174px 2px black, 176px 2px black, 178px 2px black, 180px 2px black, 182px 2px black, 184px 2px black, 186px 2px black, 188px 2px black, 190px 2px black, 192px 2px black, 194px 2px black, 196px 2px black, 198px 2px black, 200px 2px black, 202px 2px black, 204px 2px black, 206px 2px black, 208px 2px black, 210px 2px black, 212px 2px black, 214px 2px black, 216px 2px black, 218px 2px black, 220px 2px black, 222px 2px black, 224px 2px black, 226px 2px black, 228px 2px black, 230px 2px black, 232px 2px black, 234px 2px black, 236px 2px black, 238px 2px black, 240px 2px black, 242px 2px black, 244px 2px black, 246px 2px black, 248px 2px black, 250px 2px black, 252px 2px black, 254px 2px black, 256px 2px black, 258px 2px black, 260px 2px black, 262px 2px black, 264px 2px black, 266px 2px black, 268px 2px black, 270px 2px black, 272px 2px black, 274px 2px black, 276px 2px black, 278px 2px black, 280px 2px black, 282px 2px black, 284px 2px black, 286px 2px black, 288px 2px black, 290px 2px black, 292px 2px black, 294px 2px black, 296px 2px black, 298px 2px black, 300px 2px black, 302px 2px black, 304px 2px black, 308px 2px black, 310px 2px white, 312px 2px black, 314px 2px black,
+                2px 4px black, 4px 4px black, 6px 4px black, 8px 4px black, 10px 4px black, 12px 4px black, 306px 4px black, 308px 4px black, 310px 4px black, 312px 4px black, 314px 4px black, 316px 4px black,
+                2px 6px black, 12px 6px black, 16px 6px black, 18px 6px black, 20px 6px black, 22px 6px black, 24px 6px black, 26px 6px black, 28px 6px black, 30px 6px black, 32px 6px black, 34px 6px black, 36px 6px black, 38px 6px black, 40px 6px black, 42px 6px black, 44px 6px black, 46px 6px black, 48px 6px black, 50px 6px black, 52px 6px black, 54px 6px black, 56px 6px black, 58px 6px black, 60px 6px black, 62px 6px black, 64px 6px black, 66px 6px black, 68px 6px black, 70px 6px black, 72px 6px black, 74px 6px black, 76px 6px black, 78px 6px black, 80px 6px black, 82px 6px black, 84px 6px black, 86px 6px black, 88px 6px black, 90px 6px black, 92px 6px black, 94px 6px black, 96px 6px black, 98px 6px black, 100px 6px black, 102px 6px black, 104px 6px black, 106px 6px black, 108px 6px black, 110px 6px black, 112px 6px black, 114px 6px black, 116px 6px black, 118px 6px black, 120px 6px black, 122px 6px black, 124px 6px black, 126px 6px black, 128px 6px black, 130px 6px black, 132px 6px black, 134px 6px black, 136px 6px black, 138px 6px black, 140px 6px black, 142px 6px black, 144px 6px black, 146px 6px black, 148px 6px black, 150px 6px black, 152px 6px black, 154px 6px black, 156px 6px black, 158px 6px black, 160px 6px black, 162px 6px black, 164px 6px black, 166px 6px black, 168px 6px black, 170px 6px black, 172px 6px black, 174px 6px black, 176px 6px black, 178px 6px black, 180px 6px black, 182px 6px black, 184px 6px black, 186px 6px black, 188px 6px black, 190px 6px black, 192px 6px black, 194px 6px black, 196px 6px black, 198px 6px black, 200px 6px black, 202px 6px black, 204px 6px black, 206px 6px black, 208px 6px black, 210px 6px black, 212px 6px black, 214px 6px black, 216px 6px black, 218px 6px black, 220px 6px black, 222px 6px black, 224px 6px black, 226px 6px black, 228px 6px black, 230px 6px black, 232px 6px black, 234px 6px black, 236px 6px black, 238px 6px black, 240px 6px black, 242px 6px black, 244px 6px black, 246px 6px black, 248px 6px black, 250px 6px black, 252px 6px black, 254px 6px black, 256px 6px black, 258px 6px black, 260px 6px black, 262px 6px black, 264px 6px black, 266px 6px black, 268px 6px black, 270px 6px black, 272px 6px black, 274px 6px black, 276px 6px black, 278px 6px black, 280px 6px black, 282px 6px black, 284px 6px black, 286px 6px black, 288px 6px black, 290px 6px black, 292px 6px black, 294px 6px black, 296px 6px black, 298px 6px black, 300px 6px black, 302px 6px black, 306px 6px black, 316px 6px black,
+                4px 8px black, 10px 8px black, 14px 8px black, 16px 8px black, 18px 8px black, 20px 8px black, 22px 8px black, 24px 8px black, 26px 8px black, 28px 8px black, 30px 8px black, 32px 8px black, 34px 8px black, 36px 8px black, 38px 8px black, 40px 8px black, 42px 8px black, 44px 8px black, 46px 8px black, 48px 8px black, 50px 8px black, 52px 8px black, 54px 8px black, 56px 8px black, 58px 8px black, 60px 8px black, 62px 8px black, 64px 8px black, 66px 8px black, 68px 8px black, 70px 8px black, 72px 8px black, 74px 8px black, 76px 8px black, 78px 8px black, 80px 8px black, 82px 8px black, 84px 8px black, 86px 8px black, 88px 8px black, 90px 8px black, 92px 8px black, 94px 8px black, 96px 8px black, 98px 8px black, 100px 8px black, 102px 8px black, 104px 8px black, 106px 8px black, 108px 8px black, 110px 8px black, 112px 8px black, 114px 8px black, 116px 8px black, 118px 8px black, 120px 8px black, 122px 8px black, 124px 8px black, 126px 8px black, 128px 8px black, 130px 8px black, 132px 8px black, 134px 8px black, 136px 8px black, 138px 8px black, 140px 8px black, 142px 8px black, 144px 8px black, 146px 8px black, 148px 8px black, 150px 8px black, 152px 8px black, 154px 8px black, 156px 8px black, 158px 8px black, 160px 8px black, 162px 8px black, 164px 8px black, 166px 8px black, 168px 8px black, 170px 8px black, 172px 8px black, 174px 8px black, 176px 8px black, 178px 8px black, 180px 8px black, 182px 8px black, 184px 8px black, 186px 8px black, 188px 8px black, 190px 8px black, 192px 8px black, 194px 8px black, 196px 8px black, 198px 8px black, 200px 8px black, 202px 8px black, 204px 8px black, 206px 8px black, 208px 8px black, 210px 8px black, 212px 8px black, 214px 8px black, 216px 8px black, 218px 8px black, 220px 8px black, 222px 8px black, 224px 8px black, 226px 8px black, 228px 8px black, 230px 8px black, 232px 8px black, 234px 8px black, 236px 8px black, 238px 8px black, 240px 8px black, 242px 8px black, 244px 8px black, 246px 8px black, 248px 8px black, 250px 8px black, 252px 8px black, 254px 8px black, 256px 8px black, 258px 8px black, 260px 8px black, 262px 8px black, 264px 8px black, 266px 8px black, 268px 8px black, 270px 8px black, 272px 8px black, 274px 8px black, 276px 8px black, 278px 8px black, 280px 8px black, 282px 8px black, 284px 8px black, 286px 8px black, 288px 8px black, 290px 8px black, 292px 8px black, 294px 8px black, 296px 8px black, 298px 8px black, 300px 8px black, 302px 8px black, 304px 8px black, 308px 8px black, 314px 8px black,
+                6px 10px black, 8px 10px black, 12px 10px black, 306px 10px black, 310px 10px black, 312px 10px black,
+                6px 12px black, 10px 12px black, 308px 12px black, 312px 12px black,
+                4px 14px black, 8px 14px black, 308px 14px black, 312px 14px black, 4px 16px black, 8px 16px black, 308px 16px black, 312px 16px black, 4px 18px black, 8px 18px black, 308px 18px black, 312px 18px black, 4px 20px black, 8px 20px black, 308px 20px black, 312px 20px black, 4px 22px black, 8px 22px black, 308px 22px black, 312px 22px black, 4px 24px black, 8px 24px black, 308px 24px black, 312px 24px black, 4px 26px black, 8px 26px black, 308px 26px black, 312px 26px black, 4px 28px black, 8px 28px black, 308px 28px black, 312px 28px black, 4px 30px black, 8px 30px black, 308px 30px black, 312px 30px black, 4px 32px black, 8px 32px black, 308px 32px black, 312px 32px black, 4px 34px black, 8px 34px black, 308px 34px black, 312px 34px black, 4px 36px black, 8px 36px black, 308px 36px black, 312px 36px black, 4px 38px black, 8px 38px black, 308px 38px black, 312px 38px black, 4px 40px black, 8px 40px black, 308px 40px black, 312px 40px black, 4px 42px black, 8px 42px black, 308px 42px black, 312px 42px black, 4px 44px black, 8px 44px black, 308px 44px black, 312px 44px black, 4px 46px black, 8px 46px black, 308px 46px black, 312px 46px black, 4px 48px black, 8px 48px black, 308px 48px black, 312px 48px black, 4px 50px black, 8px 50px black, 308px 50px black, 312px 50px black, 4px 52px black, 8px 52px black, 308px 52px black, 312px 52px black, 4px 54px black, 8px 54px black, 308px 54px black, 312px 54px black, 4px 56px black, 8px 56px black, 308px 56px black, 312px 56px black,
+                4px 56px black, 8px 56px black, 308px 56px black, 312px 56px black, 4px 58px black, 8px 58px black, 308px 58px black, 312px 58px black, 4px 60px black, 8px 60px black, 308px 60px black, 312px 60px black, 4px 62px black, 8px 62px black, 308px 62px black, 312px 62px black, 4px 64px black, 8px 64px black, 308px 64px black, 312px 64px black, 4px 66px black, 8px 66px black, 308px 66px black, 312px 66px black, 4px 68px black, 8px 68px black, 308px 68px black, 312px 68px black, 4px 70px black, 8px 70px black, 308px 70px black, 312px 70px black, 4px 72px black, 8px 72px black, 308px 72px black, 312px 72px black, 4px 74px black, 8px 74px black, 308px 74px black, 312px 74px black, 4px 76px black, 8px 76px black, 308px 76px black, 312px 76px black,
+                6px 78px black, 10px 78px black, 308px 78px black, 312px 78px black,
+                6px 80px black, 8px 80px black, 12px 80px black, 306px 80px black, 310px 80px black, 312px 80px black,
+                4px 82px black, 6px 82px white, 8px 82px black, 10px 82px black, 14px 82px black, 16px 82px black, 18px 82px black, 20px 82px black, 22px 82px black, 24px 82px black, 26px 82px black, 28px 82px black, 30px 82px black, 32px 82px black, 34px 82px black, 36px 82px black, 38px 82px black, 40px 82px black, 42px 82px black, 44px 82px black, 46px 82px black, 48px 82px black, 50px 82px black, 52px 82px black, 54px 82px black, 56px 82px black, 58px 82px black, 60px 82px black, 62px 82px black, 64px 82px black, 66px 82px black, 68px 82px black, 70px 82px black, 72px 82px black, 74px 82px black, 76px 82px black, 78px 82px black, 80px 82px black, 82px 82px black, 84px 82px black, 86px 82px black, 88px 82px black, 90px 82px black, 92px 82px black, 94px 82px black, 96px 82px black, 98px 82px black, 100px 82px black, 102px 82px black, 104px 82px black, 106px 82px black, 108px 82px black, 110px 82px black, 112px 82px black, 114px 82px black, 116px 82px black, 118px 82px black, 120px 82px black, 122px 82px black, 124px 82px black, 126px 82px black, 128px 82px black, 130px 82px black, 132px 82px black, 134px 82px black, 136px 82px black, 138px 82px black, 140px 82px black, 142px 82px black, 144px 82px black, 146px 82px black, 148px 82px black, 150px 82px black, 152px 82px black, 154px 82px black, 156px 82px black, 158px 82px black, 160px 82px black, 162px 82px black, 164px 82px black, 166px 82px black, 168px 82px black, 170px 82px black, 172px 82px black, 174px 82px black, 176px 82px black, 178px 82px black, 180px 82px black, 182px 82px black, 184px 82px black, 186px 82px black, 188px 82px black, 190px 82px black, 192px 82px black, 194px 82px black, 196px 82px black, 198px 82px black, 200px 82px black, 202px 82px black, 204px 82px black, 206px 82px black, 208px 82px black, 210px 82px black, 212px 82px black, 214px 82px black, 216px 82px black, 218px 82px black, 220px 82px black, 222px 82px black, 224px 82px black, 226px 82px black, 228px 82px black, 230px 82px black, 232px 82px black, 234px 82px black, 236px 82px black, 238px 82px black, 240px 82px black, 242px 82px black, 244px 82px black, 246px 82px black, 248px 82px black, 250px 82px black, 252px 82px black, 254px 82px black, 256px 82px black, 258px 82px black, 260px 82px black, 262px 82px black, 264px 82px black, 266px 82px black, 268px 82px black, 270px 82px black, 272px 82px black, 274px 82px black, 276px 82px black, 278px 82px black, 280px 82px black, 282px 82px black, 284px 82px black, 286px 82px black, 288px 82px black, 290px 82px black, 292px 82px black, 294px 82px black, 296px 82px black, 298px 82px black, 300px 82px black, 302px 82px black, 304px 82px black, 308px 82px black, 310px 82px white, 312px 82px black, 314px 82px black,
+                2px 84px black, 4px 84px black, 6px 84px black, 8px 84px black, 10px 84px black, 12px 84px black, 306px 84px black, 308px 84px black, 310px 84px black, 312px 84px black, 314px 84px black, 316px 84px black,
+                2px 86px black, 12px 86px black, 16px 86px black, 18px 86px black, 20px 86px black, 22px 86px black, 24px 86px black, 26px 86px black, 28px 86px black, 30px 86px black, 32px 86px black, 34px 86px black, 36px 86px black, 38px 86px black, 40px 86px black, 42px 86px black, 44px 86px black, 46px 86px black, 48px 86px black, 50px 86px black, 52px 86px black, 54px 86px black, 56px 86px black, 58px 86px black, 60px 86px black, 62px 86px black, 64px 86px black, 66px 86px black, 68px 86px black, 70px 86px black, 72px 86px black, 74px 86px black, 76px 86px black, 78px 86px black, 80px 86px black, 82px 86px black, 84px 86px black, 86px 86px black, 88px 86px black, 90px 86px black, 92px 86px black, 94px 86px black, 96px 86px black, 98px 86px black, 100px 86px black, 102px 86px black, 104px 86px black, 106px 86px black, 108px 86px black, 110px 86px black, 112px 86px black, 114px 86px black, 116px 86px black, 118px 86px black, 120px 86px black, 122px 86px black, 124px 86px black, 126px 86px black, 128px 86px black, 130px 86px black, 132px 86px black, 134px 86px black, 136px 86px black, 138px 86px black, 140px 86px black, 142px 86px black, 144px 86px black, 146px 86px black, 148px 86px black, 150px 86px black, 152px 86px black, 154px 86px black, 156px 86px black, 158px 86px black, 160px 86px black, 162px 86px black, 164px 86px black, 166px 86px black, 168px 86px black, 170px 86px black, 172px 86px black, 174px 86px black, 176px 86px black, 178px 86px black, 180px 86px black, 182px 86px black, 184px 86px black, 186px 86px black, 188px 86px black, 190px 86px black, 192px 86px black, 194px 86px black, 196px 86px black, 198px 86px black, 200px 86px black, 202px 86px black, 204px 86px black, 206px 86px black, 208px 86px black, 210px 86px black, 212px 86px black, 214px 86px black, 216px 86px black, 218px 86px black, 220px 86px black, 222px 86px black, 224px 86px black, 226px 86px black, 228px 86px black, 230px 86px black, 232px 86px black, 234px 86px black, 236px 86px black, 238px 86px black, 240px 86px black, 242px 86px black, 244px 86px black, 246px 86px black, 248px 86px black, 250px 86px black, 252px 86px black, 254px 86px black, 256px 86px black, 258px 86px black, 260px 86px black, 262px 86px black, 264px 86px black, 266px 86px black, 268px 86px black, 270px 86px black, 272px 86px black, 274px 86px black, 276px 86px black, 278px 86px black, 280px 86px black, 282px 86px black, 284px 86px black, 286px 86px black, 288px 86px black, 290px 86px black, 292px 86px black, 294px 86px black, 296px 86px black, 298px 86px black, 300px 86px black, 302px 86px black, 306px 86px black, 316px 86px black,
+                4px 88px black, 10px 88px black, 14px 88px black, 16px 88px black, 18px 88px black, 20px 88px black, 22px 88px black, 24px 88px black, 26px 88px black, 28px 88px black, 30px 88px black, 32px 88px black, 34px 88px black, 36px 88px black, 38px 88px black, 40px 88px black, 42px 88px black, 44px 88px black, 46px 88px black, 48px 88px black, 50px 88px black, 52px 88px black, 54px 88px black, 56px 88px black, 58px 88px black, 60px 88px black, 62px 88px black, 64px 88px black, 66px 88px black, 68px 88px black, 70px 88px black, 72px 88px black, 74px 88px black, 76px 88px black, 78px 88px black, 80px 88px black, 82px 88px black, 84px 88px black, 86px 88px black, 88px 88px black, 90px 88px black, 92px 88px black, 94px 88px black, 96px 88px black, 98px 88px black, 100px 88px black, 102px 88px black, 104px 88px black, 106px 88px black, 108px 88px black, 110px 88px black, 112px 88px black, 114px 88px black, 116px 88px black, 118px 88px black, 120px 88px black, 122px 88px black, 124px 88px black, 126px 88px black, 128px 88px black, 130px 88px black, 132px 88px black, 134px 88px black, 136px 88px black, 138px 88px black, 140px 88px black, 142px 88px black, 144px 88px black, 146px 88px black, 148px 88px black, 150px 88px black, 152px 88px black, 154px 88px black, 156px 88px black, 158px 88px black, 160px 88px black, 162px 88px black, 164px 88px black, 166px 88px black, 168px 88px black, 170px 88px black, 172px 88px black, 174px 88px black, 176px 88px black, 178px 88px black, 180px 88px black, 182px 88px black, 184px 88px black, 186px 88px black, 188px 88px black, 190px 88px black, 192px 88px black, 194px 88px black, 196px 88px black, 198px 88px black, 200px 88px black, 202px 88px black, 204px 88px black, 206px 88px black, 208px 88px black, 210px 88px black, 212px 88px black, 214px 88px black, 216px 88px black, 218px 88px black, 220px 88px black, 222px 88px black, 224px 88px black, 226px 88px black, 228px 88px black, 230px 88px black, 232px 88px black, 234px 88px black, 236px 88px black, 238px 88px black, 240px 88px black, 242px 88px black, 244px 88px black, 246px 88px black, 248px 88px black, 250px 88px black, 252px 88px black, 254px 88px black, 256px 88px black, 258px 88px black, 260px 88px black, 262px 88px black, 264px 88px black, 266px 88px black, 268px 88px black, 270px 88px black, 272px 88px black, 274px 88px black, 276px 88px black, 278px 88px black, 280px 88px black, 282px 88px black, 284px 88px black, 286px 88px black, 288px 88px black, 290px 88px black, 292px 88px black, 294px 88px black, 296px 88px black, 298px 88px black, 300px 88px black, 302px 88px black, 304px 88px black, 308px 88px black, 314px 88px black,
+                6px 90px black, 8px 90px black, 310px 90px black, 312px 90px black;
+}
+
+.menu--battle {
+    position: absolute;
+    bottom: 0;
+    height: 95px;
+    width: 192px;
+    right: 0;
+    z-index: 1;
+    display: none;
+}
+.menu__border--battle {
+width: 2px;
+height: 2px;
+box-shadow: 4px 0px white, 6px 0px black, 8px 0px black,
+            2px 2px white, 4px 2px black, 6px 2px white, 8px 2px black, 10px 2px black, 12px 2px white, 14px 2px black, 16px 2px black, 18px 2px black,
+            0px 4px white, 2px 4px black, 4px 4px black, 6px 4px black, 8px 4px black, 10px 4px black, 12px 4px black,
+            0px 6px white, 2px 6px black, 4px 6px white, 6px 6px white, 8px 6px white, 10px 6px white, 12px 6px black, 14px 6px white, 16px 6px black, 18px 6px black, 20px 6px black, 22px 6px black, 24px 6px black,
+            2px 8px white, 4px 8px black, 6px 8px white, 8px 8px white, 10px 8px black, 12px 8px white, 14px 8px black, 16px 8px black, 18px 8px black, 20px 8px black, 22px 8px black,
+            6px 10px black, 8px 10px black, 12px 10px black,
+            6px 12px black, 10px 12px black,
+            4px 14px black, 8px 14px black, 4px 16px black, 8px 16px black, 4px 18px black, 8px 18px black, 4px 20px black, 8px 20px black, 4px 22px black, 8px 22px black, 4px 24px black, 8px 24px black, 4px 26px black, 8px 26px black, 4px 28px black, 8px 28px black, 4px 30px black, 8px 30px black, 4px 32px black, 8px 32px black, 4px 34px black, 8px 34px black, 4px 36px black, 8px 36px black, 4px 38px black, 8px 38px black, 4px 40px black, 8px 40px black, 4px 42px black, 8px 42px black, 4px 44px black, 8px 44px black, 4px 46px black, 8px 46px black, 4px 48px black, 8px 48px black, 4px 50px black, 8px 50px black, 4px 52px black, 8px 52px black, 4px 54px black, 8px 54px black, 4px 56px black, 8px 56px black, 4px 58px black, 8px 58px black, 4px 60px black, 8px 60px black, 4px 62px black, 8px 62px black, 4px 64px black, 8px 64px black, 4px 66px black, 8px 66px black, 4px 68px black, 8px 68px black, 4px 70px black, 8px 70px black, 4px 72px black, 8px 72px black, 4px 74px black, 8px 74px black, 4px 76px black, 8px 76px black,
+            6px 78px black, 10px 78px black,
+            6px 80px black, 8px 80px black, 12px 80px black,
+            2px 82px white, 4px 82px black, 6px 82px white, 8px 82px black, 10px 82px black, 12px 82px white,
+            2px 84px black, 4px 84px black, 6px 84px black, 8px 84px black, 10px 84px black, 12px 84px black,
+            0px 86px white, 2px 86px black, 4px 86px white, 6px 86px white, 8px 86px white, 10px 86px white, 12px 86px black, 14px 86px white,
+            2px 88px white, 4px 88px black, 6px 88px white, 8px 88px white, 10px 88px black, 12px 88px white,
+            6px 90px black, 8px 90px black;
+}
+.menu__border--move-list {
+    position: absolute;
+    left: 64px;
+    bottom: 97px;
+    width: 2px;
+    height: 2px;
+    z-index: 1;
+    box-shadow: 100px 2px black, 102px 2px white, 104px 2px black, 106px 2px white, 98px 4px black, 100px 4px white, 102px 4px black, 104px 4px black, 106px 4px white, 108px 4px white, 242px 4px white, 244px 4px white, 246px 4px black, 248px 4px black, 250px 4px white, 2px 6px black, 4px 6px black, 6px 6px black, 8px 6px black, 10px 6px black, 12px 6px black, 14px 6px black, 16px 6px black, 18px 6px black, 20px 6px black, 22px 6px black, 24px 6px black, 26px 6px black, 28px 6px black, 30px 6px black, 32px 6px black, 34px 6px black, 36px 6px black, 38px 6px black, 40px 6px black, 42px 6px black, 44px 6px black, 46px 6px black, 48px 6px black, 50px 6px black, 52px 6px black, 54px 6px black, 56px 6px black, 58px 6px black, 60px 6px black, 62px 6px black, 64px 6px black, 66px 6px black, 68px 6px black, 70px 6px black, 72px 6px black, 74px 6px black, 76px 6px black, 78px 6px black, 80px 6px black, 82px 6px black, 84px 6px black, 86px 6px black, 88px 6px black, 90px 6px black, 92px 6px black, 94px 6px black, 96px 6px black, 98px 6px white, 100px 6px black, 102px 6px white, 104px 6px black, 106px 6px black, 108px 6px white, 110px 6px white, 112px 6px black, 114px 6px black, 116px 6px black, 118px 6px black, 120px 6px black, 122px 6px black, 124px 6px black, 126px 6px black, 128px 6px black, 130px 6px black, 132px 6px black, 134px 6px black, 136px 6px black, 138px 6px black, 140px 6px black, 142px 6px black, 144px 6px black, 146px 6px black, 148px 6px black, 150px 6px black, 152px 6px black, 154px 6px black, 156px 6px black, 158px 6px black, 160px 6px black, 162px 6px black, 164px 6px black, 166px 6px black, 168px 6px black, 170px 6px black, 172px 6px black, 174px 6px black, 176px 6px black, 178px 6px black, 180px 6px black, 182px 6px black, 184px 6px black, 186px 6px black, 188px 6px black, 190px 6px black, 192px 6px black, 194px 6px black, 196px 6px black, 198px 6px black, 200px 6px black, 202px 6px black, 204px 6px black, 206px 6px black, 208px 6px black, 210px 6px black, 212px 6px black, 214px 6px black, 216px 6px black, 218px 6px black, 220px 6px black, 222px 6px black, 224px 6px black, 226px 6px black, 228px 6px black, 230px 6px black, 232px 6px black, 234px 6px black, 236px 6px black, 238px 6px black, 240px 6px black, 242px 6px white, 244px 6px black, 246px 6px white, 248px 6px black, 250px 6px black, 252px 6px white, 96px 8px white, 98px 8px black, 100px 8px black, 102px 8px black, 104px 8px black, 106px 8px black, 108px 8px black, 110px 8px white, 240px 8px white, 242px 8px black, 244px 8px black, 246px 8px black, 248px 8px black, 250px 8px black, 252px 8px black, 2px 10px black, 4px 10px black, 6px 10px black, 8px 10px black, 10px 10px black, 12px 10px black, 14px 10px black, 16px 10px black, 18px 10px black, 20px 10px black, 22px 10px black, 24px 10px black, 26px 10px black, 28px 10px black, 30px 10px black, 32px 10px black, 34px 10px black, 36px 10px black, 38px 10px black, 40px 10px black, 42px 10px black, 44px 10px black, 46px 10px black, 48px 10px black, 50px 10px black, 52px 10px black, 54px 10px black, 56px 10px black, 58px 10px black, 60px 10px black, 62px 10px black, 64px 10px black, 66px 10px black, 68px 10px black, 70px 10px black, 72px 10px black, 74px 10px black, 76px 10px black, 78px 10px black, 80px 10px black, 82px 10px black, 84px 10px black, 86px 10px black, 88px 10px black, 90px 10px black, 92px 10px black, 94px 10px black, 96px 10px white, 98px 10px black, 100px 10px white, 102px 10px white, 104px 10px white, 106px 10px white, 108px 10px black, 110px 10px white, 112px 10px black, 114px 10px black, 116px 10px black, 118px 10px black, 120px 10px black, 122px 10px black, 124px 10px black, 126px 10px black, 128px 10px black, 130px 10px black, 132px 10px black, 134px 10px black, 136px 10px black, 138px 10px black, 140px 10px black, 142px 10px black, 144px 10px black, 146px 10px black, 148px 10px black, 150px 10px black, 152px 10px black, 154px 10px black, 156px 10px black, 158px 10px black, 160px 10px black, 162px 10px black, 164px 10px black, 166px 10px black, 168px 10px black, 170px 10px black, 172px 10px black, 174px 10px black, 176px 10px black, 178px 10px black, 180px 10px black, 182px 10px black, 184px 10px black, 186px 10px black, 188px 10px black, 190px 10px black, 192px 10px black, 194px 10px black, 196px 10px black, 198px 10px black, 200px 10px black, 202px 10px black, 204px 10px black, 206px 10px black, 208px 10px black, 210px 10px black, 212px 10px black, 214px 10px black, 216px 10px black, 218px 10px black, 220px 10px black, 222px 10px black, 224px 10px black, 226px 10px black, 228px 10px black, 230px 10px black, 232px 10px black, 234px 10px black, 236px 10px black, 238px 10px black, 240px 10px white, 242px 10px black, 244px 10px white, 246px 10px white, 248px 10px white, 250px 10px white, 252px 10px black, 2px 12px black, 4px 12px black, 6px 12px black, 8px 12px black, 10px 12px black, 12px 12px black, 14px 12px black, 16px 12px black, 18px 12px black, 20px 12px black, 22px 12px black, 24px 12px black, 26px 12px black, 28px 12px black, 30px 12px black, 32px 12px black, 34px 12px black, 36px 12px black, 38px 12px black, 40px 12px black, 42px 12px black, 44px 12px black, 46px 12px black, 48px 12px black, 50px 12px black, 52px 12px black, 54px 12px black, 56px 12px black, 58px 12px black, 60px 12px black, 62px 12px black, 64px 12px black, 66px 12px black, 68px 12px black, 70px 12px black, 72px 12px black, 74px 12px black, 76px 12px black, 78px 12px black, 80px 12px black, 82px 12px black, 84px 12px black, 86px 12px black, 88px 12px black, 90px 12px black, 92px 12px black, 94px 12px black, 96px 12px black, 98px 12px white, 100px 12px black, 102px 12px white, 104px 12px white, 106px 12px black, 108px 12px white, 110px 12px white, 112px 12px black, 114px 12px black, 116px 12px black, 118px 12px black, 120px 12px black, 122px 12px black, 124px 12px black, 126px 12px black, 128px 12px black, 130px 12px black, 132px 12px black, 134px 12px black, 136px 12px black, 138px 12px black, 140px 12px black, 142px 12px black, 144px 12px black, 146px 12px black, 148px 12px black, 150px 12px black, 152px 12px black, 154px 12px black, 156px 12px black, 158px 12px black, 160px 12px black, 162px 12px black, 164px 12px black, 166px 12px black, 168px 12px black, 170px 12px black, 172px 12px black, 174px 12px black, 176px 12px black, 178px 12px black, 180px 12px black, 182px 12px black, 184px 12px black, 186px 12px black, 188px 12px black, 190px 12px black, 192px 12px black, 194px 12px black, 196px 12px black, 198px 12px black, 200px 12px black, 202px 12px black, 204px 12px black, 206px 12px black, 208px 12px black, 210px 12px black, 212px 12px black, 214px 12px black, 216px 12px black, 218px 12px black, 220px 12px black, 222px 12px black, 224px 12px black, 226px 12px black, 228px 12px black, 230px 12px black, 232px 12px black, 234px 12px black, 236px 12px black, 238px 12px black, 240px 12px black, 242px 12px white, 244px 12px black, 246px 12px white, 248px 12px white, 250px 12px black, 252px 12px white, 4px 14px white, 8px 14px white, 100px 14px white, 102px 14px black, 104px 14px black, 106px 14px white, 108px 14px white, 242px 14px black, 244px 14px white, 246px 14px black, 248px 14px black, 250px 14px white, 4px 16px white, 8px 16px white, 102px 16px white, 104px 16px white, 244px 16px black, 248px 16px black, 4px 18px black, 8px 18px black, 244px 18px black, 248px 18px black, 4px 20px black, 8px 20px black, 244px 20px black, 248px 20px black, 4px 22px black, 8px 22px black, 244px 22px black, 248px 22px black, 4px 24px black, 8px 24px black, 244px 24px black, 248px 24px black, 4px 26px black, 8px 26px black, 244px 26px black, 248px 26px black, 4px 28px black, 8px 28px black, 244px 28px black, 248px 28px black, 4px 30px black, 8px 30px black, 244px 30px black, 248px 30px black, 4px 32px black, 8px 32px black, 244px 32px black, 248px 32px black, 4px 34px black, 8px 34px black, 244px 34px black, 248px 34px black, 4px 36px black, 8px 36px black, 244px 36px black, 248px 36px black, 4px 38px black, 8px 38px black, 244px 38px black, 248px 38px black, 4px 40px black, 8px 40px black, 244px 40px black, 248px 40px black, 4px 42px black, 8px 42px black, 244px 42px black, 248px 42px black, 4px 44px black, 8px 44px black, 244px 44px black, 248px 44px black, 4px 46px black, 8px 46px black, 244px 46px black, 248px 46px black, 4px 48px black, 8px 48px black, 244px 48px black, 248px 48px black, 4px 50px black, 8px 50px black, 244px 50px black, 248px 50px black, 4px 52px black, 8px 52px black, 244px 52px black, 248px 52px black, 4px 54px black, 8px 54px black, 244px 54px black, 248px 54px black, 4px 56px black, 8px 56px black, 244px 56px black, 248px 56px black, 4px 58px black, 8px 58px black, 244px 58px black, 248px 58px black, 4px 60px black, 8px 60px black, 244px 60px black, 248px 60px black, 4px 62px black, 8px 62px black, 244px 62px black, 248px 62px black, 4px 64px black, 8px 64px black, 244px 64px black, 248px 64px black, 4px 66px black, 8px 66px black, 244px 66px black, 248px 66px black, 4px 68px black, 8px 68px black, 244px 68px black, 248px 68px black, 4px 70px black, 8px 70px black, 244px 70px black, 248px 70px black, 4px 72px black, 8px 72px black, 244px 72px black, 248px 72px black, 4px 74px black, 8px 74px black, 244px 74px black, 248px 74px black, 4px 76px black, 8px 76px black, 244px 76px black, 248px 76px black, 4px 78px black, 8px 78px black, 244px 78px black, 248px 78px black, 4px 80px black, 8px 80px black, 244px 80px black, 248px 80px black, 4px 82px white, 6px 82px black, 8px 82px white, 10px 82px black, 244px 82px black, 248px 82px black, 2px 84px white, 4px 84px white, 6px 84px black, 8px 84px black, 10px 84px white, 12px 84px black, 242px 84px black, 244px 84px white, 246px 84px black, 248px 84px black, 250px 84px white, 2px 86px white, 4px 86px black, 6px 86px white, 8px 86px black, 10px 86px black, 12px 86px white, 14px 86px black, 16px 86px black, 18px 86px black, 20px 86px black, 22px 86px black, 24px 86px black, 26px 86px black, 28px 86px black, 30px 86px black, 32px 86px black, 34px 86px black, 36px 86px black, 38px 86px black, 40px 86px black, 42px 86px black, 44px 86px black, 46px 86px black, 48px 86px black, 50px 86px black, 52px 86px black, 54px 86px black, 56px 86px black, 58px 86px black, 60px 86px black, 62px 86px black, 64px 86px black, 66px 86px black, 68px 86px black, 70px 86px black, 72px 86px black, 74px 86px black, 76px 86px black, 78px 86px black, 80px 86px black, 82px 86px black, 84px 86px black, 86px 86px black, 88px 86px black, 90px 86px black, 92px 86px black, 94px 86px black, 96px 86px black, 98px 86px black, 100px 86px black, 102px 86px black, 104px 86px black, 106px 86px black, 108px 86px black, 110px 86px black, 112px 86px black, 114px 86px black, 116px 86px black, 118px 86px black, 120px 86px black, 122px 86px black, 124px 86px black, 126px 86px black, 128px 86px black, 130px 86px black, 132px 86px black, 134px 86px black, 136px 86px black, 138px 86px black, 140px 86px black, 142px 86px black, 144px 86px black, 146px 86px black, 148px 86px black, 150px 86px black, 152px 86px black, 154px 86px black, 156px 86px black, 158px 86px black, 160px 86px black, 162px 86px black, 164px 86px black, 166px 86px black, 168px 86px black, 170px 86px black, 172px 86px black, 174px 86px black, 176px 86px black, 178px 86px black, 180px 86px black, 182px 86px black, 184px 86px black, 186px 86px black, 188px 86px black, 190px 86px black, 192px 86px black, 194px 86px black, 196px 86px black, 198px 86px black, 200px 86px black, 202px 86px black, 204px 86px black, 206px 86px black, 208px 86px black, 210px 86px black, 212px 86px black, 214px 86px black, 216px 86px black, 218px 86px black, 220px 86px black, 222px 86px black, 224px 86px black, 226px 86px black, 228px 86px black, 230px 86px black, 232px 86px black, 234px 86px black, 236px 86px black, 238px 86px black, 240px 86px black, 242px 86px white, 244px 86px black, 246px 86px white, 248px 86px black, 250px 86px black, 252px 86px white, 2px 88px black, 4px 88px black, 6px 88px black, 8px 88px black, 10px 88px black, 12px 88px black, 14px 88px white, 240px 88px white, 242px 88px black, 244px 88px black, 246px 88px black, 248px 88px black, 250px 88px black, 252px 88px black, 2px 90px black, 4px 90px white, 6px 90px white, 8px 90px white, 10px 90px white, 12px 90px black, 14px 90px white, 16px 90px black, 18px 90px black, 20px 90px black, 22px 90px black, 24px 90px black, 26px 90px black, 28px 90px black, 30px 90px black, 32px 90px black, 34px 90px black, 36px 90px black, 38px 90px black, 40px 90px black, 42px 90px black, 44px 90px black, 46px 90px black, 48px 90px black, 50px 90px black, 52px 90px black, 54px 90px black, 56px 90px black, 58px 90px black, 60px 90px black, 62px 90px black, 64px 90px black, 66px 90px black, 68px 90px black, 70px 90px black, 72px 90px black, 74px 90px black, 76px 90px black, 78px 90px black, 80px 90px black, 82px 90px black, 84px 90px black, 86px 90px black, 88px 90px black, 90px 90px black, 92px 90px black, 94px 90px black, 96px 90px black, 98px 90px black, 100px 90px black, 102px 90px black, 104px 90px black, 106px 90px black, 108px 90px black, 110px 90px black, 112px 90px black, 114px 90px black, 116px 90px black, 118px 90px black, 120px 90px black, 122px 90px black, 124px 90px black, 126px 90px black, 128px 90px black, 130px 90px black, 132px 90px black, 134px 90px black, 136px 90px black, 138px 90px black, 140px 90px black, 142px 90px black, 144px 90px black, 146px 90px black, 148px 90px black, 150px 90px black, 152px 90px black, 154px 90px black, 156px 90px black, 158px 90px black, 160px 90px black, 162px 90px black, 164px 90px black, 166px 90px black, 168px 90px black, 170px 90px black, 172px 90px black, 174px 90px black, 176px 90px black, 178px 90px black, 180px 90px black, 182px 90px black, 184px 90px black, 186px 90px black, 188px 90px black, 190px 90px black, 192px 90px black, 194px 90px black, 196px 90px black, 198px 90px black, 200px 90px black, 202px 90px black, 204px 90px black, 206px 90px black, 208px 90px black, 210px 90px black, 212px 90px black, 214px 90px black, 216px 90px black, 218px 90px black, 220px 90px black, 222px 90px black, 224px 90px black, 226px 90px black, 228px 90px black, 230px 90px black, 232px 90px black, 234px 90px black, 236px 90px black, 238px 90px black, 240px 90px white, 242px 90px black, 244px 90px white, 246px 90px white, 248px 90px white, 250px 90px white, 252px 90px black, 2px 92px white, 4px 92px black, 6px 92px white, 8px 92px white, 10px 92px black, 12px 92px white, 14px 92px black, 16px 92px black, 18px 92px black, 20px 92px black, 22px 92px black, 24px 92px black, 26px 92px black, 28px 92px black, 30px 92px black, 32px 92px black, 34px 92px black, 36px 92px black, 38px 92px black, 40px 92px black, 42px 92px black, 44px 92px black, 46px 92px black, 48px 92px black, 50px 92px black, 52px 92px black, 54px 92px black, 56px 92px black, 58px 92px black, 60px 92px black, 62px 92px black, 64px 92px black, 66px 92px black, 68px 92px black, 70px 92px black, 72px 92px black, 74px 92px black, 76px 92px black, 78px 92px black, 80px 92px black, 82px 92px black, 84px 92px black, 86px 92px black, 88px 92px black, 90px 92px black, 92px 92px black, 94px 92px black, 96px 92px black, 98px 92px black, 100px 92px black, 102px 92px black, 104px 92px black, 106px 92px black, 108px 92px black, 110px 92px black, 112px 92px black, 114px 92px black, 116px 92px black, 118px 92px black, 120px 92px black, 122px 92px black, 124px 92px black, 126px 92px black, 128px 92px black, 130px 92px black, 132px 92px black, 134px 92px black, 136px 92px black, 138px 92px black, 140px 92px black, 142px 92px black, 144px 92px black, 146px 92px black, 148px 92px black, 150px 92px black, 152px 92px black, 154px 92px black, 156px 92px black, 158px 92px black, 160px 92px black, 162px 92px black, 164px 92px black, 166px 92px black, 168px 92px black, 170px 92px black, 172px 92px black, 174px 92px black, 176px 92px black, 178px 92px black, 180px 92px black, 182px 92px black, 184px 92px black, 186px 92px black, 188px 92px black, 190px 92px black, 192px 92px black, 194px 92px black, 196px 92px black, 198px 92px black, 200px 92px black, 202px 92px black, 204px 92px black, 206px 92px black, 208px 92px black, 210px 92px black, 212px 92px black, 214px 92px black, 216px 92px black, 218px 92px black, 220px 92px black, 222px 92px black, 224px 92px black, 226px 92px black, 228px 92px black, 230px 92px black, 232px 92px black, 234px 92px black, 236px 92px black, 238px 92px black, 240px 92px black, 242px 92px white, 244px 92px black, 246px 92px white, 248px 92px white, 250px 92px black, 252px 92px white, 2px 94px white, 4px 94px white, 6px 94px black, 8px 94px black, 10px 94px white, 244px 94px white, 246px 94px black, 248px 94px black, 250px 94px white;
+
+}
+    #menu__selector {
+    position: absolute;
+    bottom: 61px;
+    left: 16px;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0px black, 4px 0px black,
+                2px 2px black, 4px 2px black, 6px 2px black,
+                2px 4px black, 4px 4px black, 6px 4px black, 8px 4px black,
+                2px 6px black, 4px 6px black, 6px 6px black, 8px 6px black, 10px 6px black,
+                2px 8px black, 4px 8px black, 6px 8px black, 8px 8px black,
+                2px 10px black, 4px 10px black, 6px 10px black,
+                2px 12px black, 4px 12px black;
+}
+.menu__text-item {
+    position: absolute;
+    font-family: "pixel";
+}
+
+#fight {
+    top: 29px;
+    left: 32px;
+    letter-spacing: 1.1px;
+}
+#item {
+    top: 61px;
+    left: 34px;
+    letter-spacing: 0.6px;
+}
+#run {
+    top: 61px;
+    left: 128px;
+}
+#pkmn {
+    top: 31px;
+    left: 126px;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0px black, 4px 0px black, 6px 0px black, 18px 0px black, 20px 0px black, 24px 0px black, 26px 0px black,
+                2px 2px black, 6px 2px black, 18px 2px black, 22px 2px black, 26px 2px black,
+                2px 4px black, 4px 4px black, 6px 4px black, 18px 4px black, 26px 4px black,
+                2px 6px black, 10px 6px black, 14px 6px black, 18px 6px black, 26px 6px black,
+                2px 8px black, 10px 8px black, 14px 8px black, 18px 8px black, 24px 8px black, 30px 8px black,
+                10px 10px black, 12px 10px black, 24px 10px black, 26px 10px black, 30px 10px black,
+                10px 12px black, 14px 12px black, 24px 12px black, 28px 12px black, 30px 12px black,
+                10px 14px black, 14px 14px black, 24px 14px black, 30px 14px black;
+}
+
+.info {
+    position: absolute;
+    bottom: 102px;
+    right: 21px;
+    width: 154px;
+    height: 27px;
+}
+.hp__bar-container {
+    width: 100px;
+    height: 8px;
+    position: absolute;
+    right: 9px;
+    bottom: 30px;
+}
+.hp__bar-container--opponent {
+    right: 15px;
+    bottom: 14px;
+}
+.hp__bar-border {
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0px black, 4px 0px black, 6px 0px black, 8px 0px black, 10px 0px black, 12px 0px black, 14px 0px black, 16px 0px black, 18px 0px black, 20px 0px black, 22px 0px black, 24px 0px black, 26px 0px black, 28px 0px black, 30px 0px black, 32px 0px black, 34px 0px black, 36px 0px black, 38px 0px black, 40px 0px black, 42px 0px black, 44px 0px black, 46px 0px black, 48px 0px black, 50px 0px black, 52px 0px black, 54px 0px black, 56px 0px black, 58px 0px black, 60px 0px black, 62px 0px black, 64px 0px black, 66px 0px black, 68px 0px black, 70px 0px black, 72px 0px black, 74px 0px black, 76px 0px black, 78px 0px black, 80px 0px black, 82px 0px black, 84px 0px black, 86px 0px black, 88px 0px black, 90px 0px black, 92px 0px black, 94px 0px black, 96px 0px black,
+                0px 2px black, 98px 2px black,
+                0px 4px black, 98px 4px black,
+                2px 6px black, 4px 6px black, 6px 6px black, 8px 6px black, 10px 6px black, 12px 6px black, 14px 6px black, 16px 6px black, 18px 6px black, 20px 6px black, 22px 6px black, 24px 6px black, 26px 6px black, 28px 6px black, 30px 6px black, 32px 6px black, 34px 6px black, 36px 6px black, 38px 6px black, 40px 6px black, 42px 6px black, 44px 6px black, 46px 6px black, 48px 6px black, 50px 6px black, 52px 6px black, 54px 6px black, 56px 6px black, 58px 6px black, 60px 6px black, 62px 6px black, 64px 6px black, 66px 6px black, 68px 6px black, 70px 6px black, 72px 6px black, 74px 6px black, 76px 6px black, 78px 6px black, 80px 6px black, 82px 6px black, 84px 6px black, 86px 6px black, 88px 6px black, 90px 6px black, 92px 6px black, 94px 6px black, 96px 6px black;
+}
+.hp__text {
+    position: absolute;
+    top: 14px;
+    left: 46px;
+    word-spacing: -2px;
+}
+.hp__text--total {
+    margin-left: 12px;
+}
+.hp__label {
+    position: absolute;
+    left: 15px;
+    top: 4px;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0px black, 4px 0px black, 8px 0px black, 12px 0px black, 14px 0px black, 16px 0px black, 18px 0px black,
+                2px 2px black, 4px 2px black, 8px 2px black, 12px 2px black, 14px 2px black, 18px 2px black, 22px 2px black,
+                2px 4px black, 4px 4px black, 6px 4px black, 8px 4px black, 12px 4px black, 14px 4px black, 16px 4px black, 18px 4px black,
+                2px 6px black, 4px 6px black, 8px 6px black, 12px 6px black, 14px 6px black, 22px 6px black;
+}
+
+.hp__label--opponent {
+    left: 9px;
+    top: 5px;
+}
+
+.level__label {
+    position: absolute;
+    bottom: 52px;
+    left: 79px;
+    width: 2px;
+    height: 2px;
+    box-shadow: 6px 0px black, 8px 0px black,
+                2px 2px black, 6px 2px black, 8px 2px black,
+                6px 4px black, 8px 4px black,
+                2px 6px black, 6px 6px black, 8px 6px black, 
+                6px 8px black, 8px 8px black, 10px 8px black, 12px 8px black;
+}
+.level__label--opponent {
+    left: 41px;
+    bottom: 36px;
+}
+
+.level__text {
+    position: absolute;
+    left: 95px;
+    bottom: 40px;
+    font-family: 'pixel-2';
+}
+.level__text--opponent {
+    left: 57px;
+    bottom: 24px;
+}
+.pokemon__name {
+    position: absolute;
+    left: 15px;
+    bottom: 58px;
+}
+.pokemon__name--opponent {
+    left: -7px;
+    bottom: 42px;
+}
+.info--battle {
+    height: 42px;
+}
+.info--opponent {
+    top: 31px;
+    left: 23px;
+}
+.info__border {
+    width: 2px;
+    height: 2px;
+    box-shadow: 150px 0px black, 152px 0px black, 150px 2px black, 152px 2px black, 150px 4px black, 152px 4px black, 150px 6px black, 152px 6px black, 150px 8px black, 152px 8px black, 150px 10px black, 152px 10px black, 150px 12px black, 152px 12px black, 150px 14px black, 152px 14px black, 150px 16px black, 152px 16px black, 150px 18px black, 152px 18px black, 150px 20px black, 152px 20px black, 150px 22px black, 152px 22px black,
+                12px 18px black, 14px 18px black,
+                8px 20px black, 10px 20px black, 12px 20px black, 12px 20px black, 14px 20px black,
+                4px 22px black, 6px 22px black, 8px 22px black, 10px 22px black, 12px 22px black, 14px 22px black, 16px 22px black, 18px 22px black, 20px 22px black, 22px 22px black, 24px 22px black, 26px 22px black, 28px 22px black, 30px 22px black, 32px 22px black, 34px 22px black, 36px 22px black, 38px 22px black, 40px 22px black, 42px 22px black, 44px 22px black, 46px 22px black, 48px 22px black, 50px 22px black, 52px 22px black, 54px 22px black, 56px 22px black, 58px 22px black, 60px 22px black, 62px 22px black, 64px 22px black, 66px 22px black, 68px 22px black, 70px 22px black, 72px 22px black, 74px 22px black, 76px 22px black, 78px 22px black, 80px 22px black, 82px 22px black, 84px 22px black, 86px 22px black, 88px 22px black, 90px 22px black, 92px 22px black, 94px 22px black, 96px 22px black, 98px 22px black, 100px 22px black, 102px 22px black, 104px 22px black, 106px 22px black, 108px 22px black, 110px 22px black, 112px 22px black, 114px 22px black, 116px 22px black, 118px 22px black, 120px 22px black, 122px 22px black, 124px 22px black, 126px 22px black, 128px 22px black, 130px 22px black, 132px 22px black, 134px 22px black, 136px 22px black, 138px 22px black, 140px 22px black, 142px 22px black, 144px 22px black, 146px 22px black, 148px 22px black,
+                0px 24px black, 2px 24px black, 4px 24px black, 6px 24px black, 8px 24px black, 10px 24px black, 12px 24px black, 14px 24px black, 16px 24px black, 18px 24px black, 20px 24px black, 22px 24px black, 24px 24px black, 26px 24px black, 28px 24px black, 30px 24px black, 32px 24px black, 34px 24px black, 36px 24px black, 38px 24px black, 40px 24px black, 42px 24px black, 44px 24px black, 46px 24px black, 48px 24px black, 50px 24px black, 52px 24px black, 54px 24px black, 56px 24px black, 58px 24px black, 60px 24px black, 62px 24px black, 64px 24px black, 66px 24px black, 68px 24px black, 70px 24px black, 72px 24px black, 74px 24px black, 76px 24px black, 78px 24px black, 80px 24px black, 82px 24px black, 84px 24px black, 86px 24px black, 88px 24px black, 90px 24px black, 92px 24px black, 94px 24px black, 96px 24px black, 98px 24px black, 100px 24px black, 102px 24px black, 104px 24px black, 106px 24px black, 108px 24px black, 110px 24px black, 112px 24px black, 114px 24px black, 116px 24px black, 118px 24px black, 120px 24px black, 122px 24px black, 124px 24px black, 126px 24px black, 128px 24px black, 130px 24px black, 132px 24px black, 134px 24px black, 136px 24px black, 138px 24px black, 140px 24px black, 142px 24px black, 144px 24px black, 146px 24px black, 148px 24px black, 150px 24px black;
+
+}
+.info__border--opponent {
+    transform: scaleX(-1);
+    position: absolute;
+    width: 2px;
+    left: 151px;
+}
+.info__pokeball-container {
+    width: 94px;
+    height: 14px;
+    position: absolute;
+    right: 27px;
+    top: 3px;
+    display: none;
+}
+.info__pokeball {
+    height: 2px;
+    width: 2px;
+    position: absolute;
+    box-shadow: 4px 0px black, 6px 0px black, 8px 0px black,
+                2px 2px black, 10px 2px black,
+                0px 4px black, 12px 4px black,
+                0px 6px black, 12px 6px black,
+                0px 8px black, 12px 8px black,
+                2px 10px black, 10px 10px black,
+                4px 12px black, 6px 12px black, 8px 12px black;
+}
+
+
+.info__border--battle {
+    width: 2px;
+    height: 2px;
+    box-shadow: 150px 0px black, 152px 0px black, 150px 2px black, 152px 2px black, 150px 4px black, 152px 4px black, 150px 6px black, 152px 6px black, 150px 8px black, 152px 8px black, 150px 10px black, 152px 10px black, 150px 12px black, 152px 12px black, 150px 14px black, 152px 14px black, 150px 16px black, 152px 16px black, 150px 18px black, 152px 18px black, 150px 20px black, 152px 20px black, 150px 22px black, 152px 22px black, 150px 24px black, 152px 24px black, 150px 26px black, 152px 26px black, 150px 28px black, 152px 28px black, 150px 30px black, 152px 30px black, 150px 32px black, 152px 32px black, 150px 34px black, 152px 34px black, 150px 36px black, 152px 36px black, 150px 38px black, 152px 38px black, 150px 40px,
+                12px 34px black, 14px 34px black,
+                8px 36px black, 10px 36px black, 12px 36px black, 12px 36px black, 14px 36px black,
+                4px 38px black, 6px 38px black, 8px 38px black, 10px 38px black, 12px 38px black, 14px 38px black, 16px 38px black, 18px 38px black, 20px 38px black, 22px 38px black, 24px 38px black, 26px 38px black, 28px 38px black, 30px 38px black, 32px 38px black, 34px 38px black, 36px 38px black, 38px 38px black, 40px 38px black, 42px 38px black, 44px 38px black, 46px 38px black, 48px 38px black, 50px 38px black, 52px 38px black, 54px 38px black, 56px 38px black, 58px 38px black, 60px 38px black, 62px 38px black, 64px 38px black, 66px 38px black, 68px 38px black, 70px 38px black, 72px 38px black, 74px 38px black, 76px 38px black, 78px 38px black, 80px 38px black, 82px 38px black, 84px 38px black, 86px 38px black, 88px 38px black, 90px 38px black, 92px 38px black, 94px 38px black, 96px 38px black, 98px 38px black, 100px 38px black, 102px 38px black, 104px 38px black, 106px 38px black, 108px 38px black, 110px 38px black, 112px 38px black, 114px 38px black, 116px 38px black, 118px 38px black, 120px 38px black, 122px 38px black, 124px 38px black, 126px 38px black, 128px 38px black, 130px 38px black, 132px 38px black, 134px 38px black, 136px 38px black, 138px 38px black, 140px 38px black, 142px 38px black, 144px 38px black, 146px 38px black, 148px 38px black,
+                0px 40px black, 2px 40px black, 4px 40px black, 6px 40px black, 8px 40px black, 10px 40px black, 12px 40px black,14px 40px black, 16px 40px black, 18px 40px black, 20px 40px black, 22px 40px black, 24px 40px black, 26px 40px black, 28px 40px black, 30px 40px black, 32px 40px black, 34px 40px black, 36px 40px black, 38px 40px black, 40px 40px black, 42px 40px black, 44px 40px black, 46px 40px black, 48px 40px black, 50px 40px black, 52px 40px black, 54px 40px black, 56px 40px black, 58px 40px black, 60px 40px black, 62px 40px black, 64px 40px black, 66px 40px black, 68px 40px black, 70px 40px black, 72px 40px black, 74px 40px black, 76px 40px black, 78px 40px black, 80px 40px black, 82px 40px black, 84px 40px black, 86px 40px black, 88px 40px black, 90px 40px black, 92px 40px black, 94px 40px black, 96px 40px black, 98px 40px black, 100px 40px black, 102px 40px black, 104px 40px black, 106px 40px black, 108px 40px black, 110px 40px black, 112px 40px black, 114px 40px black, 116px 40px black, 118px 40px black, 120px 40px black, 122px 40px black, 124px 40px black, 126px 40px black, 128px 40px black, 130px 40px black, 132px 40px black, 134px 40px black, 136px 40px black, 138px 40px black, 140px 40px black, 142px 40px black, 144px 40px black, 146px 40px black, 148px 40px black;
+}
+
+
+
+
+#pokeball-1 {
+margin-left: 0;
+}
+#pokeball-2 {
+    margin-left: 16px;      
+}
+#pokeball-3 {
+    margin-left: 32px; 
+}
+#pokeball-4 {
+    margin-left: 48px; 
+}
+#pokeball-5 {
+    margin-left: 64px; 
+}
+#pokeball-6 {
+    margin-left: 80px; 
+}
+#pixelmaker {
+    width: 60%;
+    max-width: 1000px;
+    background-color: white;
+    padding: 60px;
+    min-height: 600px;
+    margin: 60px auto;
+}
+
+.test {
+    width: 2px;
+    height: 2px;
+    box-shadow: 26px 6px red, 6px 11px black, 20px 14px black, 18px 17px black, 36px 17px black, 38px 22px black, 46px 22px black, 19px 23px red, 41px 23px red, 4px 25px black, 39px 29px black, 21px 32px black, 29px 32px red, 52px 33px black, 55px 33px red, 15px 34px red, 32px 37px black, 48px 37px red, 26px 40px red, 36px 42px black, 40px 42px black, 10px 43px black, 19px 50px black, 49px 51px black;
+}

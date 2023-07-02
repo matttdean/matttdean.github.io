@@ -127,7 +127,9 @@ box-shadow: 4px 0px white, 6px 0px black, 8px 0px black,
                 2px 12px black, 4px 12px black;
 }
 
-
+.position-0 {
+    display: none;
+}
 .position-1 {
     bottom: 60px;
     left: 144px;
@@ -152,6 +154,14 @@ box-shadow: 4px 0px white, 6px 0px black, 8px 0px black,
 }
 .position-12 {
     bottom: 62px;
+    left: 76px;
+}
+.position-13 {
+    bottom: 45px;
+    left: 76px;
+}
+.position-14 {
+    bottom: 28px;
     left: 76px;
 }
 .menu__text-item {
@@ -461,11 +471,11 @@ margin-left: 0;
 }
 #a-button {
     left: 100px;
-    top: 100px;
+    top: 75px;
 }
 #b-button {
     left: 0;
-    top: 50px;
+    top: 25px;
 }
 
 .pokemon__container {

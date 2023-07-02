@@ -8,6 +8,7 @@ let currentPP = document.getElementById("current-pp");
 let totalPP = document.getElementById("total-pp");
 let hpBar = document.getElementById("hp-bar");
 let opponentPokemon = document.getElementById("opponent-pokemon");
+let playerPokemon = document.getElementById("pokemon");
 let opponentHPBar = document.getElementById("opponent-hp-bar");
 let upButton = document.getElementById("up");
 let downButton = document.getElementById("down");
@@ -64,19 +65,22 @@ class Pokemon {
     set changeHP(newHP) {
         this._hp = newHP;
     }
+    set changeAttack(newAttack) {
+        this._attack = newAttack;
+    }
 }
 
 class Move {
-    constructor(move, type, pp, totalpp, power, accuracy) {
-        this._move = move;
+    constructor(name, type, pp, totalpp, power, accuracy) {
+        this._name = name;
         this._type = type;
         this._pp = pp;
         this._totalpp = totalpp;
         this._power = power;
         this._accuracy = accuracy;
     }
-    get move() {
-        return this._move;
+    get name() {
+        return this._name;
     }
     get type() {
         return this._type;
@@ -98,6 +102,20 @@ class Move {
     }
 }
 
+class StatusEffect extends Move {
+    constructor(move, type, pp, totalpp, power, accuracy, effect) {
+       super(move, type, pp, totalpp, power, accuracy); 
+       this._effect = effect;
+    } 
+    get effect() {
+        return this._effect;
+    }
+}
+
+const lowerAttack = (target) => {
+    target.changeAttack = target.attack - 1;
+}
+
 //Moves
 let tackle = new Move("Tackle", "normal", 35, 35, 35, 100);
 let growl = new Move("Growl", "normal", 20, 20, 0, 100);
@@ -116,13 +134,13 @@ const setPokemon = pokemon => {
     document.getElementById("current-hp").innerHTML = pokemon.hp;
     document.getElementById("total-hp").innerHTML = pokemon.hp;
     document.getElementById("pokemon-level").innerHTML = pokemon.level;
-    document.getElementById("first").innerHTML = pokemon.moveset[0].move;
-    document.getElementById("second").innerHTML = pokemon.moveset[1].move;
+    document.getElementById("first").innerHTML = pokemon.moveset[0].name;
+    document.getElementById("second").innerHTML = pokemon.moveset[1].name;
     if (pokemon.moveset[2]) {
-        document.getElementById("third").innerHTML = pokemon.moveset[2].move;
+        document.getElementById("third").innerHTML = pokemon.moveset[2].name;
     }
     if (pokemon.moveset[3]) {
-        document.getElementById("fourth").innerHTML = pokemon.moveset[3].move;
+        document.getElementById("fourth").innerHTML = pokemon.moveset[3].name;
     }
     document.getElementById("pokemon").classList.add(pokemon.name.toLowerCase())
 }
@@ -136,44 +154,74 @@ const setOpponentPokemon = pokemon => {
 setPokemon(currentPokemon);
 setOpponentPokemon(currentOpponentPokemon);
 
-const calculateDamage = (pokemon, oppponent, move) => {
+const calculateDamage = (attacker, defender, move) => {
     let damage;
     let stab = 1;
-    if (pokemon.type === move.type) {
+    //let type = determineTypeEffectiveness(defender, move);
+    if (attacker.type === move.type) {
         stab = 1.5;
     }
-    let type = determineTypeEffectiveness(move, oppponent);
-    let random = Math.floor(Math.random());
-    damage = ((2 * oppponent.level * critical / 5 + 2 ) * move.power * pokemon.attack / oppponent.defense / 50 + 2) * stab * type * random;
+    
+    //let type = determineTypeEffectiveness(move, oppponent);
+    //let random = Math.floor(Math.random());
+    //damage = ((2 * oppponent.level * critical / 5 + 2 ) * move.power * pokemon.attack / oppponent.defense / 50 + 2) * stab * type * random;
+    damage = ((2 * defender.level * 1 / 5 + 2 ) * move.power * attacker.attack / defender.defense / 50) * stab;
+
     return damage;
 }
 
-const updateHealthBar = () => {
-    let hpPercentage = Math.floor((100 * currentOpponentPokemon.hp) / currentOpponentPokemon.totalHP);
-    if (hpPercentage === 100) {
+const updateHealthBar = (pokemon, user) => {
+    let hpPercentage = Math.floor((100 * pokemon.hp) / pokemon.totalHP);
+    if (hpPercentage > 96) {
         hpPercentage = 96;
-        opponentHPBar.style.backgroundColor = "#00F800;";
+        user.style.backgroundColor = "#00F800;";
     } else if (hpPercentage < 50 && hpPercentage > 20) {
-        opponentHPBar.style.backgroundColor = "#F89000";
+        user.style.backgroundColor = "#F89000";
     } else if (hpPercentage < 20 && hpPercentage > 0) {
-        opponentHPBar.style.backgroundColor = "#F80000"
+        user.style.backgroundColor = "#F80000"
     } else if (hpPercentage <= 0) {
         hpPercentage = 0;
-        opponentPokemon.style.opacity = "0";
+        if (playersTurn === "player") {
+            opponentPokemon.style.opacity = "0";
+        } else if (playersTurn === "opponent") {
+            playerPokemon.style.opacity = "0";
+        }
+        
     }
-    opponentHPBar.style.width = hpPercentage + "%"
-    console.log(hpPercentage);
+    user.style.width = hpPercentage + "%"
 }
 
-
-const attack = move => {
+let playersTurn = "player";
+const attack = (attacker, defender, move, user) => {
     if (move.pp > 0) {
-        currentOpponentPokemon.changeHP = currentOpponentPokemon.hp - move.power / currentOpponentPokemon.defense;
+        if (move.name === "Growl") {
+            lowerAttack(defender);
+        }
+       // let damage = (2 * defender.level * 1 / 5 + 2 ) * move.power * attacker.attack / defender.defense / 50 + 2;
+        let damage = calculateDamage(attacker, defender, move);
+        defender.changeHP = defender.hp - damage;
         move.changePP = move.pp - 1;
         currentPP.innerHTML = move.pp;
-        opponentHPBar.style.width = (100 * currentOpponentPokemon.hp) / currentOpponentPokemon.totalHP + "%";
-        updateHealthBar();
+        updateHealthBar(defender, user);
+        if (playersTurn === "player") {
+            playersTurn = "opponent";
+            startOpponentsTurn();
+        } else if (playersTurn === "opponent") {
+            playersTurn = "player";
+            setTimeout(startPlayersTurn, 2000);
+        } 
     }
+}
+
+const startPlayersTurn = () => {
+    toggleDisplay([menu]);
+    setSelectorPosition(1);
+}
+const startOpponentsTurn = () => {
+    let random = Math.round(Math.random() * 1);
+    setSelectorPosition(0)
+    toggleDisplay([ attackMenu, moveInfo, moveList]);
+    setTimeout(attack, 2000, currentOpponentPokemon, currentPokemon, currentOpponentPokemon.moveset[random], hpBar);
 }
 
 const playSound = sound => {
@@ -231,7 +279,7 @@ const moveSelector = e => {
             setSelectorPosition(12);
             setMoveText(2);
         } else if (e.key === "Enter") {
-            attack(currentPokemon.moveset[0]);
+            attack(currentPokemon, currentOpponentPokemon, currentPokemon.moveset[0], opponentHPBar);
         }
     }  else if (selectorPosition === 12) {
         if (e.key === "w") {
@@ -242,7 +290,32 @@ const moveSelector = e => {
             toggleDisplay([menu, attackMenu, moveInfo, moveList]);
             setSelectorPosition(1);
         } else if (e.key === "Enter") {
-            attack(currentPokemon.moveset[1]);
+            attack(currentPokemon, currentOpponentPokemon, currentPokemon.moveset[1], opponentHPBar);
+        } else if (e.key === "s") {
+            setSelectorPosition(13);
+            setMoveText(3);
+        }
+    }   else if (selectorPosition === 13) {
+            if (e.key === "w") {
+                setSelectorPosition(12);
+                setMoveText(2);
+            } else if (e.key === "s") {
+                setSelectorPosition(14);
+                setMoveText(4);
+            } else if (key.e === "Enter") {
+                playSound(aBsound);
+                attack(currentPokemon, currentOpponentPokemon, currentPokemon.moveset[2], opponentHPBar);
+            } else if (e.key === "Backspace") {
+                playSound(aBSound);
+                toggleDisplay([menu, attackMenu, moveInfo, moveList]);
+                setSelectorPosition(1);
+            } 
+    } else if (selectorPosition === 14) {
+        if (e.key === "w") {
+            setSelectorPosition(13);
+            setMoveText(3);
+        } else if (e.key === "Enter") {
+            playSound()
         }
     }
 }

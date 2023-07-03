@@ -1,5 +1,7 @@
 let selector = document.getElementById("menu__selector");
+let screen = document.getElementsByClassName("screen")[0];
 let menu = document.getElementsByClassName("menu--battle")[0];
+let menuText = document.getElementsByClassName("menu__text")[0];
 let attackMenu = document.getElementsByClassName("menu__border--move-list")[0];
 let moveInfo = document.getElementsByClassName("menu__border--move-info-container")[0];
 let moveList = document.getElementsByClassName("menu__move-list-container")[0];
@@ -7,6 +9,8 @@ let moveType = document.getElementById("move-type");
 let currentPP = document.getElementById("current-pp");
 let totalPP = document.getElementById("total-pp");
 let hpBar = document.getElementById("hp-bar");
+let currentPokemonContainer = document.getElementsByClassName("pokemon__container")[0];
+let currentOpponentPokemonContainer = document.getElementById("currentOpponentPokemon");
 let opponentPokemon = document.getElementById("opponent-pokemon");
 let playerPokemon = document.getElementById("pokemon");
 let opponentHPBar = document.getElementById("opponent-hp-bar");
@@ -17,6 +21,11 @@ let rightButton = document.getElementById("right");
 let aButton = document.getElementById("a-button");
 let bButton = document.getElementById("b-button");
 let aBSound = new Audio('sfx/SFX_PRESS_AB.wav');
+let battle = new Audio('sfx/battle.mp3');
+let victory = new Audio('sfx/victory.mp3');
+let tackleSound = new Audio('sfx/Tackle.wav');
+let attackSound = new Audio('sfx/SFX_SNARE_9.wav');
+let deniedSound = new Audio('sfx/SFX_COLLISION.wav');
 let selectorPosition = 1;
 let currentPokemon;
 let currentOpponentPokemon;
@@ -71,13 +80,14 @@ class Pokemon {
 }
 
 class Move {
-    constructor(name, type, pp, totalpp, power, accuracy) {
+    constructor(name, type, pp, totalpp, power, accuracy, status) {
         this._name = name;
         this._type = type;
         this._pp = pp;
         this._totalpp = totalpp;
         this._power = power;
         this._accuracy = accuracy;
+        this._status = status;
     }
     get name() {
         return this._name;
@@ -96,29 +106,27 @@ class Move {
     }
     get accuracy() {
         return this._accuracy;
+    }
+    get status() {
+        return this._status;
     } 
     set changePP(newPP) {
         this._pp = newPP;
     }
-}
-
-class StatusEffect extends Move {
-    constructor(move, type, pp, totalpp, power, accuracy, effect) {
-       super(move, type, pp, totalpp, power, accuracy); 
-       this._effect = effect;
-    } 
-    get effect() {
-        return this._effect;
+    statusEffect(a, b) {
+        this._status(a, b);
     }
 }
 
 const lowerAttack = (target) => {
-    target.changeAttack = target.attack - 1;
+    if (target.attack > 5) {
+    target.changeAttack = target.attack * 0.9;
+    }
 }
 
 //Moves
 let tackle = new Move("Tackle", "normal", 35, 35, 35, 100);
-let growl = new Move("Growl", "normal", 20, 20, 0, 100);
+let growl = new Move("Growl", "normal", 20, 20, 0, 100, lowerAttack);
 
 
 //Pokemon
@@ -181,52 +189,99 @@ const updateHealthBar = (pokemon, user) => {
         user.style.backgroundColor = "#F80000"
     } else if (hpPercentage <= 0) {
         hpPercentage = 0;
-        if (playersTurn === "player") {
+        if (pokemon === currentPokemon) {
+            playerPokemon.style.opacity = "0";    
+            menuText.textContent = "";
+            displayText(`${currentPokemon.name} has fainted!`)
+        } else if (pokemon === currentOpponentPokemon) {
             opponentPokemon.style.opacity = "0";
-        } else if (playersTurn === "opponent") {
-            playerPokemon.style.opacity = "0";
+            menuText.textContent = "";
+            displayText(`Enemy ${currentOpponentPokemon.name} has fainted!`)
+            pauseSound(battle);
+            playSound(victory, true);
+
         }
-        
     }
     user.style.width = hpPercentage + "%"
 }
 
-let playersTurn = "player";
-const attack = (attacker, defender, move, user) => {
-    if (move.pp > 0) {
-        if (move.name === "Growl") {
-            lowerAttack(defender);
-        }
-       // let damage = (2 * defender.level * 1 / 5 + 2 ) * move.power * attacker.attack / defender.defense / 50 + 2;
-        let damage = calculateDamage(attacker, defender, move);
-        defender.changeHP = defender.hp - damage;
-        move.changePP = move.pp - 1;
-        currentPP.innerHTML = move.pp;
-        updateHealthBar(defender, user);
-        if (playersTurn === "player") {
-            playersTurn = "opponent";
-            startOpponentsTurn();
-        } else if (playersTurn === "opponent") {
-            playersTurn = "player";
-            setTimeout(startPlayersTurn, 2000);
-        } 
-    }
+const displayText = text => {
+    let newText = text.split("");
+    let result = [];
+    for (let i = 0; i < newText.length; i += 3) result.push(newText.slice(i, i + 3));
+    result.forEach((element, i) => setTimeout(function(){menuText.textContent += element.join("")}, 50 * i));
 }
 
+let playersTurn = "player";
+
+const attack = (attacker, defender, move, user) => {
+    //menuText.textContent = `${attacker.name} used ${move.name}!`
+    displayText(`${attacker.name} used ${move.name}!`);
+    if (move.status) {
+        move.statusEffect(defender);
+    }
+    if (playersTurn === "player") {
+        screen.classList.remove("attack");
+        currentOpponentPokemonContainer.classList.remove("attack");
+        currentPokemonContainer.classList.add("attack");
+    } else if (playersTurn === "opponent") {
+        screen.classList.remove("attack");
+        currentPokemonContainer.classList.remove("attack");
+        currentOpponentPokemonContainer.classList.add("attack");   
+    }
+    playSound(tackleSound);
+    setTimeout(function() {
+        screen.classList.add("attack");
+        playSound(attackSound);
+    }, 500);
+
+    let damage = calculateDamage(attacker, defender, move);
+    defender.changeHP = defender.hp - damage;
+    move.changePP = move.pp - 1;
+    currentPP.innerHTML = move.pp;
+    setTimeout(updateHealthBar, 1000, defender, user);
+    if (playersTurn === "player" && currentOpponentPokemon.hp >= 0) {
+        playersTurn = "opponent";
+        setTimeout(startOpponentsTurn, 1500);
+    } else if (playersTurn === "opponent" && currentPokemon.hp >= 0) {
+        togglePlayerTurn();
+        setTimeout(startPlayersTurn, 1500);
+    } 
+}
+
+const togglePlayerTurn = () => {
+    playersTurn === "player" ? playersTurn = "opponent" : playersTurn = "player";
+}
+
+
 const startPlayersTurn = () => {
+    menuText.textContent = "";
     toggleDisplay([menu]);
     setSelectorPosition(1);
 }
 const startOpponentsTurn = () => {
-    let random = Math.round(Math.random() * 1);
-    setSelectorPosition(0)
-    toggleDisplay([ attackMenu, moveInfo, moveList]);
-    setTimeout(attack, 2000, currentOpponentPokemon, currentPokemon, currentOpponentPokemon.moveset[random], hpBar);
+    menuText.textContent = "";
+    let random = Math.floor(Math.random() * 10);
+    let attackIndex;
+    random < 8 ? attackIndex = 0 : attackIndex = 1;
+    setTimeout(attack, 1000, currentOpponentPokemon, currentPokemon, currentOpponentPokemon.moveset[attackIndex], hpBar);
 }
 
-const playSound = sound => {
+const playSound = (sound, loop) => {
     sound.volume = 0.1;
 	sound.play();
+    if (loop) {
+        sound.loop = true;
+    }
+}
+
+const pauseSound = sound => {
+    sound.pause();
+}
+
+
+const playAnimation = (pokemon, animation) => {
+    pokemon.classList.add(animation);
 }
 
 const toggleDisplay = e => {
@@ -257,18 +312,24 @@ const moveSelector = e => {
             setSelectorPosition(1);
         } else if (e.key === "d") {
             setSelectorPosition(4);
+        } else if (e.key === "Enter") {
+            playSound(deniedSound);
         }
     } else if (selectorPosition === 3) {
         if (e.key === "a") {
             setSelectorPosition(1);
         } else if (e.key === "s") {
             setSelectorPosition(4);
+        } else if (e.key === "Enter") {
+            playSound(deniedSound);
         }
     } else if (selectorPosition === 4) {
         if (e.key === "a") {
             setSelectorPosition(2);
         } else if (e.key === "w") {
             setSelectorPosition(3);
+        } else if (e.key === "Enter") {
+            playSound(deniedSound);
         }
     } else if (selectorPosition === 11) {
         if (e.key === "Backspace") {
@@ -279,6 +340,8 @@ const moveSelector = e => {
             setSelectorPosition(12);
             setMoveText(2);
         } else if (e.key === "Enter") {
+            toggleDisplay([ attackMenu, moveInfo, moveList]);
+            setSelectorPosition(0)
             attack(currentPokemon, currentOpponentPokemon, currentPokemon.moveset[0], opponentHPBar);
         }
     }  else if (selectorPosition === 12) {
@@ -290,11 +353,13 @@ const moveSelector = e => {
             toggleDisplay([menu, attackMenu, moveInfo, moveList]);
             setSelectorPosition(1);
         } else if (e.key === "Enter") {
+            toggleDisplay([ attackMenu, moveInfo, moveList]);
             attack(currentPokemon, currentOpponentPokemon, currentPokemon.moveset[1], opponentHPBar);
-        } else if (e.key === "s") {
-            setSelectorPosition(13);
-            setMoveText(3);
-        }
+            setSelectorPosition(0)
+        } //else if (e.key === "s") {
+        //     setSelectorPosition(13);
+        //     setMoveText(3);
+        // }
     }   else if (selectorPosition === 13) {
             if (e.key === "w") {
                 setSelectorPosition(12);
@@ -303,19 +368,22 @@ const moveSelector = e => {
                 setSelectorPosition(14);
                 setMoveText(4);
             } else if (key.e === "Enter") {
+                toggleDisplay([ attackMenu, moveInfo, moveList]);
                 playSound(aBsound);
                 attack(currentPokemon, currentOpponentPokemon, currentPokemon.moveset[2], opponentHPBar);
+                setSelectorPosition(0)
             } else if (e.key === "Backspace") {
-                playSound(aBSound);
-                toggleDisplay([menu, attackMenu, moveInfo, moveList]);
-                setSelectorPosition(1);
+                //playSound(aBSound);
+                //toggleDisplay([menu, attackMenu, moveInfo, moveList]);
+                //setSelectorPosition(1);
             } 
     } else if (selectorPosition === 14) {
         if (e.key === "w") {
             setSelectorPosition(13);
             setMoveText(3);
         } else if (e.key === "Enter") {
-            playSound()
+            //toggleDisplay([ attackMenu, moveInfo, moveList]);
+            //playSound()
         }
     }
 }
@@ -347,6 +415,7 @@ rightButton.addEventListener("click", () => {
 aButton.addEventListener("click", () => {
     let keyEvent = new KeyboardEvent("keydown", {key: "Enter"});
     window.dispatchEvent(keyEvent);
+    playSound(battle, true);
 });
 bButton.addEventListener("click", () => {
     let keyEvent = new KeyboardEvent("keydown", {key: "Backspace"});

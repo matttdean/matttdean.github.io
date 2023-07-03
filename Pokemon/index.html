@@ -8,80 +8,83 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="screen">
-        <!-- <img src="img/download.png" alt="">  -->
-        <!-- <img src="img/Artboard1.png" alt=""> -->
-        <div class="menu__border--move-info-container hidden">
-            <div class="menu__text-item" id="type-heading">TYPE /</div>
-            <div class="menu__text-item" id="move-type">NORMAL</div>
-            <div class="menu__text-item" id="pp"><span id="current-pp">25</span>/<span id="total-pp">25</span></div>
-            <div class="menu__border--move-info"></div>
-        </div>
-        <div class="menu__border--move-list hidden"></div>
-        <span class="menu__move-list-container hidden">
-            <div class="menu__text-item" id="first">-</div>
-            <div class="menu__text-item" id="second">-</div>
-            <div class="menu__text-item" id="third">-</div>
-            <div class="menu__text-item" id="fourth">-</div>
-        </span>
+    <div class="screen-container">
+        <div class="screen">
+            <!-- <img src="img/download.png" alt="">  -->
+            <!-- <img src="img/Artboard3.png" alt=""> -->
+            <div class="menu__border--move-info-container hidden">
+                <div class="menu__text-item" id="type-heading">TYPE /</div>
+                <div class="menu__text-item" id="move-type">NORMAL</div>
+                <div class="menu__text-item" id="pp"><span id="current-pp">25</span>/<span id="total-pp">25</span></div>
+                <div class="menu__border--move-info"></div>
+            </div>
+            <div class="menu__border--move-list hidden"></div>
+            <span class="menu__move-list-container hidden">
+                <div class="menu__text-item" id="first">-</div>
+                <div class="menu__text-item" id="second">-</div>
+                <div class="menu__text-item" id="third">-</div>
+                <div class="menu__text-item" id="fourth">-</div>
+            </span>
 
-        <div class="position-1" id="menu__selector"></div>
-        <div class="menu--battle">
-            <div class="menu__text-item" id="fight">FIGHT</div>
-            <div class="menu__text-item" id="pkmn"></div>
-            <div class="menu__text-item" id="item">ITEM</div>
-            <div class="menu__text-item" id="run">RUN</div>
-            <div class="menu__border--battle"></div>
-        </div>
-        <div class="menu">
-            <div class="menu__border"></div>
-        </div>
-        <div class="pokemon__container">
-            <div id="pokemon"></div>
-        </div>
-        <div class="info info--battle">
-            <div class="info__border--battle"></div>
-            <div class="hp__bar-container">
-                <div id="hp-bar"></div>
-                <div class="hp__bar-border"></div>
+            <div class="position-1" id="menu__selector"></div>
+            <div class="menu--battle">
+                <div class="menu__text-item" id="fight">FIGHT</div>
+                <div class="menu__text-item" id="pkmn"></div>
+                <div class="menu__text-item" id="item">ITEM</div>
+                <div class="menu__text-item" id="run">RUN</div>
+                <div class="menu__border--battle"></div>
             </div>
-            <div class="hp__text"><span id="current-hp">20</span> / <span id="total-hp">20</span></div>
-            <div class="hp__label"></div>
-            <div class="level__label"></div>
-            <div class="level__text" id="pokemon-level">5</div>
-            <div class="pokemon__name" id="pokemon-name"></div>
-        </div>
-        <div class="info hidden">
-            <div class="info__border"></div>
-            <div class="info__pokeball-container">
-                <div class="info__pokeball" id="pokeball-1"></div>
-                <div class="info__pokeball" id="pokeball-2"></div>
-                <div class="info__pokeball" id="pokeball-3"></div>
-                <div class="info__pokeball" id="pokeball-4"></div>
-                <div class="info__pokeball" id="pokeball-5"></div>
-                <div class="info__pokeball" id="pokeball-6"></div>
+            <div class="menu">
+                <p class="menu__text"></p>
+                <div class="menu__border"></div>
             </div>
-        </div>
-        <div class="pokemon__container pokemon__container--opponent">
-            <div id="opponent-pokemon" class=""></div>
-        </div>
-        <div class="info info--opponent">
-            <div class="info__border info__border--opponent"></div>
-            <div class="hp__bar-container hp__bar-container--opponent">
-                <div id="opponent-hp-bar"></div>
-                <div class="hp__bar-border"></div>
+            <div class="pokemon__container">
+                <div id="pokemon"></div>
             </div>
-            <div class="hp__label hp__label--opponent"></div>
-            <div class="level__label level__label--opponent"></div>
-            <div class="level__text level__text--opponent" id="opponent-pokemon-level">5</div>
-            <div class="pokemon__name pokemon__name--opponent" id="opponent-pokemon-name"></div>
-            <div class="info__pokeball-container">
-                <div class="info__pokeball" id="pokeball-1"></div>
-                <div class="info__pokeball" id="pokeball-2"></div>
-                <div class="info__pokeball" id="pokeball-3"></div>
-                <div class="info__pokeball" id="pokeball-4"></div>
-                <div class="info__pokeball" id="pokeball-5"></div>
-                <div class="info__pokeball" id="pokeball-6"></div>
+            <div class="info info--battle">
+                <div class="info__border--battle"></div>
+                <div class="hp__bar-container">
+                    <div id="hp-bar"></div>
+                    <div class="hp__bar-border"></div>
+                </div>
+                <div class="hp__text"><span id="current-hp">20</span> / <span id="total-hp">20</span></div>
+                <div class="hp__label"></div>
+                <div class="level__label"></div>
+                <div class="level__text" id="pokemon-level">5</div>
+                <div class="pokemon__name" id="pokemon-name"></div>
+            </div>
+            <div class="info hidden">
+                <div class="info__border"></div>
+                <div class="info__pokeball-container">
+                    <div class="info__pokeball" id="pokeball-1"></div>
+                    <div class="info__pokeball" id="pokeball-2"></div>
+                    <div class="info__pokeball" id="pokeball-3"></div>
+                    <div class="info__pokeball" id="pokeball-4"></div>
+                    <div class="info__pokeball" id="pokeball-5"></div>
+                    <div class="info__pokeball" id="pokeball-6"></div>
+                </div>
+            </div>
+            <div class="pokemon__container pokemon__container--opponent" id="currentOpponentPokemon">
+                <div id="opponent-pokemon" class=""></div>
+            </div>
+            <div class="info info--opponent">
+                <div class="info__border info__border--opponent"></div>
+                <div class="hp__bar-container hp__bar-container--opponent">
+                    <div id="opponent-hp-bar"></div>
+                    <div class="hp__bar-border"></div>
+                </div>
+                <div class="hp__label hp__label--opponent"></div>
+                <div class="level__label level__label--opponent"></div>
+                <div class="level__text level__text--opponent" id="opponent-pokemon-level">5</div>
+                <div class="pokemon__name pokemon__name--opponent" id="opponent-pokemon-name"></div>
+                <div class="info__pokeball-container">
+                    <div class="info__pokeball" id="pokeball-1"></div>
+                    <div class="info__pokeball" id="pokeball-2"></div>
+                    <div class="info__pokeball" id="pokeball-3"></div>
+                    <div class="info__pokeball" id="pokeball-4"></div>
+                    <div class="info__pokeball" id="pokeball-5"></div>
+                    <div class="info__pokeball" id="pokeball-6"></div>
+                </div>
             </div>
         </div>
     </div>

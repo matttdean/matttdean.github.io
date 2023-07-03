@@ -33,8 +33,8 @@ let currentOpponentPokemon;
 //Classes
 class Pokemon {
     constructor(name, type, hp, totalHP, level, attack, defense, special, speed, moveset) {
-        this._name = name;
-        this._type = type;
+        this._name = name.toUpperCase();
+        this._type = type.toUpperCase();
         this._hp = hp;
         this._totalHP = totalHP;
         this._level = level;
@@ -81,8 +81,8 @@ class Pokemon {
 
 class Move {
     constructor(name, type, pp, totalpp, power, accuracy, status) {
-        this._name = name;
-        this._type = type;
+        this._name = name.toUpperCase();
+        this._type = type.toUpperCase();
         this._pp = pp;
         this._totalpp = totalpp;
         this._power = power;
@@ -124,9 +124,17 @@ const lowerAttack = (target) => {
     }
 }
 
+const growlEffect = (target) => {
+    lowerAttack(target);
+    setTimeout (() => {
+        menuText.textContent = "";
+        displayText(`${target.name}'s attack fell!`);
+    }, 500);
+}
+
 //Moves
 let tackle = new Move("Tackle", "normal", 35, 35, 35, 100);
-let growl = new Move("Growl", "normal", 20, 20, 0, 100, lowerAttack);
+let growl = new Move("Growl", "normal", 20, 20, 0, 100, growlEffect);
 
 
 //Pokemon
@@ -209,29 +217,34 @@ const displayText = text => {
     let newText = text.split("");
     let result = [];
     for (let i = 0; i < newText.length; i += 3) result.push(newText.slice(i, i + 3));
-    result.forEach((element, i) => setTimeout(function(){menuText.textContent += element.join("")}, 50 * i));
+    result.forEach((element, i) => setTimeout(() => {menuText.textContent += element.join("")}, 50 * i));
 }
 
 let playersTurn = "player";
 
+
 const attack = (attacker, defender, move, user) => {
-    //menuText.textContent = `${attacker.name} used ${move.name}!`
+
+
     displayText(`${attacker.name} used ${move.name}!`);
     if (move.status) {
         move.statusEffect(defender);
+        setTimeout(() => {
+
+        }, 500)
     }
     if (playersTurn === "player") {
-        screen.classList.remove("attack");
+        screen.classList.remove("screen-shake");
         currentOpponentPokemonContainer.classList.remove("attack");
         currentPokemonContainer.classList.add("attack");
     } else if (playersTurn === "opponent") {
-        screen.classList.remove("attack");
+        screen.classList.remove("screen-shake");
         currentPokemonContainer.classList.remove("attack");
         currentOpponentPokemonContainer.classList.add("attack");   
     }
     playSound(tackleSound);
-    setTimeout(function() {
-        screen.classList.add("attack");
+    setTimeout(() => {
+        screen.classList.add("screen-shake");
         playSound(attackSound);
     }, 500);
 
@@ -248,6 +261,7 @@ const attack = (attacker, defender, move, user) => {
         setTimeout(startPlayersTurn, 1500);
     } 
 }
+
 
 const togglePlayerTurn = () => {
     playersTurn === "player" ? playersTurn = "opponent" : playersTurn = "player";
@@ -295,6 +309,8 @@ const setSelectorPosition = num => {
     selectorPosition = num;
 }
 
+
+//controls
 const moveSelector = e => {
     if (selectorPosition === 1) {
         if (e.key === "s") {
@@ -356,10 +372,7 @@ const moveSelector = e => {
             toggleDisplay([ attackMenu, moveInfo, moveList]);
             attack(currentPokemon, currentOpponentPokemon, currentPokemon.moveset[1], opponentHPBar);
             setSelectorPosition(0)
-        } //else if (e.key === "s") {
-        //     setSelectorPosition(13);
-        //     setMoveText(3);
-        // }
+        } 
     }   else if (selectorPosition === 13) {
             if (e.key === "w") {
                 setSelectorPosition(12);
@@ -395,6 +408,8 @@ const setMoveText = (num) => {
     totalPP.innerHTML = currentPokemon.moveset[num-1].totalpp;
 }
 
+
+//trigger event listeners when buttons are clicked
 
 upButton.addEventListener("click", () => {
     let keyEvent = new KeyboardEvent("keydown", {key: "w"});

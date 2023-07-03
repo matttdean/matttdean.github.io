@@ -15,6 +15,20 @@
     90% {transform: translateX(10px);}
     100% {transform: translateX(-2x);}
 }
+@keyframes screen-shake {
+    0% {transform: translateY(0);}
+    30% {transform: translateY(6px);}
+    50% {transform: translateY(-12px);}
+    65% {transform: translateY(10px);}
+    75% {transform: translateY(-6px);}
+    80% {transform: translateY(4px);}
+    95% {transform: translateY(-3px);}
+    100% {transform: translateY(1px);}
+}
+@keyframes faint {
+    from {transform: translateY(0px);}
+    to {transform: translateY(112px);}
+}
 
 .opponent-attack {
     animation-name: hit;
@@ -26,6 +40,16 @@
     animation-direction: reverse;
 }
 
+.screen-shake {
+    animation-name: screen-shake;
+    animation-duration: 0.2s;
+}
+.faint {
+    animation-name: faint;
+    animation-duration: 0.2s;
+    animation-timing-function: steps(3);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -35,20 +59,35 @@
 body {
     background-color: teal;
 }
+.screen-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    height: 432px;
+    background-color: rgb(24, 26, 26);
+    margin: 30px auto 0;
+    border: 2px inset black;
+    border-radius: 7px;
+    max-width: 99%;
+}
 .screen {
     font-family: "pixel"; 
-    text-transform: uppercase;
     position: relative;
     width: 320px;
     height: 288px;
     background-color: white;
 }
 .screen-container {
-    margin: 30px auto 0;
     width: 320px;
     height: 288px;
     overflow: hidden;
     background-color: white;
+    margin-bottom: 40px;
+    border: 5px solid black;
+    /* border-style: groove; */
+    box-sizing: content-box;
+    border-radius: 2px;
 }
 .menu {
     position: absolute;
@@ -480,11 +519,18 @@ margin-left: 0;
 .buttons {
     width: 50px;
     height: 50px;
-    background-color: midnightblue;
+    background-color: rgb(24, 26, 26);
     position: absolute;
 }
 .buttons:active {
-    background-color: #090942;
+    background-color: black;
+}
+
+.arrow-button {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top: 2px groove black;
+    border-right: 2px groove black;
 }
 #up {
     top: 0;
@@ -493,30 +539,41 @@ margin-left: 0;
 #down {
     bottom: 0;
     left: 50px;
+    transform: rotateZ(180deg) scaleX(-1);
 }
 #left {
     left: 0;
     top: 50px;
+    transform: rotateZ(-90deg);
 }
 #right {
     right: 0;
-    top: 50px
+    top: 50px;
+    transform: rotateZ(90deg);
 }
 #a-button {
     left: 100px;
-    top: 75px;
+    top: 25px;
+    border: 2px groove black;
+    border-radius: 50%;
 }
 #b-button {
-    left: 0;
-    top: 25px;
+    left: 25px;
+    top: 75px;
+    border: 2px groove black;
+    border-radius: 50%;
 }
-
+#center-space {
+    left: 50px;
+    margin-top: 50px;
+}
 .pokemon__container {
     width: 112px;
     height: 112px;
     position: absolute;
     left: 14px;
     bottom: 98px;
+    overflow: hidden;
 }
 #pokemon {
     width: 2px;

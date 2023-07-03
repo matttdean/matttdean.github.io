@@ -89,6 +89,15 @@ body {
     box-sizing: content-box;
     border-radius: 2px;
 }
+@media screen and (max-width: 480px ){
+    .screen-border {
+        height: 320px;
+    }
+    .screen-container {
+        margin-bottom: 0;
+    }
+    
+}
 .menu {
     position: absolute;
     bottom: 0;
@@ -566,6 +575,9 @@ margin-left: 0;
 #center-space {
     left: 50px;
     margin-top: 50px;
+}
+#center-space:active {
+    background-color: rgb(24, 26, 26);
 }
 .pokemon__container {
     width: 112px;

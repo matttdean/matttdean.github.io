@@ -81,11 +81,17 @@ section {
     position: absolute;
     
 }
+.hero__image--bg {
+display: none;
+}
 @media screen and (min-width:960px) {
     .hero__image {
         width: auto;
         background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
     }
+    .hero__image--bg {
+        display: block;
+        }
 }
 .hero__gradient {
     width: 100dvw;
@@ -100,9 +106,6 @@ section {
         width: 100dvw;
         height: 120dvh;
         background: linear-gradient(to left,black, transparent);
-        position: absolute;
-        bottom: 0;
-        pointer-events: none;
         z-index: 1;
     }
 }
@@ -550,7 +553,7 @@ section {
     }
 }
 .order__gradient {
-    width: 10dvw;
+    width: 100dvw;
     height: 70dvh;
     background: linear-gradient(to top, black, black, black, transparent);
     position: absolute;
